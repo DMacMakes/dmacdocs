@@ -1,9 +1,9 @@
 ---
-title: "Week 2: Decisions"
-linkTitle: "2: Decisions"
+title: "Week 2: High Res 2"
+linkTitle: "2: High Rez 2"
 weight: 1
 description: >
-  Deciding.
+  Digging in.
 ---
 
 ## Welcome

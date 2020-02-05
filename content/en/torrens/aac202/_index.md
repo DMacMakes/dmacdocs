@@ -1,6 +1,6 @@
 ---
 title: "AAC202: Advanced Asset Creation"
-linkTitle: "Adv. Asset Cr."
+linkTitle: "[Adv Asset Creation]"
 weight: 2
 description: >
   What does your user need to understand about your project in order to use it - or potentially contribute to it? 

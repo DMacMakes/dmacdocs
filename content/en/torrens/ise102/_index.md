@@ -1,6 +1,6 @@
 ---
 title: "ISE102: Intro to Software Engineering"
-linkTitle: "Intro Soft. Eng."
+linkTitle: "Intro Software Eng"
 weight: 10
 description: >
   Programming principles and practise using C++. 
@@ -8,11 +8,12 @@ description: >
 
 ## Class Notes
 
-Weekly notes are accessible from the **left navigation bar** on PC or the <i class="fas fa-bars"></i> **menu button** on mobile. Check out [Week 1](/content/en/torrens/ise102/notes/week1) to get started.
+Weekly notes are accessible from the **left navigation bar** on PC or the <i class="fas fa-bars"></i> **menu button** on mobile. Check out [Week 1](/torrens/ise102/notes/week1/) to get started.
 
 {{% alert title="Important:" color="primary" %}}
 We'll work from the notes in class each week, so **open them when you arrive**. They also contain links to **resources** and weekly **exercises** to complete between classes. 
 {{% /alert %}}
+
 ## Required Software Installs
 
 We'll be working in two main programs this trimester.
