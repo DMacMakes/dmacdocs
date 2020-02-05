@@ -2,7 +2,7 @@
 ---
 title: "Subjects"
 linkTitle: "Subjects"
-weight: 20
+weight: 10
 simple_list: true
 menu:
   main:

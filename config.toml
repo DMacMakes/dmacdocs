@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Dmacdocs"
+title = "dmdocs"
 
 enableRobotsTXT = true
 
@@ -7,7 +7,7 @@ enableRobotsTXT = true
 theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
-enableGitInfo = true
+enableGitInfo = false
 
 # Language settings
 contentDir = "content/en"
@@ -53,8 +53,8 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "dmacdocs"
-description = "Documents for my classes"
+title = "dmdocs"
+description = "Torrens Subject Documentation"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
