@@ -8,7 +8,7 @@ description: >
 
 ## Welcome
 
-Magical.
+Magical publishing.
 
 ## Programming
 
