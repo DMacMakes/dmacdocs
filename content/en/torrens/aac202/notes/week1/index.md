@@ -15,6 +15,10 @@ resources:
 - src: "*lauren-duke.jpg"
   params:
     byline: "Art: Lauren Duke / Artstation"
+- src: breakdown_bracket.jpg
+  params:
+    byline: "Art: Uncredited"
+    href: "CanItURL"
 ---
 
 ## FROM BLACKBOARD 
@@ -47,7 +51,17 @@ Seems it's all about planning/strategising your advanced asset, designing and co
 
 The object the students are to "break down" and consider modeling strategies for in class is a clear subdiv model:
 
-http://2.bp.blogspot.com/-eqOLgEHLWf4/Uua2ytK_kyI/AAAAAAAAAKM/bfz8uI6wjus/s1600/HS_w3_HP.jpg
+<!--![break it down](http://2.bp.blogspot.com/-eqOLgEHLWf4/Uua2ytK_kyI/AAAAAAAAAKM/bfz8uI6wjus/s1600/HS_w3_HP.jpg)-->
+<!--<a href="http://2.bp.blogspot.com/-eqOLgEHLWf4/Uua2ytK_kyI/AAAAAAAAAKM/bfz8uI6wjus/s1600/HS_w3_HP.jpg" target="_blank"> -->
+{{< imgproc breakdown_bracket Resize "600x" Link "breakdown_bracket.jpg" >}}
+How to model?
+{{< /imgproc >}}
+<!--</a>-->
+
+{{< imgcard breakdown_bracket Link "breakdown_bracket.jpg" >}}
+How to model?
+{{< /imgcard >}}
+<!--{{< figure src="breakdown_bracket.jpg" link="breadkdown_bracket.jpg" caption="We did it dad." class="card rounded p-2 td-post-card mb-4 mt-4">}}-->
 
 specs: 
     Details - one mesh only, with no UVs or textures required
@@ -125,8 +139,6 @@ You use a bunch of pre made normal map stamps to add surface detail.
 Revealing the geometry
 {{< /imgproc >}}
 
-
-
 [Video tutorial of the above](https://www.youtube.com/watch?v=KTxiKaIzG_c)
 
 ## Getting  Detailed: Sculpting
@@ -136,8 +148,8 @@ You:
 2. Trace a model over it that can run in a game engine, maybe 2K-15K polygons.
 3. Bake over the high res details to the low ad a normal map.
 
-{{< imgproc barrel_high_alexander-shevchuk Resize "650x">}}
-High poly, slightly stylised barrel <i>(with normal map)</i>
+{{< imgproc barrel_high_lauren-duke Resize "750x">}}
+High poly stylised barrel <i>(with normal map)</i>
 {{< /imgproc >}}
 
 
@@ -160,12 +172,23 @@ Then you have the option of:
 1. Applying the smoothing as real polygons, if the resulting count isn't too high.
 2. Creating a very highly divided output (50k+ polys) and then baking the details to a normal map on a mesh that can hold the silhouette pretty well.
 
+{{< imgproc pistol_subdiv_janis_eidins Resize "700x">}}
+Clean subdivision model</i>
+{{< /imgproc >}}
+{{< imgproc pistol_mapped_janis_eidins Resize "700x">}}
+Details projected onto model with maps</i>
+{{< /imgproc >}}
+
+**ADD PICTURE OF WIRES** and a link to the 3d viewer on artstation: 
+https://www.artstation.com/artwork/968qv
 
 Pros
 - You can change long sweeping curves with a single edge move (like a bezier curve)
 Cons
 - Very laborious, difficult to achieve seemingly simple outcomes.
 - It can quickly get very tricky to achieve some forms.
+
+
 
 Flipped Normals how to model curved hard surfaces.
 https://www.youtube.com/watch?v=U7HG6XJsKoQ
@@ -178,19 +201,11 @@ Can be exported to FBX in smoothed, high density form while remaining low densit
 
 Youtube guides
 <!--  [Maya Interface Tour on YT](https://www.youtube.com/watch?v=okaC2_NxPYQ&list=PLD8E5717592CF5C26&index=10) -->
-{{< youtube okaC2_NxPYQ >}}
+<!-- {{< youtube okaC2_NxPYQ >}} -->
 
-## Maya Time
+## My High res stuff
 
-{{< imgproc barrel_alvaro_vera Resize "500x" >}}
-Cartoony barrel concept
-{{< /imgproc >}}
+Blizzard cards
 
-## Resources
-
-* Interface basics YT: [Interface Intro YT](https://youtu.be/dbjAnutq1vQ)
-* Modelling basics YT: [Moving objects lesson YT](https://www.youtube.com/watch?v=1n89UOtMI_Y&list=PLD8E5717592CF5C26&index=7)
-* Multi Cut
-* Extrude (2019 help?)
-* Pureref portable zip
-* Link to interface cheat sheet
+Look dev of motorcycle gal. Still not live!! must post.
+Show metal gadget,. Show reference boards.
