@@ -58,11 +58,6 @@ How to model?
 {{< /imgproc >}}
 <!--</a>-->
 
-{{< imgcard breakdown_bracket Link "breakdown_bracket.jpg" >}}
-How to model?
-{{< /imgcard >}}
-<!--{{< figure src="breakdown_bracket.jpg" link="breadkdown_bracket.jpg" caption="We did it dad." class="card rounded p-2 td-post-card mb-4 mt-4">}}-->
-
 specs: 
     Details - one mesh only, with no UVs or textures required
     Topology – all quads, and not more than 2000 polys
@@ -121,15 +116,15 @@ The end goal of adding polygons is to support **smoothly curving surfaces** and 
 
 More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/).
 
-## Getting Detailed: Adding Polys And Texturing.
+## Method 1: Adding Polys And Texturing.
 
 Make lots of polygons, then add stuff into the normal map
 
-{{< imgproc sf_barrel_gameanax_1 Resize "800x" >}}
+{{< imgproc sf_barrel_gameanax_1 Resize "800x" Link "https://www.artstation.com/artwork/NAZg5" >}}
 Barrels in space
 {{< /imgproc >}}
 
-{{< imgproc sf_barrel_gameanax_2 Resize "800x" >}}
+{{< imgproc sf_barrel_gameanax_2 Resize "800x" Link "https://www.artstation.com/artwork/NAZg5" >}}
 Revealing the geometry
 {{< /imgproc >}}
 
@@ -141,19 +136,23 @@ Revealing the geometry
 
 [Video tutorial of the above](https://www.youtube.com/watch?v=KTxiKaIzG_c)
 
-## Getting  Detailed: Sculpting
+## Method 2: Sculpting
 
 You:
-1. Make a barrel with **many millions** of polygons in say, ZBrush.
+1a. Make a barrel with **many millions** of polygons in say, ZBrush.
+
+1b. Make a barrel in Maya and import into, say, ZBrush to add **many millions** of polygons.
+
 2. Trace a model over it that can run in a game engine, maybe 2K-15K polygons.
 3. Bake over the high res details to the low ad a normal map.
 
-{{< imgproc barrel_high_lauren-duke Resize "750x">}}
+{{< imgproc barrel_high_lauren-duke Resize "750x" Link "https://www.artstation.com/artwork/QzxBEl">}}
 High poly stylised barrel <i>(with normal map)</i>
 {{< /imgproc >}}
 
+We all know ZBrush is tasty.. but that's for assessment 2.
 
-## Getting Detailed: Subdivision Surfaces
+## Method 3: Subdivision Surfaces
 
 {{< imgproc maya_subdiv_edge_cgi Resize "640x">}}
 Control loops and subdivisions</i>
@@ -172,10 +171,11 @@ Then you have the option of:
 1. Applying the smoothing as real polygons, if the resulting count isn't too high.
 2. Creating a very highly divided output (50k+ polys) and then baking the details to a normal map on a mesh that can hold the silhouette pretty well.
 
-{{< imgproc pistol_subdiv_janis_eidins Resize "700x">}}
+{{< imgproc pistol_subdiv_janis_eidins Resize "700x" Link "https://www.artstation.com/artwork/968qv" >}}
 Clean subdivision model</i>
 {{< /imgproc >}}
-{{< imgproc pistol_mapped_janis_eidins Resize "700x">}}
+
+{{< imgproc pistol_mapped_janis_eidins Resize "700x" Link "https://www.artstation.com/artwork/968qv">}}
 Details projected onto model with maps</i>
 {{< /imgproc >}}
 
