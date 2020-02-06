@@ -17,6 +17,74 @@ resources:
     byline: "Art: Lauren Duke / Artstation"
 ---
 
+## FROM BLACKBOARD 
+
+* 3D Creation pipelines, strategies
+
+Students follow the learning resources and do the activities:
+1. Class Activity: 3d asset pipeline activity.
+1. Game studio(?) activity: design breakdown
+1. Assessment progress: Design Sheet
+
+Covers: 
+1. Design/conceptualization
+2. importance observation, planning, strategy in 3d asset creation (talk reference?)
+3. Advanced blocking/base meshes
+
+Laureate visual roadmap of assessment 1:
+1. Design or conceptualize a 3D object based on scope provided (i'll specify a type of object)
+2. Share your work in progress in week 2 forum
+3. present your textured and lit model.
+
+Learning  Material:
+From [Module 1 blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset)
+1. Flipped normals on observation https://www.youtube.com/watch?v=qpd1AKwJLUg&list=PLBX-X8mPyxIrBAzc6Schs7WXdV13thGU6
+2. Lynda What is concept art (**CHECK this works for students with Trent**): https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset
+3. Principles 3d modeling in games **BROKEN?!** http://www.indiegamedeveloper.tv/principles-of-3d-game-art-modelling/
+4. Concept art is dead talk: https://www.youtube.com/watch?v=CYbYvImd7Bw
+
+Seems it's all about planning/strategising your advanced asset, designing and concepting - but doesn't teach high res modelling techniques first. very very weird?
+
+The object the students are to "break down" and consider modeling strategies for in class is a clear subdiv model:
+
+http://2.bp.blogspot.com/-eqOLgEHLWf4/Uua2ytK_kyI/AAAAAAAAAKM/bfz8uI6wjus/s1600/HS_w3_HP.jpg
+
+specs: 
+    Details - one mesh only, with no UVs or textures required
+    Topology – all quads, and not more than 2000 polys
+    Your facilitator might indicate additional expectations
+    The facilitator may ask faster students to share their workflow with other students.
+
+Again this is a real muddle of design and execution. Hard to imagine fitting both in.
+
+Focus on what is subdiv modeling, what is it suited to. Then show example concepts of objects suited to this approach. Their strategising will have to come down to starting shapes and lines, but really they need a few hours of video watching to do that. The model shown is tricky to subdiv model, and would actually be delivered as normal mapped. Odd.
+
+But we can talk subdiv modeling: working with quads, making holes, going from one cylinder to one sticking out (yikes) show some techniques, then move on to how to doing a drawover together.
+
+Add my links to subdiv modelling.
+
+## Ivans powerpoint
+
+### Assessment
+
+Assessment 1 roadmap has a picture of normal mapped (from v high res), pbr textured high res models in a game engine with post processing 
+1. Says 1-3 game props. week 4 showcase.
+2. 2000 triangles and 1 texture per prop (**query**: Need at least albedo/smooth/metalness for PBR)
+3. Mentions optional lods
+
+A1 workflow mentions sculpting and "maybe" retopo, also mentions baking.. but only one texture, so can't use bake unless just compositing AO??
+
+{{% alert title="Note Specification"%}}
+**Sketchfab** for delivery
+{{% /alert %}}
+
+### Modeling and UV
+Appears to teach uving in the class maybe and talk about height and normal maps. High poly modeling appears to come down to just using more polygons. 
+
+----
+
+My quick notes intro before reading blackboard.
+
 ## Welcome Back
 
 {{< imgproc welcome_back Resize "700x" >}}
@@ -33,32 +101,74 @@ Low poly cartoony barrels.
 
 **High poly** meshes can be made many ways and are **defined differently** depending on whether you're making games or film, whether the year's 2005 or 2020 and so on. Then those high poly details are brought into games on **mid poly** meshes! We'll worry about that later.
 
-For now, let's just concern ourselves with how to:
-1. Make a barrel with **many thousands** of polygons 
-2. Not make all those polygons individually.
+{{% alert title="Why more polygons?" %}}
+The end goal of adding polygons is to support **smoothly curving surfaces** and **fine details**.
+{{% /alert %}}
+
+More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/).
+
+## Getting Detailed: Adding Polys And Texturing.
+
+Make lots of polygons, then add stuff into the normal map
+
+{{< imgproc sf_barrel_gameanax_1 Resize "800x" >}}
+Barrels in space
+{{< /imgproc >}}
+
+{{< imgproc sf_barrel_gameanax_2 Resize "800x" >}}
+Revealing the geometry
+{{< /imgproc >}}
+
+You use a bunch of pre made normal map stamps to add surface detail.
+
+{{< imgproc stamp_normal_map_dave_wilson Resize "800x" >}}
+Revealing the geometry
+{{< /imgproc >}}
+
+
+
+[Video tutorial of the above](https://www.youtube.com/watch?v=KTxiKaIzG_c)
+
+## Getting  Detailed: Sculpting
+
+You:
+1. Make a barrel with **many millions** of polygons in say, ZBrush.
+2. Trace a model over it that can run in a game engine, maybe 2K-15K polygons.
+3. Bake over the high res details to the low ad a normal map.
 
 {{< imgproc barrel_high_alexander-shevchuk Resize "650x">}}
 High poly, slightly stylised barrel <i>(with normal map)</i>
 {{< /imgproc >}}
 
-{{% alert title="Why more polygons?" %}}
-The end goal of adding polygons is to support **smoothly curving surfaces** and **fine details**.
-{{% /alert %}}
 
-{{< imgproc barrel_high_lauren-duke Resize "650x" >}}
-High poly, very stylised barrel <i>(with normal map)</i>
+## Getting Detailed: Subdivision Surfaces
+
+{{< imgproc maya_subdiv_edge_cgi Resize "640x">}}
+Control loops and subdivisions</i>
 {{< /imgproc >}}
+Need better picture. Link to wacom pen tute, kukri tute.
 
-More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/).
+1. Model in quads, with certain rules.
+2. Let the computer multiply the polygons with smoothing, and you can have smooth curves and sharp corners.
 
-## Subdivision Surfaces
+You might this thing, with these many polys, then subdivide. That cuts each quad across opposing edges, making it into 4 quads. It's like doubling the size of an image, you end up with 4 times the pixels.
+**Needs examples**
 
-Model in quads, with certain rules, let the computer multiply the polygons with smoothing, and you can have smooth curves and sharp corners.
+You could divide it 2 times, 10 times, this count goes up and things get smoother.
+
+Then you have the option of:
+1. Applying the smoothing as real polygons, if the resulting count isn't too high.
+2. Creating a very highly divided output (50k+ polys) and then baking the details to a normal map on a mesh that can hold the silhouette pretty well.
+
 
 Pros
 - You can change long sweeping curves with a single edge move (like a bezier curve)
 Cons
+- Very laborious, difficult to achieve seemingly simple outcomes.
 - It can quickly get very tricky to achieve some forms.
+
+Flipped Normals how to model curved hard surfaces.
+https://www.youtube.com/watch?v=U7HG6XJsKoQ
 
 {{% alert title="More info" %}}
 Created at **Pixar**<br />
