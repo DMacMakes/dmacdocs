@@ -1,7 +1,7 @@
 ---
 title: "ISE102: Intro to Software Engineering"
 linkTitle: "INTRO SOFTWARE ENG"
-weight: 10
+weight: 30
 description: >
   Programming principles and practise using C++. 
 ---

@@ -3,6 +3,6 @@
 title: "ISE102 Weekly Notes"
 linkTitle: "Weekly notes"
 description: >
-  Weekly notes are the same you'll see me work from in class, and contain **resources** and the week's **home tasks**.
+  Weekly notes are the same you'll see me work from in class, and contain links to **resources** and the week's **home tasks**.
 ---
 

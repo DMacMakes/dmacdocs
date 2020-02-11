@@ -1,7 +1,7 @@
 ---
 title: "Week 1: High Poly Props"
-linkTitle: "1: High poly props"
-weight: 1
+linkTitle: "W.1 High poly props"
+weight: 10
 description: >
   High resolution modelling in Maya with Subdivision Surfaces. 
   Links to resources to study at home
@@ -27,7 +27,7 @@ resources:
 
 Students follow the learning resources and do the activities:
 1. Class Activity: 3d asset pipeline activity.
-1. Game studio(?) activity: design breakdown
+1. Game studio activity: design breakdown
 1. Assessment progress: Design Sheet
 
 Covers: 
@@ -47,7 +47,9 @@ From [Module 1 blackboard](https://laureate-au.blackboard.com/webapps/blackboard
 3. Principles 3d modeling in games **BROKEN?!** http://www.indiegamedeveloper.tv/principles-of-3d-game-art-modelling/
 4. Concept art is dead talk: https://www.youtube.com/watch?v=CYbYvImd7Bw
 
-Seems it's all about planning/strategising your advanced asset, designing and concepting - but doesn't teach high res modelling techniques first. very very weird?
+Planning and then modelling high res object. Show them how to plan a spanner, then they can plan their chosen thingy.
+
+Get them to model props that can go in a level. That way people can use them in assessment 2 environment.
 
 The object the students are to "break down" and consider modeling strategies for in class is a clear subdiv model:
 
@@ -209,3 +211,32 @@ Blizzard cards
 
 Look dev of motorcycle gal. Still not live!! must post.
 Show metal gadget,. Show reference boards.
+
+## Breaking down spanner
+
+**REPLACE WITH SPANNER, HANDLE WHEEL**
+{{< imgproc breakdown_bracket Resize "600x" Link "breakdown_bracket.jpg" >}}
+The mesh we'll try to reproduce
+{{< /imgproc >}}
+
+Work in subdivs then remove loops?
+
+### Breakdown
+1. Target resolution?
+2. What method?
+3. What are it's dimensions in the game's reality? 10cm cubed? 10m?
+4. Is it on your player's wrist, or will it be 30 feet above your head in dim light?
+5. Draw over in photoshop to figure out Topology
+
+{{% alert title="Definition: Topology" %}}
+The layout of vertices, edges and faces that you will create to make your model. How will the edges flow? How will you avoid triangles?
+{{% /alert %}}
+
+
+### Setting up
+1. Have reference in pureref
+2. Set up Maya project
+3. Set up grid units in Maya to make sense for object
+4. Get a primitive in there right away for scale. Box, cylinder, whatever.
+5. Save scene as maya ascii in bracket_20cm.001.ma (numbering supports incremental saving)
+6. Ensure autosave is turned on in preferences.
