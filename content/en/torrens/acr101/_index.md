@@ -2,6 +2,9 @@
 title: "ACR101: 2D Asset Creation"
 linkTitle: "2D ASSET CREATION"
 weight: 10
+menu:
+  main:
+    weight: 2
 description: >
   What does your user need to understand about your project in order to use it - or potentially contribute to it? 
 ---

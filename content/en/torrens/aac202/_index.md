@@ -2,6 +2,10 @@
 title: "AAC202: Advanced 3D Asset Creation"
 linkTitle: "ADV 3D ASSETS"
 weight: 20
+menu:
+  main:
+    weight: 3
+    linkTitle: "aac202"
 description: >
   What does your user need to understand about your project in order to use it - or potentially contribute to it? 
 ---
