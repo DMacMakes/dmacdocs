@@ -1,7 +1,7 @@
 ---
 title: "Week 2: Decisions"
-linkTitle: "2: Decisions"
-weight: 1
+linkTitle: "W.2 Decisions"
+weight: 20
 description: >
   Deciding.
 ---

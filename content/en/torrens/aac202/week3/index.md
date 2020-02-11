@@ -1,10 +1,9 @@
 ---
 title: "Week 3: Substance"
-linkTitle: "3: Substance"
+linkTitle: "W.3 Substance"
 weight: 30
 description: >
-  High resolution modelling in Maya with Subdivision Surfaces. 
-  Links to resources to study at home
+  **PBR workflows** for realistic rendering. Using Substance Painter's **procedural texturing** to save labour and produce professional results.
 resources:
 - src: "barrel_alvaro_vera.jpg"
   params:
