@@ -124,7 +124,7 @@ This is easy. The subject is a computer. In our case a **PC with an Intel Proces
 
 ### Context: Windows Command Prompt
 
-We're going to make a text-based program. To do that we'll use the _Windows Command Prompt_:
+We're going to make a text-based program. To do that we'll write a program that runs in the  _Windows Command Prompt_:
 
 ![Command Prompt](command_prompt_new.png)
 <br /><br />
@@ -138,6 +138,8 @@ Before we had fancy graphical window managers,regular users were met with a blac
 <br /><br />
 
 `cd` (_change directory_) is a program for changing into a folder, `dir` (_directory_) lists the contents of a folder and so on.
+
+Why is it still in Windows? Because that's how a large portion of serious system administration is still done, by calling lots of programs in the command prompt!
 
 #### Exercise
 
