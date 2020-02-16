@@ -12,7 +12,7 @@ description: >
 
 ## Class Notes
 
-Weekly notes are accessible from the **left navigation bar** on PC or the <i class="fas fa-bars"></i> **menu button** on mobile. Check out [Week 1](/torrens/ise102/notes/week1/) to get started.
+Weekly notes are accessible from the **left navigation bar** on PC or the <i class="fas fa-bars"></i> **menu button** on mobile. Check out [Week 1](/torrens/ise102/week1/) to get started.
 
 {{% alert title="Important:" color="primary" %}}
 We'll work from the notes in class each week, so **open them when you arrive**. They also contain weekly **exercises** to complete between classes. 

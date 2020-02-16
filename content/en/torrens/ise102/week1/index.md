@@ -276,11 +276,12 @@ Storage, processing and output.
 
 ## Homework
 
-Read through **pages 1-12 of Chapter 1** of the textbook, _**"Beginning C++ Through Game Programming"**_ 
-  - Create a Visual Studio project for called GameOver3, using the ise102_console project type.
-  - Replace the contents of main.cpp with the code of the Game Over 3.0 program (pages 11-12)
-  - Run it with the `ctrl + F5` hotkey, or select _Debug -> Start Without Debugging_ from the menu bar.
-  
+Read through **pages 1-12** of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, _Beginning C++ Through Game Programming_. This will help you understand what **variables** are, and how they represent storage. Then:
+1. Create a Visual Studio project for called `GameOver3`, using the _ise102_console_ project type.
+2. Replace the contents of `main.cpp` with the code of the **Game Over 3.0** program (pages _11,12_)
+3. Run it with the `ctrl + F5` hotkey, or select _Debug -> Start Without Debugging_ from the menu bar.
+
+The textbook is also linked from the [ise102 resources page](https://dmdocs.netlify.com/torrens/ise102/resources/).
 
 ## Bits
 
