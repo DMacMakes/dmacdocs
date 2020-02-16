@@ -43,8 +43,8 @@ Laureate visual roadmap of assessment 1:
 Learning  Material:
 From [Module 1 blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset)
 1. Flipped normals on observation https://www.youtube.com/watch?v=qpd1AKwJLUg&list=PLBX-X8mPyxIrBAzc6Schs7WXdV13thGU6
-2. Lynda What is concept art (**CHECK this works for students with Trent**): https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset
-3. Principles 3d modeling in games **BROKEN?!** http://www.indiegamedeveloper.tv/principles-of-3d-game-art-modelling/
+2. Lynda What is concept art (**CHECK**): https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset
+3. Principles 3d modeling in games **BROKEN** http://www.indiegamedeveloper.tv/principles-of-3d-game-art-modelling/
 4. Concept art is dead talk: https://www.youtube.com/watch?v=CYbYvImd7Bw
 
 Planning and then modelling high res object. Show them how to plan a spanner, then they can plan their chosen thingy.

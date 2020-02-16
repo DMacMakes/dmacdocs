@@ -1,6 +1,6 @@
 ---
 title: "AAC202: Advanced 3D Asset Creation"
-linkTitle: "ADV 3D ASSETS"
+linkTitle: "Advanced 3D Assets"
 weight: 20
 menu:
   main:
