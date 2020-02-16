@@ -43,7 +43,7 @@ If you're on a uni PC, click "Flowgorithm Portable".
 	</a>
 </div>
 
-{{% alert title="Portable Software" color="primary" %}}
+{{% alert title="Using Portable Software" color="primary" %}}
 Portable software can run straight from its folder, no install required.
 
 1. Create a folder called `portable` in your home folder (`c:\Users\yourname\portable`) where `yourname` is whatever username you use in Windows.
@@ -55,6 +55,23 @@ Portable software can run straight from its folder, no install required.
 {{% /alert %}}
 
 
+## ISE102 Textbook
+
+We don't just have a pretty good textbook, _**"Beginning C++ Through Game Programming"**_, we have free access to it.
+
+You can read it online or download PDF chapters from Ebook Central:
+
+{{< imgproc book_cpp_through_games Resize "250x" Link "https://ebookcentral-proquest-com.ezproxy.laureate.net.au/lib/think/detail.action?docID=3136727" >}}
+Click to read
+{{< /imgproc >}}
+
+I've also pre-saved chapters for downloading direct from the notes (more to come)
+
+**Direct PDF Links:**
+* [Chapter 1:](cpp_through_games_1.pdf) Types, Variables, Input and Output
+* [Chapter 2:](cpp_through_games_2.pdf) Truth, Branching, the Game Loop
+* [Chapter 3:](cpp_through_games_3.pdf) `for` Loops, Strings and Arrays
+ 
 ## Visual Studio C++ Templates
 
 Setting up projects for quick and easy exercise coding can be a little daunting. These templates, imported into Visual Studio 2019, will get you started. 

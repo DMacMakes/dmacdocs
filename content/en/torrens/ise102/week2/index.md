@@ -10,6 +10,12 @@ description: >
 
 welcome
 
+* More on syntax, grammar?
+
+Conventions:
+  * Whitespace. Why?
+  * Naming, use of case. Why?
+   
 ## Programming
 
 Content
