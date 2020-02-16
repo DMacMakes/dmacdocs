@@ -18,6 +18,10 @@ Before we can do any programming, you need to have the right software on hand. I
   ISE102 Resources
 </a>
 
+## Hello!
+
+Some people are still installing, so let's get acquainted.
+
 ## What Is Programming?
 
 Programming evokes the idea of computers and code and binary. That's just the end of the process, the execution. 
@@ -135,7 +139,7 @@ Before we had fancy graphical window managers,regular users were met with a blac
 
 `cd` (_change directory_) is a program for changing into a folder, `dir` (_directory_) lists the contents of a folder and so on.
 
-### Exercise
+#### Exercise
 
 Open the Command Prompt and try out the commands above for yourself.
 
@@ -147,10 +151,108 @@ Open the Command Prompt and try out the commands above for yourself.
     - `echo %PROCESSOR_IDENTIFIER%`
     - `ping www.reddit.com`
 
+### Language
 
-## Storage
+We'll be using **C++**, a programming language first created in the early 1980s.
 
-Memory boxes. Memory that can have variable contents. Instead of calling them variable memory boxes, call them simply **variables**.
+* Built on a language called C
+* "Close to the hardware"
+* In some ways dated
+* At the same time it's the most relied on programming language on PCs. Where you'll find it:
+    - Huge amounts of the code in Windows and Linux (more on MacOS later)
+    - Major applications like Word, Photoshop and Chrome,
+    - The game engines behind any AAA and most indie titles.
+* Used in Planes, fridges, satellites, watches, particle colliders. (picture)
+* Quite familiar to `Java`, `C#`, `ActionScript` programmers.
+* Somewhat familiar to `Python` coders, and in some ways strange.
+  
+We'll use Visual Studio to write our source code and turn that into programs (though other environments exist).
+
+### Instructions.
+
+The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them.
+
+To have instructions though, we need a task to complete or problem to solve!
+
+## Our first program: Knight's Journey
+
+![Knighting](/images/ise102/week1/knighting.png)
+
+_**Knight's Journey** is a game where you give your name, and are immediately made into a Knight._
+
+{{< alert title="The Computer's Task:" color="warning" >}}
+It has to know our name and then use the right ceremonial words to make us into knights.
+{{< /alert >}}
+
+### Instructing The Computer
+
+Before we learn computer language, let's write the instructions in a language we know. English!
+
+Computer, please:
+1. Ask us for our name
+2. Receive our name via keyboard
+3. Remember our name
+4. Know the special knighting words
+5. Combine our name with the knighting words
+6. Print out the resulting sentence, so we know we're knights.
+
+## Don't Panic: Four Basic Functions
+
+How do we turn these pretty simple instructions into something that controls the Frankenstein of components that is a computer?? 
+
+While there are indeed lots of instructions you could give to a computer and its many parts, happily they all fit into one of these four basic categories or functions: `input`, `storage`, `processing` and `output`, 
+
+| **Input** |  _Data_ in: Keyboard, mouse, network connection, camera, microphone, touch screen, control pad   |
+| **Storage** | _Data_ stored: SSD, Hard drive, RAM, CD, Micro SD. |
+| **Processing** | _Data_ changed: Moving a character across a platform, adding two cells of a spreadsheet, decompressing video. |
+| **Output** | Showing the _data_: Drawing pixels to a monitor, sending packets to a game server, sound from speakers, printing. |
+
+## Four basic elements of people
+
+**Harvey's mum:**
+  * Receives `input` via her ears, eyes and other senses
+  * Her brain stores instructions and remembers events
+  * She uses her hands to process the milk, moving it to a bottle and warming it
+  * She outputs a warm bottle of milk and a kiss to Harvey.
+  
+{{< alert title="Abstractions Reduce Complexity" color="warning" >}}
+When we take the (at least) thousands of components of a PC and group them into a few simple functions, we call it **abstraction**, and it's a very powerful tool.
+
+Any complex task achieved by humans requires the use of abstractions: if we considered every object in its full complexity we'd grind to a stop!
+{{< /alert >}}
+
+Just have a think about what you're _really_ describing when you say "I was thirsty until I drank some water."  There are several Nobel Prizes in chemistry, physics, neuroscience and biology in that statement if you go deep enough!
+
+## Exercise: Knights Journey in C++
+
+### Setting up
+
+Visit the [ise10 Resources page](/torrens/ise102/resources/) and: 
+1. Install Visual Studio Community 2019 with Desktop devopment in C++ (if you haven't already)
+2. Get the _ise102_console_ template, add it to Visual Studio
+3. Create a new Solution/project using the template.
+4. Run the project to make sure it works by hitting `ctrl + F5` 
+
+### Enter The Code
+
+1. Select and delete all the code in `main.cpp`
+2. Type in the following code. You don't need to enter the lines starting with `//`
+![KnightsJourney No Input](cpp_knightsJourney_noInput.png)
+3. Run the program with `ctrl+F5`
+
+### Discussion
+
+Storage, processing and output.
+
+### Adding Input
+
+![input](cpp_knightsJourney_input.png)
+
+## Again, visually
+
+![flowgorithm](flow_knightsJourney_noInput.png)
+
+![flowgorithm](flow_knightsJourney_input.png)
 
 ## Summary
 
@@ -178,5 +280,8 @@ Read through **pages 1-12 of Chapter 1** of the textbook, _**"Beginning C++ Thro
   - Run it with the `ctrl + F5` hotkey, or select _Debug -> Start Without Debugging_ from the menu bar.
   
 
+## Bits
 
+### Storage
 
+Memory boxes. Memory that can have variable contents. Instead of calling them variable memory boxes, call them simply **variables**.
