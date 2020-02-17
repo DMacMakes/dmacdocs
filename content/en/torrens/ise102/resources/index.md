@@ -86,7 +86,7 @@ We'll use this as a starting point for new projects. Click to download:
 
 Next:
 1. Make sure Visual Studio is closed/not running.
-2. Move `ise_console.zip` from your `Downloads` folder to the `C:\Users\yourname\Documents\Visual Studio 2019\Templates\Project Templates\` folder. Do not unzip it.
+2. Move `ise_console.zip` from your `Downloads` folder to the `C:\Users\yourname\Documents\Visual Studio 2019\Templates\ProjectTemplates\` folder. Do not unzip it.
 3. Open Visual Studio and choose **New Project**
 4. Type `ise102` into the search box, then choose `ise102 console` and click _Next_.
 ![ise102_console](new_project_ise102_console.png)
