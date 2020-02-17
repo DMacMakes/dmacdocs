@@ -190,13 +190,14 @@ It has to know our name and then use the right ceremonial words to make us into 
 
 Before we learn computer language, let's write the instructions in a language we know. English!
 
-Computer, please:
-1. Ask us for our name
-2. Receive our name via keyboard
-3. Remember our name
-4. Know the special knighting words
-5. Combine our name with the knighting words
-6. Print out the resulting sentence, so we know we're knights.
+Computer, please:  
+1. Ask us for our name  
+2. Receive our name via keyboard  
+3. Remember our name  
+4. Know the special knighting words  
+5. Combine our name with the knighting words  
+6. Point out the resulting sentence, so we know we're knights.  
+
 
 ## Don't Panic: Four Basic Features
 
