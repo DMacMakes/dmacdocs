@@ -241,44 +241,57 @@ Visit the [ise10 Resources page](/torrens/ise102/resources/) and:
 ### Enter The Code
 
 1. Select and delete all the code in `main.cpp`
-2. Type in the following code. You don't need to enter the lines starting with `//`
+2. Type in the following code, including the _comment_ lines starting with `//`
 ![KnightsJourney No Input](cpp_knightsJourney_noInput.png)
 3. Run the program with `ctrl+F5`
 
 ### Discussion
 
-Storage, processing and output.
-
-### Adding Input
-
-![input](cpp_knightsJourney_input.png)
+* Storage via variables and assignment (`=`)
+* Processing via operators (`+`)
+* Output via `cout`
 
 ## Again, visually
 
 ![flowgorithm](flow_knightsJourney_noInput.png)
 
-![flowgorithm](flow_knightsJourney_input.png)
+
+## Variables
+
+Memory boxes. 
+* A bit of memory with something in it and a label so you can find it again. 
+* Those contents can be changed, can be made to vary over time. 
+
+Instead of calling them something awkwared like variable memory boxes, call them simply **variables**
+
+### Variable Type
+
+The contents of a box change, but the type of contents for a particular box shouldn't change. We choose that type when we declare our variable:
+
+```cpp
+string name               = "Pedro";
+int age                   = 17;
+boolean isClassPresident  = true;
+```
 
 ## Summary
 
-* Install the required software
+* We installed the required software
 * Programming is just a list of instructions to complete a task
 * A computer/person is mostly input/storage/processing/output
 * You already program things, you're just learning how to apply it to a computer.
-
 * To program you need:
-  - Language
-  - A subject you will program with that language (human, computer)
-  - A list of instructions (in an agreed grammar, from an agreed upon instruction set)
-  - An agreed place the subject can do the work (car, kitchen, _Windows Command Prompt_)
-
-* We made a simple game, Knights Journey, with help from our 4 basic categories (input, storage etc)
-  - Once, in _Visual Studio_ with _C++_, for the _Windows Command Prompt/Console_
-* We made it again visually, in _Flowgorithm_.
-
+    - A subject you will program(human, computer)
+    - Common language 
+    - An agreed place the subject can do the work (car, kitchen, _Windows Command Prompt_)
+    - A list of instructions
+* We made a simple game, Knights Journey, with help from 3 of our basic categories (input, storage etc)
+    - Once, in _Visual Studio_ with _C++_, for the _Windows Command Prompt/Console_
+    - Again as a flowchart in _Flowgorithm_.
 
 ## Homework
 
+### From The Textbook 
 Read through **pages 1-12** of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, _Beginning C++ Through Game Programming_. This will help you understand what **variables** are, and how they represent storage. 
 
 Then:
@@ -288,8 +301,17 @@ Then:
   
 The textbook is also linked from the [ise102 resources page](https://dmdocs.netlify.com/torrens/ise102/resources/).  
 
-## Bits
+### Adding Input
+
+Add input to the program in C++ and Flowgorithm. Bring the finished code to discuss next week.
+
+![input](cpp_knightsJourney_input.png)
+
+![flowgorithm](flow_knightsJourney_input.png)
+
+<!--## Bits
 
 ### Storage
 
 Memory boxes. Memory that can have variable contents. Instead of calling them variable memory boxes, call them simply **variables**.
+-->
