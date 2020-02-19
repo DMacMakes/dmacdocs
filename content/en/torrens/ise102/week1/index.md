@@ -9,7 +9,6 @@ resources:
     params:
       byline: "Credit: http://annx.asianews.network"
 ---
-
 ## Software Requirements
 
 Before we can do any programming, you need to have the right software on hand. If you haven't installed _Visual Studio_ and _Flowgorithm_ follow the link:
@@ -78,30 +77,30 @@ Dad remembering the days before he had kids.
 
 ### What Do We Need For Dad Programming To Work?
 
-1. **Dad**, so we can program him
-2. A list of **instructions** for him to follow, eg
-    - Drive me in the car
-    - At this time
-    - Along this route to my friend's house
-3. A common **language**:
-    - Something you both speak to people in general
-    - Better: particular phrases and keywords known to **motivate** dad.
-4. A **car** for him to drive and some **roads** to drive on
-
-### What We Need For General Programming
+1. **Dad**, so we can program him  
+2. A list of **instructions** for him to follow, eg  
+    - Drive me in the car  
+    - At this time  
+    - Along this route to my friend's house  
+3. A common **language**:  
+    - Something you both speak to people in general  
+    - Better: particular phrases and keywords known to **motivate** dad.  
+4. A **car** for him to drive and some **roads** to drive on  
+  
+### What We Need For General Programming  
 
 If we remove the dad, the car and the route, we have a handy way thinking about programming a human/device to solve a given problem: 
 
-1. A **_subject_**
+1. A **_subject_**  
    - A human (dad) or a computer that you will you program to do the work
-1. A list of _**instructions**_
+1. A list of _**instructions**_  
    - Steps which, performed correctly, will lead to a completed task.
-1. A common spoken/written _**language**_
-   - An agreed _grammar_: how the words are arranged to have meaning.
-   - An agreed _instruction set_: keywords which trigger actions in your subject.
-1. An agreed setting or **_context_** where the work happens:
-   - Dad (_subject_) needs a car and the roads (_context_) to do the work
-
+1. A common spoken/written _**language**_  
+   - An agreed _grammar_: how the words are arranged to have meaning.  
+   - An agreed _instruction set_: keywords which trigger actions in your subject.  
+1. An agreed setting or **_context_** where the work happens:  
+   - Dad (_subject_) needs a car and the roads (_context_) to do the work  
+  
 #### Summarised
 
 For a given **task or problem**, we need:
@@ -143,15 +142,16 @@ Why is it still in Windows? Because that's how a large portion of serious system
 
 #### Exercise
 
-Open the Command Prompt and try out the commands above for yourself.
+<div class="-bg-200 p-2"> Open the Command Prompt and try out the commands above for yourself.</div>
+<br />
 
-1. Press the `Windows` key, next to `Alt`.
-2. Type `Command Prompt` and hit `Enter`.
-3. Type the commands in the screenshot, hitting `Enter` after each.
-4. Also try these commands:
-    - `echo I am a computer`
-    - `echo %PROCESSOR_IDENTIFIER%`
-    - `ping www.reddit.com`
+1. Press the `Windows` key, next to `Alt`.  
+2. Type `Command Prompt` and hit `Enter`.  
+3. Type the commands in the screenshot, hitting `Enter` after each.  
+4. Also try these commands:  
+    - `echo I am a computer`  
+    - `echo %PROCESSOR_IDENTIFIER%`  
+    - `ping www.reddit.com`  
 
 ### Language
 
@@ -172,23 +172,22 @@ We'll use Visual Studio to write our source code and turn that into programs (th
 
 ### Instructions.
 
-The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them.
+<div class="-bg-200 p-2">The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them.</div>  
 
+<br />
 To have instructions though, we need a task to complete or problem to solve!
 
 ## Our first program: Knight's Journey
 
-![Knighting](/images/ise102/week1/knighting.png)
+![Knighting](knighting.png)
 
-_**Knight's Journey** is a game where you give your name, and are immediately made into a Knight._
+_**Knight's Journey**_ is going to be a game where you give your name, and are immediately made a Knight.
 
-{{< alert title="The Computer's Task:" color="warning" >}}
-It has to know our name and then use the right ceremonial words to make us into knights.
-{{< /alert >}}
+**The Computer's Task:** It has to know our name and then use the right ceremonial words to make us into knights. How do we instruct it to complete that task?
 
 ### Instructing The Computer
 
-Before we learn computer language, let's write the instructions in a language we know. English!
+Before we write computer language, let's write the instructions in a language we know. English!
 
 Computer, please:  
 1. Ask us for our name  
@@ -198,36 +197,6 @@ Computer, please:
 5. Combine our name with the knighting words  
 6. Point out the resulting sentence, so we know we're knights.  
 
-
-## Don't Panic: Four Basic Features
-
-How do we turn these pretty simple instructions into something that controls the Frankenstein of components that is a computer?? 
-
-While there are indeed lots of instructions you could give to a computer and its many parts, happily they all fit into one of these four basic categories or features: `input`, `storage`, `processing` and `output`, 
-
-| Features | Examples  |
-|-----------|-----------|
-| **Input** |  _Data_ in: Keyboard, mouse, network connection, camera, microphone, touch screen, control pad  |
-| **Storage** | _Data_ stored: SSD, Hard drive, RAM, CD, Micro SD. |
-| **Processing** | _Data_ changed: Moving a character across a platform, adding two cells of a spreadsheet, decompressing video. |
-| **Output** | Showing the _data_: Drawing pixels to a monitor, sending packets to a game server, sound from speakers, printing. |
----
-
-## Four basic elements of people
-
-**Harvey's mum:**
-  * Receives `input` via her ears, eyes and other senses
-  * Her brain stores instructions and remembers events
-  * She uses her hands to process the milk, moving it to a bottle and warming it
-  * She outputs a warm bottle of milk and a kiss to Harvey.
-  
-{{< alert title="Abstractions Reduce Complexity" color="warning" >}}
-When we take the (at least) thousands of components of a PC and group them into a few simple functions, we call it **abstraction**, and it's a very powerful tool.
-
-Any complex task achieved by humans requires the use of abstractions: if we considered every object in its full complexity we'd grind to a stop!
-{{< /alert >}}
-
-Just have a think about what you're _really_ describing when you say "I was thirsty until I drank some water."  There are several Nobel Prizes in chemistry, physics, neuroscience and biology in that statement if you go deep enough!
 
 ## Exercise: Knights Journey in C++
 
@@ -245,6 +214,39 @@ Visit the [ise10 Resources page](/torrens/ise102/resources/) and:
 2. Type in the following code, including the _comment_ lines starting with `//`
 ![KnightsJourney No Input](cpp_knightsJourney_noInput.png)
 3. Run the program with `ctrl+F5`
+
+## Don't Panic: Four Basic Features
+
+People, like computers, feature _input, storage, processing and output_.
+
+**Harvey's mum:**
+  * Receives **input** via her ears, eyes and other senses
+  * Her brain **stores** instructions and remembers events
+  * She uses her hands and smarts to **process** the milk, moving it to a bottle and warming it
+  * She **outputs** a warm bottle of milk and a kiss to Harvey.
+  
+{{< alert title="Abstractions Reduce Complexity" color="warning" >}}
+When we take the (at least) thousands of components of a PC and group them into a few simple functions, we call it **abstraction**, and it's a very powerful tool.
+
+Any complex task achieved by humans requires the use of abstractions: if we considered every object in its full complexity we'd grind to a stop!
+{{< /alert >}}
+
+Just have a think about what you're _really_ describing when you say "I was thirsty until I drank some water."  There are several Nobel Prizes in chemistry, physics, neuroscience and biology in that statement if you go deep enough!
+
+## Four Basic Features of Computers
+
+How do we turn these pretty simple instructions into something that controls the Frankenstein of components that is a computer?? 
+
+While there are indeed lots of instructions you could give to a computer and its many parts, happily they all fit into one of these four basic categories or features: `input`, `storage`, `processing` and `output`, 
+
+| Features | Examples  |
+|-----------|-----------|
+| **Input** |  _Data_ in: Keyboard, mouse, network connection, camera, microphone, touch screen, control pad  |
+| **Storage** | _Data_ stored: SSD, Hard drive, RAM, CD, Micro SD. |
+| **Processing** | _Data_ changed: Moving a character across a platform, adding two cells of a spreadsheet, decompressing video. |
+| **Output** | Showing the _data_: Drawing pixels to a monitor, sending packets to a game server, sound from speakers, printing. |
+---
+
 
 ### Discussion
 

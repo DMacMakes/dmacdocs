@@ -1,0 +1,217 @@
+
+## FROM BLACKBOARD 
+
+* 3D Creation pipelines, strategies
+
+Students follow the learning resources and do the activities:
+1. Class Activity: 3d asset pipeline activity.
+1. Game studio activity: design breakdown
+1. Assessment progress: Design Sheet
+
+Covers: 
+1. Design/conceptualization
+2. importance observation, planning, strategy in 3d asset creation (talk reference?)
+3. Advanced blocking/base meshes
+
+Laureate visual roadmap of assessment 1:
+1. Design or conceptualize a 3D object based on scope provided (i'll specify a type of object)
+2. Share your work in progress in week 2 forum
+3. present your textured and lit model.
+
+Learning  Material:
+From [Module 1 blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset)
+1. Flipped normals on observation https://www.youtube.com/watch?v=qpd1AKwJLUg&list=PLBX-X8mPyxIrBAzc6Schs7WXdV13thGU6
+2. Lynda What is concept art (**CHECK**): https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset
+3. Principles 3d modeling in games **BROKEN** http://www.indiegamedeveloper.tv/principles-of-3d-game-art-modelling/
+4. Concept art is dead talk: https://www.youtube.com/watch?v=CYbYvImd7Bw
+
+Planning and then modelling high res object. Show them how to plan a spanner, then they can plan their chosen thingy.
+
+Get them to model props that can go in a level. That way people can use them in assessment 2 environment.
+
+The object the students are to "break down" and consider modeling strategies for in class is a clear subdiv model:
+
+<!--![break it down](http://2.bp.blogspot.com/-eqOLgEHLWf4/Uua2ytK_kyI/AAAAAAAAAKM/bfz8uI6wjus/s1600/HS_w3_HP.jpg)-->
+<!--<a href="http://2.bp.blogspot.com/-eqOLgEHLWf4/Uua2ytK_kyI/AAAAAAAAAKM/bfz8uI6wjus/s1600/HS_w3_HP.jpg" target="_blank"> -->
+<!--</a>-->
+
+specs: 
+    Details - one mesh only, with no UVs or textures required
+    Topology – all quads, and not more than 2000 polys
+    Your facilitator might indicate additional expectations
+    The facilitator may ask faster students to share their workflow with other students.
+
+Again this is a real muddle of design and execution. Hard to imagine fitting both in.
+
+Focus on what is subdiv modeling, what is it suited to. Then show example concepts of objects suited to this approach. Their strategising will have to come down to starting shapes and lines, but really they need a few hours of video watching to do that. The model shown is tricky to subdiv model, and would actually be delivered as normal mapped. Odd.
+
+But we can talk subdiv modeling: working with quads, making holes, going from one cylinder to one sticking out (yikes) show some techniques, then move on to how to doing a drawover together.
+
+Add my links to subdiv modelling.
+
+## Ivans powerpoint
+
+### Assessment
+
+Assessment 1 roadmap has a picture of normal mapped (from v high res), pbr textured high res models in a game engine with post processing 
+1. Says 1-3 game props. week 4 showcase.
+2. 2000 triangles and 1 texture per prop (**query**: Need at least albedo/smooth/metalness for PBR)
+3. Mentions optional lods
+
+A1 workflow mentions sculpting and "maybe" retopo, also mentions baking.. but only one texture, so can't use bake unless just compositing AO??
+
+{{% alert title="Note Specification"%}}
+**Sketchfab** for delivery
+{{% /alert %}}
+
+### Modeling and UV
+Appears to teach uving in the class maybe and talk about height and normal maps. High poly modeling appears to come down to just using more polygons. 
+
+----
+
+My quick notes intro before reading blackboard.
+
+## Welcome Back
+
+{{< imgproc welcome_back Resize "700x" >}}
+Good holiday?
+{{< /imgproc >}}
+
+## High Poly?
+
+Last trimester our goal was to make **low poly** props, using **hundreds of triangles**. We'd then create and apply [diffuse](https://docs.unity3d.com/Manual/shader-NormalDiffuse.html) textures, something like you see here:
+
+{{< imgproc barrels_low_poly_textured Resize "500x" >}}
+Low poly cartoony barrels.
+{{< /imgproc >}}
+
+**High poly** meshes can be made many ways and are **defined differently** depending on whether you're making games or film, whether the year's 2005 or 2020 and so on. Then those high poly details are brought into games on **mid poly** meshes! We'll worry about that later.
+
+{{% alert title="Why more polygons?" %}}
+The end goal of adding polygons is to support **smoothly curving surfaces** and **fine details**.
+{{% /alert %}}
+
+More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/).
+
+## Method 1: Adding Polys And Texturing.
+
+Make lots of polygons, then add stuff into the normal map
+
+{{< imgproc sf_barrel_gameanax_1 Resize "800x" Link "https://www.artstation.com/artwork/NAZg5" >}}
+Barrels in space
+{{< /imgproc >}}
+
+{{< imgproc sf_barrel_gameanax_2 Resize "800x" Link "https://www.artstation.com/artwork/NAZg5" >}}
+Revealing the geometry
+{{< /imgproc >}}
+
+You use a bunch of pre made normal map stamps to add surface detail.
+
+{{< imgproc stamp_normal_map_dave_wilson Resize "800x" >}}
+Revealing the geometry
+{{< /imgproc >}}
+
+[Video tutorial of the above](https://www.youtube.com/watch?v=KTxiKaIzG_c)
+
+## Method 2: Sculpting
+
+You:
+1a. Make a barrel with **many millions** of polygons in say, ZBrush.
+
+1b. Make a barrel in Maya and import into, say, ZBrush to add **many millions** of polygons.
+
+2. Trace a model over it that can run in a game engine, maybe 2K-15K polygons.
+3. Bake over the high res details to the low ad a normal map.
+
+{{< imgproc barrel_high_lauren-duke Resize "750x" Link "https://www.artstation.com/artwork/QzxBEl">}}
+High poly stylised barrel <i>(with normal map)</i>
+{{< /imgproc >}}
+
+We all know ZBrush is tasty.. but that's for assessment 2.
+
+## Method 3: Subdivision Surfaces
+
+{{< imgproc maya_subdiv_edge_cgi Resize "640x">}}
+Control loops and subdivisions</i>
+{{< /imgproc >}}
+Need better picture. Link to wacom pen tute, kukri tute.
+
+1. Model in quads, with certain rules.
+2. Let the computer multiply the polygons with smoothing, and you can have smooth curves and sharp corners.
+
+You might this thing, with these many polys, then subdivide. That cuts each quad across opposing edges, making it into 4 quads. It's like doubling the size of an image, you end up with 4 times the pixels.
+**Needs examples**
+
+You could divide it 2 times, 10 times, this count goes up and things get smoother.
+
+Then you have the option of:
+1. Applying the smoothing as real polygons, if the resulting count isn't too high.
+2. Creating a very highly divided output (50k+ polys) and then baking the details to a normal map on a mesh that can hold the silhouette pretty well.
+
+{{< imgproc pistol_subdiv_janis_eidins Resize "700x" Link "https://www.artstation.com/artwork/968qv" >}}
+Clean subdivision model</i>
+{{< /imgproc >}}
+
+{{< imgproc pistol_mapped_janis_eidins Resize "700x" Link "https://www.artstation.com/artwork/968qv">}}
+Details projected onto model with maps</i>
+{{< /imgproc >}}
+
+**ADD PICTURE OF WIRES** and a link to the 3d viewer on artstation: 
+https://www.artstation.com/artwork/968qv
+
+Pros
+- You can change long sweeping curves with a single edge move (like a bezier curve)
+Cons
+- Very laborious, difficult to achieve seemingly simple outcomes.
+- It can quickly get very tricky to achieve some forms.
+
+
+
+Flipped Normals how to model curved hard surfaces.
+https://www.youtube.com/watch?v=U7HG6XJsKoQ
+
+{{% alert title="More info" %}}
+Created at **Pixar**<br />
+Maya allows you to **preview** the smoothed form without increasing your polygons.<br />
+Can be exported to FBX in smoothed, high density form while remaining low density in Maya.
+{{% /alert %}}
+
+Youtube guides
+<!--  [Maya Interface Tour on YT](https://www.youtube.com/watch?v=okaC2_NxPYQ&list=PLD8E5717592CF5C26&index=10) -->
+<!-- {{< youtube okaC2_NxPYQ >}} -->
+
+## My High res stuff
+
+Blizzard cards
+
+Look dev of motorcycle gal. Still not live!! must post.
+Show metal gadget,. Show reference boards.
+
+## Breaking down spanner
+
+**REPLACE WITH SPANNER, HANDLE WHEEL**
+{{< imgproc breakdown_bracket Resize "600x" Link "breakdown_bracket.jpg" >}}
+The mesh we'll try to reproduce
+{{< /imgproc >}}
+
+Work in subdivs then remove loops?
+
+### Breakdown
+1. Target resolution?
+2. What method?
+3. What are it's dimensions in the game's reality? 10cm cubed? 10m?
+4. Is it on your player's wrist, or will it be 30 feet above your head in dim light?
+5. Draw over in photoshop to figure out Topology
+
+{{% alert title="Definition: Topology" %}}
+The layout of vertices, edges and faces that you will create to make your model. How will the edges flow? How will you avoid triangles?
+{{% /alert %}}
+
+
+### Setting up
+1. Have reference in pureref
+2. Set up Maya project
+3. Set up grid units in Maya to make sense for object
+4. Get a primitive in there right away for scale. Box, cylinder, whatever.
+5. Save scene as maya ascii in bracket_20cm.001.ma (numbering supports incremental saving)
+6. Ensure autosave is turned on in preferences.

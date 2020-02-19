@@ -12,14 +12,14 @@ description: >
 
 ## Class Notes
 
-Weekly notes are accessible from the **left navigation bar** on PC or the <i class="fas fa-bars"></i> **menu button** on mobile. Check out [Week 1](/torrens/ise102/week1/) to get started.
+Weekly notes are accessible from the **left navigation bar** on PC or the <i class="fas fa-bars"></i> **menu button** on mobile. 
 
 {{% alert title="Important:" color="primary" %}}
 We'll work from the notes in class each week, so **open them when you arrive**. They also contain weekly **exercises** to complete between classes. 
 {{% /alert %}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/week1/">
-  Subject Notes
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="week1/">
+  Week 1 Notes
 </a>
 
 ## Resources - Books, Software and Code
