@@ -141,10 +141,10 @@ Before we had fancy graphical window managers,regular users were met with a blac
 Why is it still in Windows? Because that's how a large portion of serious system administration is still done, by calling lots of programs in the command prompt!
 
 #### Exercise
-
-<div class="-bg-200 p-2"> Open the Command Prompt and try out the commands above for yourself.</div>
-<br />
-
+  
+<div class="-bg-200 p-2"> Open the Command Prompt and try out the commands above for yourself.</div>  
+<br />  
+  
 1. Press the `Windows` key, next to `Alt`.  
 2. Type `Command Prompt` and hit `Enter`.  
 3. Type the commands in the screenshot, hitting `Enter` after each.  
@@ -152,10 +152,11 @@ Why is it still in Windows? Because that's how a large portion of serious system
     - `echo I am a computer`  
     - `echo %PROCESSOR_IDENTIFIER%`  
     - `ping www.reddit.com`  
+  
 
-### Language
-
-We'll be using **C++**, a programming language first created in the early 1980s.
+### Language  
+  
+We'll be using **C++**, a programming language first created in the early 1980s.  
 
 * Built on a language called C
 * "Close to the hardware"
