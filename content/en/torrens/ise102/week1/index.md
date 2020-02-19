@@ -142,8 +142,7 @@ Why is it still in Windows? Because that's how a large portion of serious system
 
 #### Exercise
   
-<div class="-bg-200 p-2"> Open the Command Prompt and try out the commands above for yourself.</div>  
-<br />  
+Open the Command Prompt and **try out the commands** above for yourself.
   
 1. Press the `Windows` key, next to `Alt`.  
 2. Type `Command Prompt` and hit `Enter`.  
@@ -173,10 +172,10 @@ We'll use Visual Studio to write our source code and turn that into programs (th
 
 ### Instructions.
 
-<div class="-bg-200 p-2">The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them.</div>  
+<div class="-bg-200 p-2">  
+The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them. </div>  
 
-<br />
-To have instructions though, we need a task to complete or problem to solve!
+To have instructions though, we need a task to complete or problem to solve!  
 
 ## Our first program: Knight's Journey
 
