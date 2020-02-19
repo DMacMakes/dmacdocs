@@ -21,86 +21,43 @@ resources:
     href: "CanItURL"
 ---
 
-## FROM BLACKBOARD 
-
-* 3D Creation pipelines, strategies
-
-Students follow the learning resources and do the activities:
-1. Class Activity: 3d asset pipeline activity.
-1. Game studio activity: design breakdown
-1. Assessment progress: Design Sheet
-
-Covers: 
-1. Design/conceptualization
-2. importance observation, planning, strategy in 3d asset creation (talk reference?)
-3. Advanced blocking/base meshes
-
-Laureate visual roadmap of assessment 1:
-1. Design or conceptualize a 3D object based on scope provided (i'll specify a type of object)
-2. Share your work in progress in week 2 forum
-3. present your textured and lit model.
-
-Learning  Material:
-From [Module 1 blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset)
-1. Flipped normals on observation https://www.youtube.com/watch?v=qpd1AKwJLUg&list=PLBX-X8mPyxIrBAzc6Schs7WXdV13thGU6
-2. Lynda What is concept art (**CHECK**): https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566861_1&course_id=_83852_1&mode=reset
-3. Principles 3d modeling in games **BROKEN** http://www.indiegamedeveloper.tv/principles-of-3d-game-art-modelling/
-4. Concept art is dead talk: https://www.youtube.com/watch?v=CYbYvImd7Bw
-
-Planning and then modelling high res object. Show them how to plan a spanner, then they can plan their chosen thingy.
-
-Get them to model props that can go in a level. That way people can use them in assessment 2 environment.
-
-The object the students are to "break down" and consider modeling strategies for in class is a clear subdiv model:
-
-<!--![break it down](http://2.bp.blogspot.com/-eqOLgEHLWf4/Uua2ytK_kyI/AAAAAAAAAKM/bfz8uI6wjus/s1600/HS_w3_HP.jpg)-->
-<!--<a href="http://2.bp.blogspot.com/-eqOLgEHLWf4/Uua2ytK_kyI/AAAAAAAAAKM/bfz8uI6wjus/s1600/HS_w3_HP.jpg" target="_blank"> -->
-{{< imgproc breakdown_bracket Resize "600x" Link "breakdown_bracket.jpg" >}}
-How to model?
-{{< /imgproc >}}
-<!--</a>-->
-
-specs: 
-    Details - one mesh only, with no UVs or textures required
-    Topology – all quads, and not more than 2000 polys
-    Your facilitator might indicate additional expectations
-    The facilitator may ask faster students to share their workflow with other students.
-
-Again this is a real muddle of design and execution. Hard to imagine fitting both in.
-
-Focus on what is subdiv modeling, what is it suited to. Then show example concepts of objects suited to this approach. Their strategising will have to come down to starting shapes and lines, but really they need a few hours of video watching to do that. The model shown is tricky to subdiv model, and would actually be delivered as normal mapped. Odd.
-
-But we can talk subdiv modeling: working with quads, making holes, going from one cylinder to one sticking out (yikes) show some techniques, then move on to how to doing a drawover together.
-
-Add my links to subdiv modelling.
-
-## Ivans powerpoint
-
-### Assessment
-
-Assessment 1 roadmap has a picture of normal mapped (from v high res), pbr textured high res models in a game engine with post processing 
-1. Says 1-3 game props. week 4 showcase.
-2. 2000 triangles and 1 texture per prop (**query**: Need at least albedo/smooth/metalness for PBR)
-3. Mentions optional lods
-
-A1 workflow mentions sculpting and "maybe" retopo, also mentions baking.. but only one texture, so can't use bake unless just compositing AO??
-
-{{% alert title="Note Specification"%}}
-**Sketchfab** for delivery
-{{% /alert %}}
-
-### Modeling and UV
-Appears to teach uving in the class maybe and talk about height and normal maps. High poly modeling appears to come down to just using more polygons. 
-
-----
-
-My quick notes intro before reading blackboard.
-
 ## Welcome Back
 
 {{< imgproc welcome_back Resize "700x" >}}
 Good holiday?
 {{< /imgproc >}}
+
+## AAC202 Overview
+
+## This week
+
+* 3D Creation pipelines, strategies
+
+1. In Class: 3d asset pipeline activity.
+1. Class/Home: design breakdown
+1. Assessment progress: Design Sheet
+
+## Assessment 1
+
+Assessment 1 roadmap has a picture of normal mapped (from v high res), pbr textured high res models in a game engine with post processing.  
+
+1. Game prop. week 4 showcase.  
+2. 2000 triangles and 1 material, multiple textures per prop (**query**: Need at least albedo, smooth/metalness for PBR, normals for shape)  
+
+* Model props that can go in a level. 
+* That we can present in an assessment 3 environment.  
+
+## A2 and A3
+
+2: Character workflow in ZBrush
+3: Upgrade some chosen ACR103 levels.
+
+## Planning? 
+Planning and then modelling high res object. 
+
+First you need to know what that means in production terms. What is a high poly model?
+
+What tools and techniques are used to make current-gen quality models? What are the tradeoffs at each stage? When do we model poly by poly and when do we cheat? 
 
 ## High Poly?
 
@@ -165,6 +122,7 @@ Need better picture. Link to wacom pen tute, kukri tute.
 2. Let the computer multiply the polygons with smoothing, and you can have smooth curves and sharp corners.
 
 You might this thing, with these many polys, then subdivide. That cuts each quad across opposing edges, making it into 4 quads. It's like doubling the size of an image, you end up with 4 times the pixels.
+
 **Needs examples**
 
 You could divide it 2 times, 10 times, this count goes up and things get smoother.
@@ -190,8 +148,6 @@ Cons
 - Very laborious, difficult to achieve seemingly simple outcomes.
 - It can quickly get very tricky to achieve some forms.
 
-
-
 Flipped Normals how to model curved hard surfaces.
 https://www.youtube.com/watch?v=U7HG6XJsKoQ
 
@@ -201,16 +157,21 @@ Maya allows you to **preview** the smoothed form without increasing your polygon
 Can be exported to FBX in smoothed, high density form while remaining low density in Maya.
 {{% /alert %}}
 
-Youtube guides
+** More Youtube guides **
 <!--  [Maya Interface Tour on YT](https://www.youtube.com/watch?v=okaC2_NxPYQ&list=PLD8E5717592CF5C26&index=10) -->
 <!-- {{< youtube okaC2_NxPYQ >}} -->
 
-## My High res stuff
+## Exercise
+
+First, demo of curvey cube.
+
+Next, we make some of it.
+
+## Back to my High res stuff
 
 Blizzard cards
 
-Look dev of motorcycle gal. Still not live!! must post.
-Show metal gadget,. Show reference boards.
+Look dev of motorcycle gal. Later: metal gadget, reference boards.
 
 ## Breaking down spanner
 
@@ -218,8 +179,6 @@ Show metal gadget,. Show reference boards.
 {{< imgproc breakdown_bracket Resize "600x" Link "breakdown_bracket.jpg" >}}
 The mesh we'll try to reproduce
 {{< /imgproc >}}
-
-Work in subdivs then remove loops?
 
 ### Breakdown
 1. Target resolution?
@@ -232,7 +191,6 @@ Work in subdivs then remove loops?
 The layout of vertices, edges and faces that you will create to make your model. How will the edges flow? How will you avoid triangles?
 {{% /alert %}}
 
-
 ### Setting up
 1. Have reference in pureref
 2. Set up Maya project
@@ -240,3 +198,9 @@ The layout of vertices, edges and faces that you will create to make your model.
 4. Get a primitive in there right away for scale. Box, cylinder, whatever.
 5. Save scene as maya ascii in bracket_20cm.001.ma (numbering supports incremental saving)
 6. Ensure autosave is turned on in preferences.
+
+### Model some spanner
+
+## Choice Of Prop
+
+Level pictures.
