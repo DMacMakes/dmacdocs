@@ -15,10 +15,10 @@ resources:
 - src: "*lauren-duke.jpg"
   params:
     byline: "Art: Lauren Duke / Artstation"
-- src: breakdown_bracket.jpg
+- src: "spanner.jpg"
   params:
     byline: "Art: Uncredited"
-    href: "CanItURL"
+    
 ---
 
 ## Welcome Back
@@ -175,9 +175,8 @@ Look dev of motorcycle gal. Later: metal gadget, reference boards.
 
 ## Breaking down spanner
 
-**REPLACE WITH SPANNER, HANDLE WHEEL**
-{{< imgproc breakdown_bracket Resize "600x" Link "breakdown_bracket.jpg" >}}
-The mesh we'll try to reproduce
+{{< imgproc spanner Resize "600x" Link "spanner.png" >}}
+What forms of this would be 1. high res  2: game res  3. normals 
 {{< /imgproc >}}
 
 ### Breakdown
@@ -196,7 +195,7 @@ The layout of vertices, edges and faces that you will create to make your model.
 2. Set up Maya project
 3. Set up grid units in Maya to make sense for object
 4. Get a primitive in there right away for scale. Box, cylinder, whatever.
-5. Save scene as maya ascii in bracket_20cm.001.ma (numbering supports incremental saving)
+5. Save scene as maya ascii in spanner.001.ma (numbering supports incremental saving)
 6. Ensure autosave is turned on in preferences.
 
 ### Model some spanner
