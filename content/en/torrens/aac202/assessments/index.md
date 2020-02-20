@@ -18,8 +18,8 @@ description: >
 
 To collect:  
 * Forum [link](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&tab_id=&conf_id=_133461_1&forum_id=_804652_1)
-* Example post by me  
-* Environment for props  
+* Example post by me
+* Environment for props
   
 
 ## Assessment 2: High Poly Character
