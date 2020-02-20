@@ -18,8 +18,7 @@ Weekly notes are accessible from the **left navigation bar** on PC or the <i cla
 We'll work from the notes in class each week, so **open them when you arrive**. They also contain weekly **exercises** to complete between classes. 
 {{% /alert %}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="week1/">
-  Week 1 Notes
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="week1/">Week 1 Notes
 </a>
 
 ## Resources - Books, Software and Code
@@ -28,8 +27,7 @@ Install **the required software packages** as soon as possible. Links and info a
 
 It also outlines **required** reading in the subject textbook.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources/">
-  ISE102 Resources
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources/">ISE102 Resources
 </a>
 
 ## Join Discord

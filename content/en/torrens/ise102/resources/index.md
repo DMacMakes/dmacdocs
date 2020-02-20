@@ -17,8 +17,7 @@ If you run a different operating system on your laptop/home machine, there are f
 ## C++: Microsoft Visual Studio Community 2019
 We'll write C++ in a free version of Microsoft's industry standard development environment. Take care to select the **Community** edition for **Windows**.
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://visualstudio.microsoft.com/vs/" target="_blank">
-		Visual Studio 2019 Downloads<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://visualstudio.microsoft.com/vs/" target="_blank">Visual Studio 2019 Downloads<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
 </div>
 
@@ -36,11 +35,9 @@ If you have **your own machine**, pick "Flowgorithm Setup" and download the Wind
 If you're on a uni PC, click "Flowgorithm Portable".
 
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="http://flowgorithm.org/download/index.htm" target="_blank">
-		Flowgorithm Setup<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="http://flowgorithm.org/download/index.htm" target="_blank">Flowgorithm Setup<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-  <a class="btn btn-lg btn-primary mr-3 mb-4" href="flowgorithm_portable.zip" target="_blank">
-		Flowgorithm Portable<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+  <a class="btn btn-lg btn-primary mr-3 mb-4" href="flowgorithm_portable.zip" target="_blank">Flowgorithm Portable<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
 </div>
 
@@ -81,8 +78,7 @@ Setting up projects for quick and easy exercise coding can be a little daunting.
 
 We'll use this as a starting point for new projects. Click to download:
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources/ise102_console.zip">
-  Download ise102_console<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources/ise102_console.zip">Download ise102_console<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 Next:  

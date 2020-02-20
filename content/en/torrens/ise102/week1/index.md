@@ -13,8 +13,7 @@ resources:
 
 Before we can do any programming, you need to have the right software on hand. If you haven't installed _Visual Studio_ and _Flowgorithm_ follow the link:
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources">
-  ISE102 Resources
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources">ISE102 Resources
 </a>
 
 ## Hello!

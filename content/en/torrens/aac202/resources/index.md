@@ -25,8 +25,7 @@ You'll need a few software packages on your pc, whether it's your home pc for as
 
 Autodesk provides their industry standard 3D software to students. Sign up, download _Maya_ and use the serial number they provide.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.autodesk.com/education/free-software/maya">
-Maya For Students<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.autodesk.com/education/free-software/maya">Maya For Students<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 ### Image editor
