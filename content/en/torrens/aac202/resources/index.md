@@ -26,7 +26,7 @@ You'll need a few software packages on your pc, whether it's your home pc for as
 Autodesk provides their industry standard 3D software to students. Sign up, download _Maya_ and use the serial number they provide.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.autodesk.com/education/free-software/maya">
-  Maya For Students<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+Maya For Students<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 ### Image editor
@@ -35,22 +35,16 @@ You'll also need to be able to create/edit images
 
 Photoshop is preferred and will be demonstrated in class. Krita is a quality, free alternative.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="http://www.adobe-students.com/au/creativecloud/buy/students.html">
-  Photoshop For Students<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="http://www.adobe-students.com/au/creativecloud/buy/students.html">Photoshop For Students<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://krita.org/en/download/krita-desktop/">
-  Krita Downloads<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://krita.org/en/download/krita-desktop/">Krita Downloads<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 
 ### Substance Painter
 
 Like _Maya_, _**Substance Painter**_ is available free to students once you've signed up.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.substance3d.com/education/">
-  Substance Educational<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.substance3d.com/education/">Substance Educational<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Pureref
 
@@ -63,9 +57,7 @@ You can choose **installer or portable** from the dropdowns on the download page
 | laptop/home pc | installer      |
 | uni lab pc     | portable version |
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.pureref.com/download.php">
-  Pureref downloads<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.pureref.com/download.php">Pureref downloads<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Project Files Coming
 
