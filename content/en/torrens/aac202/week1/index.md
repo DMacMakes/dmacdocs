@@ -37,6 +37,26 @@ Good holiday?
 1. Class/Home: design breakdown
 1. Assessment progress: Design Sheet
 
+## Deliverables
+
+1. Choose or design a prop to suit this environment and aesthetic **LINK or PIC**  
+2. Create a thread in the [Module 1 Discussion Forum](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804652_1). Call it "_yourname_'s Prop Concept".
+    - Post the concept/design of your prop
+    - Hilight it in or place it in the environment image 
+    - Collect reference for the complete object (at least half of it isn't visible in environment concepts)   
+3. Describe your plan of attack for this model. Look at **MYPOST** for guidance.
+   - What key modelling will you need for the silhouette while staying under 2000 polygons.
+   - Where will the subdivisions help (for smooth clean, mechanical looking shapes).
+   - Where do you think you'll need control loops?
+   - What do you think can be added in normal maps?
+   - It's probably easiest if you draw over and annotate your concept with some planned topology 
+
+**Link to Assessment 1 info on assessments page: scene to choose object from, specs.** 
+**Link to an example post for this week**
+**Due before class**
+
+// Modeling pics due week 2
+
 ## Assessment 1
 
 Assessment 1 roadmap has a picture of normal mapped (from v high res), pbr textured high res models in a game engine with post processing.  

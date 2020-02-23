@@ -8,13 +8,18 @@ description: >
 
 ## Assessment 1: High Poly Props
 
-1. Choose or design a prop to suit this environment and aesthetic **LINK or PIC**  
-2. Post your choice to the Forum **LINK**
-    - Hilight it in environment image (if exists)
-    - Draw up and post your design if isn't, includinging where it will be in environment
-    - Collect reference for the complete object (at least half of it isn't visible in environment concepts)   
-3. Complete the written component. Questions/brief shown in my example post **LINK**  
-   - Accompany answers about your plan with images (drawovers etc)
+Give a higher level brief of this.
+
+Link to blackboard a1 page and briefpdf.
+This will be led in class but the bulk done at home.
+Deliver an asset with following specs.
+Final deliverable for week 4.
+Weekly deliverables in each week's notes.
+
+### Weekly deliverables
+
+Week 1 [in the notes](../week1/#deliverables)
+
 
 To collect:  
 * Forum [link](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&tab_id=&conf_id=_133461_1&forum_id=_804652_1)
