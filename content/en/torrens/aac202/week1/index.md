@@ -35,6 +35,12 @@ Good holiday?
 
 ## AAC202 Overview
 
+* 2D for games
+* Art fundamentals
+* Immerse yourself in drawing. Practise always, and practise productively.
+* Bring a wacom/drawing tablet!
+* Sure, some assessments. 
+
 ## This week
 
 * 3D Creation pipelines, strategies
@@ -52,10 +58,16 @@ Particulars on the [AAC202 Assessments page](../assessments/#assessment-1-high-p
 
 1. Choose or design a prop for the environment below, using the style reference provided.
 2. Create a thread in the [Module 1 Discussion Forum](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804652_1). Call it "_yourname_'s Prop Concept".
-    - Post the concept/design of your prop
-    - Hilight it in or place it in the environment image 
-    - Collect reference for the complete object (at least half of it isn't visible in environment concepts)   
-
+3. Either choose an existing prop:
+  - Outline it in the environment concept
+  - Carefully lasso select's shape and copy/paste it to a new image with a grey background. 
+4. Or if you decide to design a prop:
+  - Draw up your design
+  - Provide an image of it placed in context in the concept
+  - Provide an image of it on a grey background
+5. Post the images in your prop thread.
+  - Also collect and post real world reference of your object for details you'll need
+  
 ### The Environment Concept 
 
 {{< imgproc retro_building_krzysztof-maziarz Resize "1024x" Link "retro_building_krzysztof-maziarz.jpg" >}}
@@ -80,6 +92,15 @@ He's an artist who works at SuperCell.
 Pancake breakfast. Click to zoom.
 {{< /imgproc >}}
 
+{{< imgproc style_chest_paul_chambers Resize "1024x" Link "style_chest_paul_chambers.png" >}}
+Chest. Click to zoom.
+{{< /imgproc >}}
+ 
+{{< imgproc style_big_breakfast_paul_chambers Resize "1024x" Link "style_big_breakfast_paul_chambers.png" >}}
+Big breakfast. Click to zoom.
+{{< /imgproc >}}
+ 
+ 
 #### Zoomed out: Lulemero
 
 Nice rounded softness in this scene gives us an idea of how to approach our modeling.
