@@ -98,7 +98,7 @@ Next:
 
 ### 1. Install Inside/Alongside Your OS
 
-If you are on a **Mac** or **Linux** laptop [Download Windows](https://www.microsoft.com/en-au/software-download/windows10) (free unactivated). You can then either:
+If you are on a **Mac** or **Linux** laptop [Download this Windows iso](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EUs2E8Oj_-dNroXMb_tg0O8BhM4nTzv3g98UZ4VPnlmRCQ?e=digodN) (free unactivated). You can then either:
 
 1a. Install Windows in a **virtual machine** using [Virtual Box](https://www.virtualbox.org/wiki/Downloads) (free) **or**  
 1b. Install Windows alongside your main OS and **dual boot** using bootcamp (Mac) or grub (Linux)  
