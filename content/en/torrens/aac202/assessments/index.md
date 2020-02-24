@@ -18,7 +18,7 @@ You'll be **targeting an environment concept** provided in the Week 1 notes, and
 There are deliverables for **week 1**, **week 2** and **week 4**.
 
 ### Week 1 Deliverables
-**Select** an object from the environment concept **or design** a fitting prop of your own. This will be posted to the subject **forums**, along with some written responses. Concept, style reference and instructions are in the week 1 notes:
+**Select** an object from the environment concept **or design** a fitting prop of your own. This will be posted to the subject **forums**. Concept, style reference and instructions are in the week 1 notes:
 
 [Week 1 Deliverables in the notes](../week1/#deliverable-this-week)
 
