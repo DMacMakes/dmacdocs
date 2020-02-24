@@ -6,15 +6,21 @@ description: >
   High resolution modelling in Maya with Subdivision Surfaces. 
   Links to resources to study at home
 resources:
-- src: "barrel_alvaro_vera.jpg"
+- src: "*krzysztof-maziarz*"
   params:
-    byline: "Art: Alvaro Vera"
+    byline: "Art: Krzysztof Maziarz (Artstation)"
+- src: "*lulemero*"
+  params:
+    byline: "Art: Lulemero (Instagram)"
+- src: "*javier_rodriguez*"
+  params:
+    byline: "Art: Javier Rodriguez (Artstation)"
 - src: "*alexander-shevchuk.jpg"
   params:
-    byline: "Art: Alexander Shevchuk / Artstation"
+    byline: "Art: Alexander Shevchuk (Artstation)"
 - src: "*lauren-duke.jpg"
   params:
-    byline: "Art: Lauren Duke / Artstation"
+    byline: "Art: Lauren Duke (Artstation)"
 - src: "spanner.jpg"
   params:
     byline: "Art: Uncredited"
@@ -37,35 +43,69 @@ Good holiday?
 1. Class/Home: design breakdown
 1. Assessment progress: Design Sheet
 
-## Deliverables
+## Assessment 1: High Poly Props
 
-1. Choose or design a prop to suit this environment and aesthetic **LINK or PIC**  
+Choose and create prop for the provided environment.
+Particulars on the [AAC202 Assessments page](../assessments/#assessment-1-high-poly-props).
+
+### Deliverable This Week
+
+1. Choose or design a prop for the environment below, using the style reference provided.
 2. Create a thread in the [Module 1 Discussion Forum](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804652_1). Call it "_yourname_'s Prop Concept".
     - Post the concept/design of your prop
     - Hilight it in or place it in the environment image 
     - Collect reference for the complete object (at least half of it isn't visible in environment concepts)   
-3. Describe your plan of attack for this model. Look at **MYPOST** for guidance.
-   - What key modelling will you need for the silhouette while staying under 2000 polygons.
-   - Where will the subdivisions help (for smooth clean, mechanical looking shapes).
-   - Where do you think you'll need control loops?
-   - What do you think can be added in normal maps?
-   - It's probably easiest if you draw over and annotate your concept with some planned topology 
 
-**Link to Assessment 1 info on assessments page: scene to choose object from, specs.** 
-**Link to an example post for this week**
-**Due before class**
+### The Environment Concept 
 
-// Modeling pics due week 2
+{{< imgproc retro_building_krzysztof-maziarz Resize "1024x" Link "retro_building_krzysztof-maziarz.jpg" >}}
+Cartoony building design with lots of toony props.
+{{< /imgproc >}}
 
-## Assessment 1
+{{< imgproc lineworks_krzysztof-maziarz Resize "1024x" Link "lineworks_krzysztof-maziarz.jpg" >}}
+Linework for extra object information
+{{< /imgproc >}}
 
-Assessment 1 roadmap has a picture of normal mapped (from v high res), pbr textured high res models in a game engine with post processing.  
+### Style Help
+
+Detailed subdivision modelling is way beyond the scope of this subject. Instead, we'll use them to add **charming roundness** and **light catching** chamfers to our props.
+
+To do that in a cohesive way we'll use style reference.
+
+#### Close Up: Paul Chambers
+
+He's an artist who works at SuperCell.
+
+{{< imgproc style_pancakes_paul_chambers Resize "1024x" Link "style_pancakes_paul_chambers.png" >}}
+Pancake breakfast. Click to zoom.
+{{< /imgproc >}}
+
+#### Zoomed out: Lulemero
+
+Nice rounded softness in this scene gives us an idea of how to approach our modeling.
+
+{{< imgproc klaayas_room_javier_rodriguez Resize "1024x" Link "klaayas_room_javier_rodriguez.jpg">}}
+Everything looks sanded off, smooth to touch. Click to zoom.
+{{< /imgproc >}}
+
+Here's a scene with a tiny bit less rounding/bevelling, but full and smooth volumes.
+
+{{< imgproc bathroom_lulemero Resize "1024x" Link "bathroom_lulemero.jpg" >}}
+Bathroom. Click to zoom.
+{{< /imgproc >}}
+
+### Method
+
+Here's a wireframe to discuss
+
+{{< imgproc klaayas_room_wireframe_javier_rodriguez Resize "1024x" Link "klaayas_room_wireframe_javier_rodriguez.jpg">}}
+Mostly hitting corners. Leaves and cacti use more even geometry. Click to zoom.
+{{< /imgproc >}}
+
+### The specs
 
 1. Game prop. week 4 showcase.  
-2. 2000 triangles and 1 material, multiple textures per prop (**query**: Need at least albedo, smooth/metalness for PBR, normals for shape)  
-
-* Model props that can go in a level. 
-* That we can present in an assessment 3 environment.  
+2. 2000 triangles and 1 material, Multiple textures per prop (Need at least albedo, smooth/metalness for PBR, normals for shape)  
 
 ## A2 and A3
 
