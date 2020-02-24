@@ -10,7 +10,7 @@ description: >
 ---
 
 
-## Recap And Homework
+## Week 1 Recap And Homework
 
 * Adding the `cin` code.
 * Who tried _Flowgorithm_?
@@ -103,6 +103,21 @@ A _relational operator_ is something in _C++_ that checks how two variables/valu
 Click for the relational operators of c++. (Chap 2, p.38, of the textbook)
 {{< /imgcard >}}
 
+{{< alert title="Definition: Operators" color= "primary" >}}
+_Relational operators_ are just the operators in _C++_ that test relationships.
+
+Operators are just **symbols** that tell the computer to **do some processing** on variables or values.
+
+```cpp
+int myDollars = 10;
+int yourDollars = 5;
+
+// `+` is a math operator that performs addition.
+int ourBudget = myDollars + yourDollars;
+```
+There are operators for arithmetics (`+`,`-`,`/`), input/output (`<<`,`>>`), assignment (`=`), logic (`&&` is _and_, `||` is _or_) and more.
+{{< /alert >}}
+
 ## Deciding The Next Action
 
 {{< imgcard if_else_playerGuess >}}
@@ -130,39 +145,91 @@ If the comparison resutls in `false`, the second _code_block_ after `else` is ex
 
 In the parentheses `()` we have the relational test `a > b`, but you can replace it with any test that returns `true` or `false`. You can even use a single `bool` because they can only be `true` or `false`.
 
-
 ### `else` is optional
 
 You have two paths available when you make an evaluation. For example, you only need to display an error if something is wrong. When you **only want to act to true, leave off the `else`**.
 
 ```cpp
-if (errorMsg != "")
-{
-  cout << errorMsg << endl;
-}
+  if (errorMsg != "")
+  {
+    cout << errorMsg << endl;
+  }
 ```
+
+### `if` With Arithmetic Operators
+
+You can combine arithmetic operators with relational operators in your tests:
+
+```
+  if ( myMoney + yourMoney > priceOfMilk)
+  {
+    teaColour = "black";
+  } 
+  else 
+  {
+    teaColour = "white";  
+  }
+```
+{{< alert title="Definition: Conditionals" color= "primary" >}}
+_Conditional logic_ or _branching_ is code that lets us choose our next code.
+Operators are just **symbols** that tell the computer to **do some processing** on variables or values.
+
+```cpp
+int myDollars = 10;
+int yourDollars = 5;
+
+// `+` is a math operator that performs addition.
+int ourBudget = myDollars + yourDollars;
+```
+There are operators for arithmetics (`+`,`-`,`/`), input/output (`<<`,`>>`), assignment (`=`), boolean logic (`&&` is _and_, `||` is _or_) and more.
+{{< /alert >}}
+
+
+## The Power Of Names
+
+One of the most **important parts of learning** is putting names to things. Naming a thing or concept gives us power over it: we can **discuss** it, **theorize** about it, **question** it. It becomes a manageable idea, you can **combine** it with other ones.
+
+Think about the power of the word _**choice**_ as you grow up. In your family life, at school, at work. Imagine life without the ability to think about and demand the right to make choices. **Would your parents ever have suggested** nutella toast and clan raids at 1am Sunday night?
+
+We learned a few new and very powerful words today, and I don't want you to think of them as jargon or a pain to learn. These words might be the **biggest gift of a university education**. Todays words..
+
+* Operators
+  - Relational Operators
+  - Arithmetic Operators
+  - Assignment
+* Conditional logic
+  - branching
+* Code block
+* Literal (vs variable)
+
+give you huge power because these are **common ideas in programming**. If you know how to look for these things in a **new language** you'll find them, and the language will open up very quickly.
+
+### Exercise
+
+Lets implement the same game in **_Flowgorithm_**, using our new understanding of programming ideas.
+
+1. Grab _Flowgorithm_ from the [resources](../resources/#Flowgorithm) page.
+2. Open it, it should start with a new flowchart (main -> end).
+3. Click the arrow between (main -> end) and choose _declare_
+4. Name the variable `secretNumber`, and set it to `integer` in the drop down.
+5. Continue on to make the rest of Guessy Number.
+
+{{< imgcard flow_guessy Link "flow_guessy.png">}}
+Click if the flowchart is too small to read.
+{{< /imgcard >}}
+
+
+## Summary
+
+Ths week we learned how to make comparisons between values, and then to decide what action to take. We matched the idea of **processing** and the use of **operators**.
+
+We discussed the importance and power of names.
 
 ## Homework:
 
-* Rest of chapter one, read chapter two up to a **page 48**
-* Create a project "Score Rater 3" and enter the source code on page 47.
-
-
-Pay particular attention to these things in Chapter 1
-## C++ Syntax
-
-### `#Include` Statement
-
-### Semicolons
-
-easy peasy.
-
-### Whitespace
-
-Readability. Grab old week 1
-
-### Capitalisation And Naming
-
-Naming. Use of case.
-
-Conventions! (grab from week 4 or 6 I think)
+1. Read the rest of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, where you'll learn about arithmetic operators, data types and more.
+    - Take notes
+    - In a new Visual Studio project, **type and run** _Game Stats 2.0_ on **page 24**.
+2. Read [Chapter 2](../resources/cpp_through_games_2.pdf) up to a **page 48**
+    - Take notes
+    - Create another project _Score Rater 3_ and **type and run** the code on **page 47**.
