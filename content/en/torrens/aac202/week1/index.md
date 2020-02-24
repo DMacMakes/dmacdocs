@@ -94,6 +94,12 @@ Here's a scene with a tiny bit less rounding/bevelling, but full and smooth volu
 Bathroom. Click to zoom.
 {{< /imgproc >}}
 
+Look at the chair, pillow and blanket. Imagine the pc and furniture with more rounded off edges, or large soft chamfers.
+
+{{< imgproc bedroom_tech_ninjas Resize "1024x" Link "bedroom_tech_ninjas.jpg" >}}
+Bedroom. Click to zoom.
+{{< /imgproc >}}
+
 ### Method
 
 Here's a wireframe to discuss
