@@ -1,9 +1,9 @@
 ---
-title: "Week 2: Detail and UV"
-linkTitle: "W.2 Detail and UV"
+title: "Week 2: High Res And Game Rez Modeling"
+linkTitle: "W.2 High/Game rez"
 weight: 20
 description: >
-  Modelling our chosen props as smooth, high resolution models, leveraging subdivision surfaces. Solving subdiv problems.
+  Modelling our chosen props as smooth, very high resolution models, leveraging subdivision surfaces. Creating a game rez version.
 resources:
 - src: "barrel_alvaro_vera.jpg"
   params:
@@ -15,6 +15,51 @@ resources:
 
 * Review the [updated Assessments page](../assessments/#assessment-1-high-poly-props) (and week1 notes from there)
 * Look at our prop choices.
+
+## Subdiv Learning
+Videos in Class
+
+### Working with cylinders
+
+Some straightforward controlling of volume and end shapes:
+
+{{< youtubetime iyZqmWf5x_c 223 >}}
+
+But how do you add features to one small area without breaking the that perfectly circular cross section:
+{{< youtubetime RCSijbeXujs 38 >}}
+
+The first 10 minutes here show us how to break up the mesh without gaps and distortions.
+https://youtu.be/ryPIKJkNzPI
+{{< youtube ryPIKJkNzPI >}}
+
+### More Complex
+
+More by Elementza:
+
+{{< youtube 0WZ8zfKOTr0 >}}
+
+### Sharp Things, Hiding Triangles
+
+One to subdivision modeling is that **pointy volumes** are naturally form **pyramids/triangles**: how do we handle those with quads?
+
+{{< youtube Z9wgKy-F1Rw >}}
+
+{{< alert title="Eh? He's Not Using Maya?" color= "primary" >}}
+Though he's using 3DS Max, the model's built with subdivision surfaces and **his solutions are applicable to Maya too**. The video's full of great techniques and the tools are familiar despite different names (turbosmooth = Maya's smoothed display, etc).
+{{< /alert >}}
+
+Another challenge he helps you manage: **adding details** means adding lots of edge loops. How do we **avoid a loopfest** that makes the model unmanageable and messes up curves?
+* If we terminate those edges that'll make a triangle, right? Won't that mess up the surface?
+  * First, there are **sneaky ways of shaping quads** 
+  * Second, triangles and ngons  create bumpy artefacts on curved surfaces, but **flat surfaces handle bad geometry better**
+
+## Model Our Prop
+
+## Game Rez Model
+
+### Supporting Baked Details
+
+We need enough geometry to support the silhouette and believable normal map details.
 
 ### Deliverable This Week
 
@@ -28,13 +73,13 @@ resources:
    * Post images of your model
      * Smooth shaded with wireframes and ambient occlusion turned off, from a few angles
      * A shot or two without wireframes.
-
-**Link to an example post for this week**
-**Due before class**
+3. First attempt at the game resolution model.
 
 ## Modeling To Match Our Style
 
-
+Looking at the style.
+Where and how to use those control edges.
+Staying simple but removing those impossibly sharp, computer generated corners.
 
 ### Paintovers
 

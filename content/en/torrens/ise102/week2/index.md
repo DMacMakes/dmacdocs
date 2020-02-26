@@ -107,6 +107,7 @@ Click for the relational operators of c++. (Chap 2, p.38, of the textbook)
 _Relational operators_ are just the operators in _C++_ that test relationships.
 
 Operators are just **symbols** that tell the computer to **do some processing** on variables or values.
+{{< /alert >}}
 
 ```cpp
 int myDollars = 10;
@@ -116,7 +117,7 @@ int yourDollars = 5;
 int ourBudget = myDollars + yourDollars;
 ```
 There are operators for arithmetics (`+`,`-`,`/`), input/output (`<<`,`>>`), assignment (`=`), logic (`&&` is _and_, `||` is _or_) and more.
-{{< /alert >}}
+
 
 ## Deciding The Next Action
 
@@ -156,34 +157,9 @@ You have two paths available when you make an evaluation. For example, you only 
   }
 ```
 
-### `if` With Arithmetic Operators
-
-You can combine arithmetic operators with relational operators in your tests:
-
-```
-  if ( myMoney + yourMoney > priceOfMilk)
-  {
-    teaColour = "black";
-  } 
-  else 
-  {
-    teaColour = "white";  
-  }
-```
 {{< alert title="Definition: Conditionals" color= "primary" >}}
-_Conditional logic_ or _branching_ is code that lets us choose our next code.
-Operators are just **symbols** that tell the computer to **do some processing** on variables or values.
-
-```cpp
-int myDollars = 10;
-int yourDollars = 5;
-
-// `+` is a math operator that performs addition.
-int ourBudget = myDollars + yourDollars;
-```
-There are operators for arithmetics (`+`,`-`,`/`), input/output (`<<`,`>>`), assignment (`=`), boolean logic (`&&` is _and_, `||` is _or_) and more.
+_Conditional logic_ or _control logic_ is code that lets us choose what is executed next. It allows branching: we can choose our code to divert along one branch (do this) or another (do that).
 {{< /alert >}}
-
 
 ## The Power Of Names
 
@@ -214,7 +190,7 @@ Lets implement the same game in **_Flowgorithm_**, using our new understanding o
 4. Name the variable `secretNumber`, and set it to `integer` in the drop down.
 5. Continue on to make the rest of Guessy Number.
 
-{{< imgcard flow_guessy Link "flow_guessy.png">}}
+{{< imgcard flow_guessy Link "flow_guessy.png" >}}
 Click if the flowchart is too small to read.
 {{< /imgcard >}}
 
