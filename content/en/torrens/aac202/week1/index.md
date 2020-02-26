@@ -15,6 +15,9 @@ resources:
 - src: "*javier_rodriguez*"
   params:
     byline: "Art: Javier Rodriguez (Artstation)"
+- src: "*paul_chambers*"
+  params:
+    byline: "Art: Paul Chambers (Artstation)"
 - src: "*alexander-shevchuk.jpg"
   params:
     byline: "Art: Alexander Shevchuk (Artstation)"

@@ -1,5 +1,5 @@
 ---
-title: "Week 3: Substance"
+title: "Week 3: UV, Importing To Substance, Baking."
 linkTitle: "W.3 Substance"
 weight: 30
 description: >

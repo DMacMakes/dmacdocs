@@ -8,6 +8,15 @@ resources:
 - src: "barrel_alvaro_vera.jpg"
   params:
     byline: "Art: Alvaro Vera"
+- src: "*zombie*"
+  params:
+    byline: "Art: David Jankes"
+- src: "*javier_rodriguez*"
+  params:
+    byline: "Art: Javier Rodriguez (Artstation)"
+- src: "*paul_chambers*"
+  params:
+    byline: "Art: Paul Chambers (Artstation)"
 ---
 
 
@@ -16,9 +25,47 @@ resources:
 * Review the [updated Assessments page](../assessments/#assessment-1-high-poly-props) (and week1 notes from there)
 * Look at our prop choices.
 
-## Subdiv Learning
-Videos in Class
+## Modeling To Match Our Style
 
+We'll need subdivs, but it shouldn't get too technical. The style was chosen so we'd get a long way by focusing on just corners: the smart use of fencing, bevels and maybe some creases.
+
+{{< imgcard style_pancakes_paul_chambers Link "style_pancakes_paul_chambers.png" >}}
+Pancake breakfast. Click to zoom.
+{{< /imgcard >}}
+
+{{< imgcard klaayas_room_wireframe_javier_rodriguez Link "klaayas_room_wireframe_javier_rodriguez.jpg" >}}
+Klayaas Room subdiv wires
+{{< /imgcard >}}
+
+{{< imgcard klaayas_room_javier_rodriguez Link "klaayas_room_javier_rodriguez.jpg" >}}
+Klayaas Room 
+{{< /imgcard >}}
+
+
+
+
+**Style summary:** Simple volumes but without those impossibly sharp, computer generated corners.
+
+## Subdiv Learning
+
+Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
+
+For that reason, I'll be skimming several videos today, and leaving it to each of you to watch the ones in the order that works for your prop.
+
+{{< alert title="Tip: Work Large To Small" color= "warning" >}}
+Always work large to small. You don't know yet how many small details you'll need to get your point across, or how hard they'll be. Get the silhouettes, proportions and corners right first.
+{{< /alert >}}
+
+### Fundamentals
+
+Ways to support corners:
+{{< youtube HPrj4FbVnRM 122 >}}
+
+* Bevels
+* Fencing (or support loops)
+* Creases
+    - Appear to be the holy grail at first, but have real limitations.
+ 
 ### Working with cylinders
 
 Some straightforward controlling of volume and end shapes:
@@ -44,8 +91,8 @@ One to subdivision modeling is that **pointy volumes** are naturally form **pyra
 
 {{< youtube Z9wgKy-F1Rw >}}
 
-{{< alert title="Eh? He's Not Using Maya?" color= "primary" >}}
-Though he's using 3DS Max, the model's built with subdivision surfaces and **his solutions are applicable to Maya too**. The video's full of great techniques and the tools are familiar despite different names (turbosmooth = Maya's smoothed display, etc).
+{{< alert title="Disaster: I don't know 3DS Max!" color= "danger" >}}
+Relaxing. He's using 3DS Max, but he's using subdivision surfaces and **his solutions apply just as well in Maya**. The video's full of great techniques despite the weird tool names (turbosmooth = Maya's smoothed display, etc).
 {{< /alert >}}
 
 Another challenge he helps you manage: **adding details** means adding lots of edge loops. How do we **avoid a loopfest** that makes the model unmanageable and messes up curves?
@@ -53,13 +100,47 @@ Another challenge he helps you manage: **adding details** means adding lots of e
   * First, there are **sneaky ways of shaping quads** 
   * Second, triangles and ngons  create bumpy artefacts on curved surfaces, but **flat surfaces handle bad geometry better**
 
-## Model Our Prop
+## Retopology
 
-## Game Rez Model
+The game model that receives the details from the subdiv model has different requirements, and we need different topology to suit. The missing detail will return in our normal map.
+
+{{< imgcard topology_zombie_high Link "topology_zombie_high.jpg" >}}
+The subdiv (or sculpted) mesh doesn't have perform well on a player's PC, just the artist's.
+{{< /imgcard >}}
+
+{{< imgcard topology_zombie_low Link "topology_zombie_low.jpg" >}}
+The in-game mesh has to animate well (characters) and support the silhouette/volumes.
+{{< /imgcard >}}
+
+{{< alert title="Definition: Topology" color= "primary" >}}
+
+A cylinder is just an idea, it can be constructed lots of ways. The curved surface can have 8 faces, 16, 17, 28, whatever; more faces just make it more precise.
+The same can apply to a human head: there are infinite ways triangles can be rearranged to produce, to our eye, the same head.
+
+**The topology of a surface is the collection of points, edges and faces currently used to represent it.**
+{{< /alert >}}
 
 ### Supporting Baked Details
 
 We need enough geometry to support the silhouette and believable normal map details.
+
+We can 
+1. Start with a copy of the model that is being subdivided
+  - Delete the support loops
+  - Scale loops to look more like the smoothed silhouette
+  - Add more geo for curves etc
+2. Start with the smoothed version
+  - It's too dense to easily clean up
+  - We can, though, make it a 'live' surface that geometry sticks to
+  - Use that stickiness to draw all our new quads right onto it.
+
+### Quad Draw And Live surfaces
+
+{{< youtube xpDWta5O3n8 >}}
+These guys can jibber jabber but they do share great skills.
+
+{{< youtubetime 3L8eZAwmG2E 100 >}}
+Danny Mac (I know). Does some head retopo here in 3D Coat, showing nice techniques for sharpening and smoothing the transitions between planes.
 
 ### Deliverable This Week
 
@@ -74,12 +155,6 @@ We need enough geometry to support the silhouette and believable normal map deta
      * Smooth shaded with wireframes and ambient occlusion turned off, from a few angles
      * A shot or two without wireframes.
 3. First attempt at the game resolution model.
-
-## Modeling To Match Our Style
-
-Looking at the style.
-Where and how to use those control edges.
-Staying simple but removing those impossibly sharp, computer generated corners.
 
 ### Paintovers
 
