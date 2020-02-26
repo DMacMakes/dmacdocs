@@ -66,7 +66,7 @@ Always work large to small. You don't know yet how many small details you'll nee
 ### Fundamentals
 
 Ways to support corners:
-{{< youtube HPrj4FbVnRM 122 >}}
+{{< youtubetime HPrj4FbVnRM 122 >}}
 
 * Bevels
 * Fencing (or support loops)
@@ -83,7 +83,6 @@ But how do you add features to one small area without breaking the that perfectl
 {{< youtubetime RCSijbeXujs 38 >}}
 
 The first 10 minutes here show us how to break up the mesh without gaps and distortions.
-https://youtu.be/ryPIKJkNzPI
 {{< youtube ryPIKJkNzPI >}}
 
 ### More Complex
@@ -96,7 +95,7 @@ More by Elementza:
 
 One to subdivision modeling is that **pointy volumes** are naturally form **pyramids/triangles**: how do we handle those with quads?
 
-{{< youtube Z9wgKy-F1Rw >}}
+{{< youtube "Z9wgKy-F1Rw" >}}
 
 {{< alert title="Disaster: I don't know 3DS Max!" color= "danger" >}}
 Relaxing. He's using 3DS Max, but he's using subdivision surfaces and **his solutions apply just as well in Maya**. The video's full of great techniques despite the weird tool names (turbosmooth = Maya's smoothed display, etc).
@@ -119,11 +118,12 @@ The subdiv (or sculpted) mesh doesn't have perform well on a player's PC, just t
 The in-game mesh has to animate well (characters) and support the silhouette/volumes.
 {{< /imgcard >}}
 
+..
+https://www.youtube.com/watch?v=8OADBBgk7oM
+..
 {{< alert title="Definition: Topology" color= "primary" >}}
-
 A cylinder is just an idea, it can be constructed lots of ways. The curved surface can have 8 faces, 16, 17, 28, whatever; more faces just make it more precise.
 The same can apply to a human head: there are infinite ways triangles can be rearranged to produce, to our eye, the same head.
-
 **The topology of a surface is the collection of points, edges and faces currently used to represent it.**
 {{< /alert >}}
 
