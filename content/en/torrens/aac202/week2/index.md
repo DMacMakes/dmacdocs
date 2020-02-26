@@ -17,6 +17,9 @@ resources:
 - src: "*paul_chambers*"
   params:
     byline: "Art: Paul Chambers (Artstation)"
+- src: "*krzysztof-maziarz*"
+  params:
+    byline: "Art: Krzysztof Maziarz (Artstation)"
 ---
 
 
@@ -24,6 +27,10 @@ resources:
 
 * Review the [updated Assessments page](../assessments/#assessment-1-high-poly-props) (and week1 notes from there)
 * Look at our prop choices.
+
+{{< imgcard retro_building_krzysztof-maziarz Link "retro_building_krzysztof-maziarz.jpg">}}
+The concept
+{{< /imgcard >}}
 
 ## Modeling To Match Our Style
 
