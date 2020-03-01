@@ -203,7 +203,7 @@ You want to guess the number in Guessy Limit: What two things need to be true?  
 Logical operators are similar to using **and**, **or** and **not** in a sentence. **Or** works with two variables or values like **and** does. 
 
 | Word    |   C++ Symbol    | When to use   |
-|--|--|--|
+|----|----|----|
 | And     | &&              | I need **both** tests to evaluate to `true` |
 | Or      | \|\|              | I need **at least one** test to evaluate to `true` | 
 | Not     | !   | I need the following thing **not** to evaluate as true. |
