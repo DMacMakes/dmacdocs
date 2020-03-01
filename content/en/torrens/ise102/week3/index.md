@@ -24,8 +24,7 @@ We know that **completing a task** is **stepping through a list** of instruction
 We've stepped through these instructions in two ways so far: **sequentially** and **selectively**. Today we'll add the third, **repetitively**.
 
 {{< alert title="Definition: Execute" color= "primary" >}}
-To complete a task you first _complete_ each _step_.
-<br /><br />
+To complete a task you first _complete_ each _step_.<br /><br />
 In programming we often talk about _**stepping**_ through and _**executing**_ each _**line**_ of code.
 {{< /alert >}}
 
