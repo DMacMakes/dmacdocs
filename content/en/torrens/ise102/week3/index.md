@@ -13,6 +13,10 @@ description: >
   
 [Week 2 Homework](../week2/#homework)
 
+## Assessment 1
+
+Read about Assessment 1 on [the ISE102 Asessments page](../assessments/#assessment-1-slot-machine)
+
 ## Controlling Execution
 
 We know that **completing a task** is **stepping through a list** of instructions.  That list might be written on paper, spoken to someone, or typed into a computer.
@@ -29,7 +33,7 @@ In programming we often talk about _**stepping**_ through and _**executing**_ ea
 
 We go through the statements in the _**sequence**_ or order they're presented: 1st, 2nd, 3rd until we reach the end. This is how a program works by default.
 
-{{< imgproc flow_knightsJourney_input Resize "400x" >}}
+{{< imgproc flow_knightsJourney_input Resize "500x" >}}
 Knights Journey runs in a straight line.
 {{< /imgproc >}}
 
@@ -40,7 +44,7 @@ AKA branching. You step through the instructions in a straight line until you co
 * Is it equal to my favourite dessert?
 * Does it weight more than I can lift?
 
-{{< imgproc flow_guessy Resize "400x" >}}
+{{< imgproc flow_guessy Resize "500x" >}}
 Guessy Number selects the next stepped based on win/loss
 {{< /imgproc >}}
 
@@ -49,6 +53,10 @@ Guessy Number selects the next stepped based on win/loss
 {{< youtube "F2A-0IF4sqI" >}}
 <br />
 Considered on its own, _**repetition**_ is a simple, endless, maybe boring process. When you introduce the **entering** and **exiting** of loops, things start happen.
+
+{{< imgcard flow_guessy_loop >}}
+If the playerGuess is NOT EQUAL to the secretNumber, pass through the loop.
+{{< /imgcard >}}
 
 {{< alert title="Dig Deeper" color= "primary" >}}
 **More On Control Structures:**
