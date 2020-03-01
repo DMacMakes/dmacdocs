@@ -12,6 +12,7 @@
     padding: $table-cell-padding;
     vertical-align: top;
     border-top: $table-border-width solid $table-border-color;
+    border-bottom: $table-border-width solid $table-border-color;
   }
 
   thead th {
