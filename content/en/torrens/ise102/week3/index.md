@@ -250,6 +250,7 @@ This week you will **submit part your homework code**!.
     - `1` continues, `2` exits. If they don't input `1` or `2`, continue the loop.
     - **Send me** your finished `main.cpp` **via email** before next class! I'll put my email in a Blackboard Announcement for those who don't have it.
       - To **find** `main.cpp` right click your project name in the _solution explorer_ and click _open folder in file explorer_
+
 ```
   **Played an exciting game**"
   
