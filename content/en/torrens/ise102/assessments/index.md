@@ -9,13 +9,14 @@ description: >
 
 ## Assessment 1: Exam
 
-**Due: ** End of week 4
-Testing your understanding of the ideas in programming, along with knowledge of C++ data types, structures, operators, evaluation and more. Reading the textbook, testing out _C++_ statements in a coding environment and working through _SoloLearn_ will make all the differenc in this one.
+**Due:** End of week 4
 
+Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. Reading the textbook, testing out _C++_ statements in a coding environment and working through _SoloLearn_ will make all the difference in this one.
 
 ### Deliverable
 
-An online, 90 minute exam you will complete through Blackboard. The exam will be available to start at any point from Sunday Week 3 until Sunday at the end of Week 4. 
+An online, 90 minute exam you will complete **on Blackboard**. The exam will be available to start at any point from Sunday end of week 3 **until Sunday end of week 4**. 
+
   * The exam will be made available on the Friday of week 8 on the ISE102 _Assessment 2_ page on _Blackboard_.
   * Once started, you have to complete it within **90 minutes**.
   * You can **return** to the exam **during** those 90 minutes if your machine/internet goes down, but **not after**.
@@ -28,7 +29,6 @@ An online, 90 minute exam you will complete through Blackboard. The exam will be
 We'll make a text based slot machine using the `ise102_console` template. A _prompt and response_ game loop.
 
 [Slot Machine Brief](https://laureate-au.blackboard.com/bbcswebdav/pid-8547440-dt-content-rid-36256223_1/xid-36256223_1)
-_(Currently listed as assessment 2, I'm working on fixing this with Trent)_
 
 ### Deliverable 
 
