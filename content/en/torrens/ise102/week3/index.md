@@ -15,7 +15,7 @@ description: >
 
 ## Assessment 1
 
-Read about Assessment 1 on [the ISE102 Asessments page](../assessments/#assessment-1-slot-machine)
+Read about Assessment 1 on [the ISE102 Asessments page](../assessments/#assessment-1-exam)
 
 ## Controlling Execution
 
