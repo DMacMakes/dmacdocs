@@ -1,6 +1,6 @@
 ---
-title: "Week 2: High Res And Game Rez Modeling"
-linkTitle: "W.2 High/Game rez"
+title: "2: Subdivs And Game Res"
+linkTitle: "W.2 High/Game res"
 weight: 20
 description: >
   Modelling our chosen props as smooth, very high resolution models, leveraging subdivision surfaces. Creating a game rez version.
@@ -149,7 +149,7 @@ These guys can jibber jabber but they do share great skills.
 {{< youtubetime 3L8eZAwmG2E 100 >}}
 Danny Mac (I know). Does some head retopo here in 3D Coat, showing nice techniques for sharpening and smoothing the transitions between planes.
 
-### Deliverable This Week
+## Deliverable This Week
 
 1. Add another post to your Prop Concept thread in the [Module 1 Discussion Forum](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804652_1). Describe your plan of attack for this model.
    * What key modelling will you need for the silhouette while staying under 2000 polygons.
@@ -163,40 +163,4 @@ Danny Mac (I know). Does some head retopo here in 3D Coat, showing nice techniqu
      * A shot or two without wireframes.
 3. First attempt at the game resolution model.
 
-### Paintovers
 
-Modelling is slow and destructive, not great for quick iterations.
-
-**Screenshots from Orb's artstation, show how he detailed his library assets.**
-
-Painting:  
-  1. Take greyscale screenshots
-  2. Do a rough linework layer if needed
-  3. Paint basic light planes with 3 or 4 tones to create your new form
-  4. Refine, try multiple options
-  5. Assess what needs maya modelling, what can be done with stamping/normal maps (embossed text, panels)
-  5. Implement modelling changes in maya
-  6. Next week we'll look at stamping.
-
-**SCREENSHOTS OF STAMPING TOO**
-
-Can also be used to plan things we'll add with stamping.
-
-## Topology Help
-
-It can be very tricky coming up with ways to use only quads, or hide a couple triangles. Help is out there:
-
-* [My Topology Pinterest board](https://www.pinterest.com.au/dmacdraws/topology/)
-* [Polycount thread about high res modelling problems](https://polycount.com/discussion/56014/how-the-f-do-i-model-this-reply-for-help-with-specific-shapes-post-attempt-before-asking/p127)  
-
-
-## UV Maps
-
-We'll need UV maps for painting and baking.
-
-### Review UV unwrap.
-Discuss how it's different (if it is) for higher res.
-
-### Extra uv unwrap tips.
-
-Er..
