@@ -66,6 +66,10 @@ Painting:
   5. Assess what needs maya modelling, what can be done with stamping/normal maps (embossed text, panels)
   5. Implement modelling changes in maya
 
+{{< imgcard commander_draw_over Link "commander_draw_over.png">}}
+For the first pass a draw-over might be more in your comfort zone.
+{{< /imgcard >}}
+
 ## UV Mapping
 
 We did a fair bit of this in ACR103:
