@@ -16,7 +16,7 @@ resources:
 * Tips for modeling Challenges
 * Learning how to go from modeling to baking and texturing
   * Looking through joystick files
-  * Game res model vs subdiv
+  * Game res model vs subd
   * UV unwrapping for a good normal map bake
   * Substance import/bake
   * Basic material application
@@ -24,7 +24,7 @@ resources:
 ### Download This Project
 
 {{< imgproc joystick_high_low_maya Resize "600x" >}}
-Blue is subdiv, pink is game resolution.
+Blue is subd, pink is game resolution.
 {{< /imgproc >}}
 
 I pushed on with the arcade style joystick controller during the week. We'll look through it this week and I'll work on the box section to demonstrate the workflow.
@@ -33,7 +33,7 @@ I pushed on with the arcade style joystick controller during the week. We'll loo
 
 ## Week 2 Deliverables
 
-Previously you submitted your choice of concept to the forum. This week, you submitted a plan and your subdiv and game res models.
+Previously you submitted your choice of concept to the forum. This week, you submitted a plan and your subd and game res models.
 
 [week 2](../week2/#deliverable-this-week)
 
@@ -70,6 +70,59 @@ Painting:
 For the first pass a draw-over might be more in your comfort zone.
 {{< /imgcard >}}
 
+## How it all works
+
+We create two sets of meshes in Maya, then take them to painter. One set survive as the game meshes, the others (subds) are just used to generate normal maps.
+
+### Meshes in Maya
+
+We create **two kinds** of meshes inside Maya. 
+1. The **subd** meshes (button and trim) are in **blue**. 
+2. The **pink** button and trim are **two new meshes**, which will go in the game.
+
+**Note**: The same blue button and trim (outer ring) meshes **appear twice** in the next image: normal view and smooth preview.
+
+{{< imgcard a_button_and_trim_meshes_all Link "a_button_and_trim_meshes_all.png">}}
+Smoothed and unsmoothed views of the subd meshes (button and trim) and one view of the game meshes (button and trim)
+{{< /imgcard >}}
+
+1. **Subd meshes**
+   * `a_button_trim_subd` and `a_button_subd`
+   * We view them in normal mode (press `1`) and smoothed mode `3`. 
+   * To **control** how it looks when smoothed, we **add** loops and edges to it.
+   * It has more geometry than we need in the game, even when viewed in normal view, because of the extra loops and edges.
+   * We try to stick to **quads** (rectangles) that **flow** around the model.
+   * When _Maya_ **exports** this mesh it **subdivides** it several times, creating a very large number polygons.
+   * These only exist to be **analysed and discarded** by _Substance Painter_ in the creation of normal maps, which will be applied to the game mesh.
+2. **Game meshes**. 
+   * `a_button_trim_game` and `a_button_game`
+   * These are never smoothed
+   * They have a similar silhouette to the smooth-view subd meshes
+   * They have **fewer polygons** than their equivalent subd mesh (even unsmoothed). This **improves frame rate**.
+   * Triangles are no problem
+   * They will go in the game and use a normal map.
+
+{{% alert title="Disambiguation: button and trim " color= "primary" %}}
+The button and trim are two meshes used to create a whole button unit. Each has a subd variant and a game variant.
+
+<img src="a_button_game_meshes.png" width="250" />
+
+`a_button_game` and `a_button_trim_game` meshes shown separately.
+{{% /alert %}}
+
+### Meshes In Painter
+
+We create a new project with the game meshes `a_button_game` and `a_button_trim_game` (the ring around the button), then bake normal maps for them by analysing and discarding the subd meshes.
+
+{{< imgcard button_a_game_meshes_painter Link "button_a_game_meshes_painter.png">}}
+Four views of the same two meshes in Painter, <code>a_button_game</code> and <code>a_button_trim_game</code>
+{{< /imgcard >}}
+
+{{< imgproc button_a_in_normals Resize "400x" Link "button_a_in_normals.png">}}
+Here are some snippets of the normal map representing the button
+{{< /imgproc >}}
+
+
 ## UV Mapping
 
 We did a fair bit of this in ACR103:
@@ -95,11 +148,30 @@ Soft inner edges, hard texture border edges.
 ## Off to substance and Bake
 
 ### Export FBX
-* Object naming (high, low)
-* Freezing scale/rotation
-* Exporting subdivs with smoothing automatically applied
+
+Before you export:
 * Single material on game res assets
+* Freeze scale and rotation on all models
+* Select all _subd meshes and press 3 for smooth preview
+* Two versions of each mesh: one ending in _subd, the other in _game
+
+{{< imgcard mesh_naming_outliner Link "mesh_naming_outliner.png" >}}
+Identical names with different suffixes
+{{< /imgcard >}}
+
+* export all subd meshes together
+* export game meshes together
+
+{{< imgcard maya_export_fbx_subd_painter Link "maya_export_fbx_subd_painter.png" >}}
+Naming the two files: identical except for the <code>_subd</code> and <code>_game</code> suffixes. Note file sizes difference.
+{{< /imgcard >}}
+
+* Exporting subds with smoothing automatically applied
 * Tangents and binormals
+{{< imgcard maya_export_fbx_settings Link "maya_export_fbx_settings.png" >}}
+These settings are for both subd meshes export and game meshes export.
+{{< /imgcard >}}
+
 
 ## Substance
 
