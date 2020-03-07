@@ -1,6 +1,6 @@
 ---
-title: "3: Baking In Substance"
-linkTitle: "W.3 Substance"
+title: "3: Game Res and Exporting"
+linkTitle: "W.3 Substance Prep"
 weight: 30
 description: >
   Preparing models for substance, baking maps to feed into the texturing process.
@@ -145,7 +145,7 @@ Soft inner edges, hard texture border edges.
 <i><b>UV Shell/Island:</b></i> Polygons fully separated from others by UV cut/seam. They'll remain together when unfolded in the UV editor.
 {{< /alert >}}
 
-## Off to substance and Bake
+## Exporting For Substance
 
 ### Export FBX
 
@@ -173,28 +173,3 @@ These settings are for both subd meshes export and game meshes export.
 {{< /imgcard >}}
 
 
-## Substance
-
-* link coming for recent UI tute
-
-### Import
-
-### Applying a basic material
-
-* Not impressive at first
-* One featureless texture all over the object
-
-### Baking
-
-Generate all the high res model data we need.
-
-* normals tangent/world space
-* AO
-* Color ID/Clown map
-* thickness 
-* world space normals
-* curves etc
-
-## Texturing
-
-Mask by color selection.

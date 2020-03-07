@@ -1,6 +1,6 @@
 ---
-title: "2: Subdivs And Game Res"
-linkTitle: "W.2 High/Game res"
+title: "2: Subdivisions Continued"
+linkTitle: "W.2 Subdivs"
 weight: 20
 description: >
   Modelling our chosen props as smooth, very high resolution models, leveraging subdivision surfaces. Creating a game rez version.

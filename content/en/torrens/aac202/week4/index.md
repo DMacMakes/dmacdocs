@@ -1,10 +1,36 @@
 ---
-title: "Week 4: Beauty Shots"
-linkTitle: "W.4 Beauty"
+title: "W.4: Bake, Texture, Present"
+linkTitle: "W.4 Present"
 weight: 40
 description: >
   Turning 3D art into playable game assets means exporting to a real time **game engine**. Today we'll learn how to move our models from Maya and Painter into Unreal/Unity. From there you can light and screenshot them for your **final deliverables** of Assessment 1.
 ---
+
+## Substance
+
+* link coming for recent UI tute
+
+### Import
+
+### Applying a basic material
+
+* Not impressive at first
+* One featureless texture all over the object
+
+### Baking
+
+Generate all the high res model data we need.
+
+* normals tangent/world space
+* AO
+* Color ID/Clown map
+* thickness 
+* world space normals
+* curves etc
+
+## Texturing
+
+Mask by color selection.
 
 ## Presenting Our Results
 
