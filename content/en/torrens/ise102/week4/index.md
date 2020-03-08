@@ -197,10 +197,11 @@ Very solid app for learning a new programming language. It's structured to teach
 Download from the iOS App Store (iPhone) or Google Play (Android). 
 - You want just _SoloLearn_, not a specialised older version. 
 - Create and account to log in
-- Grab the C++ tutorial
+- Under _My Courses_ Grab the _C++ Tutorial_
 - Start doing it now in class, go as far as you can.
-- I'll let you know when to stop.
+- I'll let you know when to stop in class.
 - Continue it at home to prep for the exam.
+- At home you can stop at arrays.
 
 ## Enum
 
@@ -225,7 +226,7 @@ This week we:
 
 1. Read the beginning of [Chapter 3](../resources/cpp_through_games_3.pdf) and  until you really understand for loops, even nested ones.
     - Take notes
-    - Write yourself some code tests to check your understanding
+    - Write small code tests to check your understanding!
     - Keep at it till you totally get `for` loops, even nested ones.
-2. Keep at the SoloLearn C++ tutorial.
+2. Keep at the _SoloLearn C++ tutorial_. You can stop at _arrays_.
 3. Take your exam!
