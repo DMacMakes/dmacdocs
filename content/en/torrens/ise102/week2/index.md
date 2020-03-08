@@ -1,5 +1,5 @@
 ---
-title: "Week 2: Comparing and Deciding"
+title: "2: Comparing and Deciding"
 linkTitle: "W.2 Comparisons"
 weight: 20
 description: >

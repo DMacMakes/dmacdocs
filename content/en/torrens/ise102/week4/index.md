@@ -1,5 +1,5 @@
 ---
-title: "Week 4: Review before exam"
+title: "4: Exam Week Review"
 linkTitle: "W.4 Review"
 weight: 40
 description: >
@@ -139,7 +139,7 @@ The parentheses `()` in the first line of the `for` loop are familiar, but, inst
 
 #### Pros:
 
-* You can understand the loop by reading the first line (if true to its word).
+* You can understand the `for` loop by reading the first line (if true to its word).
 * If the variable is defined in the first line, you don't have have to search the code for it, or check its value.
 * The loop body is a bit simpler
 * It helps you to remember to change the test variable, making infinite loops a bit less likely. 
@@ -153,7 +153,9 @@ The parentheses `()` in the first line of the `for` loop are familiar, but, inst
 
 ### Exercise: Structure And Variations
 
-The 3 lines in the for loop can vary their form a bit, and also be left out entirely. Open a browser and visit [cpp.sh](cpp.sh). Try each of the for loops below inside `main()`. Don't forget to add `using namespace std`.
+Those 3 parts in the `for` loop parentheses can **vary their form** quite a bit, and some even **left out** entirely. 
+
+**Open a browser** and visit [cpp.sh](cpp.sh). Try each of the for loops below inside `main()`. Don't forget to add `using namespace std`.
 
 
 

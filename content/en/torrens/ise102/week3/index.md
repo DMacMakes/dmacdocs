@@ -1,5 +1,5 @@
 ---
-title: "Week 3: The Game Loop and Logic"
+title: "3: The Game Loop and Logic"
 linkTitle: "W.3 Loops, Logic"
 weight: 30
 description: >

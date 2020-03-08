@@ -1,5 +1,5 @@
 ---
-title: "ISE102 Week 1: Beginnings"
+title: "1: Beginnings"
 linkTitle: "W.1 Beginnings"
 weight: 10
 description: >
