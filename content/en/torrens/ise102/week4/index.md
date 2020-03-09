@@ -155,7 +155,7 @@ The parentheses `()` in the first line of the `for` loop are familiar, but, inst
 
 Those 3 parts in the `for` loop parentheses can **vary their form** quite a bit, and some even **left out** entirely. 
 
-**Open a browser** and visit [cpp.sh](cpp.sh). Try each of the for loops below inside `main()`. Don't forget to add `using namespace std`.
+**Open a browser** and visit [cpp.sh](http://cpp.sh/). Try each of the for loops below inside `main()`. Don't forget to add `using namespace std`.
 
 
 
