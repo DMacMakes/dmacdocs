@@ -207,7 +207,48 @@ Download from the iOS App Store (iPhone) or Google Play (Android).
 
 ## Enum
 
-Coming soon.
+Imagine you have 21 heroes in a game, and you need check thousands of little details about them every frame - their health, location, who they're blasting and so on. You'll need a variable for each kind of hero so you can do things like:
+```cpp
+  if( player1.hero == ZENYATTA ) {
+    // things
+  }
+```
+
+You _could_ use `string`, like  but strings use a fair bit of memory, and checking against them is quite slow (at least to the dizzyingly high standards of your cpu). It has to step through each letter and compare.
+
+```cpp
+const string ZENYATTA = "ZENYATTA"; // Nope, too slow.
+const string ORISA = "ORISA";       
+``` 
+
+It's much faster and more efficient to use an integer, or `int`. It's so useful that integers are used for this all the time.
+
+```cpp
+const int ZENYATTA = 0; // Nope, too slow.
+const int ORISA = 1;
+const int MERCY = 2;
+const int DOOMFIST = 3;
+...
+const int SOMBRA = 21;       
+``` 
+
+You can imagine with more than three or four of these it becomes a lot of typing and hassle to hand number a whole list, define each one as `const int`, change all the numbers if you add one in the middle, etc. That's where we use `enum` to save work.
+
+```cpp {linenos=inline}
+enum Heroes {
+  ZENYATTA,
+  ORISA,
+  MERCY,
+  DOOMFIST,
+  JUNKRAT,
+  TRACER      //  and so on
+}
+  
+```
+
+### Numbering And Use Of Enums
+
+.. 
 
 ## Literals
 
