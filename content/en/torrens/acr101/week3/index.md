@@ -1,7 +1,7 @@
 ---
 title: "Week 3: Pixel Art"
 linkTitle: "W.3 Pixel Art"
-weight: 20
+weight: 30
 description: >
   The styles and techniques of the sprite era.
 resources:
@@ -19,18 +19,13 @@ Download my a PDF of the updated [week3 powerpoint slides](ACR101_Week_3_Pixel_A
 This week, don't click to follow along :D
 {{< /imgproc >}}
 
-## In Class Final Activities:
-
-### Daily Speedpaint
-
-**EXAMPLE PICS**
+## Due This Week
 
 ### Create A Character Sprite
 The details are in the powerpoint.
 1. Create a **post in your Journal** (linked from assessment 3 on [Blackboard](https://laureate-au.blackboard.com/)) for "Week 3 Sprite"
 2. Post your final image and subject/style reference used.
 
-**EXAMPLE SPRITES**
 
 ## Last Week:
 
