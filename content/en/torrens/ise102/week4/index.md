@@ -248,7 +248,7 @@ enum Heroes {
 
 ### Numbering And Use Of Enums
 
-.. 
+Read on in [Capter 1 of the textbook](../resources/cpp_through_games_1.pdf), where Enumerations are discussed from **page 29**.
 
 ## Literals
 
