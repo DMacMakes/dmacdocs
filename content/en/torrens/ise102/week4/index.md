@@ -30,7 +30,7 @@ Before we look at `for` loops, we'll need to understand a more compact way of **
 Setting the <i>initial</i>, or first value of a variable. The simplest and oldest way to do this is by assigning a value with `=`. So far, we've usually done this on a new line.
 {{< /alert >}}
 
-```cpp {linenos=inline }
+```cpp 
 temperatureInCelsius = 25.4f;         // Perhaps a setting for a thermostat
 playerConnected = false;              // Your connection dropped.
 ```
@@ -40,7 +40,7 @@ playerConnected = false;              // Your connection dropped.
 <i>Declaring</i> a variable is asking C++ to create one for you. You provide the _data type_ and _variable name_. You can also, optionally, make it a _constant_ and/or _initialise_ it.
 {{< /alert >}}
 
-```cpp {linenos=inline }
+```cpp 
 
 // Declaration looks like:
 //  type name;
