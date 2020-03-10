@@ -251,7 +251,7 @@ This week you will **submit part your homework code**!.
       - To **find** `main.cpp` right click your project name in the _solution explorer_ and click _open folder in file explorer_
 
 ```
-  **Played an exciting game**"
+  **Played an exciting game**
   
   Do you want to play again?
   1. Play again

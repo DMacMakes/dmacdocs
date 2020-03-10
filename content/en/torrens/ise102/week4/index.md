@@ -111,7 +111,7 @@ A for loop puts them all together, at the start of the loop.
 
 #### Exercise: For Loop Age Code
 
-1. Create a new `ise102_console` project, _You_old_ 
+1. Create a new `ise102_console` project, _You\_old_ 
 2. Open main.cpp and enter the code below by:
    - First using the `while` loop style 
      - Enter everything except **lines 17-22**
