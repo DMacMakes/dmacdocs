@@ -37,7 +37,7 @@ playerConnected = false;              // Your connection dropped.
 
 
 {{< alert title="Definition: Declare" color= "primary" >}}
-<i>Declaring</i> a value is asking C++ to create one for you. You provide the _data type_ and _variable name_. You can also, optionally, make it a _constant_ and/or _initialise_ it.
+<i>Declaring</i> a variable is asking C++ to create one for you. You provide the _data type_ and _variable name_. You can also, optionally, make it a _constant_ and/or _initialise_ it.
 {{< /alert >}}
 
 ```cpp {linenos=inline }
@@ -111,7 +111,7 @@ A for loop puts them all together, at the start of the loop.
 
 #### Exercise: For Loop Age Code
 
-1. Create a new `ise102_console` project, _You_old_
+1. Create a new `ise102_console` project, _You_old_ 
 2. Open main.cpp and enter the code below by:
    - First using the `while` loop style 
      - Enter everything except **lines 17-22**
