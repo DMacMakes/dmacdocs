@@ -44,16 +44,16 @@ You can choose **installer or portable** from the dropdowns on the download page
 Only try one pack at a time, and delete any you don't use. Too many brushes is the enemy of good brush use!
 
 ### Zedig 1
-Zedig/Diboine's [two main brushes](https://www.deviantart.com/zedig/art/Alexandre-Diboine-Brushes-810233537) now (requires deviantart login for download):
+Zedig/Diboine's [two main brushes](zedig_two_current_brushes.zip) now (requires deviantart login for download):
 ![Diboine 2 pack](https://66.media.tumblr.com/55f7f5172f93984801a8db772a5a865a/tumblr_ojgxkzcoFp1sqh0kno1_1280.jpg)
 
 ### Zedig 2
-Zedig's [painty brushpack 3.0](https://www.deviantart.com/zedig/art/A-lot-of-people-have-been-asking-for-my-brushpack-445828615):
+Zedig's [painty brushpack 3.0](zedig_painty_pack_3.zip):
 
 ![Zedig Brush pack 3](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/b66a7a73-2718-4579-8467-919992645d7c/d7dfnk7-0fc4cdd1-303d-4355-bec0-e650beaf0649.jpg)
 
 ### Loish 1
-The [Loish brush set](https://gumroad.com/l/wdOlf)
+The [Loish brush set](The_Loish_Brushset.zip)
 
 ![Losh brushset](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/a0367442-a7cf-4b5e-9b2a-585e6d98ce8d/d7wdhh8-d2637df0-e192-436e-80b1-2f255d195c42.jpg)
 
