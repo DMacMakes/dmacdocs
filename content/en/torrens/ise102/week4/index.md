@@ -267,7 +267,7 @@ This week we:
 
 ## Homework:
 
-1. Read the beginning of [Chapter 3](../resources/cpp_through_games_3.pdf) and  until you really understand for loops, even nested ones.
+1. Read the beginning of [Chapter 3](../resources/cpp_through_games_3.pdf) (up to **page 82**) until you really understand for loops, even nested ones.
     - Take notes
     - Write small code tests to check your understanding!
     - Keep at it till you totally get `for` loops, even nested ones.
