@@ -18,7 +18,7 @@ The people already in the industry share a few qualities. They are:
 
 The only way I can get you guys there is by directing your focussed, hard work. Right now, that's not happening enough.
 
-### How We'll Get Productive
+### How To Get There
 
 | Productive                          | Not Productive                            |
 |------------                         |----------------                           |
