@@ -16,7 +16,7 @@ The people already in the industry share a few qualities. They are:
 * self critical
 * super driven
 
-The only way I can start you guys along that path is leading you into the right kind of focussed, hard work to get better, fast. Right now, that's not happening.
+The only way I can get you guys there is by directing your focussed, hard work. Right now, that's not happening enough.
 
 ### How We'll Get Productive
 
@@ -27,11 +27,13 @@ Productive class time:
 | Building on what we learn in class and bringing the results to the next class    | Having nothing ready to go when class starts.                |
 | Examining and working through problems. Double checking previous lecture notes and trying the application help/web help.   |  Asking for the solution or giving up before you've tried.                         |
 | Working along with the class and asking questions about the new material | Getting lost and asking to cover old material because you haven't read the notes, watched the videos or taken part. |
-| Getting distracted but recovering, chilling during breaks so you're focussed | Sharing your distraction mid class.                  |
+| Getting distracted but **recovering**. Centering during breaks so you're focussed again. | Sharing your distraction in class. Committing to giving up and spending 3 hours chipping away at the whole room's chance of getting into a flow. |
 | Knowing its on us to get better every day.   | Hoping 3 hours a week will do much beyond showing us what work there is to do, and what to learn at home. |
 
-{{< alert title="Manage Your Class Time" color= "primary" >}}
-Remember, since you're not at school, you can take a break *any time*.  If class is too much, take a break, wander outside, it's up to you. 
+{{< alert title="Be Where You Need To Be" color= "primary" >}}
+Remember, since you're not at school, you can just _take a break any time_. We don't confine you like a school. If you're disconnecting and you can't wrestle it back in here, walk out, find somewhere you can: that's on you to solve now as an adult. If you're done, go sit in the sun with a coffee, or go to level 1 and watch videos somewhere you won't be shooshed. 
+
+It's just.. _confusing_ and weird when you rebel in here, because I'm literally the only person here who actually gets in trouble if I bail. 
 {{< /alert >}}
 
 If you don't succeed in seeing and take those opportunities yourself, you will be asked to.
