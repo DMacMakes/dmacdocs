@@ -151,6 +151,7 @@ Soft inner edges, hard texture border edges.
 
 Before you export:
 * Use one material on all game res assets: game_meshes_mat
+* Ensure your UVs all fit within 0-1 uv space (the first square)
 * _Freeze_ scale and rotation on all models (_modify -> freeze transforms -> [ ]_)
 * Select all _subd meshes and **press** `3` for _smooth preview_
 * Add _subdiv to the end of all your subd mesh names (eg sign_frame_subd, cable_subd)

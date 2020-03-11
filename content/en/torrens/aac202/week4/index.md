@@ -6,12 +6,21 @@ description: >
   Turning 3D art into playable game assets means exporting to a real time **game engine**. Today we'll learn how to move our models from Maya and Painter into Unreal/Unity. From there you can light and screenshot them for your **final deliverables** of Assessment 1.
 ---
 
-<!--## Productive Class Time
+## Productive Class Time
 
  
-It's week 4 of a second year class, and we're here learning to do something very difficult. The amount of expertise you need to have any chance in game art is high: the people already in the industry are self sufficient and super driven. 
+We're here learning to do something extremely hard, in week 4 of a second year subject. The amount of knowledge and ability you need to have any chance in game art now is higher than it's ever been. 
 
-The only way I can help you guys get on that path is through focussed hard work.  Here's how we can get seriously productive in class:
+The people already in the industry share a few qualities. They are:
+* self reliant
+* self critical
+* super driven
+
+The only way I can start you guys along that path is leading you into the right kind of focussed, hard work to get better, fast. Right now, that's not happening.
+
+### How We'll Get Productive
+
+Productive class time:
 
 | Productive                          | Not Productive                            |
 |------------                         |----------------                           |
@@ -25,26 +34,39 @@ The only way I can help you guys get on that path is through focussed hard work.
 Remember, since you're not at school, you can take a break *any time*.  If class is too much, take a break, wander outside, it's up to you. 
 {{< /alert >}}
 
+If you don't succeed in seeing and take those opportunities yourself, you will be asked to.
 
-If you don't see and take those opportunities yourself, I'll ask you to.
--->
 ## Finalising Models And Exporting
 
-Errors:
-  - If you haven't read through updated week 3 notes, you're behind.
-    - Read those (don't skim), before asking any questions.
-  - Fixing any freaky smooth preview behaviour
-  - Can't unfold/uv game res because errors
+Open your Maya projects. We're going to try to resolve any problems you're having exporting your files for baking in Painter.
 
-Exporting:
+First, if you:
+- Don't know what meshes to make or what to export, then it's very possible you haven't carefully read through the updated week 3 notes that were mentioned in the announcement sent out on Saturday: 
+  - Read those (don't skim), and check if your question was already answered.
+    - Grab and examine the updated Maya project.
+  
+  https://dmdocs.netlify.com/torrens/aac202/week3/#how-it-all-works
+  
+Other problems we'll look at:
+  - Fixing any weird subds and smooth preview errors
+  - Errors stopping Maya unfolding/laying out your game mesh.
+  - Everything looks to be set up right.. but the bake is failing/has errors  
+  - It's baking but the result still looks low poly
 
-Checklist:
+### Updated Arcade Stick Files
+
+These also contain the baking project you'll use today to import your model.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ETl9ulaSrI9LlLCR05OObgoBjILw7NO0KUpV_aFLyMV66w?e=HFsDQb">Arcade Stick V2 Maya<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EbGYxoT6oiNLlvRKy42Gt-gBla0ZvIzXG04Akn0MG_GzLA?e=SsJOGf">Arcade Stick V2 Painter<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Substance
 
-* link coming for recent UI tute
-* Look through Joystick scene
-* Download demo scene I've prepared. White, then with maps, then textured, then with textures but no maps
+First, looking through the updated arcade stick scene.
+
+{{< imgcard arcade_stick_baked_painter Link "arcade_stick_baked_painter.png">}}
+Wireframe over normal mapped game mesh, normal mapped game mesh, roughly textured game mesh.
+{{< /imgcard >}}
 
 ### Starting With Configured Scene
 
@@ -54,10 +76,9 @@ First, in _Maya_ (as in week 3 notes):
 * Append _game to the end of all your game mesh names (as above)
 * Append _subdiv to the end of all your subd mesh names (as above)
 * rename the material on your game meshes to game_meshes_mat
+* Ensure your UVs all fit within 0-1 uv space (the default square in UV editor)
 * export all subd meshes together as a single file (eg `joystick_parts_subd.fbx`)
 * export game meshes together (eg `joystick_parts_game.fbx`)
-
-
 
 In _Painter_:
 * Open the `firstname_lastname_baking.spp` scene.
