@@ -20,8 +20,6 @@ The only way I can get you guys there is by directing your focussed, hard work. 
 
 ### How We'll Get Productive
 
-Productive class time:
-
 | Productive                          | Not Productive                            |
 |------------                         |----------------                           |
 | Building on what we learn in class and bringing the results to the next class    | Having nothing ready to go when class starts.                |
