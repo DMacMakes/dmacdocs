@@ -150,20 +150,21 @@ Soft inner edges, hard texture border edges.
 ### Export FBX
 
 Before you export:
-* Single material on game res assets
-* Freeze scale and rotation on all models
-* Select all _subd meshes and press 3 for smooth preview
-* Two versions of each mesh: one ending in _subd, the other in _game
+* Use one material on all game res assets: game_meshes_mat
+* _Freeze_ scale and rotation on all models (_modify -> freeze transforms -> [ ]_)
+* Select all _subd meshes and **press** `3` for _smooth preview_
+* Add _subdiv to the end of all your subd mesh names (eg sign_frame_subd, cable_subd)
+* Add _game to the end of all your game mesh names (eg sign_frame_game, cable_game)
 
 {{< imgcard mesh_naming_outliner Link "mesh_naming_outliner.png" >}}
 Identical names with different suffixes
 {{< /imgcard >}}
 
-* export all subd meshes together
-* export game meshes together
+* export all subd meshes together as a single file (eg `joystick_parts_subd.fbx`)
+* export game meshes together (eg `joystick_parts_game.fbx`)
 
 {{< imgcard maya_export_fbx_subd_painter Link "maya_export_fbx_subd_painter.png" >}}
-Naming the two files: identical except for the <code>_subd</code> and <code>_game</code> suffixes. Note file sizes difference.
+One file for all your <code>_subd</code> and <code>_game</code> suffixes. Note file sizes difference.
 {{< /imgcard >}}
 
 * Exporting subds with smoothing automatically applied
