@@ -6,11 +6,9 @@ description: >
   Turning 3D art into playable game assets means exporting to a real time **game engine**. Today we'll learn how to move our models from Maya and Painter into Unreal/Unity. From there you can light and screenshot them for your **final deliverables** of Assessment 1.
 ---
 
-## Productive Class Time
+<!--## Productive Class Time
 
-
-
-<!-- 
+ 
 It's week 4 of a second year class, and we're here learning to do something very difficult. The amount of expertise you need to have any chance in game art is high: the people already in the industry are self sufficient and super driven. 
 
 The only way I can help you guys get on that path is through focussed hard work.  Here's how we can get seriously productive in class:
