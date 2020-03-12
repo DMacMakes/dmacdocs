@@ -93,7 +93,7 @@ Smoothed and unsmoothed views of the subd meshes (button and trim) and one view 
    * It has more geometry than we need in the game, even when viewed in normal view, because of the extra loops and edges.
    * We try to stick to **quads** (rectangles) that **flow** around the model.
    * When _Maya_ **exports** this mesh it **subdivides** it several times, creating a very large number polygons.
-   * These only exist to be **analysed and discarded** by _Substance Painter_ in the creation of normal maps, which will be applied to the game mesh.
+   * **DO not need UV maps**. These only exist to be **analysed and discarded** by _Substance Painter_ in the creation of normal maps, which will be applied to the game mesh.
 2. **Game meshes**. 
    * `a_button_trim_game` and `a_button_game`
    * These are never smoothed
@@ -101,6 +101,7 @@ Smoothed and unsmoothed views of the subd meshes (button and trim) and one view 
    * They have **fewer polygons** than their equivalent subd mesh (even unsmoothed). This **improves frame rate**.
    * Triangles are no problem
    * They will go in the game and use a normal map.
+   * To accept the normal map **game meshes need to be UV mapped.**
 
 {{% alert title="Disambiguation: button and trim " color= "primary" %}}
 The button and trim are two meshes used to create a whole button unit. Each has a subd variant and a game variant.
@@ -125,7 +126,7 @@ Here are some snippets of the normal map representing the button
 
 ## UV Mapping
 
-We did a fair bit of this in ACR103:
+You only need **UV maps on your game mesh**. Your subd mesh dos not need them.
 
 1. Create starting UVs with Camera Projection
 2. Select edges to create seams, delineate UV islands
@@ -133,6 +134,12 @@ We did a fair bit of this in ACR103:
 4. View checkerboard texture and uv distortion info to assess results
 5. Repeat steps 2 through 4 to remove as much distortion in checkers as possible
 6. Layout/Arrange islands to reduce wasted texture (part automated, part manual)
+
+{{< alert title="Critical: Freezing, Deleting History" color= "danger" >}}
+Modify -> Freeze transforms [] the scale and rotation on (first) all your objects and (second) all your groups. Any scaling and rotation will make <i>unfold</i> and <i>layout</i> produce skewed/uneven results.
+
+<i>Edit->Delete all by type -> history</i>, _unfold_ and _layout_ will be easily derailed by history.
+{{< /alert >}}
 
 ### Hard And Soft Edges For Normal Mapping
 

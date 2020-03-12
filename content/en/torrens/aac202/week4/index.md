@@ -73,12 +73,13 @@ Wireframe over normal mapped game mesh, normal mapped game mesh, roughly texture
 I've created a _Substance Painter_ project you can use for baking.  The settings are already tweaked for our workflow and for checking the quality of the baked maps. There are a few straightforward steps to using it:
 
 First, in _Maya_ (as in week 3 notes):
-* Append _game to the end of all your game mesh names (as above)
-* Append _subdiv to the end of all your subd mesh names (as above)
+* Append `_game` to the end of all your game mesh names (as above)
+* Append `_subdiv` to the end of all your subd mesh names (as above)
 * rename the material on your game meshes to game_meshes_mat
-* Ensure your UVs all fit within 0-1 uv space (the default square in UV editor)
-* export all subd meshes together as a single file (eg `joystick_parts_subd.fbx`)
-* export game meshes together (eg `joystick_parts_game.fbx`)
+* Ensure your **game mesh has been UV mapped** and unwrapped. The **subd mesh doesn't require a uv map.**
+* Ensure your game mesh UVs all fit within 0-1 uv space (the default square in UV editor)
+* export all `subd meshes` together as a `single file` (eg `joystick_parts_subd.fbx`)
+* export game meshes together as another single file (eg `joystick_parts_game.fbx`)
 
 In _Painter_:
 * Open the `firstname_lastname_baking.spp` scene.
