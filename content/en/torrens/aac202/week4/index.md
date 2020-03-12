@@ -127,6 +127,36 @@ If your bake succeeds, Painter connects all the new textures.
 
 We'll step through these.
 
+## Deliverable This Week
+
+You'll create images and submit them in an archive with one of your scene files.
+
+###  Painter images
+Pic a 2 or 3 camera angles to show off your object. For each one, capture at least two images:
+
+1: Object with normal maps enabled, using default white material.  
+2. The same again with wireframes enabled.  
+3. This time turn on any materials you’ve applied, and turn off wireframes.  
+
+###  Maya Images
+Hide your game meshes, unhide all your subd meshes. Pick two angles and take screen shots with `wireframe on shaded` enabled and:
+1. Normal view enabled (press `1`)
+2. Subd smoothing enabled (press`3`)
+
+### Scene File
+Do **one** of the following:
+
+1: If you successfully bake your textures, submit your *Painter* `spp` file.
+2: Otherwise submit your *Maya* `.ma` or `.mb` scene file
+
+### Archive  
+1. Gather your images and scene file in one folder. **compress** the folder with `.7zip` or `zip`
+2. Name the archive:
+   `firstname_lastname_A1_AAC202.zip`
+3. Submit on Blackboards assessment 1 page.
+
+If you have trouble with the large file size, upload it to a service like *Dropbox* and submit the link.
+
 ## Texturing
 
 Mask by color selection.
@@ -139,22 +169,11 @@ Mask by color selection.
 * Post effects
   * Don't go overboard on these. It's a rabbit hole, and won't fix mesh problems :\
 
-### Week 4 deliverables
-
-Images:
-
-  * Painter
-    * Mesh with baking complete and wireframe over the top
-    * Mesh unbaked
-    * Mesh with baking complete, no wireframe.
-   
-Substance file
-If substance doesn't work out: Maya project.
-
 ### Summary
 1. Finalising models
 2. Exploring updated Arcade Stick files
-2. Importing meshes and baking high res details to texture maps.
-3. Exploring lighting.
+3. Importing meshes and baking high res details to texture maps.
+3. Deliverables
+3. Lighting/materials
 
 
