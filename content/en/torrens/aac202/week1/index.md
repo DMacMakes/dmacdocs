@@ -36,6 +36,55 @@ resources:
 Good holiday?
 {{< /imgproc >}}
 
+
+## NEW APPROACH
+
+Biggest cross-subject problem right now: assignments are due on a sunday, not 1 week after the class.
+
+W1: 
+- Do not teach about the game mesh or painter yet! Introduce once this first idea is rock solid.
+- Leave out "high" and "low" poly where possible. Use "unsmoothed" and "smoothed", "subdivided".
+- Pic an object from the provided concept in first hour.
+- Demo of SubD modeling. Understanding that the subd mesh has two views/states.
+- Together we model something step by step
+- They start on their model. Forget the whole planning angle, was too confusing. People mixed up all the meshes and though they thought they grocked the normals, it was usually misinterpreted.
+
+W2: 
+  - More subD modeling and refining, finishing
+  - Looking at problems people have
+  - Fixing one or two meshes for people in front of class
+  - Get it finalised. Name everything part1_subd, thing_subd.
+
+W3: 
+- Describe goal: lets make a game mesh that is as close as possible to our subd in smoothed mode.
+- You can start with a new mesh, or with a duplicate of the subd with all the supports removed.
+- Call parts part1_game, thing_game.
+- Key challenge? How do you model something in the same space as another model (the subd) and compare them?
+  - Using layers with R turned on
+  - Making objects visible/invisible
+  - game res prefers staying inside the high res.
+  - approximating smooth curves with minimal geometry (use example both big curves and tight curves)
+Our game res model is going to have texture maps generated from the geometry of the smoothed subdiv!
+Use always: Freeze modifiers, delete history! Especially important in UV.
+- Uv unwrapping game model.
+  - Recapping the unwrap process
+  - How to set up our normals:
+    - In edge mode, uv editor -> select -> select texture borders. Harden edges.
+    - Inverse edge selection. Soften edges.
+Has to be finishd this week. Post to journal.
+
+W4: 
+  - Work together demo: download and open painter demo scene. (maybe download all demo assets start of trimester?)
+    - scene has a baked button in it when opened
+    - edit -> project configuration, import a diff game meshes
+    - Texture Set Settings -> Bake Mesh Maps, select diff subd meshes
+    - Hit bake, see results.
+    - Explain that the game res  mesh is our true mesh, and the new normal maps we just got are generated from the high res.
+      - Diagram showing how it looks in front and behind, then uses angle of surface for x,y,z (r,g,b) values. 1,0,1 for purple.
+  - Do it with theirs, debug what's not working.
+Open painter sample scene
+
+
 ## AAC202 Overview
 
 * 2D for games
