@@ -234,6 +234,9 @@ Add to Two Times Calculator:
   * (A multiplicand is the second number in your multiplication)
 * A menu item for viewing the credits (as in who made the game).
 
+Add realtime shooting to free throw master by entering this (and filling in blanks)
+* code
+
 ## Summary
 
 This week we learned:
