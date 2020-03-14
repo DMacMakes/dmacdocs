@@ -228,13 +228,20 @@ From the _Online Etymology Dictionary:_
 
 ## Homework
 
-Add to Two Times Calculator:
+**Reading:** 
+Chapter 5, Mad Lib.
+
+[Chapter 5](../resources/book_cpp_through_games.jpg)
+
+
+**Add to** _Two Times Calculator_:
 * A constant for the multiplier (2)
 * A function that asks the user for and returns the multiplicand
   * (A multiplicand is the second number in your multiplication)
 * A menu item for viewing the credits (as in who made the game).
 
-Add realtime shooting to free throw master by entering this (and filling in blanks)
+**Add** realtime shooting to _free throw master_ 
+* by entering this (and filling in blanks)
 * code
 
 ## Summary
