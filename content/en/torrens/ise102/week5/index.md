@@ -1,7 +1,7 @@
 ---
-title: "5: Functions"
-linkTitle: "W.5 Functions"
-weight: 40
+title: "5: Functions 1"
+linkTitle: "W.5 Functions 1"
+weight: 50
 description: >
   Programs inside programs!
 ---
@@ -16,7 +16,7 @@ They're easy to create because they have the same basic components as their pare
 
 The function `twoTimes` takes a number and multiplies it by 2:
 
-{{< imgcard function_two_times_1 Link "function_two_times_1">}}
+{{< imgcard function_two_times_1 Link "function_two_times_1.png">}}
 Click to expand.
 {{< /imgcard >}}
 
@@ -27,7 +27,7 @@ Then, use `twoTimes` like a helpful program anywhere in `main()`!
 * `main()` has been where we write our programs
 * `twoTimes` is like a sub-program, and it runs when `main()` _**calls**_ it.
 
-{{< imgcard function_main_2x_1 Link "function_main_2x_1">}}
+{{< imgcard function_main_2x_1 Link "function_main_2x_1.png">}}
 Click to expand.
 {{< /imgcard >}}
 
@@ -41,7 +41,7 @@ A section of a computer program that is defined only once but can be used when r
 * Enter the code below **including comments**
 * Run it. Try a few other values.
 
-{{< imgcard code_two_times_1 Link "code_two_times_1">}}
+{{< imgcard code_two_times_1 Link "code_two_times_1.png">}}
 Click to expand.
 {{< /imgcard >}}
 
@@ -82,7 +82,116 @@ The most common are:
 * subprogram
   
 {{< /alert >}}
-## How Functions Work Together
+
+## Functions For Free
+
+> Writing functions save you a lot of work. Using someone else's functions though, that's even better!
+
+Places we get free functions:
+* Packaged with _C++_, in the _**Standard Library**_
+* Our work colleagues if you're at a company
+* Your friends if you're making a game as a team (**not in this course**)
+* _**Libraries**_ are downloadable collections of code and functions to do common tasks
+* _**Game Engines**_ like _Unreal_ are written in C++ and expose lots of functions.
+* _**APIs**_ are libraries written by organisations so we can use their service or device. Facebook, Arduino, PS4, Google all have _Application Programming Interfaces_
+
+### The Standard Library
+
+The keywords of the language give you the basic building blocks to make whatever you need.  That leaves out a lot of everyday things you might need though like:
+* reading files
+* generating random numbers
+* rounding off numbers
+* trigonometry and much more.
+
+The Standard Library functions are spread out in a number of library files, but all use the same `std` prefix.
+1: **include** the right **header** like `#include <cmath>`
+2: Either use `std::` or `using namespace std` to access the function. Now you know what that really means.
+
+> To find which header holds the function, google like so: for absolute values (turn a negative positive) google "absolute value C++" and click [abs - C++ Reference - Cplusplus.com](http://www.cplusplus.com/reference/cmath/abs/).
+
+### Handy Math For Games
+
+Here's Some very basic but very necessary math you don't want to have to code yourself.
+
+| Function  | Header      | Description                                                   | Type            | Link |
+|-----------|-------------|---------------------------------------------------------------|-----------------|------|
+| **abs**   | cmath       | Takes a number, returns the **positive value**  (-2 becomes 2)    | int, float etc  | [docs](http://www.cplusplus.com/reference/cmath/abs/)     |
+| **floor** | cmath       | Takes a decimal, returns **nearest lower** integer                | int, float      | [docs](http://www.cplusplus.com/reference/cmath/floor/)   |
+| **ceil**  | cmath       | Takes a decimal, returns **nearest higher** integer               | int, float      | [docs](http://www.cplusplus.com/reference/cmath/ceil/)    |
+| **srand** | cstdlib     | Takes a number, **seeds** random number generator                 | void            | [docs](http://www.cplusplus.com/reference/cstdlib/srand/) |
+| **rand**  | cstdlib     | Generates a **random number** from 0 to RAND_MAX                  | unsigned int    | [docs](http://www.cplusplus.com/reference/cstdlib/rand/)  |
+| **time**  | ctime       | **Time** in seconds since Jan 1 1970. Good seed for srand.        | time_t          | [docs](http://www.cplusplus.com/reference/ctime/time/)    |
+
+{{< imgcard cplusplus_ref_floor Link "http://www.cplusplus.com/reference/cmath/floor/" >}}
+Cplusplus.com reference for the <code>floor()</code> function
+{{< /imgcard >}}
+
+### Generating A Random Number
+
+Using `srand` to initialise the random number generator, and `rand()` to create numbers.
+
+{{< imgcard code_random_intro Link "code_random_intro.png">}}
+Randoms in their default range, then in the range 0-10.
+{{< /imgcard >}}
+
+### Seeding The Generator
+
+Computers are **designed to be extremely predictable**, to produce reliable results. Randomness and predictability don't go easily together, but algorithms and various inputs can be used to approximate randomness.
+
+* You can make them more random by feeding them seed values.
+* We used a very basic one: the time in seconds 1970. Every time we start the program that value will be different.
+* In fact the `rand()` function in c++ will always give the same series of randoms unless you give it different seeds.
+
+### Setting Your Own Range
+
+`RAND_MAX` is already set in the _Standard Library_. To adjust the result of `rand()` to a **custom range** we have to use maths. One easy way: use the **remainder** of whole integer division.
+
+{{< alert title="Modulus: The Remainder" color= "primary" >}}
+**Dividing** one whole number by another gives us two results: the _**quotient**_ and _**remainder**_. 
+
+_C++_ gives us the _quotient_ with the division operator `/`, and the _remainder_ with the modulus operator, `%`. Look at **10 divided by 3:**
+
+![modulus_10_over_3](modulus_10_over_3.png)  
+
+There are **3** (quotient) sets of 3 balls. **1** (remainder) is left over.
+
+**In _C++_:**
+```cpp
+int quotient = 10 / 3;  // quotient == 3
+int remainder = 10 % 3;    // remainder == 1
+```
+{{< /alert >}}
+
+#### Remainder as range
+
+The remainder of any number over 3 can only be 0, 1, or 2. This picture will help:
+
+{{< imgcard modulus_11_over_3 >}}
+There are <b>3</b> (quotient) sets of 3 balls. <b>2</b> (remainder) are left over.
+{{< /imgcard >}}
+
+We've had remainder 1, 2.. if we add another ball we'll have remainder 0. The rule then is:
+
+```cpp
+////  0, 1, 2 
+number0To2 = number % (3);
+
+//// 0,1,2,3
+number0To3 = number % (4);
+
+//// A pattern emerges..
+number0ToRange = number % (range + 1);
+
+```
+## Exercise: Adding Functions
+
+Upgrading _Randoms\_introduction_ with functions. I've written the structure, it's up to you to replace the missing code. The lines (__, _____) don't always match the length of the answer.
+
+{{< imgcard code_random_functions_gaps Link "code_random_functions_gaps.png">}}
+Click to expand.
+{{< /imgcard >}}
+
+## Strategy: Making Functions Work As A Team
 
 {{< imgcard heist_gang >}}
 Everyone has a job, one guy is the lead.
@@ -103,7 +212,7 @@ Everyone has a job, one guy is the lead.
     * Safe guy **opens** a lock
     * **Driver** drives a vehicle
 
-### Organised Teamwork
+### Top Down Organising
 
 If **Smart criminal** gave out the first job and everyone else just figured it out between themselves he wouldn't know things like:
 * Who's doing what
@@ -138,94 +247,6 @@ type functionName( type argument1, type argument2 )
 }
 ```
 
-## Exercise: Free Throw Master
-
-Enter it.
-
-{{< imgcard code_free_throw_master Link "code_free_throw_master.png">}}
-Click to expand the world's greatest basketball game.
-{{< /imgcard >}}
-
-The output:
-{{< imgcard output_free_throw_master Link "output_free_throw_master.png">}}
-Hi scores, realistic sports action.
-{{< /imgcard >}}
-
-### Benefits Of Functions
-
-Reuse: You don't have to duplicate code when you can wrap it in a function and use it as many times as you want.
-
-### Readability
-
-Windows 10 has over 50 million lines of code. Imagine if that was all inside `main()`. You could see it from the moon.
-
-You can have just a few function calls in `main()`, then each of those can call specialised functions and so on. You quickly get an overview of the program. Look, here's Windows 10!!
-
-```cpp
-/// Not really Windows 10
-int main()
-{
-  strint input = "";
-  bool shuttingDown = false;
-  
-  startUp();      // Start windows
-  while ( shuttingDown == false )  // If noone clicked shutdown
-  {
-    string input = checkInput();   // Keyboard tapping? Mouse clicking??
-    
-    if (input != SHUTDOWN_REQUEST) 
-    {
-      reactToInput(input);          // Do windows things
-    }
-    else
-    {
-      shuttingDown = true;          // Oh no, prepare for shutdown
-    }
-  }
-  shutDown();     // Thank you for using windows.
-  
-  return(0);
-}
-/// Just under 50 million lines of code continue below
-
-```
-
-{{< alert title="Going Deeper: Function life cycle" color= "primary" >}}
-When main calls a function, it's a bit like windows starting a program. 
-1. It sets up room in memory for the function to come to life, then lets it:
-   * set up variables, 
-   * do its job
-   * return data. 
-2. The _function_ ends, the memory is cleared along with variable values.
-3. Any future _function_ calls set up room in memory and repeat this process. Dust in the wind.
-{{< /alert >}}
-
-### Grouping Processing With Storage
-
-Imagine all your heist guys had all the information everyone else had, they'd be overloaded. What's explosives guy going to do with all the info about the network and cameras etc. 
-
-Humans work better with a limited set of data related to what they're doing right now. Functions let us put data next to the code we're using it with.
-
-**Question:** I understand a _function_ takes input, but.. is it required? We defined `highScore`, can't `showQuitMessage()` just use it??
-**Answer:** Nope. A _function's variables_ aren't visible to any other code. The game won't compile if you try to `cout << highScore` inside `showQuitMessage()`. This _compartmentalises_ things, making it much easier to see what code is changing what data.
-
-PICTURE OF FUNCTION SCOPE
-
-We refer to what a _function_ can see as its **scope**. A function's scope includes:
-   1. Variables declared in the parentheses aka the _arguments list_
-   2. Variables declared inside the _code block_ `{}` of the _function_.
-   3. _**Global**_ variables declared outside any codeblocks of any functions. Commonly after `#include` statements.
-
-{{< alert title="Origin Of Term: Scope" color= "primary" >}}
-From the _Online Etymology Dictionary:_
-
-**Scope:** "extent," 1530s, "room to act," 
-* from Italian _scopo_ "aim, purpose, object, thing aimed at, mark, target,"  
-* from Latin _scopus_,  
-* from Greek _skopos_ "aim, target, object of attention; watcher, one who watches" 
-  * suffixed form of root *_spek-_ "to observe." Sense of "distance the mind can reach, extent of view" first recorded c. 1600.
-{{< /alert >}}
-
 ## Homework
 
 **Reading:** 
@@ -233,16 +254,12 @@ Chapter 5, Mad Lib.
 
 [Chapter 5](../resources/book_cpp_through_games.jpg)
 
-
 **Add to** _Two Times Calculator_:
 * A constant for the multiplier (2)
 * A function that asks the user for and returns the multiplicand
   * (A multiplicand is the second number in your multiplication)
 * A menu item for viewing the credits (as in who made the game).
 
-**Add** realtime shooting to _free throw master_ 
-* by entering this (and filling in blanks)
-* code
 
 ## Summary
 
