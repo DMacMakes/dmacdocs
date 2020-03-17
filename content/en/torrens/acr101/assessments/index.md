@@ -28,7 +28,20 @@ For weekly Assessment 3 deliverablys check the **week's notes** (left nav, or to
 
 ## Assessment 1
 
-Coming soon (or check Blackboard)
+Character Portfolio.
+
+[Brief on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/15620432?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27ACR101%2520Assessment%25201.2019113.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200317T031337Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200317%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=c5aaccaf0afc2a3bd67edab1aae8b46fd04f124aef5e70a995bd6001318eb738)
+
+### Filling 12 Pages
+
+Some ideas:
+* silhouettes of various design ideas
+* more silhouettes exploring your pick of those early ones
+* drawings of character from silhouettes, exploring colour palettes
+* Realistic vs styled
+* character posed in common scenarios they’d likely be in (wolverine yelling at kids, pikachu shorting out his switch)
+* turnaround
+* show the exploration of faces/hairstyles/outfits along the way
 
 ## Assessment 2
 

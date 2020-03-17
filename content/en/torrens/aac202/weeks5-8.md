@@ -46,6 +46,7 @@ How to character bust from base mesh.
 Further Learning:
   - More Saint videos
   
+file:///W:/repos/dmcgits.io/mds/ACR103/week10_notes_2018.html
 
 ## Week 7: Character sculpting 3
 
