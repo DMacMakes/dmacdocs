@@ -191,61 +191,7 @@ Upgrading _Randoms\_introduction_ with functions. I've written the structure, it
 Click to expand.
 {{< /imgcard >}}
 
-## Strategy: Making Functions Work As A Team
 
-{{< imgcard heist_gang >}}
-Everyone has a job, one guy is the lead.
-{{< /imgcard >}}
-
-**Heist movies** usually go something like this:
-* **Smart criminal** guy decides to do The Big One/The Very Last One and puts together a crew
-* Then there's planning, arguing, people walking out etc
-* They get serious and everyone is given instructions by **Smart criminal**. They either:
-  * Get something important for the job
-    * **Distractingly attractive lady** gets Id from rich jerk
-    * **Hacker** gets security codes and camera ids
-    * **Unhappy employee** draws a layout of the cameras and their blindspots, intel on staff.
-    * **Explosives guy** gets.. explosives.
-  
-  * Do something important for the job
-    * **Loud comedian** runs a distraction
-    * Safe guy **opens** a lock
-    * **Driver** drives a vehicle
-
-### Top Down Organising
-
-If **Smart criminal** gave out the first job and everyone else just figured it out between themselves he wouldn't know things like:
-* Who's doing what
-* If the heist is going to work out
-* Who's selling out the plan to cops/other crooks
-* Who's secretly stashing half the loot
-
-So he deals with each person one by one:
-* Each team member is given only the **information they need to know** for their specialty
-* They return the information/goods to him **directly**
-* He then **passes on** some of what he's learned to the **next team member**
-* They can then subcontract out some work on that limited task/info when necessary
-
-1. **Smart criminal** tells **Attractive lady** about _rich jerk_, and she brings back his _ID Card_
-2. **Smart criminal** gives **Hacker** the _ID Card_, and he gets _camera ids_ and _security codes_
-3. **Smart criminal** gives **Unhappy employee** the _security codes_, and he uses them to access secure areas and map out _camera locations_
-.. and so on.
-
-### The Contract
-
-How do you get a bunch of goons you don't trust to do what you need done? Through clear, limited agreements. Look again at a _function_ declaration and a _function_ call: you can see that a well written function defines a contract:
-1. Its abilities are in the name, usually a _verb_.
-2. The _argument_ or _parameter_ list defines the minimum input it needs to do the work.
-3. The function's _type_ tells you what you are guaranteed in return. `int twoTimes()` is required to `return` an `int`.
-
-```cpp
-type functionName( type argument1, type argument2 )
-{
-  type outputVariable;
-  // do things
-  return ( outputVariable );
-}
-```
 
 ## Homework
 

@@ -37,6 +37,11 @@ Themes:
 
 See end of slides PDF.
 
+## Due This Week
+
+1. Add silhouettes of your character design to character portfolio
+2. Add silhouettes and reflect on the learning experience in your journal.
+
 ## Last Week:
 
 [Due in Week 3](../week3/#due-this-week)
