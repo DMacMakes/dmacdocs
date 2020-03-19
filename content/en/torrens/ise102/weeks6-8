@@ -1,0 +1,29 @@
+# Ensuring Assessment 2 preparedness
+
+Getting us from here to slot machine in 3 weeks.
+
+- Describe slot machine on Assessments page
+- Discuss with class
+- Game loop in game loop template, show a little centralised function calling/data handling. Make a graphic.
+- Teach about scope, breaking up a problem. Find a good video.
+- 
+
+## Week 6
+
+  - Talk about assessment
+  - Template to build from? Bringing together things we made?
+  - Links to resources each week about implementation: switch, rand, srand, betting rules, clearing screen, laying out in ascii.
+  
+Functions 2:
+  - Putting functions below main?
+  - Reading book
+  - The heist aka project manager: giving out work, getting data back, passing it on.
+  - Benefits: easy to read/debug main. Single function does a single job.
+
+Exercise: Write out the core of our slot machines. It's just a series of function calls and handler functions.
+
+Testing:
+  - Make sure main logic runs:
+    - call functions and get data back, pass on
+    - functions can start out as stubs: they return whatever you want, so you can test `main()`
+    - This can be our 

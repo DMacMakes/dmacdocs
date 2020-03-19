@@ -62,57 +62,49 @@ type functionName( type argument1, type argument2 )
 }
 ```
 
-## Exercise: Free Throw Master
+## Assessment 2: Slots
 
-Enter it.
 
-{{< imgcard code_free_throw_master Link "code_free_throw_master.png">}}
-Click to expand the world's greatest basketball game.
+
+## Exercise: Slots Skeleton 1
+
+Looking at the brief and building the skeleton of a plan. A bit like putting a core team together and filling it out.
+
+{{< imgcard code_slots_skeleton_1 Link "code_slots_skeleton_1.png">}}
+Click to expand.
 {{< /imgcard >}}
 
 The output:
-{{< imgcard output_free_throw_master Link "output_free_throw_master.png">}}
+{{< imgcard output_slots_skeleton_1 Link "output_slots_skeleton_1.png">}}
 Hi scores, realistic sports action.
 {{< /imgcard >}}
 
-### Benefits Of Functions
+### Benefits 1: Readability
 
-Reuse: You don't have to duplicate code when you can wrap it in a function and use it as many times as you want.
+With other functions on hand, and well planned roles for each, `main()` becomes **a short summary of your program**.
+Main() here is short and readable. Functions do a single job.
 
-### Readability
+{{< imgcard code_main_ss_1 Link "code_main_ss_1.png">}}
+Click to zoom
+{{< /imgcard >}}
 
-Windows 10 has over 50 million lines of code. Imagine if that was all inside `main()`. You could see it from the moon.
+### Reuse
 
-You can have just a few function calls in `main()`, then each of those can call specialised functions and so on. You quickly get an overview of the program. Look, here's Windows 10!!
+Blah
 
-```cpp
-/// Not really Windows 10
-int main()
-{
-  strint input = "";
-  bool shuttingDown = false;
-  
-  startUp();      // Start windows
-  while ( shuttingDown == false )  // If noone clicked shutdown
-  {
-    string input = checkInput();   // Keyboard tapping? Mouse clicking??
-    
-    if (input != SHUTDOWN_REQUEST) 
-    {
-      reactToInput(input);          // Do windows things
-    }
-    else
-    {
-      shuttingDown = true;          // Oh no, prepare for shutdown
-    }
-  }
-  shutDown();     // Thank you for using windows.
-  
-  return(0);
-}
-/// Just under 50 million lines of code continue below
+## Exercise: Slots Skeleton 2
 
-```
+Adding in betting (including function), more description of function body from brief.
+
+{{< imgcard code_slots_skeleton_2 Link "code_slots_skeleton_2.png">}}
+Click to expand.
+{{< /imgcard >}}
+
+The output:
+{{< imgcard output_slots_skeleton_2 Link "output_slots_skeleton_2.png">}}
+Hi scores, realistic sports action.
+{{< /imgcard >}}
+
 
 {{< alert title="Going Deeper: Function life cycle" color= "primary" >}}
 When main calls a function, it's a bit like windows starting a program. 
@@ -152,6 +144,8 @@ From the _Online Etymology Dictionary:_
 
 ## Homework
 
-**Add** realtime shooting to _free throw master_ 
-* by entering this (and filling in blanks)
-* code
+**Replace psuedocode** in _slots skeleton 3_ 
+**Add** a function to show the 3 random numbers (just fake the data).
+**Add** an enum for outcome of spin: no win, pair, three of a kind, three sevens.
+**Return** an int from the function for the outcome (something from the enum)
+**Reading** needed to get functions dialled now. 
