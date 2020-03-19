@@ -1,7 +1,7 @@
 ---
-title: "5: ZBrush"
-linkTitle: "W.5 ZBrush"
-weight: 50
+title: "6: ZBrush"
+linkTitle: "W.6 ZBrush"
+weight: 60
 description: >
   ZBrush is a critical tool for modern games studios; it's also the best way to sculpt on a computer.
 ---
@@ -29,7 +29,7 @@ description: >
 
 (pics of brushes, scultped objects, wireframes)
 
-**VID OF zbrush timelapse**
+**VID OF zbrush sculptish timelapse**
 
 ### From Film To Games
 
@@ -39,6 +39,8 @@ Many wrinkly monsters, festy zombies and gnarled trees in film have been created
 * Won Oscar for contribution to film effects
 * GPU accelerated normal maps came along, you could now steal the details from those high res models and approximate them on game models.
 * Unreal engine (and whatever doom 3 was on??)
+  
+**PICS of wrinkly movie monsters, pref really zbrushed.**
   
 **PICS OF DOOM 3, OTHER EARLY NORMAL MAP TITLES**
 
@@ -51,19 +53,58 @@ Using ZBrush on the uni computers or your own.
 * Open a **STARTING SCENE I PROVIDE**
 * Import the settings I give out (basic right click nav, not saving undo)
 * Navigate
+  - Right drag tumble
+  - Right drag shift snap top/front/left etc
+  - alt-right-drag pan
+  - ctrl-right-drag zoom
 * Save settings.
 
 First marks:
+* On provided sphere
 * Standard brush. Dam standard.
 * Move brush
 
 Adding mass:
+* Still on sphere
 * Clay buildup, Inflate
 * Smooth brush
+* Snake hook elastic?
 
-More cleaning:
+More cleaning, subtools:
 * Trim Dynamic, HPolish
-* Pinch
+* Pinch (on dam standard)
+* Switch to cube subtool, solo.
+* trim dynamic, hpolish the corners
+* Now smooth, pinch
+
+Pixelation?? Subdivision up down
+
+## Free play
+
+Play around and make something. Ideas:
+
+* Mad ballz
+* Heart
+* Cake
+* Floaty droid (maybe light sabre practise thing from star wars?)
+* Muscley torso.
+  
+## More Basics
+
+Auto masking:
+* switch to skinny object
+* Show how sculpting damages back faces
+* Backface auto masking
+* Inflate brush (without backface mask)
+
+Different Materials:
+* how materials affect our perception: detail pops when shiney, not matte.
+* Stylised materials a little
+* Colours vs material
+
+Getting Out Of Trouble
+* things aren't moving - Lost edit mode (hit t)
+* 
 
 Watch out:
 * Exiting edit mode by mistake (T)
@@ -81,24 +122,22 @@ Watch out:
 Offer selection.
 If your own character's head is very well realised in multiple angles, you can make them (without hair)
 
+## Learning Resources
+
+### Docs
+
+Link to key zb docsumentation
+
+### Videos
+Link up:
+ZClassroom (specific videos)
+Michael Pavlovic Intro
+Shane Olsen (does a sculpt in 3 hours each stream with Pixologic)
+Follygon
+
 -----
 
-j## My Notes
+## Week 6 Deliverables for Assessment 2
 
-## PBR rendering
-Our goal is to get the model/s Rendered nicely with PBR textures.
-
-Painter is an option if time is short. 
-
-Ideally we go out to a game engine:
-1. Pick a renderer: Unreal? Unity?
-1. Export our model from Maya/Painter into a format our renderer accepts
-2. Import into our renderer, apply lighting and settings.
-3. Beautify
-4. Capture screenshots for Journal/Forum.
-
-## Week 4 Deliverables for Assessment 1
-
-Put the details here, link to here from assessments page 
-
+Post the results of your noodling to the forums.
 
