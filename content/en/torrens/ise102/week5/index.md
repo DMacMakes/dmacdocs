@@ -191,22 +191,6 @@ Upgrading _Randoms\_introduction_ with functions. I've written the structure, it
 Click to expand.
 {{< /imgcard >}}
 
-
-
-## Homework
-
-**Reading:** 
-Chapter 5, Mad Lib.
-
-[Chapter 5](../resources/book_cpp_through_games.jpg)
-
-**Add to** _Two Times Calculator_:
-* A constant for the multiplier (2)
-* A function that asks the user for and returns the multiplicand
-  * (A multiplicand is the second number in your multiplication)
-* A menu item for viewing the credits (as in who made the game).
-
-
 ## Summary
 
 This week we learned:
@@ -218,3 +202,12 @@ This week we learned:
   * Passing arguments
   * Descriptive function names
   * Returning values.
+
+## Homework
+
+**Add to** _Two Times Calculator_:
+* A constant for the multiplier (2)
+* A function that asks the user for a number.
+* Multiply that number by 2 and tell them the result.
+  
+
