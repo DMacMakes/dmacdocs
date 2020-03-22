@@ -85,7 +85,6 @@ Wowser (aka yellow cat) turnaround.
 
 How do they express? Can it be done without their face growing outside of a set texture area? Counter question: can we use a shader to emote with colour?
 
-
 {{< imgcard wowsers_facial Link "wowsers_facial.png">}}
 The express with sticker faces, colour gradients, ball changes?
 {{< /imgcard >}}
