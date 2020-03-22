@@ -19,7 +19,11 @@ Octo-pony
 {{< /imgcard >}}
 
 {{< imgcard options_chunkies Link "options_chunkies.png">}}
-caption
+Chunkies
+{{< /imgcard >}}
+
+{{< imgcard options_leftovers Link "options_leftovers.png">}}
+Leftovers!
 {{< /imgcard >}}
 
 ## Choices
@@ -75,7 +79,13 @@ Turnaround: front view is 3D, others painted.
 Wowser (aka yellow cat) turnaround.
 {{< /imgcard >}}
 
-## First era: stone age 
+## Eras
+
+3 options for workers in each era, then 5 levels of worker.
+Options and 3 levels for era feature character.
+
+
+### Era 1: Stone Age 
 
 Costume development. 
 
@@ -83,17 +93,27 @@ Costume development.
 Different loincloths, exploring headwear on top of wisdom ball.
 {{< /imgcard >}}
 
-## Eras
 
-3 options for workers in each era, then 5 levels of worker.
-Options and 3 levels for era feature character.
+### Era 2: Bronze Age
 
-### Bronze Age
 Bronze (egypt) workers (options, levels.
-Cleopatra.
 
-### Dynasties
+{{< imgcard wowser_bronze_options Link "wowser_bronze_options.png">}}
+Many options based on Egyptian reference.
+{{< /imgcard >}}
 
-### Renaissance
+{{< imgcard wowser_bronze_levels Link "wowser_bronze_levels.png">}}
+Selecting/merging the designs to make 5 levels of learning/progress. 
+{{< /imgcard >}}
 
+### Era 3: Dynasty
 
+{{< imgcard wowser_guanyu_levels Link "wowser_guanyu_levels.jpg">}}
+Guan Yu, a nearly-mythical figure in Chinese history.
+{{< /imgcard >}}
+
+### Era 4: Renaissance
+
+{{< imgcard wowser_ren_levels Link "wowser_ren_levels.jpg">}}
+Reneissance worker levels.
+{{< /imgcard >}}
