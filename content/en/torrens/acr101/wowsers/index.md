@@ -3,14 +3,27 @@ title: "Wowsers"
 linkTitle: "Wowsers"
 weight: 120
 description: >
-  Progress of a character design with stakeholders.
+  Progress of a character design (for stakeholders).
 resources:
 - src: "image_of_art.png"
   params:
     byline: "Art: Person Person"
 ---
 
+{{< imgcard wowser_turn Link "wowser_turn.png">}}
+This guy.
+{{< /imgcard >}}
+
 ## The brief
+
+* Little learning things. 
+* Mischevious, initially pretty dim. 
+* Maybe like _Minions?_
+* Level up as they learn
+* Can be dressed up for any era and as any historical figure
+* Can manipulate tools.
+
+For anyone who looks at a character and goes "Urrrr, these guys are so lazy. Just copy Pikachu and take the day off"... **strap in!**
 
 ## Starting Broad
 
@@ -29,7 +42,19 @@ Leftovers!
 ## Choices
 
 ### Develop This Guy
-My art director and first tier clients wanted more ear guy, I did variations on that. Went through colours, bigger toothier face etc.
+My art director and first tier clients wanted a guy we called earhands guy, I did variations on that. Went through colours, bigger toothier face etc.
+
+{{< imgcard earhands_swarm Link "earhands_swarm.jpg">}}
+Many ears
+{{< /imgcard >}}
+
+{{< imgcard earhands_choose Link "earhands_choose.jpg">}}
+Earhands choose??
+{{< /imgcard >}}
+
+{{< imgcard earhands_choose_chub Link "earhands_choose_chub.jpg">}}
+Earhands choose chubby?
+{{< /imgcard >}}
 
 Art director passed on to clients. Clients unsure, wanted to see cuter.
 
