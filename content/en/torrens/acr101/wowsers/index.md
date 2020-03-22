@@ -73,10 +73,25 @@ Just **aim for valid, solid options**. You always have home hours to make/refine
 
 ## Final Choice, Refine!
 
-Turnaround: front view is 3D, others painted.
+#### Turnaround 
+
+Front view is 3D, others painted.
 
 {{< imgcard wowser_turn Link "wowser_turn.png">}}
 Wowser (aka yellow cat) turnaround.
+{{< /imgcard >}}
+
+#### Acting
+
+How do they express? Can it be done without their face growing outside of a set texture area? Counter question: can we use a shader to emote with colour?
+
+
+{{< imgcard wowsers_facial Link "wowsers_facial.png">}}
+The express with sticker faces, colour gradients, ball changes?
+{{< /imgcard >}}
+
+{{< imgcard wowsers_acting Link "wowsers_acting.jpg">}}
+They express with their whole bodies.
 {{< /imgcard >}}
 
 ## Eras
@@ -108,6 +123,20 @@ Selecting/merging the designs to make 5 levels of learning/progress.
 
 ### Era 3: Dynasty
 
+#### Wowser Levels To Warrior
+
+{{< imgcard wowser_dyn_levels_warrior Link "wowser_dyn_levels_warrior.png">}}
+One path, war
+{{< /imgcard >}}
+
+#### Wowser Levels To Scholar
+
+{{< imgcard wowser_dyn_levels_scholar Link "wowser_dyn_levels_scholar.png">}}
+Another path, not so much battle
+{{< /imgcard >}}
+
+#### Special: General Guan Yu
+
 {{< imgcard wowser_guanyu_levels Link "wowser_guanyu_levels.jpg">}}
 Guan Yu, a nearly-mythical figure in Chinese history.
 {{< /imgcard >}}
@@ -115,5 +144,22 @@ Guan Yu, a nearly-mythical figure in Chinese history.
 ### Era 4: Renaissance
 
 {{< imgcard wowser_ren_levels Link "wowser_ren_levels.jpg">}}
-Reneissance worker levels.
+Renaissance worker levels.
 {{< /imgcard >}}
+
+{{< imgcard ren_reference Link "ren_reference.png">}}
+Some renaissance reference.
+{{< /imgcard >}}
+
+{{< imgcard ren_artists_refine Link "ren_artists_refine.png">}}
+Special Wowsers: Renaissance artists
+{{< /imgcard >}}
+
+## So This Happened
+
+At some point I was asked to mock up what would happen if we had a mobile fantasy rpg game with Wowsers in it. I can't recall why but if you let me do it I absolutely will.
+
+{{< imgcard wowsers_rpg Link "wowsers_rpg.png">}}
+Good times!
+{{< /imgcard >}}
+
