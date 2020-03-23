@@ -6,6 +6,74 @@ description: >
   Programs inside programs!
 ---
 
+
+## Assessment 2: Slots
+
+The brief:
+
+Examples later in class.
+
+### Tips
+
+* Write the brief down in your own words.
+* Also remember to check against that and the real brief throughout the time you work on it.
+* Break a big problem into smaller problems
+
+## Approaching Big Jobs
+
+Break it down into smaller and smaller tasks, until you can find stuff you can do.
+
+### Bullet points
+
+I like to set up bullet points first, before any psuedocode. As you write them out, you start to see how parts will work, smaller problems you'll need to serve. Like a todo list, it clarifies and organises.
+
+```
+"My pencil and I are smarter than I am." - Einstein
+```
+
+* Make **entire** slots game **app** (too monolithic)
+  * Make a **menu**
+    * Show menu w cash total
+    * Get Choice
+    * Go to sub-screen or quit
+  * Make the slots **game part**
+    * Show cash
+    * Get user bet
+    * Take away bet
+    * show 3 random numbers 2-7
+    * Check for wins
+    * Calculate winnings
+    * Display win/loss info
+    * Return to menu.
+  * Make **credits** part
+    * Show credits (think film credits: who made what)
+    * Return to menu
+  * Make **quitting** part
+    * Tell them how they did
+    * Thank them or pick on them.
+
+That's still a lot to do, but we don't have to do it all at once. 
+
+### Code skeleton
+
+A good way to start is a scaffolding or skeleton that looks and behaves a bit like the app, but we can just fake the actual details.
+
+What does that mean? Writing up the first few functions you'll probably need, and having them take and return data. They can fake their own functionality at first, as we'll see shortly.
+
+## Exercise: Slots Skeleton 1
+
+Looking at the brief and building the skeleton of a plan. A bit like putting a core team together and filling it out.
+
+{{< imgcard code_slots_skeleton_1 Link "code_slots_skeleton_1.png">}}
+Click to expand.
+{{< /imgcard >}}
+
+The output:
+{{< imgcard output_slots_skeleton_1 Link "output_slots_skeleton_1.png">}}
+Hi scores, realistic sports action.
+{{< /imgcard >}}
+
+
 ## Strategy: Making Functions Work As A Team
 
 {{< imgcard heist_gang >}}
@@ -61,23 +129,6 @@ type functionName( type argument1, type argument2 )
   return ( outputVariable );
 }
 ```
-
-## Assessment 2: Slots
-
-
-
-## Exercise: Slots Skeleton 1
-
-Looking at the brief and building the skeleton of a plan. A bit like putting a core team together and filling it out.
-
-{{< imgcard code_slots_skeleton_1 Link "code_slots_skeleton_1.png">}}
-Click to expand.
-{{< /imgcard >}}
-
-The output:
-{{< imgcard output_slots_skeleton_1 Link "output_slots_skeleton_1.png">}}
-Hi scores, realistic sports action.
-{{< /imgcard >}}
 
 ### Benefits 1: Readability
 
