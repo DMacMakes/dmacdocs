@@ -1,7 +1,8 @@
 ---
-title: "Homework Review: Functions 1"
+title: "Review"
+weight: 120
 description: >
-  Improving Two_times
+  Adding input to Two_times
 ---
 
 ## The Task
@@ -12,6 +13,5 @@ Described in the [Week 5 Notes](../../week5/#homework)
 
 With a couple ways to ouput.
 
-{{< imgcard code_two_times_input Link "code_two_times_input.png">}}
-Click to expand
+{{< imgcard code_two_times_input Link "code_two_times_input">}}
 {{< /imgcard >}}

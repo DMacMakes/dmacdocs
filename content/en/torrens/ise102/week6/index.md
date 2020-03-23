@@ -6,12 +6,9 @@ description: >
   Programs inside programs!
 ---
 
-
 ## Assessment 2: Slots
 
 The brief pdf [on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/15836406?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27ISE102_Assessment%25202%2520Brief_14112019.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200323T002852Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200323%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=79ee9923fd485563a89cf9cbb31a3dfb27f1b2a5885a18ad85ec1ca65766012a)
-
-Examples later in class.
 
 ### Tips
 
@@ -33,29 +30,25 @@ I like to set up bullet points first, before any psuedocode. As you write them o
 
 * Make **entire** slots game **app** (too monolithic)
 
-* Make a **menu**
-  * Show menu w cash total
-  * Get Choice
-  * Go to sub-screen or quit  
-
-
-* Make the slots **game part**  
-  * Show cash
-  * Get user bet, check it
-  * Take away bet
-  * show 3 random numbers 2-7
-  * Check for wins
-  * Calculate winnings
-  * Display win/loss info
-  * Return to menu.
-
-* Make **credits** part
-  * Show credits (think film credits: who made what)
-  * Return to menu
-
-* Make **quitting** part
-  * Tell them how they did
-  * Thank them or pick on them.
+1. Make a **menu**
+    * Show menu w cash total
+    * Get Choice
+    * Go to sub-screen or quit  
+2. Make the slots **game part**  
+    * Show cash
+    * Get user bet, check it
+    * Take away bet
+    * show 3 random numbers 2-7
+    * Check for wins
+    * Calculate winnings
+    * Display win/loss info
+    * Return to menu.
+3. Make **credits** part  
+    * Show credits (think film credits: who made what)  
+    * Return to menu  
+4. Make **quitting** part
+    * Tell them how they did
+    * Thank them or pick on them.
 
 That's still a lot to do, but we don't have to do it all at once. 
 
@@ -70,7 +63,6 @@ What does that mean? Writing up the first few functions you'll probably need, an
 Looking at the brief and building the skeleton of a plan. A bit like putting a core team together and filling it out.
 
 {{< imgcard code_slots_skeleton_1 Link "code_slots_skeleton_1.png">}}
-Click to expand.
 {{< /imgcard >}}
 
 The output:
@@ -100,17 +92,16 @@ Everyone has a job, one guy is the lead.
 
 ### Top Down Organising
 
-If **Smart criminal** gave out the first job and everyone else just figured it out between themselves he wouldn't know things like:
-* Who's doing what
-* If the heist is going to work out
-* Who's selling out the plan to cops/other crooks
-* Who's secretly stashing half the loot
+If **Smart criminal** wants to control events and predict the outcome of the heist, he needs to deal with each person individually.
 
-So he deals with each person one by one:
+#### Direct Control
+
 * Each team member is given only the **information they need to know** for their specialty
 * They return the information/goods to him **directly**
 * He then **passes on** some of what he's learned to the **next team member**
 * They can then subcontract out some work on that limited task/info when necessary
+
+#### In Practise
 
 1. **Smart criminal** tells **Attractive lady** about _rich jerk_, and she brings back his _ID Card_
 2. **Smart criminal** gives **Hacker** the _ID Card_, and he gets _camera ids_ and _security codes_
@@ -139,19 +130,13 @@ With other functions on hand, and well planned roles for each, `main()` becomes 
 Main() here is short and readable. Functions do a single job.
 
 {{< imgcard code_main_ss_1 Link "code_main_ss_1.png">}}
-Click to zoom
 {{< /imgcard >}}
-
-### Reuse
-
-Blah
 
 ## Exercise: Slots Skeleton 2
 
 Adding in betting (including function), more description of function body from brief.
 
 {{< imgcard code_slots_skeleton_2 Link "code_slots_skeleton_2.png">}}
-Click to expand.
 {{< /imgcard >}}
 
 The output:
@@ -172,16 +157,14 @@ When main calls a function, it's a bit like windows starting a program.
 
 ### Grouping Processing With Storage
 
-Imagine all your heist guys had all the information everyone else had, they'd be overloaded. What's explosives guy going to do with all the info about the network and cameras etc. 
+Imagine all your heist guys had all the information everyone else had, they'd be overloaded. Humans work and focus better with smaller amounts of info related to the current task. Functions embody that idea.
 
-Humans work better with a limited set of data related to what they're doing right now. Functions let us put data next to the code we're using it with.
+**Question:** A function takes input, but.. does it have to? We defined `highScore` in `main()`, can't `showQuitMessage()` just use it??
 
-**Question:** I understand a _function_ takes input, but.. is it required? We defined `highScore`, can't `showQuitMessage()` just use it??
-**Answer:** Nope. A _function's variables_ aren't visible to any other code. The game won't compile if you try to `cout << highScore` inside `showQuitMessage()`. This _compartmentalises_ things, making it much easier to see what code is changing what data.
+**Answer:** No. A function's body isn't visible to any other code, including the variables there.
 
-PICTURE OF FUNCTION SCOPE
 
-We refer to what a _function_ can see as its **scope**. A function's scope includes:
+What a _function_ can see is its **_scope_**. A function's scope includes:
    1. Variables declared in the parentheses aka the _arguments list_
    2. Variables declared inside the _code block_ `{}` of the _function_.
    3. _**Global**_ variables declared outside any codeblocks of any functions. Commonly after `#include` statements.
@@ -189,19 +172,16 @@ We refer to what a _function_ can see as its **scope**. A function's scope inclu
 {{< alert title="Origin Of Term: Scope" color= "primary" >}}
 From the _Online Etymology Dictionary:_
 
-**Scope:** "extent," 1530s, "room to act," 
-* from Italian _scopo_ "aim, purpose, object, thing aimed at, mark, target,"  
-* from Latin _scopus_,  
-* from Greek _skopos_ "aim, target, object of attention; watcher, one who watches" 
-  * suffixed form of root *_spek-_ "to observe." Sense of "distance the mind can reach, extent of view" first recorded c. 1600.
+**Scope:**   
+* from Greek _skopos_ / _spek-_ "to observe." Sense of "distance the mind can reach, extent of view" first recorded c. 1600.
 {{< /alert >}}
 
 ## Homework
 
 ### Code 
 1. **Replace psuedocode** in _slots\_skeleton\_2_:
-  - getValidBet needs to get bet, check is valid, loop if it isn't valid.
-  - showHomeMenuPrompt needs to loop if choice is invalid
+    - getValidBet needs to get bet, check is valid, loop if it isn't valid.
+    - showHomeMenuPrompt needs to loop if choice is invalid
 2. **Add** a function to show the 3 random numbers (just fake the data).
 3. **Add** an enum for outcome of spin: no win, pair, three of a kind, three sevens.
 
