@@ -1,8 +1,7 @@
 ---
-title: "Review"
-weight: 120
+title: "Homework Times_two"
 description: >
-  Adding input to Two_times
+  Adding input to Times_two code
 ---
 
 ## The Task
