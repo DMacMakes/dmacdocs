@@ -1,5 +1,8 @@
 ---
 title: "Homework Times_two"
+linkTitle: "  "
+hidden: true
+weight: 90
 description: >
   Adding input to Times_two code
 ---
