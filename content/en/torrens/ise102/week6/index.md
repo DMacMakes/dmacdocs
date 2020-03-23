@@ -32,11 +32,13 @@ I like to set up bullet points first, before any psuedocode. As you write them o
 ```
 
 * Make **entire** slots game **app** (too monolithic)
-  * Make a **menu**
+
+* Make a **menu**
     * Show menu w cash total
     * Get Choice
     * Go to sub-screen or quit
-  * Make the slots **game part**
+
+* Make the slots **game part**
     * Show cash
     * Get user bet
     * Take away bet
@@ -45,10 +47,12 @@ I like to set up bullet points first, before any psuedocode. As you write them o
     * Calculate winnings
     * Display win/loss info
     * Return to menu.
-  * Make **credits** part
+
+* Make **credits** part
     * Show credits (think film credits: who made what)
     * Return to menu
-  * Make **quitting** part
+
+* Make **quitting** part
     * Tell them how they did
     * Thank them or pick on them.
 
