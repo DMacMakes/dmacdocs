@@ -34,27 +34,28 @@ I like to set up bullet points first, before any psuedocode. As you write them o
 * Make **entire** slots game **app** (too monolithic)
 
 * Make a **menu**
-    * Show menu w cash total
-    * Get Choice
-    * Go to sub-screen or quit
+  * Show menu w cash total
+  * Get Choice
+  * Go to sub-screen or quit  
 
-* Make the slots **game part**
-    * Show cash
-    * Get user bet
-    * Take away bet
-    * show 3 random numbers 2-7
-    * Check for wins
-    * Calculate winnings
-    * Display win/loss info
-    * Return to menu.
+
+* Make the slots **game part**  
+  * Show cash
+  * Get user bet, check it
+  * Take away bet
+  * show 3 random numbers 2-7
+  * Check for wins
+  * Calculate winnings
+  * Display win/loss info
+  * Return to menu.
 
 * Make **credits** part
-    * Show credits (think film credits: who made what)
-    * Return to menu
+  * Show credits (think film credits: who made what)
+  * Return to menu
 
 * Make **quitting** part
-    * Tell them how they did
-    * Thank them or pick on them.
+  * Tell them how they did
+  * Thank them or pick on them.
 
 That's still a lot to do, but we don't have to do it all at once. 
 
@@ -74,9 +75,8 @@ Click to expand.
 
 The output:
 {{< imgcard output_slots_skeleton_1 Link "output_slots_skeleton_1.png">}}
-Hi scores, realistic sports action.
+The game loop works, the winnings are accruing.
 {{< /imgcard >}}
-
 
 ## Strategy: Making Functions Work As A Team
 
@@ -93,7 +93,6 @@ Everyone has a job, one guy is the lead.
     * **Hacker** gets security codes and camera ids
     * **Unhappy employee** draws a layout of the cameras and their blindspots, intel on staff.
     * **Explosives guy** gets.. explosives.
-  
   * Do something important for the job
     * **Loud comedian** runs a distraction
     * Safe guy **opens** a lock
@@ -157,7 +156,7 @@ Click to expand.
 
 The output:
 {{< imgcard output_slots_skeleton_2 Link "output_slots_skeleton_2.png">}}
-Hi scores, realistic sports action.
+We know our game loop is reliable, now we've added fake betting.
 {{< /imgcard >}}
 
 
@@ -199,8 +198,15 @@ From the _Online Etymology Dictionary:_
 
 ## Homework
 
-**Replace psuedocode** in _slots skeleton 3_ 
-**Add** a function to show the 3 random numbers (just fake the data).
-**Add** an enum for outcome of spin: no win, pair, three of a kind, three sevens.
-**Return** an int from the function for the outcome (something from the enum)
-**Reading** needed to get functions dialled now. 
+### Code 
+1. **Replace psuedocode** in _slots\_skeleton\_2_:
+  - getValidBet needs to get bet, check is valid, loop if it isn't valid.
+  - showHomeMenuPrompt needs to loop if choice is invalid
+2. **Add** a function to show the 3 random numbers (just fake the data).
+3. **Add** an enum for outcome of spin: no win, pair, three of a kind, three sevens.
+
+### Read
+
+TBC
+<!--**Return** an int from the function for the outcome (something from the enum)
+**Reading** needed to get functions dialled now.  -->
