@@ -17,6 +17,7 @@ resources:
 ## Discussing Assessment 1
 
 * Due this week!
+* Recapping what earns marks.
 * Checking in on progress
 * Answering questions.
 * Adding in this week's activities
@@ -26,7 +27,8 @@ resources:
 Working on your character folios.
 
 ## Due This Week
-Most of your character folio.
+
+Continued character folio work.
 
 ## Case Study: Wowsers
 
@@ -207,3 +209,16 @@ At some point I was asked to mock up what would happen if we had a mobile fantas
 Good times!
 {{< /imgcard >}}
 
+## Bonus: Siegecraft Commander
+
+### How to explore options 
+
+Get loose. Just give options. Here, for the Peon Commander I've mostly varied the hair, headband, bandanna, gloves, shirt.
+
+{{< imgcard sc_peon_comm_accessories Link "sc_peon_comm_accessories.png">}}
+{{< /imgcard >}}
+
+To create a variety of faces, I started with yellow blobs to focus solely on varying the shape dramatically.
+
+{{< imgcard sc_peon_comm_faces Link "sc_peon_comm_faces.jpg">}}
+{{< /imgcard >}}
