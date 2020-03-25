@@ -8,9 +8,13 @@ description: >
 
 ## Download And Install ZBrush
 
-* Installers for windows, mac on one drive.
-* At home: 30 day trial, Rent month by month, Buy outright.
-* Otherwise, lab machines.
+* Using 30 day trial for now:
+* Working on floating licenses outside uni
+
+Download link on the resources page:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#zbrush">Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
 
 ## Digital Sculpting?
 

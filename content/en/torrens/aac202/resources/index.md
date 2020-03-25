@@ -21,6 +21,24 @@ Visit my [AAC202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/
 
 You'll need a few software packages on your pc, whether it's your home pc for assesments or a laptop you're bringing to class.
 
+### ZBrush
+
+{{< imgproc zbrush_app Resize "400x" Link "https://pixologic.com/zbrush/trial/signup.php" >}}
+ZBrush in action
+{{< /imgproc >}}
+
+_ZBrush_ is a digital sculpting application that provides an experience similar to working with clay, rather than building from rectangles. **For now we'll be using the free trial,** as I.T. are tied up with the online transition.  Sign up, download and follow the instructions to start your trial: 
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://pixologic.com/zbrush/trial/signup.php">Get ZBrush<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
+
+
+
+
+
+
+
+
 ### Maya 2020
 
 Autodesk provides their industry standard 3D software to students. Sign up, download _Maya_ and use the serial number they provide.
