@@ -16,6 +16,10 @@ Download link on the resources page:
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#zbrush">Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
+{{< imgproc zbrush_trial Resize "600x">}}
+ZBrush 2020.1
+{{< /imgproc >}}
+
 ## Digital Sculpting?
 
 * What is sculpture (some classical, modern pics)
@@ -25,15 +29,25 @@ Download link on the resources page:
   * Generally useful in the < 100K polygons space
 (One pic of Maya with smoothed object, maybe joystick)
 
+{{< imgcard maya_app_witcher >}}
+The Witcher 3 by CD Projekt S.A.
+{{< /imgcard >}}
+
 * ZBrush 
   * Focussed on smooshing and building and carving surfaces
   * Provides tools  a sculptor would recognise
   * Tries to automate the polygon part away
   * Happily works with millions of "polygons" by using a different paradigm internally
 
-(pics of brushes, scultped objects, wireframes)
+{{< imgcard zbrush_app_goblin >}}
+Goblin by <a href="https://www.youtube.com/watch?v=Zp07GW3rND0" target="_blank">Flipped Normals</a>
+{{< /imgcard >}}
 
-**VID OF zbrush sculptish timelapse**
+{{< imgcard brushes_additional Link "brushes_additional.jpg" >}}
+Many kinds of sculpting brushes
+{{< /imgcard >}}
+
+{{< youtube L6kYhShKXKY >}}
 
 ### From Film To Games
 
@@ -65,23 +79,39 @@ Using ZBrush on the uni computers or your own.
 
 First marks:
 * On provided sphere
-* Standard brush. Dam standard.
-* Move brush
+* Standard brush: `b, s, t`
+* Dam standard: `b, d, s`
+* Move brush: `b, m, v`
+
+{{< imgcard brushes_default Link "brushes_default.jpg" >}}
+What you'll see when you press `b`
+{{< /imgcard >}}
+
+Brush controls:
+
+Press space to access brush controls near the cursor.
+
+{{< imgcard space_menu >}}
+{{< /imgcard >}}
 
 Adding mass:
 * Still on sphere
-* Clay buildup, Inflate
-* Smooth brush
-* Snake hook elastic?
+* Clay buildup `b, c, b`
+* Inflate `b, i, n`
+* Smooth brush `shift`
+* Snake hook `b, s, h`
 
 More cleaning, subtools:
-* Trim Dynamic, HPolish
-* Pinch (on dam standard)
+* Trim Dynamic `b, t, d`
+* HPolish `b, h`
+* Pinch (on dam standard) `b, p, i`
 * Switch to cube subtool, solo.
 * trim dynamic, hpolish the corners
 * Now smooth, pinch
 
 Pixelation?? Subdivision up down
+* Subdivide: `Ctrl + D`
+* Step up, down `d`, `shift+d`
 
 ## Free play
 
@@ -92,6 +122,30 @@ Play around and make something. Ideas:
 * Cake
 * Floaty droid (maybe light sabre practise thing from star wars?)
 * Muscley torso.
+  
+{{< imgcard madballz Link "madballz.png">}}
+Madballz
+{{< /imgcard >}}
+
+{{< imgcard madballz_slobbernaut Link "madballz_slobbernaut.png">}}
+Madballz slobbernaut
+{{< /imgcard >}}
+
+{{< imgcard play_heads Link "play_heads.jpg">}}
+Heads
+{{< /imgcard >}}
+
+{{< imgcard play_heads Link "play_heads_2.jpg">}}
+More heads
+{{< /imgcard >}}
+
+{{< imgcard play_bunnies Link "play_bunnies.jpg">}}
+Bunnies
+{{< /imgcard >}}
+
+{{< imgcard play_frogs Link "play_frogs.jpg">}}
+Frogs
+{{< /imgcard >}}
   
 ## More Basics
 
@@ -114,6 +168,10 @@ Watch out:
 * Exiting edit mode by mistake (T)
 * Getting back into it.
 
+## Play Again
+
+Go on, dig in.
+
 ## Assessment 2: Character Sculpt
 
 * What to make
@@ -121,12 +179,22 @@ Watch out:
 * Baldy character head
 * Or keycap/artisan
 
+<!--
 ### Today, Pick Concept
 
 Offer selection.
 If your own character's head is very well realised in multiple angles, you can make them (without hair)
+-->
 
 ## Learning Resources
+
+#### Standard Brush with Michael Pavlovic:
+
+{{< youtube Rm5ZWj1h9GI >}}
+
+#### Brush Palette and Move Brush:
+
+{{< youtube fb7WHVhKxu8 >}}
 
 ### Docs
 
