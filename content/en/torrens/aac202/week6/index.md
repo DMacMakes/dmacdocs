@@ -196,6 +196,7 @@ If your own character's head is very well realised in multiple angles, you can m
 
 {{< youtube fb7WHVhKxu8 >}}
 
+<!--
 ### Docs
 
 Link to key zb docsumentation
@@ -208,7 +209,7 @@ Shane Olsen (does a sculpt in 3 hours each stream with Pixologic)
 Follygon
 
 -----
-
+-->
 ## Week 6 Deliverables for Assessment 2
 
 Post the results of your noodling to the forums.
