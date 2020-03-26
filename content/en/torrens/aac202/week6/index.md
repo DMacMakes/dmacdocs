@@ -16,6 +16,12 @@ Download link on the resources page:
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#zbrush">Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
+### Class Working Files
+
+ZBrush demo scene, template scene and config files.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="zbrush_week6_working_files.zip">Working Files<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
+
 {{< imgproc zbrush_trial Resize "600x">}}
 ZBrush 2020.1
 {{< /imgproc >}}
