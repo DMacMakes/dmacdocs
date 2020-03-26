@@ -63,8 +63,6 @@ Many wrinkly monsters, festy zombies and gnarled trees in film have been created
 * Won Oscar for contribution to film effects
 * GPU accelerated normal maps came along, you could now steal the details from those high res models and approximate them on game models.
 * Unreal engine (and whatever doom 3 was on??)
-  
-**PICS of wrinkly movie monsters, pref really zbrushed.**
 
 ### Doom 3
   
@@ -89,8 +87,6 @@ Very current normal mapped assets
 {{< imgcard doom_cyberdemon Link "doom_cyberdemon.jpg">}}
 Original Cyberdemon Zbrush sculpt
 {{< /imgcard >}}
-
-**PIC OF high res model, low res model, then normal mapped result. Overwatch?**
 
 ## Intro to ZBrush
 
@@ -155,10 +151,6 @@ Play around and make something. Ideas:
 Madballz
 {{< /imgcard >}}
 
-{{< imgcard madballz_slobbernaut Link "madballz_slobbernaut.png">}}
-Madballz slobbernaut
-{{< /imgcard >}}
-
 {{< imgcard play_heads Link "play_heads.jpg">}}
 Heads
 {{< /imgcard >}}
@@ -196,17 +188,52 @@ Watch out:
 * Exiting edit mode by mistake (T)
 * Getting back into it.
 
-## Play Again
+## Due This Week
 
-Go on, dig in.
+Homework: Pick one of the madballz (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
 
+{{< alert title="Deliverables and Submission" color= "primary" >}}
+Reply to the `Module 6/Homework: Madballz` thread [on the subject discussion forums](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804657_1&message_id=_2001686_1). Post the **reference** of your chosen madball along with some **screenshots of the finished sculpt.**
+{{< /alert >}}
+
+_**Bonus:**_ ZBrush has a super helpful filter called **Clay Polish**. Look it up in the zbrush documentation or on youtube. To try it out, add some random shapes to your free-play sculpt and hit Clay Polish. For this kind of sculpt it's a bit of a magic "make art" button.
+
+{{< imgcard mb_detail_skullface Link "mb_detail_skullface.jpg">}}
+Skullface Detail
+{{< /imgcard >}}
+
+{{< imgcard mb_views_skullface Link "mb_views_skullface.jpg">}}
+Skullface
+{{< /imgcard >}}
+
+{{< imgcard mb_detail_slobulus Link "mb_detail_slobulus.jpg">}}
+Slobulus Detail
+{{< /imgcard >}}
+
+{{< imgcard mb_views_slobulus Link "mb_views_slobulus.jpg">}}
+Slobulus
+{{< /imgcard >}}
+
+{{< imgcard mb_detail_hornhead Link "mb_detail_hornhead.jpg">}}
+hornhead Detail
+{{< /imgcard >}}
+
+{{< imgcard mb_views_hornhead Link "mb_views_hornhead.jpg">}}
+Hornhead
+{{< /imgcard >}}
+
+{{< imgcard madballz Link "madballz.png">}}
+Madballs
+{{< /imgcard >}}
+
+<!-- 
 ## Assessment 2: Character Sculpt
 
 * What to make
 * Milestones/deliverables
 * Baldy character head
 * Or keycap/artisan
-
+-->
 <!--
 ### Today, Pick Concept
 
@@ -215,6 +242,17 @@ If your own character's head is very well realised in multiple angles, you can m
 -->
 
 ## Learning Resources
+
+#### Great sculpts
+
+A playlist of great sculpts, many of them timelapsed to <10 mins. Most of them were added over a year ago but they're no less great.
+
+https://www.youtube.com/watch?v=e4LjwgFV8xw&list=PLfWza-ietxyywGqWIFLIuDeBK7DZ7Sych
+
+{{< imgcard sculpts_preview_follygon_troll Link "https://www.youtube.com/watch?v=e4LjwgFV8xw&list=PLfWza-ietxyywGqWIFLIuDeBK7DZ7Sych">}}
+One of the great vids by Follygon in this playlist.
+{{< /imgcard >}}
+
 
 #### Standard Brush with Michael Pavlovic:
 
@@ -238,7 +276,4 @@ Follygon
 
 -----
 -->
-## Week 6 Deliverables for Assessment 2
-
-Post the results of your noodling to the forums.
 
