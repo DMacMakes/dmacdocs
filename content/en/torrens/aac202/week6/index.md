@@ -190,7 +190,7 @@ Watch out:
 
 ## Due This Week
 
-Homework: Pick one of the madballz (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
+Homework: Pick one of the madballz (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. The base of your sculpt is the sphere in Trying_Out_Brushes.zpr. If you overwrote it, get a fresh copy from [zbrush_week6_working_files.zip](zbrush_week6_working_files.zip).  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
 
 {{< alert title="Deliverables and Submission" color= "primary" >}}
 Reply to the `Module 6/Homework: Madballz` thread [on the subject discussion forums](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804657_1&message_id=_2001686_1). Post the **reference** of your chosen madball along with some **screenshots of the finished sculpt.**
