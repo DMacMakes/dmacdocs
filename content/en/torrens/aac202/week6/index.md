@@ -254,11 +254,11 @@ One of the great vids by Follygon in this playlist.
 {{< /imgcard >}}
 
 
-#### Standard Brush with Michael Pavlovic:
+#### Standard Brush with Michael Pavlovic
 
 {{< youtube Rm5ZWj1h9GI >}}
 
-#### Brush Palette and Move Brush:
+#### Brush Palette and Move Brush
 
 {{< youtube fb7WHVhKxu8 >}}
 

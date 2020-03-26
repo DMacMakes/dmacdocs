@@ -176,17 +176,15 @@ From the _Online Etymology Dictionary:_
 * from Greek _skopos_ / _spek-_ "to observe." Sense of "distance the mind can reach, extent of view" first recorded c. 1600.
 {{< /alert >}}
 
-## Homework
+## Due This Week
 
 ### Code 
+
 1. **Replace psuedocode** in _slots\_skeleton\_2_:
     - getValidBet needs to get bet, check is valid, loop if it isn't valid.
     - showHomeMenuPrompt needs to loop if choice is invalid
 2. **Add** a function to show the 3 random numbers (just fake the data).
 3. **Add** an enum for outcome of spin: no win, pair, three of a kind, three sevens.
 
-### Read
-
-TBC
 <!--**Return** an int from the function for the outcome (something from the enum)
 **Reading** needed to get functions dialled now.  -->
