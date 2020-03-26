@@ -59,8 +59,30 @@ Many wrinkly monsters, festy zombies and gnarled trees in film have been created
 * Unreal engine (and whatever doom 3 was on??)
   
 **PICS of wrinkly movie monsters, pref really zbrushed.**
+
+### Doom 3
   
-**PICS OF DOOM 3, OTHER EARLY NORMAL MAP TITLES**
+{{< imgcard doom_3 Link "doom_3.png">}}
+Doom 3, maybe the first big normal mapped game
+{{< /imgcard >}}
+
+{{< imgcard doom_3_2 Link "doom_3_2.png">}}
+Doom 3 again
+{{< /imgcard >}}
+
+### Doom Eternal
+
+Very current normal mapped assets
+
+{{< imgcard doom_eternal_marauder Link "doom_eternal_marauder.jpg">}}
+{{< /imgcard >}}
+
+{{< imgcard doom_eternal Link "doom_eternal.jpg">}}
+{{< /imgcard >}}
+
+{{< imgcard doom_cyberdemon Link "doom_cyberdemon.jpg">}}
+Original Cyberdemon Zbrush sculpt
+{{< /imgcard >}}
 
 **PIC OF high res model, low res model, then normal mapped result. Overwatch?**
 
