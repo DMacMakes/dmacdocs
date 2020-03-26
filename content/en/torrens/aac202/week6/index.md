@@ -163,7 +163,7 @@ Madballz slobbernaut
 Heads
 {{< /imgcard >}}
 
-{{< imgcard play_heads Link "play_heads_2.jpg">}}
+{{< imgcard play_heads_2 Link "play_heads_2.jpg">}}
 More heads
 {{< /imgcard >}}
 
