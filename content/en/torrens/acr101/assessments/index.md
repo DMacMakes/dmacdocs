@@ -4,6 +4,10 @@ linkTitle: "Assessments"
 weight: 5
 description: >
   All the information you need to deliver the required work.
+resources:
+- src: "*marlet*"
+  params:
+    byline: "Art: Nico Marlet"
 ---
 
 {{% alert title="Critical:" color="danger" %}}
@@ -26,13 +30,46 @@ Rough summary: It's a journal you will share only with me, and it contains image
 
 For weekly Assessment 3 deliverablys check the **week's notes** (left nav, or top of page nav button on mobile).
 
-## Assessment 1
+## Assessment 1: Character Portfolio
 
-Character Portfolio.
+First, read the brief carefully:
 
 [Brief on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/15620432?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27ACR101%2520Assessment%25201.2019113.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200317T031337Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200317%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=c5aaccaf0afc2a3bd67edab1aae8b46fd04f124aef5e70a995bd6001318eb738)
 
+### Deliverables
 
+12 pages, as per the brief, with 5 or so for being reference.
+
+Handy specs:
+* Jpg (90% quality) or png
+* Largest dimension around 2500-300px (width for landscape, height for portrait).
+* Named 1_content_of_page.jpg, 2_content_of_page.jpg and so on.
+  * eg: 1_backstory_and_poses.jpg, 2_first_sketches_and_reference.jpg
+* A little text to explain what you're showing.
+* Credit any artist's work below/on each image. (no need to credit random photographs of swords etc)
+
+Zip all 12 (or more) page files into one archive and submit it via Blackboard. Name it as follows:
+
+`firstName_lastName_character_folio_acr101.zip`.
+
+#### Templates
+
+Here are some PSD files you can use as page templates. 
+
+1. [Landscape, 4K PSD](character_folio_template_landscape.psd)
+2. [Portrait, almost 4K PSD](character_folio_template_portrait.psd).
+
+Each is just a blank white page with enough resolution to support your images. If you use these templates **you can export a JPG or PNG at 75% scale** for your final submission and have enough resolution.
+
+Because some people were unsure about visualising the whole 12 pages and laying it out, there's layer in the psds with **12 grey thumbnail pages** matching the ratio of the template. Might come in handy for planning.
+
+{{< imgcard character_folio_template_landscape Link "character_folio_template_landscape.psd">}}
+Landscape
+{{< /imgcard >}}
+
+{{< imgcard character_folio_template_portrait Link "character_folio_template_portrait.psd">}}
+Portrait
+{{< /imgcard >}}
 
 ### Filling 12 Pages
 
@@ -44,6 +81,20 @@ Some ideas:
 * character posed in common scenarios they’d likely be in (wolverine yelling at kids, pikachu shorting out his switch)
 * turnaround
 * show the exploration of faces/hairstyles/outfits along the way
+
+### Inspiration
+
+{{< imgcard marlet_mantis Link "marlet_mantis.jpg">}}
+Mantis expressing
+{{< /imgcard >}}
+
+{{< imgcard marlet_sifu Link "marlet_sifu.jpg">}}
+Sifu
+{{< /imgcard >}}
+
+{{< imgcard marlet_sifu Link "marlet_crane.jpg">}}
+Crane 
+{{< /imgcard >}}
 
 ## Assessment 2
 
