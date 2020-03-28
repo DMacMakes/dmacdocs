@@ -32,6 +32,8 @@ For weekly Assessment 3 deliverablys check the **week's notes** (left nav, or to
 
 ## Assessment 1: Character Portfolio
 
+**Due Date:** 11:55pm, Wednesday, **April 1**. (revised due to campus closure)
+
 First, read the brief carefully:
 
 [Brief on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/15620432?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27ACR101%2520Assessment%25201.2019113.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200317T031337Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200317%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=c5aaccaf0afc2a3bd67edab1aae8b46fd04f124aef5e70a995bd6001318eb738)
@@ -84,17 +86,32 @@ Some ideas:
 
 ### Inspiration
 
-{{< imgcard marlet_mantis Link "marlet_mantis.jpg">}}
-Mantis expressing
-{{< /imgcard >}}
+#### Exploring Poses And Variation
+
+Great examples of movement and posing by Spudonkey:
+{{< instagram B9C5eGpJIZ1 >}}
+{{< instagram B7jQkQKFdRi >}}
+
+Quick variations/options by Spudonkey:
+{{< instagram B7zEwowlKbQ >}}
+
+Nico Marlet defining a character's acting.
 
 {{< imgcard marlet_sifu Link "marlet_sifu.jpg">}}
-Sifu
+Sifu (Kung Fu Panda)
 {{< /imgcard >}}
 
-{{< imgcard marlet_sifu Link "marlet_crane.jpg">}}
+#### Head And Face Expressing, Moving
+
+{{< imgcard marlet_mantis Link "marlet_mantis.jpg">}}
+Mantis (Kung Fu Panda)
+{{< /imgcard >}}
+
+{{< imgcard marlet_crane Link "marlet_crane.jpg">}}
 Crane 
 {{< /imgcard >}}
+
+
 
 ## Assessment 2
 
