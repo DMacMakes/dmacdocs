@@ -120,7 +120,7 @@ It can:
 * Critically, you can follow the execution path and see if areas of your program (inside functions, loops, ifs) are ever reached.
 
 {{< imgcard debugger_outcomes Link "debugger_outcomes.png">}}
-No cout required: the <i>debugger</i> looking into the program in real time
+No cout required: the <i>debugger</i> halting and looking inside the program in real time
 {{< /imgcard >}}
 
 ### What Is The Debugger
