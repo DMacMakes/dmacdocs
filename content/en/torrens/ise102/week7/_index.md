@@ -68,7 +68,19 @@ Encourage your program to tell you things.
 
 This is called `debug output`, and like a gun in Samuel L Jackson's hand, it makes the program more _verbose_.
 
-// example of adding cout to see the data
+#### Example
+
+Say we were calling `spinWheels()` in our slot machine to 1. generate 3 numbers and 2. check for a win. If the winnings were wrong for a given bet we might need to see variable values at certain times. We can do that with lots of cout statements. The word "DEBUG:" is just for readability.
+
+{{< imgcard debug_output_bet_outcomes Link "debug_output_bet_outcomes.png">}}
+Couts inserted: Click to zoom.
+{{< /imgcard >}}
+
+{{< imgcard debug_outcomes_running Link "debug_outcomes_running.png">}}
+Debug output while testing the game: Click to zoom
+{{< /imgcard >}}
+
+
 
 pros: 
 * you can make lots of new information available: 
@@ -119,7 +131,11 @@ Step through Danny's answer to homework.
 ## More Slots
 
 {{< imgcard slots_3_output Link "slots_3_output.png">}}
-Click to expand.
+Slots 3 with real bets and fake spin. Click to expand.
+{{< /imgcard >}}
+
+{{< imgcard slots_3_output Link "slots_3_output.png">}}
+Slots 3 after key press to return. Click to expand.
 {{< /imgcard >}}
 
 The game now:
@@ -129,6 +145,7 @@ The game now:
 1. Uses `outcome` and `bet` to calculate `winnings` (in `playSlots` function)
 1. Has an `enum` containing outcomes like `PAIR` and `THREE_OF_KIND`.
 1. Has an `enum` containing multipliers for each cash prize.
+1. Waits for keypress after a game, then clears screen and returns to menu.
 
 ### Simple View: See The Pieces First
 
@@ -149,13 +166,20 @@ Main hasn't changed. "Playslots" basically coordinates it's own team.
 Each function alone reads like a pretty simple program. Manageable chunks that you can write!
 {{< /imgcard >}}
 -->
+
+### New Tricks
+
+* `_getch` waits for any keypress. Requires `#include <conio.h>`.
+* `system("cls");` clears the console. It calls `cls`, a command in the windows console.
+* A `do.. while()` loop in the flesh.
+
 ## Coding Conventions
 
 Agreeing on a style of code formatting and capitalisation.
-(Grab from old week 6)
-https://dmcgits.github.io/mds/ISE102/week6_notes.html
 
-Link to resources, step through conventions there.
+In my old week 6 notes:
+[https://dmcgits.github.io/mds/ISE102/week6_notes.html](https://dmcgits.github.io/mds/ISE102/week6_notes.html)
+
 
 
 
