@@ -107,7 +107,7 @@ We're listening.
 
 ## Digital God: The Debugger
 
-The debugger is on a whole other level. It lets you see inside your program, to slow it down to human speeds, stopping and starting it at your command.
+The _debugger_ is on a whole other level. It lets you see inside your program, to slow it down to human speeds, stopping and starting it at your command.
 
 {{< imgcard neo_stopping_bullets >}}
 Be like Neo. See the matrix, control the matrix.
@@ -119,14 +119,24 @@ It can:
 * See what literals like `0.06` and `b` are being treated as (`double` and `char`)
 * Critically, you can follow the execution path and see if areas of your program (inside functions, loops, ifs) are ever reached.
 
+{{< imgcard debugger_outcomes Link "debugger_outcomes.png">}}
+No cout required: the <i>debugger</i> looking into the program in real time
+{{< /imgcard >}}
+
+### What Is The Debugger
+
+It's a few things: 
+* Mainly, it's another program that loads and sits in memory. 
+  * It has special permission to access and change the memory given over to your program.
+* It's the interface mode of Visual Studio that lets you interact with the debugger program
+* It's also extra stuff compiled into your slots game that makes it possible.
+
 ### Exercise: Breakpoints And Step Through
 
 * Step through simple program.
 * Watch locals changed
 * Watch an if statement
 
-Step through skeleton 2
-Step through Danny's answer to homework.
 
 ## More Slots
 
