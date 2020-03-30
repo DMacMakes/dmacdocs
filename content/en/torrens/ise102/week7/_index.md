@@ -209,7 +209,7 @@ It's a few things:
 Slots 3 with real bets and fake spin. Click to expand.
 {{< /imgcard >}}
 
-{{< imgcard slots_3_output Link "slots_3_output.png">}}
+{{< imgcard slots_3_output_2 Link "slots_3_output_2.png">}}
 Slots 3 after key press to return. Click to expand.
 {{< /imgcard >}}
 
