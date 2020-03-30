@@ -234,13 +234,12 @@ Reading these function signatures and the comment above each should tell you eno
 Main hasn't changed. "Playslots" basically coordinates it's own team.
 {{< /imgcard >}}
 
-<!--
 ### The Functions
 
 {{< imgcard slots_skeleton_3 Link "slots_skeleton_3">}}
 Each function alone reads like a pretty simple program. Manageable chunks that you can write!
 {{< /imgcard >}}
--->
+
 
 ### New Tricks
 
