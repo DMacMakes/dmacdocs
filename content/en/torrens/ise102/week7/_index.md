@@ -224,19 +224,19 @@ The game now:
 
 ### Simple View: See The Pieces First
 
-{{< imgcard slots_skeleton_3_collapsed Link "slots_skeleton_3_collapsed">}}
+{{< imgcard slots_skeleton_3_collapsed Link "slots_skeleton_3_collapsed.png">}}
 Reading these function signatures and the comment above each should tell you enough to understand what's going on.
 {{< /imgcard >}}
 
 ### More Info: How Main Uses The Pieces
 
-{{< imgcard slots_skeleton_3_part_collapsed Link "slots_skeleton_3_part_collapsed">}}
+{{< imgcard slots_skeleton_3_part_collapsed Link "slots_skeleton_3_part_collapsed.png">}}
 Main hasn't changed. "Playslots" basically coordinates it's own team.
 {{< /imgcard >}}
 
 ### The Functions
 
-{{< imgcard slots_skeleton_3 Link "slots_skeleton_3">}}
+{{< imgcard slots_skeleton_3 Link "slots_skeleton_3.png">}}
 Each function alone reads like a pretty simple program. Manageable chunks that you can write!
 {{< /imgcard >}}
 
