@@ -24,24 +24,89 @@ We do what anyone does to fix a machine or process: calmly slice it down into so
 
 ### Sources Of Bugs
 
-First up, **you** are the source of all bugs. More specifically though, we want to know **what sort of error you made** to generate the bug. You'll find most of these fit into a small number of categories, which helps direct your debugging approach.
+First up, **you** are the source of 99% of bugs. Very occasionaly there's something wrong with a library or documentation. 
 
-#### Design Error
+### Syntax Errors
 
-* well coded, planned solution doesn’t actually solve problem
-* eg: find volume of a cylinder: formula perfectly implemented in code.. but you looked at the wrong formula: this one is for a torus.
-* Eg: guitarist in band playing a song perfectly, but band is mad: learned wrong song
+These are the ones that stop you compiling, and are mostly pretty easy to fix. 
+* Visual Studio tells you the kind of error along with the line it's on
+* If you don't know the error, you Google it and usually
+  * it's in the cpp reference or
+  * someone on stackoverflow (or other forum) has solved it before.
 
-#### Language Usage Error
+{{< alert title="Definition: Syntax Error" color= "primary" >}}
+A Syntax Error is a problem in the structure of your code that confuses the compiler and prevents it compiling. It can often be a single character out of place missing. 
+Examples:
+* missing or extra semicolon `;`
+* swapping upperCase and lowerCase `animalCrackers` becomes `Animalcrackers`
+* a forgotten parenthesis `)` or curly brace `}`
+* accidentally escaping quotes so a string continues forever `\"`
+* many, many others
+{{< /alert >}}
+
+### Logic Errors
+
+These are the ones where your **program compiles, but doesn't do what you expected**. Also known as _semantic_ errors.
+
+To get to the bottom of these, "what was my mistake?" is the question to answer. As always, things get easier when we group things into categories. Once you get used to **the kinds of mistakes you can make**, finding bugs  is easier.
+
+#### The Design Error
+
+{{< alert title="Chef Gomez" color= "warning" >}}
+Chef Gomez, a huge celebrity chef, produces a book of dessert recipes. She becomes a meme on Instagram when every one who tries to cook his chocolate cake turn out giant chocolate cookies.
+The recipe, it turns out, is a perfectly good one. Chef Gomez, on the other hand, apparently took a knock to the head and is convinced a cake is a large crunchy treat. 
+
+**The problem is the design, not the way it was encoded as a recipe.**
+
+<img src="cookie_cake.jpg" />
+
+{{< /alert >}}
+
+So you've **designed a solution** and then written code that **successfully implements** it. The steps you described, however, **wouldn't actually complete the given task**.
+
+* eg: A program to find the volume of a cylinder: it's perfectly implemented in code.. but you were on the wrong wikipedia page and used the formula for a cone.
+* eg: The character jumps and falls through the floor: it's coded right, but the math you chose for checking when a character hits a platform is faulty because you aren't great at geometry.
+
+#### The Language Usage Error
 
 * Solution was good but code implementation doesnt actually match your planned solution
 * Spring from misunderstanding language
 * Eg: you write a test for three of a kind and it’s well designed in psuedocode: but you misunderstand how to join up the tests (chaining `==` instead of using a combination of `==` and `&&`). It triggers for 3 of a kind  but also pairs.
 * EG: the maths are right but answer us wrong. Maybe You aren’t accounting for the precision of floating points. Or you are adding integers and the result is larger than the variable can hold.
 
-#### Library Usage Error
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int a = 0;
+  int b = 0;
+  int c = 0;
+
+  if ( a == b == c )
+  {
+    cout << "\t Equal! \n";
+  }
+  else
+  {
+    cout << "\t Not equal :( \n";
+  }
+}
+```
+#### The Library Usage Error
 * Passing the wrong scale of value in (milliseconds instead of seconds)
 * Thinking a return value implies success, when it actually means error.
+
+#### The Brain Fart
+
+Don't foget the good old brain fart. They can be any of the above errors that happen despite your knowledge and experience because you're tired, distracted, hurrying etc. Especially common when you've been coding too long without a break, or don't eat and sleep enough.
+
+* Assigning to the wrong variable
+* Calling a function and forgetting to assign the result
+* Switching your true/false logic
+* Understanding operators but still just typing the wrong one (`>` instead of `>=` etc)
+* Putting a return inside a loop instead of after it.
 
 #### Others
 
