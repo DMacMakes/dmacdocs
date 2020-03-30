@@ -6,7 +6,7 @@ description: >
   X-Ray vision: looking at your program as it runs
 ---
 
-{{< imgcard see_code_agents.jpg>}}
+{{< imgcard see_code_agents>}}
 Hello, Mr Smith.
 {{< /imgcard >}}
 
