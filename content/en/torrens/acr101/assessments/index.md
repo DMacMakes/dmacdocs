@@ -44,7 +44,7 @@ First, read the brief carefully:
 
 Handy specs:
 * Jpg (90% quality) or png
-* Largest dimension around 2500-300px (width for landscape, height for portrait).
+* Largest dimension around 2500-3000px (width for landscape, height for portrait).
 * Named 1_content_of_page.jpg, 2_content_of_page.jpg and so on.
   * eg: 1_backstory_and_poses.jpg, 2_first_sketches_and_reference.jpg
 * A little text to explain what you're showing.
