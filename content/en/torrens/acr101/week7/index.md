@@ -12,9 +12,9 @@ resources:
 
 ## Week 7 Powerpoint
 
-Download my a PDF of the updated [week7 powerpoint slides](ACR101_Week_7_Color.pdf).
+Download my a PDF of the updated [week7 powerpoint slides](ACR101_Week_7_Colour.pdf).
 
-{{< imgproc slides_week7 Resize "500x" Link "ACR101_Week_7_Color.pdf" >}}
+{{< imgproc slides_week7 Resize "500x" Link "ACR101_Week_7_Colour.pdf" >}}
 Click for slides pdf
 {{< /imgproc >}}
 
