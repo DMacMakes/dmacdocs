@@ -218,25 +218,18 @@ The game now:
 1. Takes real bets and checking they're valid.
 1. Uses the player's `bet`
 1. Uses `outcome` and `bet` to calculate `winnings` (in `playSlots` function)
-1. Has an `enum` containing outcomes like `PAIR` and `THREE_OF_KIND`.
-1. Has an `enum` containing multipliers for each cash prize.
+1. Has an `enum` containing multipliers for each win type.
 1. Waits for keypress after a game, then clears screen and returns to menu.
 
 ### Simple View: See The Pieces First
 
-{{< imgcard slots_skeleton_3_collapsed Link "slots_skeleton_3_collapsed.png">}}
+{{< imgcard slots_skeleton_3b_collapsed Link "slots_skeleton_3b_collapsed.png">}}
 Reading these function signatures and the comment above each should tell you enough to understand what's going on.
-{{< /imgcard >}}
-
-### More Info: How Main Uses The Pieces
-
-{{< imgcard slots_skeleton_3_part_collapsed Link "slots_skeleton_3_part_collapsed.png">}}
-Main hasn't changed. "Playslots" basically coordinates it's own team.
 {{< /imgcard >}}
 
 ### The Functions
 
-{{< imgcard slots_skeleton_3 Link "slots_skeleton_3.png">}}
+{{< imgcard slots_skeleton_3b Link "slots_skeleton_3b.png">}}
 Each function alone reads like a pretty simple program. Manageable chunks that you can write!
 {{< /imgcard >}}
 
