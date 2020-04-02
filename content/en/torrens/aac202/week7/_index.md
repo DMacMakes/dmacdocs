@@ -92,7 +92,6 @@ A Tool can have multiple subtools. While you're in a ZBrush project you can load
 Jaw is a subtool of our character tool. Note the ear subtool has two meshes.
 {{< /imgproc >}}
 
-
 | Category |  Definition/Place              |
 |-----|-----|
 | Tools | Objects in the Tools palette.     |
@@ -119,6 +118,10 @@ The  gizmo is like the Maya transform manipulators.
 * Press `w` to use it (or `e` or `r`)
 * Press `q` to return to brushing
 * If you see a weird line with circled ends instead of gizmo, press `y` to switch.
+
+{{< imgproc gizmo Resize "300x" >}}
+The Gizmo and its menu.
+{{< /imgproc >}}
   
 Gizmo tool moving things
 	* Individually
@@ -149,13 +152,32 @@ A blockout is what we saw last week: a whole made out of smaller, simpler pieces
 - don't have to worry about joining and topology
 - can edit pieces safely without messing up neighbouring anatomy.
 
-Open and show Brice Laville base mesh.
+Brice Laville Saint Martin doing it:
 
-Watch Tai Pao 1.
+{{< youtube "Ay-UY6JTbF4" >}}
 
-Do a little of it live. Reiterate masking.
+Now we'll do it with his basemesh 👌
 
-Show video 4 dynamesh and clean.
+{{< imgcard res_ztools Link "Zbr_wk2_resources.zip">}}
+Brice Saint Laville's starting files.
+{{< /imgcard >}}
+
+* Open the aa starting file in `Lightbox->Projects`
+* Select a star or cylinder tool from tool palette
+* Go to `Lightbox->Tools->Base Meshes` and load the head basemesh.
+
+Live demo.
+
+### Joining The Pieces
+
+Dynamesh is a magical tool that didn't exist in ZBrush until it was over 15 years old. Everything changed for cartoony artists, concept artists. You could truly experiment and explore whole creatures in ZBrush with little friction.
+
+It'll be hard to see, but Brice merges everything with Dynamesh around 0:25. After that, you'll see the seams and cleanup. He's meticulous.
+{{< youtube "-ElecAWzP_Y" >}}
+
+{{< imgcard brice_tao_dynamesh Link "brice_tao_dynamesh.jpg">}}
+Captured frame where he looks at the new topology. Teeny tiny quads.
+{{< /imgcard >}}
 
 Then I’ll dynamesh (give settings) and start cleaning up with sculptris (give settings).
 
@@ -184,3 +206,11 @@ Block out, merge, continue.
 Week 8 we’ll use goZ to add stuff in maya and begin work on our final charcter. Learn material fill.
 
 Week 9 polypaint and solve people’s problems workshop.
+
+#### Resources
+
+My AAC202 youtube playlist:
+[https://www.youtube.com/playlist?list=PLfWza-ietxyzCD459RKEL6Tg42Tgnq5gE](https://www.youtube.com/playlist?list=PLfWza-ietxyzCD459RKEL6Tg42Tgnq5gE)
+
+The middle tao pai pai video:
+{{< youtube "k2TPi-WaO20" >}}
