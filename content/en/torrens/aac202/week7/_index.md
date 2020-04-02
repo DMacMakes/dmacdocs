@@ -111,6 +111,10 @@ A bit like objects in Maya. Can have multiple meshes.
 6. `Tool->Load Tool`: browse to and choose the `eyes.ztl` file I provided.
     - Star is replaced with eyes and eyelids
 7. Return to our Madball. Click `tool->subtool->append` and choose the eyes.
+
+{{< imgcard ui_append>}}
+Append an object as a Subtool
+{{< /imgcard >}}
    
 #### Moving With The Gizmo
 
@@ -139,6 +143,10 @@ Gizmo tool moving things
 		* automask topological
 		* masking with ctrl
 		* Now try Move Elastic `b, m, e`
+
+{{< imgproc brice_head_pg Resize "500x">}}
+Brice head with polygroups visible.
+{{< /imgproc >}}
 
 #### Find Short Tute Video Of Eyes
 
