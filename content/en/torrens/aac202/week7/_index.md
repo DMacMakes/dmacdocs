@@ -120,13 +120,14 @@ Jaw is a subtool of our character tool. Note the ear subtool has two meshes.
 A bit like objects in Maya. Can have multiple meshes.
 {{< /alert >}}
 
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_classs.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
+
 1. Download My Madball Demo File
 2. Unzip, it contains `madball_demo.zpr` and `eyes.ztl` files. 
 3. Open `madball_demo.zpr`
-5. Click Madball in `Tool` palette and choose the **star** (polymesh3D)
-6. `Tool->Load Tool`: browse to and choose the `eyes.ztl` file I provided.
-    - Star is replaced with eyes and eyelids
-7. Return to our Madball. Click `tool->subtool->append` and choose the eyes.
+5. Click `tool->subtool->append` and choose the `polysphere3D`. 
 
 {{< imgcard ui_append>}}
 Append an object as a Subtool
