@@ -121,7 +121,7 @@ A bit like objects in Maya. Can have multiple meshes.
 {{< /alert >}}
 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_classs.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_class.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 1. Download My Madball Demo File
