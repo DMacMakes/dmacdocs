@@ -133,20 +133,28 @@ Gizmo tool moving things
 	* Locking/unlocking and changing the gizmo pivot `alt` or gizmo edit widget (like `d` in Maya`)
 	* Back to center of visible objects
 	* Can scale/rotate also.
+
+
 * Modifying eyes
-	* Deforming with gizmo
-	* We have one subtool for eyes and eyelids. How work on eyelids without messing up eye
-	* Move tool `b, m, v`
-		* masks!
-		* With automask polygroup (in brush menu)
-			* View popugroups with shift F
-		* automask topological
-		* masking with ctrl
-		* Now try Move Elastic `b, m, e`
+  	* Deforming with gizmo (`w`)
+  	* We have one subtool for eyes and eyelids. How work on eyelids without messing up eye
+  	* Back to Sculpt/Draw: `q`
+  	* Move brush `b, m, v`
+      	* masks (in draw mode)
+        		* `ctrl-left drag` to mask out
+        		* `ctrl-left drag` on background, not touching model, to clear mask.
+        		* `ctrl-left click` on background to flip mask.
+    		* With automask polygroup (in brush menu)
+      			* View popugroups with shift F
+    		* automask topological
+    		* masking with ctrl
+    		* Now try Move Elastic `b, m, e`
 
 {{< imgproc brice_head_pg Resize "500x">}}
 Brice head with polygroups visible.
 {{< /imgproc >}}
+This is a nice sitting position, I can type pretty easy too. typing way easier with a bigass tilt to the keeb dohn u fing.
+I wonder if i can type prtty cosy like. yeah that's real cosy like.super cosy like if i could get my arms held up like this.
 
 #### Find Short Tute Video Of Eyes
 
@@ -174,7 +182,13 @@ Brice Saint Laville's starting files.
 * Select a star or cylinder tool from tool palette
 * Go to `Lightbox->Tools->Base Meshes` and load the head basemesh.
 
-Live demo.
+## Demo: Greeno
+
+Starting a character bust from a basemesh using reference.
+
+{{< imgcard ui_drawMenu_frontReference>}}
+The starting file along with good <i>Draw</i> menusettings for a reference plane.
+{{< /imgcard >}}
 
 ### Joining The Pieces
 
