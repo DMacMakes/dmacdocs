@@ -70,6 +70,10 @@ New brushes this week.
 New materials this week.
 {{< /imgcard >}}
 
+## Follygon's ZBrush Process
+
+{{< youtube cYE_bVG98OQ >}}
+
 ### How To Add Eyeballs And Eyelids!
 
 Sometimes having everything in one mooshy, continuous mass makes life hard. Consider eyes:
