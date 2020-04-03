@@ -34,13 +34,13 @@ More than just adding and removing clay. Now we take advantage of digital tools.
 
 ### New  Resources
 
-Exit ZBrush and, in explorer, open the `C:\Program Files\ZBrush 2020\` folder.
+Exit ZBrush and, in explorer, open the `C:\Program Files\Pixologic\ZBrush 2020\` folder.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="Zbr_wk2_resources.zip">Download Zbr_wk2_resources.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 **ZTools:**
-  * Copy whole `BaseMeshes` folder into `C:\Program Files\ZBrush 2020\ZTools`
+  * Copy whole `BaseMeshes` folder into `C:\Program Files\Pixologic\ZBrush 2020\ZTools`
   * Low poly, quad based **character blockout** with good, mixed gender topology. Broken up into parts.
   * One file for **whole character**, another with **head + body**, one with **just eyes** near world origin (x,y,z = 0)
 
@@ -49,7 +49,7 @@ Stylised human basemeshes.
 {{< /imgproc >}}
 
 **Brushes:**
-  * Copy files into `C:\Program Files\ZBrush 2020\ZStartup\BrushPresets`
+  * Copy files into `C:\Program Files\Pixologic\ZBrush 2020\ZStartup\BrushPresets`
   * _DM_ClayBuildMushy:_ Like Clay Buildup with softer, rounder shape.
   * _JACCut_A:_ Like a combo of Dam Standard and Pinch. Sharp creases, edges.
   * _Orb_Cracks:_ Great crack-in-stone brush.
@@ -60,7 +60,7 @@ New brushes this week.
 {{< /imgcard >}}
 
 **Materials:**
-  * Copy files into `C:\Program Files\ZBrush 2020\ZStartup\Materials`
+  * Copy files into `C:\Program Files\Pixologic\ZBrush 2020\ZStartup\Materials`
   * _IJ_Clay:_ Bright with rimlight, good for exaggerating form.
   * _mah_modelling:_ Great all round modelling brush, like grey_matcap.
   * _zbro_EyeReflection_ellipse:_ Glossy eye material
