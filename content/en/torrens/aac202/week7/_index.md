@@ -6,6 +6,10 @@ linkTitle: "W.7 ZBrush 2"
 weight: 70
 description: >
   Working clean: subtools, automasking, base meshes, remeshing.
+resources:
+- src: "*patri*"
+  params:
+    byline: "Art: Patri Balanovsky (Artstation)"
 ---
 
 ## Last Week's Homework
@@ -62,13 +66,17 @@ New brushes this week.
   * _zbro_EyeReflection_ellipse:_ Glossy eye material
   * _zbro_Viewport_Skin4:_ Change your colour to a skin tone for a decent realtime skin.
 
-{{< imgcard res_materials>}}
+{{< imgcard res_materials >}}
 New materials this week.
 {{< /imgcard >}}
 
 ### How To Add Eyeballs And Eyelids!
 
 Sometimes having everything in one mooshy, continuous mass makes life hard. Consider eyes:
+
+{{< imgcard moana_disney Link "https://www.pinterest.com.au/dmacdraws/aac202/">}}
+Moana's lower lids are more visible as she looks upward. Also visible are the thick edges of her upper lids.
+{{< /imgcard >}}
 
 * **Eyeballs**, apart from a bump on the front, are **perfectly round**, glossy balls. 
     * Maintaining perfect shapes is hard in sculpting.
@@ -77,6 +85,10 @@ Sometimes having everything in one mooshy, continuous mass makes life hard. Cons
     * As a modeller you need to change them constantly.
 
 To freely modify one while leaving the other perfect, **we need different surfaces**.
+
+{{< imgproc bust_chef_pixar Resize "500x" Link "https://www.pinterest.com.au/dmacdraws/aac202/">}}
+This real clay chef sculpt from Pixar is extremely stylised. You can see the eyes and lids are not sculpted out of the main mass.
+{{< /imgproc >}}
 
 ### Tools and Subtools
 
@@ -225,13 +237,31 @@ Block out, merge, continue.
 	2: dynamesh all but eyes and eyelids into single form, trying to keep detail without too much geo.
 	3: clean up some details with sculptris.
 
+{{< imgproc "patri-balanovsky-alien-faces-5" Resize "600x" Link "[url](https://www.artstation.com/artwork/n6X1r)" >}}
+faces-5
+{{< /imgproc >}}
+
+{{< imgproc "patri-balanovsky-alien-faces-8" Resize "600x" Link "[url](https://www.artstation.com/artwork/n6X1r)" >}}
+faces-8
+{{< /imgproc >}}
+
+{{< imgproc "patri-balanovsky-alien-faces-12" Resize "600x" Link "[url](https://www.artstation.com/artwork/n6X1r)" >}}
+faces-12
+{{< /imgproc >}}
+
 Week 8 we’ll use goZ to add stuff in maya and begin work on our final charcter. Learn material fill.
 
 Week 9 polypaint and solve people’s problems workshop.
 
 #### Resources
 
-My AAC202 youtube playlist:
+ZBrush keyboard shortcuts:
+[http://docs.pixologic.com/user-guide/keyboard-shortcuts/shortcuts-by-category/](http://docs.pixologic.com/user-guide/keyboard-shortcuts/shortcuts-by-category/)
+
+My aac202 pinterest board.
+[https://www.pinterest.com.au/dmacdraws/aac202/](https://www.pinterest.com.au/dmacdraws/aac202/)
+
+My aac202 youtube playlist:
 [https://www.youtube.com/playlist?list=PLfWza-ietxyzCD459RKEL6Tg42Tgnq5gE](https://www.youtube.com/playlist?list=PLfWza-ietxyzCD459RKEL6Tg42Tgnq5gE)
 
 The middle tao pai pai video:
