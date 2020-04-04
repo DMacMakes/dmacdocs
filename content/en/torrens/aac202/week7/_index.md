@@ -108,10 +108,10 @@ A Tool can have multiple subtools. While you're in a ZBrush project you can load
 Jaw is a subtool of our character tool. Note the ear subtool has two meshes.
 {{< /imgproc >}}
 
-| Category |  Definition/Place              |
-|-----|-----|
-| Tools | Objects in the Tools palette.     |
-| Subtools | Objects in the Subtools list   |
+| Category |  Definition/Place                            |
+|-----|-----                                              |
+| Tools | Objects in the Tools palette.                   |
+| Subtools | Objects in the Subtools list                 |
 | Meshes   | Shells of contiguous polygons. Found inside subtools. |
 
 #### Importing Subtools
