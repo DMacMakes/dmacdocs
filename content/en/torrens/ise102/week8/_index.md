@@ -17,6 +17,8 @@ Testing for user flow and clarity
 
 ## Delivering Your Assessment Files
 
+{{< youtube H44emolQCz4 >}}
+
 {{< alert title="Where Is My Project Folder?" color= "primary" >}}
 With your project open in Visual studio:
   * Tight click the project in the _solution explorer_
@@ -24,7 +26,7 @@ With your project open in Visual studio:
   * You'll see several files there, including your `main.cpp`.
 {{< /alert >}}
 
-### Cleaning up cache stuff
+### What You Should Delete
 Your folder can be several hundred MB in size. The files you actually need are about 30-50KB in size.
 
 In your solution/project folder (same thing for us) you can **delete all** of these folders:
@@ -39,8 +41,6 @@ In your solution/project folder (same thing for us) you can **delete all** of th
 {{< imgcard folder_cleaning>}}
 Delete the folders.
 {{< /imgcard >}}
-
-### Zipping up the whole project
 
 ## Add Colour With Termcolor
 
@@ -83,14 +83,16 @@ Add `termcolor.h` to your own assignment by **right clicking** the `termcolor.h`
 
 Just having it in your project/solution folder doesn't make `#include` work.
 
+In _solution explorer_, right click _Headers_, add existing, and select the `termcolor.h` file in your project folder.
 
+### Usage
+
+For more help, visit the [github homepage of termcolor](https://github.com/ikalnytskyi/termcolor) and scroll down to the README.
+
+<!--
 ## Intro to Objects
   * Learning and adding functions, vs spoon feeding answers. We can do that now!
   * Cin functions
   * Catching alpha numeric input (in demo code, not spoon feeding)
   * String object functions
-
-
-  - 
-
-
+-->
