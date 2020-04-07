@@ -5,9 +5,9 @@ weight: 80
 description: >
   Painting doesn't have to be so intimidating. Tips today include using simple tones to maximum effect, and knowing how certain "good" aka dynamic shapes can make paintings more engaging. Also: Assessment 2.
 resources:
-- src: "image_of_art.png"
+- src: "*catell*"
   params:
-    byline: "Art: Person Person"
+    byline: "Art: Catell Ruiz (Deviantart)"
 ---
 
 We've had 7 heavy weeks of work and not a small amount of drama with the change in lifestyle for all of us. This week is going to be a bit lighter, but the concepts are so vital and engaging that hopefully you'll be inspired to play a lot with these concepts at home.
@@ -54,6 +54,19 @@ You've learned about seeing large shapes in dynamic paintings. Now look at your 
 
 ## Homework
 
+Give yourself 30 minutes to paint the major values in the image below by Catell Ruiz. Post it to the discussion forum in the [Week 8 - Environment practise](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83802_1&nav=discussion_board_entry&conf_id=_133410_1&forum_id=_805305_1&message_id=_2024923_1) thread. 
+
+* You can use 5 major values
+* Look for good shapes
+* Don't paint most of the lines (edges between slats, drop shadow on every tile)
+* Steer clear of blending except on the one or two rounded roof/beam bits it's needed. 
+* Keep moving around the image, don't stay long in one place
+* You don't always have to brush/paint. Try selecting an area with the freehand lasso tool and filling it 👌
+
+
+{{< imgcard homework_catell Link "homework_catell.jpg">}}
+House concept for <i>Numa</i>
+{{< /imgcard >}}
 
 ## Resources
 
