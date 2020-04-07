@@ -38,7 +38,7 @@ Grab the [Brushes here](week8_exercise_brushes.abr)
 
 Check out the dmdocs ACR101 [assessment page](../assessments/#assessment-2-environment-portfolio)
 
-* 12 pages, as with character folio.
+* 16 pages, as with character folio.
 * Incorporates work done in class and updated journal.
 * Minimum (equivalent) 5 pages of reference.
   
@@ -51,4 +51,13 @@ Marco Bucci again! **Watch this video** on your own pc. When you're done, come b
 ### Exercise
 
 You've learned about seeing large shapes in dynamic paintings. Now look at your own painting and see where you can simplify areas and make them more dynamic by cleaning up/altering/creating shapes in there. 
+
+## Homework
+
+
+## Resources
+
+* ACR101 [youtube playlist](https://www.youtube.com/playlist?list=PLfWza-ietxyyBRsQdwrhGV7ymiKaGwbpz).
+* Uncharted Environment [Workflow breakdown on Gnomon](https://www.gnomon.edu/blog/discover-naughty-dog-s-environment-art-workflow-for-uncharted-4).
+
 

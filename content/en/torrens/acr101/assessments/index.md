@@ -122,23 +122,26 @@ Similar to assessment 1 in idea and format, applied to environments.
 {{< alert title="Environment" color= "primary" >}}
 The game world. The landscape including trees, rivers, trails, roads, buildings, walls, citadels and so on. 
 
-A game environment differs from a real world environment in that it often has to communicate things like goals, special areas, factions and the path to travel clear and cinematic ways.
+A game environment differs from a real world environment in that it often has to communicate things like goals, special areas, factions and the path to travel, all in clear and cinematic ways.
 {{< /alert >}}
 
 ### Assessment Outline
-* Research and create an environmental design portfolio for digital production based on a singular thematic concept. 
+
+* Research and create an environmental design portfolio. Imagine it will be used by artists to make the level assets for a real video game.
+* It will be based on a single level/zone of a single game.
 * This is not limited to 2D games, the concepts can be for any game and digital production.
 * Designs can be a combination of a digitally painted concept, illustrations, texture studies and asset designs.
-* Designs must be accompanied by a development portfolio with a minimum of 16 pages including final 2D render. 
+* Designs are part of a development portfolio with a minimum of 16 pages including final 2D render. 
 * In class-exercises, sketches, mood boards and other research elements can contribute to the portfolio.
 * Your facilitator will provide any additional information informing the brief, such as style, object or thematic guides.
 
 ### Submission/Deliverables
 
+**Due Date:** Sunday May 10, 11:55pm.
+
 * Environment Portfolio
     * High resolution images, not thumbnails. A landscape-orientation page should be around 2500px wide.
-    * Minimum of 16 pages
-    * 1-page final environment design sheet - see below.
+    * Minimum of **16 pages**
     * 5 pages minimum of references (can be spread throughout)
     * 1 page final environment Design Sheet
         * A3 Single sheet containing final renders.
@@ -146,6 +149,11 @@ A game environment differs from a real world environment in that it often has to
 
 Zip up or PDF your 16 pages.
 * **Do not** use pdf if you aren't sure how to **preserve resolution** and quality.
+
+### Resources
+
+* ACR101 [youtube playlist](https://www.youtube.com/playlist?list=PLfWza-ietxyyBRsQdwrhGV7ymiKaGwbpz).
+* Uncharted Environment [Workflow breakdown on Gnomon](https://www.gnomon.edu/blog/discover-naughty-dog-s-environment-art-workflow-for-uncharted-4).
 
 ## What Have I/You Forgotten?
 
