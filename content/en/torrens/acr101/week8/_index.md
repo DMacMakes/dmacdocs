@@ -36,6 +36,8 @@ Grab the [Brushes here](week8_exercise_brushes.abr)
 
 ## Assessment 2: Environment Portfolio
 
+Check out the dmdocs ACR101 [assessment page](../assessments/#assessment-2-environment-portfolio)
+
 * 12 pages, as with character folio.
 * Incorporates work done in class and updated journal.
 * Minimum (equivalent) 5 pages of reference.
