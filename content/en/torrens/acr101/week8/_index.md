@@ -22,6 +22,8 @@ Marco Bucci! **Watch this video** on your own pc. When you're done, come back to
 
 Painting from life using 3 tone light and shadow. 
 
+Grab the [Brushes here](week8_exercise_brushes.abr)
+
 {{< imgcard portrait_1>}}
 {{< /imgcard >}}
 
@@ -30,6 +32,7 @@ Painting from life using 3 tone light and shadow.
 
 {{< imgcard portrait_3>}}
 {{< /imgcard >}}
+
 
 ## Assessment 2: Environment Portfolio
 
