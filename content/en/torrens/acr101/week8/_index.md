@@ -54,7 +54,7 @@ You've learned about seeing large shapes in dynamic paintings. Now look at your 
 
 ## Homework
 
-Give yourself 30 minutes to paint the major values in the image below by Catell Ruiz. Post it to the discussion forum in the [Week 8 - Environment practise](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83802_1&nav=discussion_board_entry&conf_id=_133410_1&forum_id=_805305_1&message_id=_2024923_1) thread. 
+Give yourself 30 minutes to paint the major values in the image below by Catell Ruiz. Post it to the discussion forum in the [Week 8 - Environment practise](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83802_1&nav=discussion_board_entry&conf_id=_133410_1&forum_id=_805305_1&message_id=_2024923_1) thread at least one day before class (by Monday night if class is Tuesday).
 
 * You can use 5 major values
 * Look for good shapes
