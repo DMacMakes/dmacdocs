@@ -113,9 +113,39 @@ Crane
 
 
 
-## Assessment 2
+## Assessment 2: Environment Portfolio
 
-Coming soon (or check Blackboard)
+Similar to assessment 1 in idea and format, applied to environments.
+
+[Brief page on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8570135_1&course_id=_83802_1) (Tri 1, 2020)
+
+{{< alert title="Environment" color= "primary" >}}
+The game world. The landscape including trees, rivers, trails, roads, buildings, walls, citadels and so on. 
+
+A game environment differs from a real world environment in that it often has to communicate things like goals, special areas, factions and the path to travel clear and cinematic ways.
+{{< /alert >}}
+
+### Assessment Outline
+* Research and create an environmental design portfolio for digital production based on a singular thematic concept. 
+* This is not limited to 2D games, the concepts can be for any game and digital production.
+* Designs can be a combination of a digitally painted concept, illustrations, texture studies and asset designs.
+* Designs must be accompanied by a development portfolio with a minimum of 16 pages including final 2D render. 
+* In class-exercises, sketches, mood boards and other research elements can contribute to the portfolio.
+* Your facilitator will provide any additional information informing the brief, such as style, object or thematic guides.
+
+### Submission/Deliverables
+
+* Environment Portfolio
+    * High resolution images, not thumbnails. A landscape-orientation page should be around 2500px wide.
+    * Minimum of 16 pages
+    * 1-page final environment design sheet - see below.
+    * 5 pages minimum of references (can be spread throughout)
+    * 1 page final environment Design Sheet
+        * A3 Single sheet containing final renders.
+        * Must include at least 1 coloured environment render.
+
+Zip up or PDF your 16 pages.
+* **Do not** use pdf if you aren't sure how to **preserve resolution** and quality.
 
 ## What Have I/You Forgotten?
 
