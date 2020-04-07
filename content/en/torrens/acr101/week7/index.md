@@ -1,7 +1,7 @@
 ---
 title: "7: Colour"
 linkTitle: "W.7 Color"
-weight: 60
+weight: 70
 description: >
   Color harmonies, psychology, mood and application.
 resources:
