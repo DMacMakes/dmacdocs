@@ -22,8 +22,14 @@ Marco Bucci! **Watch this video** on your own pc. When you're done, come back to
 
 Painting from life using 3 tone light and shadow. 
 
--BRUSHES COMING-
--PICTURE COMING-
+{{< imgcard portrait_1>}}
+{{< /imgcard >}}
+
+{{< imgcard portrait_2>}}
+{{< /imgcard >}}
+
+{{< imgcard portrait_3>}}
+{{< /imgcard >}}
 
 ## Assessment 2: Environment Portfolio
 
