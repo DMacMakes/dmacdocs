@@ -27,8 +27,10 @@ Painting from life using 3 tone light and shadow.
 
 ## Assessment 2: Environment Portfolio
 
-Info coming.
-
+* 12 pages, as with character folio.
+* Incorporates work done in class and updated journal.
+* Minimum (equivalent) 5 pages of reference.
+  
 ## Good Shapes
 
 Marco Bucci again! **Watch this video** on your own pc. When you're done, come back to the stream and **type '{)'** in chat.
