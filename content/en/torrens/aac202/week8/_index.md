@@ -16,7 +16,7 @@ What was good? What was tricky?
 
 ## New ZBrush Resource Pack
 
-Download the [week3 zip](Zbr_wk3_resources.zip)
+Download my updated [ZBrush Resources and ui zip](Zbr_wk3_resources.zip)
 
 ## Refining The Sculpt
 
