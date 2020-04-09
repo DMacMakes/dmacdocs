@@ -10,9 +10,9 @@ resources:
     byline: "Art: Patri Balanovsky (Artstation)"
 ---
 
-## Help With Week 7 Sculpt
+## Discussing Week 7 Sculpt
 
-First half hour: Looking at a few people's sculpts, helping to fix issues.
+What was good? What was tricky?
 
 ## Refining The Sculpt
 
