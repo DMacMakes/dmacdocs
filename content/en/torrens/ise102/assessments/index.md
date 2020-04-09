@@ -32,7 +32,33 @@ We'll make a text based slot machine using the `ise102_console` template. A _pro
 
 ### Deliverable 
 
-You'll deliver a zip file containing the entire Visual Studio solution for your game. Instructions will be added soon to the  [Delivering Code](#delivering-code-assessments) section of this page.
+You'll deliver a zip file containing your Visual Studio solution. Work through the steps shown in the video carefully: if your submission is bloated, missing important files or misnamed it will cost marks.
+
+{{< youtube H44emolQCz4 >}}
+
+{{< alert title="Where Is My Project Folder?" color= "primary" >}}
+With your project open in Visual studio:
+  * Tight click the project in the _solution explorer_
+  * Click _Open folder in file explorer_. 
+  * You'll see several files there, including your `main.cpp`.
+{{< /alert >}}
+
+### What You Should Delete
+Your folder can be several hundred MB in size. The files you actually need are about 30-50KB in size.
+
+In your solution/project folder (same thing for us) you can **delete all** of these folders:
+* _.vs_ 
+    * visual studio will probably have to be closed for this one
+    * If you can't see it, turn on "hidden items" in Windows explorer's _view_ ribbon.
+* _debug_
+* _release_
+* _x86_
+* _x64_
+
+{{< imgcard folder_cleaning>}}
+Delete the folders.
+{{< /imgcard >}}
+
 
 ## Assessment 3: Realtime Game
 

@@ -18,6 +18,10 @@ What was good? What was tricky?
 
 Download my updated [ZBrush Resources and ui zip](Zbr_wk3_resources.zip)
 
+{{< imgcard Zbr_wk3_ui_brice_base Link "Zbr_wk3_ui_brice_base.jpg" >}}
+The new UI and brushes/materials/plugin
+{{< /imgcard >}}
+
 ## Refining The Sculpt
 
 We're still using a small subset of ZBrush's features, and some areas remain difficult to work with.
