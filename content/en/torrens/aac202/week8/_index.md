@@ -14,6 +14,10 @@ resources:
 
 What was good? What was tricky?
 
+## New ZBrush Resource Pack
+
+Download the [week3 zip](Zbr_wk3_resources.zip)
+
 ## Refining The Sculpt
 
 We're still using a small subset of ZBrush's features, and some areas remain difficult to work with.
