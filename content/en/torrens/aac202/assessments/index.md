@@ -36,6 +36,17 @@ Your final deliverable will be screenshots and an export from Substance Painter.
 
 ## Assessment 2: High Poly Character
 
-Simple whole character from scratch or character bust (head and shoulders) from base mesh.
+The brief for the assessment delves into things we won't actually be covering here or fitting in. That said, we'll still be delivering a sculpted character in rendered images (and working zpr file), and I'll go through how the marking rubric is still relevant.
+
+[PDF Brief](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/4656692?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27AAC202%2520Assessment%25202_2018.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200409T012856Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200409%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=d84dec4be2e49818e35e4c680ae3f56a7a59bdd37e702a0eacd930e2f7ace1f8) on Blackboard
+
+### The Task
+
+Select one of the heads you _didn't_ already sculpt. Using what you've learned in your first attempt and in third ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.
+
+### Deliverables
+
+1. Working ZPR file
+2. Renders of your character from multiple angles.
 
 ## Assessment 3: High Poly Environment
