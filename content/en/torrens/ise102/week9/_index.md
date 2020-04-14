@@ -124,24 +124,27 @@ Good? Do more!
 ## Listen for input 
 How to listen for input on a given frame
 
-```cpp {.line-numbers}
-// COMING
-#include <iostream>
-#include <string>
-using namespace std;
+Download [Week9_TapColours.zip](Week9_TapColours.zip)
 
-int main()
-{
-  return(0);
-}
+## Exercise:
+
+1. Background Flip:
+
 ```
-
-**Exercise:**
 Listen for R  or Y
 If it's R:
   fill screen with red
 If it's Y: fill with yellow  
   Y fill yellow
+```
+
+2. Border Flip:
+
+```
+Listen for B or W
+Change the border to blue or white accordingly.
+```
+
 
 
 
