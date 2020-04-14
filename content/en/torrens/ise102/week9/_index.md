@@ -79,33 +79,53 @@ I'll give you a Visual Studio solution today with a library that draws text char
 We can make something like this more easily.
 {{< /imgcard >}}
 
-**Hand out** code with default screen size and width, default fps.
+### Download The Example
 
 [Console_Drawing_Week_9.zip](Console_Drawing_Week_9.zip)
 
 We'll treat the characters on screen as giant pixels. Using the TextPixels library, 
 they'll be made square.
 
-**Code exercise:**
-How to draw to command prompt.
-Copy code for: 
+**Load and run** the code. Run it.
+
  * drawing a pixel
  * drawing a string
  * Numbers to a string
- * drawing a line
+ * filling a row with a character
+ * Show fps
 
-**Discuss and explain:**
-* The game loop we saw
-* The aninated graphics game loop - 
-	* doesn’t hold for input, like ordering and waiting for coffee. 
-	* It snatches it like a tour de france rider (gifs for this)
-  
-**Tasks - Write code that will: **
-* draw 3 pixels at random places
-* Using a loop, fill the screen with horizontal lines.
+### Exercise
 
-** Listen for input **
+Read the code and comments carefully. Hover over function names for an explanation of what they do.
+
+1. Change the symbol that is drawn across a row to something else.
+2. Make it go down a column instead.
+3. Change the foreground and background colour of the symbol.
+4. Change the border colour.
+
+#### How did we do?
+
+Good? Do more!
+
+5. Draw a 10 pixel square at the bottom right of the window, but don't draw over the border.
+6. Draw 3 pixels at random places
+7. Using a loop, fill the screen with horizontal lines in blue and grey lines (hint: modulus)
+
+
+### Listen for input 
 How to listen for input on a given frame
+
+```cpp {.line-numbers}
+// COMING
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+  return(0);
+}
+```
 
 **Exercise:**
 Listen for R  or Y
