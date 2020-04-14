@@ -106,11 +106,6 @@ Read the code and comments carefully. Hover over function names for an explanati
 2. Make it go down a column instead.
 3. Change the foreground and background colour of the symbol.
 4. Change the border colour.
-5. Draw a Tetris L piece somewhere the screen. Falling at whatever orientation you like.
-   
-{{< imgcard tetris_L >}}
-The Tetris L piece.
-{{< /imgcard >}}
 
 ### How did we do?
 
@@ -118,7 +113,11 @@ Good? Do more!
 
 5. Draw a 10 pixel square at the bottom right of the window, but don't draw over the border.
 6. Draw 3 pixels at random places
-7. Using a loop, fill the screen with horizontal lines in blue and grey lines (hint: modulus)
+7. Draw a Tetris L piece somewhere the screen. Falling at whatever orientation you like. 
+{{< imgcard tetris_L >}}
+The Tetris L piece.
+{{< /imgcard >}}
+8. Using a loop, fill the screen with horizontal lines in blue and grey lines (hint: modulus)
 
 
 ## Listen for input 
