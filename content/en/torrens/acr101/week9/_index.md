@@ -61,3 +61,27 @@ Joshua Veronese
 {{< imgcard slides_week9 Link "Week9_Env_Concept_Art.pdf">}}
 Week 9 Slides: Environmental Concept Art
 {{< /imgcard >}}
+
+## Homework
+
+* Pick one of the thumbnail ideas you didn’t use today, or make up your own.
+* Make 2-3 400px thumbnails and pick the one you like best. 
+* Paint up your scene at a higher resolution using what you already know (paintbrush work) plus the steps we learned today where they help.
+    - Deliver an image 1000px wide
+    - I recommend working at 2000px wide and then exporting it scaled down 50% (bicubic automatic) as a png. In Photoshop you can use File > Export > Export As…
+* Post to discussion forum in [module 5 -  Week 9 – Homework thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83802_1&nav=discussion_board_entry&conf_id=_133410_1&forum_id=_805306_1&message_id=_2036350_1)
+
+Themes:
+  The old pier- Break in the weather - Ice cold- Abandoned mine - **your own**
+
+Process from slides:
+Phase 1: Reference Gathering
+Phase 2: Composition blocking
+Phase 3: Adding Gradients
+Phase 4: Detail pass
+Phase 5: Colour
+Phase 6: Texturing
+Phase 7: Post processing
+
+
+
