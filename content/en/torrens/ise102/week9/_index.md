@@ -70,7 +70,7 @@ Textmode 2000
 ZZT
 {{< /imgcard >}}
 
-### Solution: TextPixels
+## Solution: TextPixels
 
 I'll give you a Visual Studio solution today with a library that draws text characters anywhere on screen. 
 
@@ -98,7 +98,7 @@ they'll be made square.
  * filling a row with a character
  * Show fps
 
-### Exercise
+## Exercise
 
 Read the code and comments carefully. Hover over function names for an explanation of what they do.
 
@@ -106,8 +106,13 @@ Read the code and comments carefully. Hover over function names for an explanati
 2. Make it go down a column instead.
 3. Change the foreground and background colour of the symbol.
 4. Change the border colour.
+5. Draw a Tetris L piece somewhere the screen. Falling at whatever orientation you like.
+   
+{{< imgcard tetris_L >}}
+The Tetris L piece.
+{{< /imgcard >}}
 
-#### How did we do?
+### How did we do?
 
 Good? Do more!
 
@@ -116,7 +121,7 @@ Good? Do more!
 7. Using a loop, fill the screen with horizontal lines in blue and grey lines (hint: modulus)
 
 
-### Listen for input 
+## Listen for input 
 How to listen for input on a given frame
 
 ```cpp {.line-numbers}
