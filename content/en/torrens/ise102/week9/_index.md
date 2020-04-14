@@ -85,6 +85,7 @@ We can make something like this more easily.
 
 ### Download The Example
 
+(Updated with `fillRect(x, y, width, height)` and `fillRectByCoords(x, y, x2, y2)` working correctly)
 [Console_Drawing_Week_9.zip](Console_Drawing_Week_9.zip)
 
 We'll treat the characters on screen as giant pixels. Using the TextPixels library, 
@@ -103,7 +104,7 @@ they'll be made square.
 Read the code and comments carefully. Hover over function names for an explanation of what they do.
 
 1. Change the symbol that is drawn across a row to something else.
-2. Make it go down a column instead.
+2. Make it go from top to bottom (y) instead of across (x).
 3. Change the foreground and background colour of the symbol.
 4. Change the border colour.
 
@@ -112,18 +113,25 @@ Read the code and comments carefully. Hover over function names for an explanati
 Good? Do more!
 
 5. Draw a 10 pixel square at the bottom right of the window, but don't draw over the border.
-6. Draw 3 pixels at random places
+   - Use either `fillRect` or `fillRectByCoords`, whichever makes the most sense to you
+6. Draw 3 pixels at random places in 3 different colours using `drawPixel`.
 7. Draw a Tetris L piece somewhere the screen. Falling at whatever orientation you like. 
 {{< imgcard tetris_L >}}
 The Tetris L piece.
 {{< /imgcard >}}
-8. Using a loop, fill the screen with horizontal lines in blue and grey lines (hint: modulus)
+8. Using loops, fill the screen with horizontal stripes, using one colour for even lines and another for odd lines. 
+    * Any two colours will do.
+    * Hint: modulus (the remainder of integer division) is good at telling odd from even.
 
+## Go Deeper: Listen for input 
 
-## Listen for input 
-How to listen for input on a given frame
+We asked our programmer to make a program that fills the screen with red when the _R_ key is pressed, and yellow when _Y_ is pressed. If we don't have it up and running within 7 days we'll definitely go out of business.
 
-Download [Week9_TapColours.zip](Week9_TapColours.zip)
+Our best programmer was on the task, but she hasn't yet returned from her Genetically Engineered Dinosaur Rescue Park holiday. The  working files are here, and she noted how to finish it in her comments. Can you finish it?
+
+It's above our heads: all we know is the function `keyIsDown('R')` returns `true` if the _R_ key is being held down. 
+
+Download [Week9_TapColours.zip](Week9_TapColours.zip) if you're programmer enough to do it.
 
 ## Exercise:
 
