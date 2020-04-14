@@ -133,23 +133,14 @@ It's above our heads: all we know is the function `keyIsDown('R')` returns `true
 
 Download [Week9_TapColours.zip](Week9_TapColours.zip) if you're programmer enough to do it.
 
-## Exercise:
-
-1. Background Flip:
+### In Sorta Pseudocode
 
 ```
 Listen for R  or Y
 If it's R:
   fill screen with red
-If it's Y: fill with yellow  
-  Y fill yellow
-```
-
-2. Border Flip:
-
-```
-Listen for B or W
-Change the border to blue or white accordingly.
+If it's Y: 
+  fill with yellow  
 ```
 
 
