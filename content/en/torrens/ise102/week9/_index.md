@@ -147,7 +147,7 @@ The output
 
 Here's a look at `draw()`, which calls a bunch of textpixels functions:
 
-```cpp {.line-numbers}
+```cpp
 
 void draw()
 {
