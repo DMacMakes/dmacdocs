@@ -76,21 +76,24 @@ Textmode 2000
 ZZT
 {{< /imgcard >}}
 
+{{< imgcard snake_huge_pixels >}}
+We could make something like this more easily.
+{{< /imgcard >}}
+
 ## Solution: TextPixels
 
-I'll give you a Visual Studio solution today with a library that draws text characters anywhere on screen. 
+I'll give you a Visual Studio solution today with a library that draws coloured unicode text characters anywhere in the console. 
 
 * It is effectively like changing big pixels on a low resolution screen
 * It can move to and draw at any x,y coordinate in any sequence
     * no left to right, no tabs `\t` or spaces or newlines `\n` needed.
 * If you picture the command prompt completely full of text, like a find a word puzzle, those are our text pixels.
-* 
 
-{{< imgcard snake_huge_pixels >}}
-We can make something like this more easily.
+{{< imgcard output_console_drawing >}}
+Some of the drawing routines in TextPixels demonstrated
 {{< /imgcard >}}
 
-### Screen Coordinates
+### Drawing To Screen Coordinates
 
 As you know, a computer screen is a big grid of pixels. Every time that grid is updated, that's one frame of your game, or 1 hz (hertz).
 
@@ -111,24 +114,75 @@ Pixels at x,y coordinates
 {{< /imgcard >}}
 
 {{< imgcard fillRect_width_height >}}
-Drawing a filled rectangle
+Drawing a filled rectangle on a screen
 {{< /imgcard >}}
+
+### Character Set
+
+Our projects so far have been limited to the basic 128 character set, which doesn't get you much more than what is on your keyboard. **TextPixels uses unicode,** which gives us handy stuff like the "box drawing" characters and pixels with different fills:
+
+{{< imgcard unicode_box_drawing_characters Link "https://en.wikipedia.org/wiki/Box-drawing_character">}}
+Click for the Wikipeda page
+{{< /imgcard >}}
+
+We'll get into how to use more of those later, but to get started we'll have **access to the solid pixel** with `drawPixel(x,y)`
 
 ### Download The Example
 
-(Updated with `fillRect(x, y, width, height)` and `fillRectByCoords(x, y, x2, y2)` working correctly)
-[Console_Drawing_Week_9.zip](Console_Drawing_Week_9.zip)
+[Console_Drawing_Week_9.zip](Console_Drawing_Week_9.zip) (Updated with `fillRect(x, y, width, height)` and `fillRectByCoords(x, y, x2, y2)` working correctly)
 
-We'll treat the characters on screen as giant pixels. Using the TextPixels library, 
-they'll be made square.
+We'll treat the characters on screen as giant pixels. Using the TextPixels library, they'll be made square.
 
-**Load and run** the code. Run it.
+**Load and run** the code. Examine the code provided for:
 
  * drawing a pixel
  * drawing a string
  * Numbers to a string
  * filling a row with a character
  * Show fps
+
+{{< imgcard output_console_drawing >}}
+The output
+{{< /imgcard >}}
+
+Here's a look at `draw()`, which calls a bunch of textpixels functions:
+
+```cpp {.line-numbers}
+
+void draw()
+{
+  //// WindowWidth and WindowHeight are both 30 by default.
+  //// Draw a rectangle that fills the screen with colour to clear it
+  //// From 0,0, and 30 total pixels wide and high.
+  fillRect(0, 0, windowWidth(), windowHeight(), FG_DARK_MAGENTA);
+  
+  //// Here I do exactly the same thing with fillRectByCoords
+  //// I draw from 0,0 to 29,29 because 0-29 is thirty (look at top border)
+  fillRectByCoords(0, 0, windowWidth()-1, windowHeight()-1, FG_DARK_MAGENTA);
+
+  //// Draw a rectangle 2 pixels shorter and narrower, starting at 1,1.
+  //// That leaves us a 1 pixel border on all sides
+  fillRect(1, 1, windowWidth()-2, windowHeight()-2, FG_GREY);
+  
+  //// Draw a single pixel mid screen
+  drawPixel(windowWidth() / 2, windowHeight() / 2, FG_GREEN);
+  
+  //// Print the frames per second on the bottom visible row of the screen.
+  drawString(1, windowHeight() - 1, "FPS: " + getFpsString(), layerColours(FG_GREY, BG_DARK_MAGENTA));
+  
+  //// Draw column numbers along the top row, leaving off the 1 in numbers > 9
+  for (int column = 0; column < windowWidth(); column++) {
+    drawWString(column, 0, to_wstring(column % 10), layerColours(FG_GREY, BG_DARK_MAGENTA));
+  }
+  //// draw = all along a row, but not on the borders.
+  for (int column = 1; column < windowWidth()-1; column++) {
+      drawWCharacter(column, 20, L'=', layerColours(FG_DARK_BLUE, BG_GREY));
+  }
+  return;
+
+}
+
+```
 
 ## Exercise
 
