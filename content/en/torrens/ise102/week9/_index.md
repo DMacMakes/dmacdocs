@@ -5,9 +5,9 @@ weight: 90
 description: >
   Going beyond text-entry mode, to drawing graphics with text.
 resources:
-  - src: "*word_in_image_names*"
+  - src: "screen_refresh*"
     params:
-      byline: "Credit: this guy"
+      byline: "Original images: https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/ac3-1/CRT_Monitors.html"
 ---
 
 ## Slots Is Done
@@ -48,7 +48,13 @@ We're really limited in **where we can place things** on screen.
 - Buuut **we have to stack them** up from the left of the screen, line by line
 - We can't change things we've drawn, except to clear the screen try again.
 
-Things you can do if you can **draw anywhere**:
+When you look at htop (like windows task manager) running in a console, it becomes obvious that the command prompt is just a grid of characters.
+
+{{< imgcard console_htop_grid >}}
+Rows and columns become obvious
+{{< /imgcard >}}
+
+If you could draw to each one **directly with x,y coordinates** you could do stuff like this:
 
 {{< imgcard pro_football_fairchild_channel_f >}}
 Games on early consoles like the Fairchild Channel F are close to text mode but would be painful to make and play with our current method.
@@ -74,13 +80,38 @@ ZZT
 
 I'll give you a Visual Studio solution today with a library that draws text characters anywhere on screen. 
 
-* It is effectively like changing big pixels in a low resolution bitmap (eg 30x30)
+* It is effectively like changing big pixels on a low resolution screen
 * It can move to and draw at any x,y coordinate in any sequence
     * no left to right, no tabs `\t` or spaces or newlines `\n` needed.
-* Each "pixel" in our "bitmap" is actually a text character drawn to a row/column  spot
+* If you picture the command prompt completely full of text, like a find a word puzzle, those are our text pixels.
+* 
 
 {{< imgcard snake_huge_pixels >}}
 We can make something like this more easily.
+{{< /imgcard >}}
+
+### Screen Coordinates
+
+As you know, a computer screen is a big grid of pixels. Every time that grid is updated, that's one frame of your game, or 1 hz (hertz).
+
+Before LCDs computer monitors were, like televisions, cathode ray tubes. The shot a beam of electrons at the pixels to change their colour, and they only had one beam, so they had to sweep the screen pixel by pixel.
+
+{{< imgcard screen_refresh_combined Link "https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/ac3-1/CRT_Monitors.html" >}}
+As you can see, the beam swept from top left to top right, and continued down the screen row by row.
+{{< /imgcard >}}
+
+When you draw to a screen in code we use the same coordinates, and textpixel uses this system as well.
+
+{{< imgcard screen_coords_3_mini_lcd >}}
+A tiny arduino screen
+{{< /imgcard >}}
+
+{{< imgcard screen_coords_4_pixels >}}
+Pixels at x,y coordinates
+{{< /imgcard >}}
+
+{{< imgcard fillRect_width_height >}}
+Drawing a filled rectangle
 {{< /imgcard >}}
 
 ### Download The Example
