@@ -37,9 +37,9 @@ We've been making games in an environment like a chat, or a left-justified text 
 
 ### Limitations
 
-Two big elements stand out as missing from our console/terminal games.
+One major thing stands out as missing from our console/terminal games: the ability to draw to arbitrary locations. Well, we could afford a larger character set too.
 
-#### 1. Drawing Anwywhere
+#### Drawing Anwywhere
 
 We're really limited in **where we can place things** on screen. 
 
@@ -105,8 +105,12 @@ As you can see, the beam swept from top left to top right, and continued down th
 
 When you draw to a screen in code we use the same coordinates, and textpixel uses this system as well.
 
-{{< imgcard screen_coords_3_mini_lcd >}}
+{{< imgproc arduino_oled Resize "500x">}}
 A tiny arduino screen
+{{< /imgproc >}}
+
+{{< imgcard screen_coords_3_mini_lcd >}}
+Coordinates on a tiny arduino screen
 {{< /imgcard >}}
 
 {{< imgcard screen_coords_4_pixels >}}
@@ -182,10 +186,14 @@ Here's a look at some of the `textpixels` function calls in `draw()`:
 
 Read the code and comments carefully. Hover over function names for an explanation of what they do.
 
-1. Change the symbol that is drawn across a row to something else.
+1. Change the '=" that is drawn across the row to something else.
 2. Make it go from top to bottom (y) instead of across (x).
-3. Change the foreground and background colour of the symbol.
+3. Change the foreground and background colour of your new character
 4. Change the border colour.
+
+{{< imgcard exercise1_by_waleed >}}
+Exercise 1 complete, by Waleed.
+{{< /imgcard >}}
 
 ### How did we do?
 
