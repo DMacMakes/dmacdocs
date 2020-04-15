@@ -145,13 +145,10 @@ We'll treat the characters on screen as giant pixels. Using the TextPixels libra
 The output
 {{< /imgcard >}}
 
-Here's a look at `draw()`, which calls a bunch of textpixels functions:
+Here's a look at some of the `textpixels` function calls in `draw()`:
 
 ```cpp
-
-void draw()
-{
-  //// WindowWidth and WindowHeight are both 30 by default.
+//// WindowWidth and WindowHeight are both 30 by default.
   //// Draw a rectangle that fills the screen with colour to clear it
   //// From 0,0, and 30 total pixels wide and high.
   fillRect(0, 0, windowWidth(), windowHeight(), FG_DARK_MAGENTA);
@@ -171,16 +168,13 @@ void draw()
   drawString(1, windowHeight() - 1, "FPS: " + getFpsString(), layerColours(FG_GREY, BG_DARK_MAGENTA));
   
   //// Draw column numbers along the top row, leaving off the 1 in numbers > 9
-  for (int column = 0; column < windowWidth(); column++) {
-    drawWString(column, 0, to_wstring(column % 10), layerColours(FG_GREY, BG_DARK_MAGENTA));
+  for (int x = 0; x < windowWidth(); x++) {
+    drawWString(x, 0, to_wstring(x % 10), layerColours(FG_GREY, BG_DARK_MAGENTA));
   }
   //// draw = all along a row, but not on the borders.
-  for (int column = 1; column < windowWidth()-1; column++) {
-      drawWCharacter(column, 20, L'=', layerColours(FG_DARK_BLUE, BG_GREY));
+  for (int x = 1; x < windowWidth()-1; x++) {
+      drawWCharacter(x, 20, L'=', layerColours(FG_DARK_BLUE, BG_GREY));
   }
-  return;
-
-}
 
 ```
 
