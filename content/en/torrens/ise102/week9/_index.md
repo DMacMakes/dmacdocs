@@ -3,7 +3,7 @@ title: "9: Drawing In The Console"
 linkTitle: "W.9 Drawing"
 weight: 90
 description: >
-  Going beyond text-entry mode, to drawing graphics with text.
+  Going beyond text-entry mode, to drawing pictures with fonts.
 resources:
   - src: "screen_refresh*"
     params:
