@@ -240,15 +240,15 @@ Block out, merge, continue.
 	2: dynamesh all but eyes and eyelids into single form, trying to keep detail without too much geo.
 	3: clean up some details with sculptris.
 
-{{< imgproc "patri-balanovsky-alien-faces-5" Resize "600x" Link "[url](https://www.artstation.com/artwork/n6X1r)" >}}
+{{< imgproc "patri-balanovsky-alien-faces-5" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
 faces-5
 {{< /imgproc >}}
 
-{{< imgproc "patri-balanovsky-alien-faces-8" Resize "600x" Link "[url](https://www.artstation.com/artwork/n6X1r)" >}}
+{{< imgproc "patri-balanovsky-alien-faces-8" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
 faces-8
 {{< /imgproc >}}
 
-{{< imgproc "patri-balanovsky-alien-faces-12" Resize "600x" Link "[url](https://www.artstation.com/artwork/n6X1r)" >}}
+{{< imgproc "patri-balanovsky-alien-faces-12" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
 faces-12
 {{< /imgproc >}}
 

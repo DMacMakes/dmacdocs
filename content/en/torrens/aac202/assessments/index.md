@@ -44,9 +44,31 @@ The brief for the assessment delves into things we won't actually be covering he
 
 Select one of the heads you _didn't_ already sculpt. Using what you've learned in your first attempt and in third ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.
 
-### Deliverables
+### Deliverables And Submission
 
-1. Working ZPR file
-2. Renders of your character from multiple angles.
+1. Your final **ZPR file**
+2. **Renders** (`shift+r`) of your character from multiple angles.
+   * **Side, front, back** (with perspective enabled: press `p`)
+   * A **beauty render 3/4 angle** to show off the character 
+   * Don't have the character tiny in the middle of the canvas. Move zbrush to your largest screen and have the character take up most of the canvas.
+
+The **beauty render** should be rendered to passes and taken into Photoshop or a similar image editor and polished up. 
+
+* **How to render passes**: [week9 notes \> render passes](../week9/#render-passes)
+  * If you have Photoshop you can use the Zbrush To Photoshop CC plugin to select and export them
+  * Otherwise use the RenderPass buttons to export individual passes.
+* Some **polishing** possibilities:
+  * Cropping to a nice composition
+  * Warming/cooling shadows, maybe improving the contrast
+  * Adding rim light  
+  * Adding gloss/specular hilight/shine to some elements
+  * painting in eyelashes and eyebrows that you didn't have geometry for
+    
+{{< alert title="Submitting Your Files" color= "primary" >}}
+1. Put your beauty render, other screenshots and your final ZPR file in a folder.
+2. **Rename that folder** `firstnameLastname_zbrushCharacter_AAC202`, zip it and and submit it on the **Blackboard** Assessment 2 page.
+{{< /alert >}}
+
+
 
 ## Assessment 3: High Poly Environment
