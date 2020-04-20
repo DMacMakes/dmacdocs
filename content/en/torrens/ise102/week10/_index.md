@@ -8,24 +8,30 @@ description: >
 
 ## Week9 Homework
 
-I left you guys a challenge: [Listen for input](../week9/#go-deeper-listen-for-input)
+I left you guys a challenge: [Listen for input](../week9/#go-deeper-listen-for-input). Let's look through a possible solution.
 
 ## Using Objects
  
- Objects are a types of data in C++ that have more complexity than your basic types (int, float, char).
+ Objects are a **types of data** in C++ that have more features than your basic types (`int`, `float`, `char`). Objects we've used so far include `string`, `cin` and `cout`.
  
  ### Objects can
   
-  * Behave like a normal variable. `string` is an example.
+  * Behave like a normal variable. Look at `string` for example:
     ```cpp
-    string fullName = "Princess Bubblegum";
+    string fullName = "Princess Bubblegum";     // no different to declaring and initialising int
     ```
-  * Also behave like folders that contain more variables and functions inside
+  * Also **behave like folders** that contain more variables and functions inside
     * We can access them by putting a dot `.` right after the variable name
 
 {{< imgcard string_object_functions Link "string_object_functions.png">}}
 The `string` object has plenty of useful functions.
 {{< /imgcard >}}
+
+The **output:**
+```
+        Your full name, Princess Bubblegum is 18 characters long.
+        Is 'Princess' your first name? I like it.
+```
 
 {{< alert title="Dot Notation" color= "primary" >}}
 You access variables and functions within an object by typing its  <b>variable name followed by a dot</b>. Intellisense will offer you a **list** of functions/variables for that data type. 
@@ -35,13 +41,29 @@ Here, it's `string`, and I've found a `length()` function:
 <img src="string_intellisense.jpg">
 {{< /alert >}}
 
-#### Dive Deeper: String Functions
+## Exercise 1
+
+1. Create an _ise102_console_ project and **type the _Princess Bubblegum_** code into `main()`.
+2. Now take the role of the interviewer. You still think "Princess Bubblegum" is a regular name.
+   * Create a variable `lastName`. Use `substr` (substring) to **store the Princess's last name** in `lastName`.  
+   * After your discussion of her first name, go to a new line and **complement her** on her last name. Mention it in the sentence.
+
+One **example:**
+
+```
+        Your full name, Princess Bubblegum is 18 characters long.
+        Is 'Princess' your first name? I like it.
+        I can't think of a lovelier last name than `Bubblegum`.
+```
+
+### Dive Deeper: String Functions
 
 * `string::substr()` (substring) [documentation](http://www.cplusplus.com/reference/string/string/substr/) 
 * `string::length()` [documentation](http://www.cplusplus.com/reference/string/string/length/)
 * `string` object [documentation](http://www.cplusplus.com/reference/string/string/)
     
-Objects:
+## Objects Also..
+  
   * Exist in the C++ libraries: `string`, `cout` 
   * Are things we can create to suit our own programs.
   * Can be made to represent anything you need
@@ -51,28 +73,27 @@ Objects:
       myLaserGun.pew();
       myLaserGun.pew();
       ```
+## Organise Things:
 
-### Objects Organise Things
+* Storing a character in your program as a couple separate variables might be fine, but: 
+  * what if you have two, or five? 15, 20, 25 variables? name1, height1, xPosition1, yPosition1, name2, height2.
+* Have objects **lump things together**.
 
-Storing a character in your program as a couple separate variables might be fine, but what if you have two, or five? 15, 20, 25 variables? name1, height1, xPosition1, yPosition1, name2, height2... 
-
-Have objects **lump things together**.
-<!--
 ```cpp
-Hero player1;     // Both players 
-Hero player2;     // So have same named variables available.
+Creature batty;     // Both are Creatures
+Creature horsey;     // So have same named variables available.
 
 // Set up player1 data
-player1.name = "Jada Pinkett Smith";
-player1.heroCategory = ACTRESS;
-player1.height = "151";
+batty.colour = FG_BLACK;
+batty.x = 5; 
+batty.y = 10;
 
 // Set up player 2 data
-player2.name = "Deng Xiaoping";
-player2.heroCategory = POLITICIAN;
-player2.height = "152";
+batty.colour = FG_BLACK;
+batty.x = 25; 
+batty.y = 10;
 ```
--->
+
 ### Objects Match Our Thinking
 
 Humans live in a world of objects with properties that do things.
@@ -102,8 +123,25 @@ Danny's seat height was adjusted to 42cm above ground.
 
 So, we can move left and right by changing our x location.
 
-### Exercise: Control Movement
-// code to move left and right, type it in
+### Exercise 2: Control Movement
+
+Here's an overview (functions and main) of a new structure we can use for our game. As you'll see next week, it'll help us use multiple screens.
+
+{{< imgcard code_flappy_functions Link "code_flappy_functions.png">}}
+{{< /imgcard >}}
+
+We'll use it now to move around. **Grab the base file** and **fill in** the missing bits from the code below.
+
+[Week10_moving_batty_finish.zip](Week10_moving_batty_finish.zip)
+
+{{< imgcard code_flappy_1 Link "code_flappy_1.png">}}
+{{< /imgcard >}}
+
+#### Add Up and Down
+
+1: Add constants for LEFT and RIGHT that can be used when setting value of xDir.
+2: Add constants for UP and DOWN.
+3: Look at the left right code; now implement up and down movement.
 
 ## Too fast!
 
@@ -118,7 +156,6 @@ How do we change the speed?
 ### Don't move so far each frame
 
 But we're moving 1 pixel, we'd have to move **move less than 1 pixel** per loop but.. fractions! That gets complicated: you have to use floats, and round to the nearest pixel etc.
-    DIAGRAM
     
 ### Easy Fix, Change The Framerate! 
 
@@ -149,3 +186,12 @@ If our game isn't running most of the time, and sleeps in 65ms blocks, **it's ea
 
     DIAGRAM
 
+### Our old friend modulus.
+
+If batty only moves every 2nd, 4th, or whatever frame, she'll move slower but we'll still catch ll the keypresses.
+
+Modulus is great at doing things when certain divisions are reached: even, odd, every 20th, etc.
+
+#### Exercise
+
+Put an `if` around the code in `playBattyGame` that applies batty's `xDir` and `yDir` to her position. Try moving her every 10 frames, every 2 frames.. find a value that feels good.
