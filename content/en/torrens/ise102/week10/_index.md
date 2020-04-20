@@ -114,6 +114,8 @@ Danny's chair seat is 48cms above ground.
 Danny's seat height was adjusted to 42cm above ground.
 ```
 
+## Assessment 3: Snake
+
 
 ## Moving
 
