@@ -90,9 +90,9 @@ batty.x = 5;
 batty.y = 10;
 
 // Set up player 2 data
-batty.colour = FG_BLACK;
-batty.x = 25; 
-batty.y = 10;
+horsey.colour = FG_GREY;
+horsey.x = 25; 
+horsey.y = 10;
 ```
 
 ### Objects Match Our Thinking
