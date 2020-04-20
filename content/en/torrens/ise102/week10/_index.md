@@ -44,7 +44,7 @@ Here, it's `string`, and I've found a `length()` function:
 
 ## Exercise 1
 
-1. Create an _ise102_console_ project and **type the _Princess Bubblegum_** code into `main()`.
+1. Create an _ise102\_console_ project and **type the _Princess Bubblegum_** code into `main()`.
 2. Now take the role of the interviewer. You still think "Princess Bubblegum" is a regular name.
    * Create a variable `lastName`. Use `substr` (substring) to **store the Princess's last name** in `lastName`.  
    * After your discussion of her first name, go to a new line and **complement her** on her last name. Mention it in the sentence.
