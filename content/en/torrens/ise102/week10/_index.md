@@ -18,9 +18,9 @@ I left you guys a challenge: [Listen for input](../week9/#go-deeper-listen-for-i
 ### Objects can
   
   * Behave like a normal variable. Look at `string` for example:
-    ```cpp
-    string fullName = "Princess Bubblegum";     // no different to declaring and initialising int
-    ```
+```cpp  
+  string fullName = "Princess Bubblegum";     // no different to declaring and initialising int
+```
   * Also **behave like folders** that contain more variables and functions inside
     * We can access them by putting a dot `.` right after the variable name
 
