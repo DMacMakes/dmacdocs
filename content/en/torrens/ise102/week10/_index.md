@@ -140,11 +140,21 @@ We'll use it now to move around. **Grab the base file** and **fill in** the miss
 {{< imgcard code_flappy_1 Link "code_flappy_1.png">}}
 {{< /imgcard >}}
 
-### Revisiting The Game Loop
+## Revisiting The Game Loop
 
-Remember our old friends **input, storage, processing,output**. You just saw them in the loop in `playFlappyBat()`;
+Remember our old friends **input, storage, processing,output**? You just saw them in the loop in `playFlappyBat()`;
 
-The frame-based **loop during gamePlay**, at it's simplest:
+The frame-based **loop during gamePlay**, at its simplest, is this:
+```
+do:
+  get input
+  simulate everything(processing)
+  ouput to screen
+while game hasn't ended
+```
+
+A more detailed explanation, in _C++_ comments:
+
 ```cpp
 do
 {
