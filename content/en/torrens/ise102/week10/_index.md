@@ -126,7 +126,7 @@ Danny's seat height was adjusted to 42cm above ground.
 
 So, we can move left and right by changing our x location.
 
-### Exercise 2: Control Movement
+### Exercise 2a: Control Movement
 
 Here's an overview (functions and main) of a new structure we can use for our game. As you'll see next week, it'll help us use multiple screens.
 
@@ -140,7 +140,29 @@ We'll use it now to move around. **Grab the base file** and **fill in** the miss
 {{< imgcard code_flappy_1 Link "code_flappy_1.png">}}
 {{< /imgcard >}}
 
-#### Add Up and Down
+### Revisiting The Game Loop
+
+Remember our old friends **input, storage, processing,output**. You just saw them in the loop in `playFlappyBat()`;
+
+The frame-based **loop during gamePlay**, at it's simplest:
+```cpp
+do
+{
+  /// CHECK INPUTS - mouse, keyboard, gamepad inputs. 
+  /// button is down, dpad direction is left, etc. Process and store them.
+  
+  /// PROCESSING/SIMULATION - model the events in the game. Move or shoot or use item
+  /// based on the inputs. Have enemies do their next thing as well. Check who gets shot,
+  /// lands on a platform, etc etc.
+  
+  /// OUTPUT
+  /// Now that the world has changed, draw it all to screen. Magic effects, new 
+  /// health level, new map location etc.
+  /// Also non visual output: play sounds, vibrate control pad etc.
+} while(!gameOver)  /// Do it all again next frame.
+```
+
+### Exercise 2b: Add Up and Down
 
 1: Add constants for LEFT and RIGHT that can be used when setting value of xDir.
 2: Add constants for UP and DOWN.
@@ -164,13 +186,12 @@ But we're moving 1 pixel, we'd have to move **move less than 1 pixel** per loop 
 
 If the problem is that the game is running too fast, just run it slower!
 
-#### Exercise: setFPS
+### Exercise 2c: setFPS
 
 textpixels has a handy function to do it. Put it **inside main, before the game loop**
 ```cpp
   textpixel::setFPS(60);
 ```
-
 Figure out the fps needed to cross the window (30 pixels) in 2 seconds. Apply it in the code. Looks good!
 
 ### Looks Good Feels Bad: Responsiveness
@@ -189,13 +210,13 @@ If our game isn't running most of the time, and sleeps in 65ms blocks, **it's ea
 
     DIAGRAM
 
-### Our old friend modulus.
+### Our Old Friend Modulus `&`
 
 If batty only moves every 2nd, 4th, or whatever frame, she'll move slower but we'll still catch ll the keypresses.
 
 Modulus is great at doing things when certain divisions are reached: even, odd, every 20th, etc.
 
-#### Exercise
+### Exercise 2d: Move Every X Frames
 
 Put an `if` around the code in `playBattyGame` that applies batty's `xDir` and `yDir` to her position. Try moving her every 10 frames, every 2 frames.. find a value that feels good.
 
