@@ -13,7 +13,8 @@ I left you guys a challenge: [Listen for input](../week9/#go-deeper-listen-for-i
 ## Using Objects
  
  Objects are a **types of data** in C++ that have more features than your basic types (`int`, `float`, `char`). Objects we've used so far include `string`, `cin` and `cout`.
- 
+   
+
 ### Objects can
   
   * Behave like a normal variable. Look at `string` for example:
