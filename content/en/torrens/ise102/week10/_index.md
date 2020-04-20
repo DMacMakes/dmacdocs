@@ -218,13 +218,17 @@ So _textpixels_ is sleeping 98.5% of every second, in gaps of about 65ms.
 
 If our game isn't running most of the time, and sleeps in 65ms blocks, **it's easy for textpixels to miss keypresses**.
 
-    DIAGRAM
+*ADD DIAGRAM*
 
 ### Our Old Friend Modulus `&`
 
-If batty only moves every 2nd, 4th, or whatever frame, she'll move slower but we'll still catch ll the keypresses.
+If batty only moves every 2nd, 4th, or whatever frame, she'll move slower but we'll still catch all the keypresses.
 
 Modulus is great at doing things when certain divisions are reached: even, odd, every 20th, etc.
+
+{{< alert title="You Can't Not Know Integer Division" color= "danger" >}}
+If you don't understand _Integer Division_ and _remainders_, it's officially on you now. Go study it, **get it locked down**. It's taught in primary school so it was a long time ago, but it's very easy to re-learn. Look it up on wikipedia, call up your high school maths teacher, whatever, but DO IT NOW.
+{{< /alert >}}
 
 ### Exercise 2d: Move Every X Frames
 
