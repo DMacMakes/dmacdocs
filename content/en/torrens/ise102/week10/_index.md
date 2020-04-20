@@ -195,3 +195,15 @@ Modulus is great at doing things when certain divisions are reached: even, odd, 
 #### Exercise
 
 Put an `if` around the code in `playBattyGame` that applies batty's `xDir` and `yDir` to her position. Try moving her every 10 frames, every 2 frames.. find a value that feels good.
+
+## Homework
+
+When batty reaches the right border of the screen, she needs to teleport to the left border. Another way to word it: when she collides with the the right border she wraps around to the left side of the play area.
+
+1. Take a grid and, assuming she's moving right on row 10, draw the place she will be when she needs to teleport (hint: it's an illegal position, on a border)
+2. Draw the place she needs to appear (a legal one)
+3. Write down those x coordinates.
+4. Now, on **the line below** the one in which we apply yDir to her y:
+   * Check if her x location is on the disappear point.
+   * If true, change her x to the location she needs to appear.
+5. Apply the same process to going left, going up and going down.
