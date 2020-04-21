@@ -1,6 +1,6 @@
 ---
 title: "Environment Concept Art"
-linktitle: "W9: Enviro Concepts"
+linktitle: "W.9: Enviro Concepts"
 weight: 90
 description: "Making concept art"
 ---
