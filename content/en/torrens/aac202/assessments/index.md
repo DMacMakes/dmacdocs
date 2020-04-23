@@ -70,5 +70,17 @@ The **beauty render** should be rendered to passes and taken into Photoshop or a
 {{< /alert >}}
 
 
+## Assessment 3: High Poly Environments
 
-## Assessment 3: High Poly Environment
+Individual/group
+
+First, the [view the pdf brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566879_1&course_id=_83852_1)
+
+Enough starting material for 2-3 students given in one class (we have 2.5 weeks left) is challenging.
+
+Wood person, rock person and metal person could be a start.
+
+Stone wall, metal fence and wooden gate? Dungeon/graveyard pack?
+
+Specs: 
+polys per model
