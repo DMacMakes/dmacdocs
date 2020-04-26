@@ -1,16 +1,22 @@
 ---
-title: "Week 11: Colliding and More Screens"
-linkTitle: "W.11: Colliding"
+title: "Week 11: Objects 2"
+linkTitle: "W.11: Objects 2"
 weight: "110"
 description: >
-  How do we check if things hit eachother, and how do we react? How can we add more screens to our games? Oh, also more objects.
+  How do we check if things collide? How can we use bunches of related objects easily? How do we add more screens to our game?
 ---
 
 ## Homework:
 
 Teleporting. This was a type of hit detection, or collision detection.
 
+DISCUSS SOLUTIONS
 
+{{< imgcard edge_teleport_explained.jpg>}}
+Edge teleport: When Batty's somewhere bad, (B1) put her somewhere that isn't (B2).
+{{< /imgcard >}}
+
+Demo answer working in VS. 
 
 ## More Screens
 
