@@ -38,7 +38,21 @@ Usually near the end.
  
  ### Menu
  
+ * **Q)** How is a menu screen different to a game screen? 
+ * **A)** It isn't.
+ * Just have a draw loop like `playGame()` does.
+   * display choices on screen with a string drawing function
+   * Wait for a button press
+   * Return the new screen id back to main.
+ 
+ In main: If `screen==MENU` call `showMenu()` instead of `playGame()`.
+ 
  ### Game Over
+ 
+_ Game Over_ is just a state of the current game, really. 
+ * Stay in the `playGame()` function and display it
+   * you have all the variables you need
+   * It's pretty easy to start a new game there.
  
  ### The Code Summary
 
@@ -52,7 +66,8 @@ Usually near the end.
 
 ## More Collisions
 
-If we can check for border hits, it should be super easy to check if we've hit other stuff.
+We already know how to check if Batty  collisions and make batty teleport. 
+it should be super easy to check if we've hit other stuff.
 
 ### Adding Other Things
 
