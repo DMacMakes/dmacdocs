@@ -12,7 +12,7 @@ Teleporting. This was a type of hit detection, or collision detection.
 
 DISCUSS SOLUTIONS
 
-{{< imgcard edge_teleport_explained.jpg>}}
+{{< imgcard edge_teleport_explained>}}
 Edge teleport: When Batty's somewhere bad, (B1) put her somewhere that isn't (B2).
 {{< /imgcard >}}
 
@@ -49,7 +49,7 @@ Usually near the end.
  
  ### Game Over
  
-_ Game Over_ is just a state of the current game, really. 
+_Game Over_ is just a state of the current game, really. 
  * Stay in the `playGame()` function and display it
    * you have all the variables you need
    * It's pretty easy to start a new game there.
