@@ -8,15 +8,16 @@ description: >
 
 ## Homework:
 
-Teleporting. This was a type of hit detection, or collision detection.
-
-DISCUSS SOLUTIONS
+To wrap around, or teleport to the other side of the garden:
+* Move _Batty_ each frame
+* When a move takes her onto a pixel that's out of bounds, **manually change her x,y location** to a safe pixel on the other side of the screen.
+* If that's not clear, here's a visual:
 
 {{< imgcard edge_teleport_explained>}}
 Edge teleport: When Batty's somewhere bad, (B1) put her somewhere that isn't (B2).
 {{< /imgcard >}}
 
-Demo answer working in VS. 
+
 
 ## More Screens
 
@@ -31,12 +32,25 @@ Run it, try to **break it** and **extend it before you begin to integrate it** w
 
 Usually near the end.
 {{< /alert >}}
-
  
  {{< imgcard screens_screens >}}
  {{< /imgcard >}}
  
- ### Menu
+### The Code Summary
+
+A `screen` is a just a name I chose for what part of the game we're in. The _menu screen_, or the _play screen_.
+
+I made a `screen` variable in `main()` and then, in loop, I check it and display the right screen. 
+* The loop isn't 60fps like the drawing loops
+* It calls a function, to show a screen and doesn't resume until the player leaves that screen
+* It uses `switch` and `case:`, which behaves a lot like `if.. else if`.
+  * Remember, each `case:` needs its own `break;`. Read the textbook if you're unsure.
+
+{{< imgcard code_screens_summary Link "code_screens_summary.png">}}
+{{< /imgcard >}}
+
+ 
+### The Menu
  
  * **Q)** How is a menu screen different to a game screen? 
  * **A)** It isn't.
@@ -45,43 +59,43 @@ Usually near the end.
    * Wait for a button press
    * Return the new screen id back to main.
  
- In main: If `screen==MENU` call `showMenu()` instead of `playGame()`.
+In main: If `screen==MENU` call `showMenu()` instead of `playGame()`.
  
- ### Game Over
+### Game Over
  
-_Game Over_ is just a state of the current game, really. 
- * Stay in the `playGame()` function and display it
-   * you have all the variables you need
-   * It's pretty easy to start a new game there.
- 
- ### The Code Summary
+I think _Game Over_ is just a state of the current game, really. I choose to stay in the `playGame()` function and display it.
 
-{{< imgcard code_screens_summary Link "code_screens_summary.png">}}
-{{< /imgcard >}}
-
+* you have all the variables you need
+* It seems pretty easy to start a new game there.
+ 
 ### The Code 
+
+Here are the functions.
 
 {{< imgcard code_screens Link "code_screens.png">}}
 {{< /imgcard >}}
 
 ## More Collisions
 
-We already know how to check if Batty  collisions and make batty teleport. 
-it should be super easy to check if we've hit other stuff.
+We already know how to check if Batty collides with a wall (check her location and the wall location), it should be super easy to check if we've hit other stuff.
 
-### Adding Other Things
+### Adding Other Stuff
 
-Fruit are things our Snake/Bat can eat by running into them. They don't have much properties: maybe a location (x, y), a colour and what kind fruit they are.
+Fruit are things our Snake/Bat can eat by running into them. They don't have many properties: maybe a location (x, y), a colour and what kind fruit they are. 
 
 ```cpp
 Fruit anApple;
 apple.x = apple.y = 15;
 apple.colour = FG_GREEN;
-apple.kind = "apple";
+apple.kind = "apple"
 ```
+
+* If we have a fruit with a location we can check if Batty is on the same pixel.
+* Then we could move the fruit to a new random location.
+
 We don't have a Fruit data type though..
 
-### Exercise 1: Define Fruit
+### Exercise 1: Define And Add Fruit
 
 You know that Creature is defined somehow in `creature.h`. Some of you might have even looked.
 
@@ -92,13 +106,72 @@ You know that Creature is defined somehow in `creature.h`. Some of you might hav
   - Give it the right class name.
   - Add the `kind` variable to it.
   - Get rid of xDir and yDir, since Fruit doesn't move around.
-5. Add an `Apple` to `playBattyGame()`. Remember to draw it (look at how batty is drawn).
+5. Add an `Apple` to `playBattyGame()`, like you added a Creature. Remember to draw it too, just like batty..
 
 {{< imgcard code_creature_h >}}
 Creature.h
 {{< /imgcard >}}
 
 ### Colliding With Fruit
+
+You know how to collide with a wall: checking if a wall pixel is located where the bat pixel is located.
+Fruit's the same: The following is mostly pseudocode, with a bit of c++ thrown in for context.
+```cpp
+int playBattyGame()
+{
+ // variables and start of frame loop
+ listen for inputs
+ if we want to move this frame:
+    x += xDir;
+    y += xDir;
+    if batty x is same as a wall x or batty is is same as a wall y:
+      Move batty to a safe pixel on other side.
+    end if
+    if batty x and y match a fruits x and y:
+      Increase player score
+      Give the fruit a new location
+    end if
+  // end of frame loop
+} // end of playBattyGame
+```
+
+### Exercise: Collide with fruit
+Most of the code above, we've already done. I've just converted it back into English/pseudocode, to help you remember the steps we're taking, without getting thrown by code.
+
+Now, take those steps and turn them into code!
+
+## Wing-spreading Time
+
+{{< imgcard big_baby_bird>}}
+Dad needs you to open those wings mate.
+{{< /imgcard >}}
+
+It's that time boys and girls. From here on my explanations and source code get less direct. 
+I'll give you examples,pseudocode and help, but you have to do work out how to put it together yourself now.
+
+### Looking It Up Yourself
+
+1) Learn what you've put off: `for` and `while`  loops, functions, `switch` statements: if you're not sure, do the googling and the reading now.
+2) Learn the range of sites that can help you, each with their own style: _geeksforgeeks_, _stackoverflow_, _Wikpedia_, _cppreference_ and _youtube_. If you take responsibility for learning, for being curious and active, these sites will see you there. 
+  * Detailed but not a reference sheet: https://www.geeksforgeeks.org/switch-statement-cc/
+  * Listicle style: https://www.geeksforgeeks.org/interesting-facts-about-switch-statement-in-c/
+  * Across languages, high level view: https://en.wikipedia.org/wiki/Switch_statement
+  * Question and answer: https://stackoverflow.com/questions/31410393/c-switch-cases/31410441
+  * Technical, authoritative: https://en.cppreference.com/w/cpp/language/switch
+
+### Don't Push Code Around
+
+"Don't push paint around" is a phrase art teachers use to counter something they, us, and everyone else does. When we have gone beyond our understanding, but we know we're kinda close, we start to noodle and try random stuff. In concept art it's maybe because we don't really know how to paint folds in fabric, or how to render realistic hair. We don't have reference photos for combat armour, or we never figured out the perspective properly.
+
+You're new to coding, and you'll often have bugs that come from misunderstanding c++ syntax, its basic structures. When that happens, it'll feel like you're close, but you'll never get there: reordering, changing variable values, none of it's working because you don't actually know how to do a comparison in your `while` statement, or that you have to store the value a function is returning.
+
+What you need to do is solve the underlying problem, outside of your program, and come back with the knowledge.
+
+{{< alert title="(A) Golden Rule: Work Small To Big" color= "primary" >}}
+Test small chunks of code in isolation and you'll be able to focus down the problem. Students often spend hours and days trying to fix their logic, despite knowing they're kind of winging it on functions or the difference between `&&` and `||`. Maybe they can just get this one thing solved and not have to dig into that.
+
+Take the two or three lines you _know_ you don't really understand and put them in `main()` in a new, empty project. Throw in some dummy values, try to ask new questions in that new lightSee them without anything around them, think about what you're assuming about the c++ keywords/operators/syntax in that code and how you can test if you're right. 
+{{< /alert >}}
 
 ### Exercise: Adding To The Score
 
@@ -124,7 +197,6 @@ To show it on the screen, you can use drawString as long as you convert your sco
 
 Remember, you also have `drawWString` if you want to use Unicode, and `to_wstring` to convert `int` to `wstring``.
   
-
 ### Add More?
 
 You can create all sorts of game elements now.
