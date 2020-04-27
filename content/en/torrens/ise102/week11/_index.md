@@ -210,7 +210,7 @@ If they hit a rotten fruit, you have to make clear it was rotten fruit, and what
   * You could tutorialise it a bit by pausing the game for 2 seconds the first time it happens, so they def read the message.
 {{< /alert >}}
 
- ## Vectors Hold Your Collections
+## Vectors Hold Your Collections
  
  Want to make 10 of something, or 100? Without dealing with 100 variable names?
  
@@ -226,14 +226,23 @@ If they hit a rotten fruit, you have to make clear it was rotten fruit, and what
 
 ### Vector Of Fruit
 
-1. Creating and initialising multiple fruits
-2. Drawing those fruits with a regular for loop.
+In English, what we'll do:
+1. Make some fruits, give them location, kind, and colour
+2. Draw them all to screen
+
+More c++ specific:
+1. Creating and initialise multiple fruits (no need for loop)
+2. Drawing those fruits with a regular `for` loop.
+
+
+
+### Bonus: `for_each`
 3. Drawing those fruits with a `for_each` to reduce bugs
 
+## Intermediate Level: Moving The Collision Code
 
-## Going Deeper: Collision Code Is Long
-
-`playBattyGame()` is getting bloated with collision code: even the teleport code is a lot. Can we **move it into a function?**.
+`playBattyGame()` is getting bloated with wall collision code, then fruit collision code. Long functions are tough to read and debug.
+Can we **move that stuff into a function?**.
 
 x and y are two values, so we can't assign a return value. It'd be great to pass batty to to a function and have it change the positions. Functions work on a value copy of our object though, not the original. We need a solution.. 
 
@@ -335,3 +344,38 @@ Yeah, in the same way adulthood is worth it. The rules get murkier and more conf
 * That's critical for game performance. 
 * They save on a lot of globals and extra awkward function calls.
 * They let us make our game worlds bigger and more interesting.
+
+## Homework
+
+Do the fruit collision work if you didn't get it done in class. Send me a zip in the next 2 days, along with any questions.
+
+Then: Push on with assessment! You have fruit, collisions, teleporting, scoring.. 
+
+**I won't be spelling out** for you what **exact bit to do as homework**: this stuff just needs doing. I'll be mostly teaching about vectors(collections) and snake movement options in a short class next week. You want to have your game modes and screens started/finished by then, so you have time left to try adding the segmented snake body.
+
+**What's left?**
+
+### Game Over!
+A way to **end the game**. There's work to be done like:
+* showing a game over message/screen
+* making it obvious to the person where they died and why,
+* and letting them know their final score
+* letting people go to the menu or play again.
+* 
+We have no way of dying right now, but we want that screen sorted, so we have **a couple choices**:
+1) **Make our snake grow** and eat itself
+   - That's a _lot_ of work getting the snake to grow and move
+   - There's also plenty of testing self-collision/self-biting before we can test something as simple as game over
+   - It'll be hard to tell snake body problems end and game over screen problems start.
+2) Temporarily make the walls deadly again.
+   - It's easy: we already collide with the wall. Instead of moving the snake, turn it blood red and say game over.
+   - That totally doubles as a mode you could put in the main menu. Play Snake and Play Snake (electric fence)
+3) Make a DeathBlock or Shredder object, like you made Fruit. Put it on screen, and end the game if your snake hits it.
+   * Also easy
+   * Also a game mode or game option 
+   * Maybe it's a progressive difficulty thing.
+  
+### Game Modes
+
+To get more than a pass/credit, you want to have extra features and options in the game. See my ideas in _game over_, the ideas in the pdf brief, also just think of fun ideas.
+  
