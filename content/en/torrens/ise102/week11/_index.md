@@ -226,6 +226,9 @@ If they hit a rotten fruit, you have to make clear it was rotten fruit, and what
 
 ### Vector Of Fruit
 
+1. Creating and initialising multiple fruits
+2. Drawing those fruits with a regular for loop.
+3. Drawing those fruits with a `for_each` to reduce bugs
 
 
 ## Going Deeper: Collision Code Is Long
