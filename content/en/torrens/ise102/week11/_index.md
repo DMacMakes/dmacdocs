@@ -33,7 +33,7 @@ Run it, try to **break it** and **extend it before you begin to integrate it** w
 Usually near the end.
 {{< /alert >}}
  
- {{< imgcard screens_screens >}}
+ {{< imgcard screens_all3 >}}
  {{< /imgcard >}}
  
 ### The Code Summary
@@ -54,12 +54,12 @@ I made a `screen` variable in `main()` and then, in loop, I check it and display
  
  * **Q)** How is a menu screen different to a game screen? 
  * **A)** It isn't.
- * Just have a draw loop like `playGame()` does.
+ * Just have a draw loop like `playSnake()` does.
    * display choices on screen with a string drawing function
    * Wait for a button press
    * Return the new screen id back to main.
  
-In main: If `screen==MENU` call `showMenu()` instead of `playGame()`.
+In main: If `screen==MENU` call `showMenu()` instead of `playSnake()`.
 
 {{< imgcard code_showMenu Link "code_showMenu.jpg">}}
 Drawing and getting input is easy. The important job is to store the user's `choice` and send it back to `main`.
@@ -105,23 +105,27 @@ Creature.h
 ### Colliding With Fruit
 
 You know how to collide with a wall: checking if a wall pixel is located where the bat pixel is located.
-Fruit's the same: The following is mostly pseudocode, with a bit of c++ thrown in for context.
-```cpp
-int playBattyGame()
-{
- // variables and start of frame loop
- listen for inputs
- if we want to move this frame:
-    x += xDir;
-    y += xDir;
-    if batty x is same as a wall x or batty is is same as a wall y:
-      Move batty to a safe pixel on other side.
+Fruit's the same: This is pseudocode for what we've done, plus fruit:
+
+```
+function int playBattyGame
+  create batty
+  create fruit
+  place batty and fruit in some position
+
+  while player hasnt quit
+    listen for inputs
+    if we want to move this frame:
+      move batty 1 pixel in his current direction
+      if batty x is same as a wall x or batty is is same as a wall y:
+        Move batty to a safe pixel on other side.
+      end if
+      if batty x and y match the fruit's x and y:
+        Increase player score
+        Give the fruit a new location
+      end if
     end if
-    if batty x and y match a fruits x and y:
-      Increase player score
-      Give the fruit a new location
-    end if
-  // end of frame loop
+  end while
 } // end of playBattyGame
 ```
 
@@ -220,7 +224,11 @@ If they hit a rotten fruit, you have to make clear it was rotten fruit, and what
  
  You create a single vector object, and can submit as many objects to it as you like for safe keeping. To access any object, just provide an _index_. Like with most indices in c++, it starts at 0.
 
-## Collision Code Is Long
+### Vector Of Fruit
+
+
+
+## Going Deeper: Collision Code Is Long
 
 `playBattyGame()` is getting bloated with collision code: even the teleport code is a lot. Can we **move it into a function?**.
 
