@@ -21,7 +21,7 @@ Edge teleport: When Batty's somewhere bad, (B1) put her somewhere that isn't (B2
 
 ## More Screens
 
-To **add features** we'll need more screens. _Game Over_, _Menu_, _Set Difficulty_ etc. I've provided the code, you can copy what you need.
+To **add features** we'll need more screens. _Game Over_, _Menu_, _Set Difficulty_ etc. I've provided code to get started.
 
 Run it, try to **break it** and **extend it before you begin to integrate it** with your own code. Once it's mixed up with something else you'll be stuck with any assumptions you didn't test, and it takes advanced debugging to correct.
 
@@ -43,14 +43,14 @@ A `screen` is a just a name I chose for what part of the game we're in. The _men
 I made a `screen` variable in `main()` and then, in loop, I check it and display the right screen. 
 * The loop isn't 60fps like the drawing loops
 * It calls a function, to show a screen and doesn't resume until the player leaves that screen
-* It uses `switch` and `case:`, which behaves a lot like `if.. else if`.
-  * Remember, each `case:` needs its own `break;`. Read the textbook if you're unsure.
 
 {{< imgcard code_screens_summary Link "code_screens_summary.png">}}
 {{< /imgcard >}}
 
  
 ### The Menu
+ 
+ Open the solution, and let's look through the menu.
  
  * **Q)** How is a menu screen different to a game screen? 
  * **A)** It isn't.
@@ -60,19 +60,9 @@ I made a `screen` variable in `main()` and then, in loop, I check it and display
    * Return the new screen id back to main.
  
 In main: If `screen==MENU` call `showMenu()` instead of `playGame()`.
- 
-### Game Over
- 
-I think _Game Over_ is just a state of the current game, really. I choose to stay in the `playGame()` function and display it.
 
-* you have all the variables you need
-* It seems pretty easy to start a new game there.
- 
-### The Code 
-
-Here are the functions.
-
-{{< imgcard code_screens Link "code_screens.png">}}
+{{< imgcard code_showMenu Link "code_showMenu.jpg">}}
+Drawing and getting input is easy. The important job is to store the user's `choice` and send it back to `main`.
 {{< /imgcard >}}
 
 ## More Collisions
