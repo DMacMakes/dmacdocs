@@ -8,21 +8,119 @@ description: >
 
 ## Detailing: Fixes/improvements to parts we did
 
-## Extending:
-Duplicating and modifying to save time. Hiding the duplication.
+
+## Finishing Our Assets
+
+{{< alert title="PSA: Ask Michael" color= "primary" >}}
+Each of you will be facing different challenges now and need to go deeper. Since I can't cover it all in class, it's time to spread your wings and start learning what you need to. 
+
+To do that, your primary source should be [this playlist](https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq1ae09h1dht4S6M) by Michael Pavlovic.
+
+<a href="https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq1ae09h1dht4S6M"><img src="pavlovic_zbrush_basics.jpg"></a>
+{{< /alert >}}
+
+
+### Modules
+
+Consider how you could break up the larger form into Modules to save time/resources
+(drawover)
+
+### Dupe And Flip
+
+ Dupe Subtool: Tool > Subtool > Duplicate 
 
 * Methods for duplication
+  
+* Mirroring
+  * Axis
+  * Local symmetry
+
+### Subtools Vs Polygroups Again
+
 * Splitting to sep subtools, using solo/xray mode (performance upside too)
+* Working with many meshes in one subtool
+  * Only do this when close to done
+  * Make sure your subdivision levels match (example: 5 levels in all meshes)
 
-## Adding On
-You've added the props. Now add your own bits!
-Arrow in the wood? Bullet chunk out of stone?
+### Moving Subtools Alone Or Together
 
-### Making Add Ons
-1. Model and import from Maya
-2. GoZ
-2. Model direct in Zbrush with primitives and init
+Gizmo!
+
+{{< youtube ECzbIVoVHOI >}}
+
+
+## Making The Other Bits
+You've got the main piece sorted. Now add the features and props to give it character. Arrow in the wood? Oysters? Crab?
+
+
+
+### Model In Maya, Import
+
+Importing fbx files.
+Decimating and exporting to Maya .
+
+### ZBrush Primitives
+
+Ways to make primitives in ZBrush.
+1. Primitives + init + make polymesh3d
+4. Intermediate: Using the Gizmo cog.
+
+Creating starting shapes using _primitives_
+{{< youtube "wkBo64Ciapc" >}}
+
+Turning a primitive into a usable, sculptable _polymesh3D_
+{{< youtube "2cFUMTjGz6I" >}}
+
+### ZBrush Poly Modeling 
+
+Start with a cube (or other _polymesh3D_), use **ZModeler** brush.
+
+1. Start with a 2x2 cube by clicking the button in my UI's right tray.
+   * Select the cube it appended to the end of your subtool list
+   * Turn on solo: **alt-shift-s**
+   * Turn on polyframe: **shift + f**
+2. Select the ZModeler Brush: **b, z**
+3. Hover over an edge
+5. Click and drag on any edge to insert a loop.
+4. Hover over an edge
+5. Hold `space` to see all edge tools. 
+
+{{< imgcard zmodeler_insert_loop >}}
+A whole new wooorld.
+{{< /imgcard >}}
+
+Watch this great demo and explanation by Michael Pavlovic. You can 100% learn ZBrush to an industry level from this guy's tutorials.
+
+{{< youtube "UJ1-UfKfzh0" >}}
+
+### Creases And Subdivision
+
+With no subdivisions we can use dynamic subdivisions. This is the same as hitting 3 in Maya.
+
+You can use support edges to make corners, like we did in Maya, but then when you subdivide you'll end up with a lot of density there. In ZBrush you can mostly get there with creases.
+
+1. Create a 2x2 cube.
+2. Click **Dynamic** in the right tray, or hit `d`.
+3. You can toggle it on and off with `d`, `shift d`. 
+4. Try setting _SmoothSubdiv_ to 3, 4, 5 in righ tray.
+2. Select _ZModeler_ brush.
+3. Hover over an edge and choose _crease_ and _edge loop complete_
+4. Set CreaseLvl to 3. Click an edge to crease it. 
+
+{{< imgcard crease_edgeloop >}}
+{{< /imgcard >}}
+
+{{< imgcard dynamic_subdivs_creases >}}
+Crease level 3 means the crease will only hold till the 3rd subdivide. Afte that it starts to smooth the edge.
+{{< /imgcard >}}
+
+
+### GoZ
+
+Another Maya option where you can go back and forth
+
 
 ## Homework
 Build out the asset using the parts you made last week.
+
 Differentiate them without losing your silhouette.
