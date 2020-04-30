@@ -8,6 +8,9 @@ description: >
 
 ## Detailing: Fixes/improvements to parts we did
 
+Your progress:
+
+[Week 10 Discussion](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804661_1&message_id=_1912076_1)
 
 ## Finishing Our Assets
 
@@ -37,6 +40,10 @@ Consider how you could break up the larger form into Modules to save time/resour
 
 ### Subtools Vs Polygroups Again
 
+Gizmo: duplicating within a subtool
+
+{{< youtube F8O8gq2l4LE >}}
+
 * Splitting to sep subtools, using solo/xray mode (performance upside too)
 * Working with many meshes in one subtool
   * Only do this when close to done
@@ -58,6 +65,8 @@ You've got the main piece sorted. Now add the features and props to give it char
 
 Importing fbx files.
 Decimating and exporting to Maya .
+
+{{< youtube "PmymBtiO9tw" >}}
 
 ### ZBrush Primitives
 
