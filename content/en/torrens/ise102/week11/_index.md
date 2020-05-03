@@ -129,10 +129,36 @@ function int playBattyGame
 } // end of playBattyGame
 ```
 
+
+
 ### Exercise: Collide with fruit
 Most of the code above, we've already done. I've just converted it back into English/pseudocode, to help you remember the steps we're taking, without getting thrown by code.
 
 Now, take those steps and turn them into code!
+
+### Exercise: Adding To The Score
+
+The score is just a variable we can keep in battyGamePlay/snakeGamePlay. 
+
+To show it on the screen, you can use drawString as long as you convert your score to a string. Use `drawString` and use `to_string(myInt)` to convert your int to a string.
+
+```cpp
+  /// Draw a normal (not wide) string to x,y
+  drawString(xLocation, yLocation, stringIWantToWrite);
+  
+  /// To set both foreground and background colours of your text:
+  drawString(xLocation, yLocation, stringIWantToWrite, layerColour(FG_WHITE, BG_DARK_RED) );
+  
+  /// Use to_string() to convert an int to a string. drawString won't take numbers directly 
+  drawString(xLocation, yLocation, to_string(myInteger) );
+  
+  /// Join strings and numbers
+  /// Use to_string() to convert an int to a string. drawString won't take numbers directly 
+  int age = 20;
+  drawString(xLocation, yLocation, "Age: " + to_string(age) );
+```
+
+Remember, you also have `drawWString` if you want to use Unicode, and `to_wstring` to convert `int` to `wstring``.
 
 ## Wing-spreading Time
 
@@ -167,29 +193,7 @@ Test small chunks of code in isolation and you'll be able to focus down the prob
 Take the two or three lines you _know_ you don't really understand and put them in `main()` in a new, empty project. Throw in some dummy values, try to ask new questions in that new lightSee them without anything around them, think about what you're assuming about the c++ keywords/operators/syntax in that code and how you can test if you're right. 
 {{< /alert >}}
 
-### Exercise: Adding To The Score
 
-The score is just a variable we can keep in battyGamePlay/snakeGamePlay. 
-
-To show it on the screen, you can use drawString as long as you convert your score to a string. Use `drawString` and use `to_string(myInt)` to convert your int to a string.
-
-```cpp
-  /// Draw a normal (not wide) string to x,y
-  drawString(xLocation, yLocation, stringIWantToWrite);
-  
-  /// To set both foreground and background colours of your text:
-  drawString(xLocation, yLocation, stringIWantToWrite, layerColour(FG_WHITE, BG_DARK_RED) );
-  
-  /// Use to_string() to convert an int to a string. drawString won't take numbers directly 
-  drawString(xLocation, yLocation, to_string(myInteger) );
-  
-  /// Join strings and numbers
-  /// Use to_string() to convert an int to a string. drawString won't take numbers directly 
-  int age = 20;
-  drawString(xLocation, yLocation, "Age: " + to_string(age) );
-```
-
-Remember, you also have `drawWString` if you want to use Unicode, and `to_wstring` to convert `int` to `wstring``.
   
 ### Add More?
 
