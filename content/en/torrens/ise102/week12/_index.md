@@ -11,19 +11,36 @@ Fruit eating, score displaying, general progress.
 
 ## How To Do Well In A3
 
-The brief says the Snake game is a base. It rewards building new things, added settings and features.
+The brief says the Snake game is a base. It rewards building new things, added settings and features. When your tinker with it, when you flex a little.. we know you really understand it.
 
-Build beyond the bare minimum you're shown in class, engage your curiosity. When I show you a technique it should spark you to want to try things, to make it your own. To make things you have to have a little cockiness, the arrogance to say "it'd be better if I added this."
+* Go through rubric
+* Extra features! Things you can run into that change the game, difficulty settings, extra lives, best score recorded to disk.
+* Do more than the minimum! 
+* Don’t just do exactly as i do visually. You could:
+  * Change the window dimensions (`setupWindow(50,25)`)
+  * Have a double-thick wall
+  * What can you display in unicode? Are there emojis?
+  * Have a panel below the game showing 
+    * score
+    * different fruit types what they give you
+    * Hazards like poison blocks or speed-up blocks?
+    * Your previous best score
 
-* Don't just provide a game that is finished in class exercises.
-  *  You know you can change the window size, right? `textpixels::setupWindow( 50, 25 );`
-  *  Game modes!
+## Downloads
+
+Download these to follow along: executable examples of batty/snake in action, and solutions you'll use as exercise bases.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_executables.zip" target="_blank">week12_executables.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_snake_trail_exercise1.zip" target="_blank">week12_snake_trail_exercise1.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## A Segmented Snake
 
-Discription of snake in brief
+A feature you've been asking for: the segmented snake.
 
-**Picture of segmented snake**
+{{< imgproc screen_snake_history_insert Resize "600x" >}}
+Try the segmented, growing snake in `4_snake_insert_erase.exe` 
+{{< /imgproc >}}
 
 ### How would a snake work?
 
@@ -44,8 +61,6 @@ The only reason it's not there is.. you fill the background every frame, erasing
 {{< /alert >}}
 
 ### Exercise 1: Drawing Batty's Trail
-
-Download [Week12_Snake_trail_exercise1.zip](Week12_Snake_trail_exercise1.zip)
 
 Filling the screen with wall and grass has been hiding batty's trail. Stop it happening by commenting out a couple of lines.
 
@@ -68,6 +83,14 @@ That was a great way to get a trail, but what's wrong? What's the solution?
 
 Solving either problem means wiping our trail out. How can we draw it again, instead of just drawing one pixel?
 
+## Reminder: Big Programmers Now
+
+{{< imgcard big_baby_bird>}}
+Fly little fella! Dad's wrecked his back getting worms.
+{{< /imgcard >}}
+
+This is just a guide: finishing all this and putting it together is up to you and your new coding skills!
+
 ## Drawing History
 
 **A trail is just history marked out.** A trail in a forest is just where a lot of feet have trodden the grass down. The memory of that travel is in the state of the plants and ground.
@@ -80,7 +103,7 @@ What if we just drew her again at all her old positions as well as her current p
 * All we need then is some other _storage_. Somewhere to keep our bat's history of x,y positions that doesn't have to be erased.
 * Then we drawPixel for each of them.
 
-### Exercise: Starting With 1
+### Exercise 2: Starting With 1
 
 We have batty. Make a new Creature, just like `batty`, called oldBatty, that follows her one pixel behind. It's one frame of batty's past. 
 
@@ -100,7 +123,41 @@ How do you declare all those variables though? `oldBatty199`, `oldBatty200` and 
  When you've had your walk around the gallery you return and fish out the piece of paper reading "Bag Check" with your bag's assigned number. Without needing any sort of description, they find and return your bag.
  {{< /alert >}}
 
+
+## Collections: The vector
+A vector object can hold any number of a chosen data type(int, float, string, Bag, Creature, Fruit)
+
 CODE: c++ code with a vector called bagCheck, another called battyHistory.
+
+Creating
+Adding
+Accessing
+Note: array access notation
+
+Give basic project just with right includes, loop drawing fruit.
+Examples with ints, fruit
+
+### Making a snake:
+Make a vector called battyHistory
+Create some ghosts of batty.
+In a loop:
+  * make a creature called ghost
+  * give her batty's x and y coordinates.
+  * add her to battyHistory with vector::push_back()
+
+### Moving a snake:
+2. Insert a fresh oldbatty into the start (0) of the trail every time batty moves. Then:
+    * erase the last item in the vector to keep the same length.
+    
+### Vector functions we use:
+    * vector::insert(), vector::erase().
+    * vector::front(), vector::back()
+    * vector::begin(), vector::end()
+
+## Vector help:
+* Geeks for geeks: https://www.geeksforgeeks.org/vector-in-cpp-stl/
+* Edureka: https://www.edureka.co/blog/vectors-in-cpp/
+* Technical reference: http://www.cplusplus.com/reference/vector/vector/
 
 
 ## Catchups
