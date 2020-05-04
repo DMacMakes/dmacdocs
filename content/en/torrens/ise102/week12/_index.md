@@ -34,6 +34,8 @@ Download these to follow along: executable examples of batty/snake in action, an
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_snake_trail_exercise1.zip" target="_blank">week12_snake_trail_exercise1.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_vector_exercise" target="_blank">week12_vector_exercise.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 ## A Segmented Snake
 
 A feature you've been asking for: the segmented snake.
