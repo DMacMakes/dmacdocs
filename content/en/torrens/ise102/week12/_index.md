@@ -145,18 +145,34 @@ The code:
 {{< imgcard code_vector_exercise Link "code_vector_exercise.png">}}
 {{< /imgcard >}}
 
-### Making a snake:
-Make a vector called battyHistory
-Create some ghosts of batty.
+## Making a snake:
+Say you have a creature called snakeHead.
+Make a vector called snakeHistory
+Create some Creatures with the same x and y as snakeHead.
 In a loop:
-  * make a creature called ghost
-  * give her batty's x and y coordinates.
-  * add her to battyHistory with vector::push_back()
+  * make a creature called oldHead
+  * give it snakeHead's x and y coordinates.
+  * add it to snakeHistory with vector::push_back()
+
+### Drawing A Snake
+1. Loop through snakeHistory. For each Creature in there, draw a pixel at it's x and y location
+2. Draw a pixel at snakeHead's x and y location.
 
 ### Moving a snake:
-2. Insert a fresh oldbatty into the start (0) of the trail every time batty moves. Then:
-    * erase the last item in the vector to keep the same length.
-    
+1. When you're about to move the head, make a Creature oldHead
+2. Store snakeHead.x and snakeHead.y in oldHead.x and oldHead.y (like we did with oldBatty)
+3. Insert oldHead into the start of the snakeHistory.
+4. Erase the last item in the vector to keep the same length.
+
+{{< imgcard diagram_snake_move_insert_erase Link "diagram_snake_move_insert_erase.png">}}
+Step by step.
+{{< /imgcard >}}
+
+### Growing A Snake:
+1. When you eat a fruit, create a Creature called newTail
+2. Give it the x and y coordinates of the last Creature in snakeHistory
+3. Add it onto the back of snakeHistory.
+  
 ### Vector functions we use:
     * vector::insert(), vector::erase().
     * vector::front(), vector::back()
