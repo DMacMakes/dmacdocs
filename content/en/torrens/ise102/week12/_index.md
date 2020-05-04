@@ -134,8 +134,14 @@ Adding
 Accessing
 Note: array access notation
 
-Give basic project just with right includes, loop drawing fruit.
-Examples with ints, fruit
+{{< imgcard screen_vector_exercise Link "screen_vector_exercise.png">}}
+Using collections
+{{< /imgcard >}}
+
+The code:
+
+{{< imgcard code_vector_exercise Link "code_vector_exercise.png">}}
+{{< /imgcard >}}
 
 ### Making a snake:
 Make a vector called battyHistory
