@@ -20,7 +20,7 @@ develop and shape your portfolios."
 * Week 10, no exercise: discuss how the [Rayman and Mercenary kings case studies](../week10/#eg-2d-environment-concepts) in the notes helped you develop your environment. Include image/s of your work.
 * Week 11, no exercise: discuss how any of the 50+ images I posted to [the acr101 pinterest board](https://www.pinterest.com.au/dmacdraws/acr101/) helped you develop your environment. Include image/s of your work.
 * Week 12, reflections on portfolios - successful, less successful parts. Image/s from final stage of environment folio.
-* The [pdf brief](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/15620434?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27ACR101%2520Assessment%25203.20191113.pdf) on Blackboard
+* The [pdf brief](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8570136_1&course_id=_83802_1) on Blackboard
 * Submission: I can already see your "Assessment 3 - Journal", so just have it all up to date by Sunday night.
   * If you can do it today and call it done, one less thing on your plate. Easy if you're already close.
   * **If you finish before then please send me an email** at daniel.mcgillick@laureate.edu.au so I can start marking.
