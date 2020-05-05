@@ -150,6 +150,36 @@ A game environment differs from a real world environment in that it often has to
 Zip up or PDF your 16 pages.
 * **Do not** use pdf if you aren't sure how to **preserve resolution** and quality.
 
+### Filling 12 Pages
+
+The numbering of the list isn't page counts, just a reference.
+
+1. Level Idea 
+   - written
+   - game genre, gameplay
+   - scenario for this level (eg raid on temple)
+1. Photo Reference
+2. Style Reference
+    - On a team you'll probably be given a style to follow by the lead artist
+    - We don't have that, so provide images of a style you would make the game in
+    - Provide enough variety in image subjects to cover the style meaningfully: buildings, landscapes, props, foliage etc
+    - Can use style of an existing game, or two games (it will be between this and this), or an artist you like online that produces art that could feasibly be in-game.
+3. Maps
+    - Sketching out a top down map (maybe rpg or rts game) or side on map (platformer, brawler) is great planning step. 
+    - Getting player from a to b in your mind, over a rough map, tells you things you'll need ie. rubble pile, collapsed temple, tree with branches to jump on etc
+4. Scenes
+     - Wide angle shot of a whole scene not from a gameplay perspective perhaps: more something to evoke the experience of the place, like a holiday photograph.
+5. Various buildings
+6. Key (and less key) props/set pieces
+    - ramshackle old ladders, barricades, gutters to shimmy
+    - blown up truck, raised garden beds
+    - elevator apparently formed of vines
+7. Vegetation
+    - Tropical, alpine? Tree 1, tree 2, shrub, grass (very high, high, medium, low)
+8. Features supporting game mechanics (barricades, climb-ables, stuff to shimmy, destructables)
+9. Areas for encounters:
+    - boss fight area: is she on a giant spinning platform? Are there lava pits?
+
 ### Resources
 
 * ACR101 [youtube playlist](https://www.youtube.com/playlist?list=PLfWza-ietxyyBRsQdwrhGV7ymiKaGwbpz).
