@@ -40,7 +40,7 @@ For your actual subject matter, the landscapes, buildings, details and props, **
 
 Big topic! Very basic explanation time!
 
-[2/3 point perspective](https://youtu.be/tHGduybF4TM?t=638) in timelapse.
+[2-3 point perspective](https://youtu.be/tHGduybF4TM?t=638) in timelapse.
 
 ### Options You Can Use Now
 
