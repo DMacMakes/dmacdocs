@@ -113,11 +113,20 @@ We have batty. Make a new Creature, just like `batty`, called oldBatty, that fol
 2. Then move batty.
 3. When you drawPixel `batty`, draw `oldBatty` (who has the old x and y positions of `batty`) next.
 
-That's one segment. With enough oldBatty's (oldBatty0, oldBatty1, oldBatty2..) you'd have a tail as long as her whole history.
+{{< imgcard snapshots_onionskin>}}
+Leaving snapshots behind
+{{< /imgcard >}}
+
+oldBatty is just one snapshot of batty's past, being taken over and over again.
+What if, instead, we had a bunch of snapshots, and instead of updating them we just take new ones. When batty is about to move, take a snapshot and leave it there.
+
+> batty0, batty1, batty2, batty3..
+
+What about all those damn variables though? Do you have to make like 100, 1000 variables to store them? How do you even make new variables at run time? Hell, we don't even need all the names. Just batty0, 1, 2, 3.
 
 ## Storing History In Collections
 
-How do you declare all those variables though? `oldBatty199`, `oldBatty200` and the rest? It's not practical. Plus, they clearly don't need names, just numbers. You need a collection of Creatures you can access with a single name (maybe oldBattys, battyHistory, segments) and a number or `index`.
+ You need a collection of Creatures you can access with a single name (maybe oldBattys?) and a number or `index`.
 
 {{< alert title="Indexed Collections" color= "primary" >}}
  A gallery contains lots of precious and small items. When you visit with your family then, you're not surprised that they don't want people taking in bags: they ask you to leave yours with security in the `bag check`. It's full of all different sizes and shapes of bags, and when they take yours they assign it a number, 104, so they can find it again.
