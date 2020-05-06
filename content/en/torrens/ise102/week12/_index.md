@@ -154,24 +154,34 @@ The code:
 {{< imgcard code_vector_exercise Link "code_vector_exercise.png">}}
 {{< /imgcard >}}
 
+### battyHistory
+
+So, if batty is real, and behind her is a trail of snapshots of her past, many old battys, we could call that `battyHistory`.
+
+Every time **she is about to move**, we create a **new snapshot**, an `oldBatty` at her current position, **insert it** into `battyHistory` at the **beginning**, and then move her.
+
+That **new snapshot makes her body one piece longer**, which is **not okay** because she only grows when she eats, not every time she moves. 
+
+To prevent growing, we **snip off** the old, **unwanted snapshot** at the end of `battyHistory`
+
 ## Making a snake:
-Say you have a creature called snakeHead.
-Make a vector called snakeHistory
-Create some Creatures with the same x and y as snakeHead.
+* Say you have a `Creature` called `snakeHead`.
+* And you make a `vector` called `snakeHistory`, to hold old snakeHead snapshots. It's of type `vector<Creature>`
+Create the first 3 snapshots, `Creature`s with the same x and y as snakeHead, and push them onto the snake, like so:
 In a loop:
-  * make a creature called oldHead
-  * give it snakeHead's x and y coordinates.
-  * add it to snakeHistory with vector::push_back()
+  * make a `Creature` called `oldHead`
+  * give it `snakeHead`s `x` and `y` coordinates.
+  * add it to `snakeHistory` with vector::push_back()
 
 ### Drawing A Snake
-1. Loop through snakeHistory. For each Creature in there, draw a pixel at it's x and y location
-2. Draw a pixel at snakeHead's x and y location.
+1. Loop through `snakeHistory`. For each `Creature` in there, draw a pixel at it's x and y location
+2. Body drawn, draw a pixel at `snakeHead`'s `x` and `y` location.
 
 ### Moving a snake:
-1. When you're about to move the head, make a Creature oldHead
-2. Store snakeHead.x and snakeHead.y in oldHead.x and oldHead.y (like we did with oldBatty)
-3. Insert oldHead into the start of the snakeHistory.
-4. Erase the last item in the vector to keep the same length.
+1. When you're about to move the head, make a snapshot, a `Creature` called `oldHead`
+2. Store `snakeHead.x` and `snakeHead.y` in `oldHead.x` and `oldHead.y` (like we did with `oldBatty`)
+3. `insert` `oldHead` into the `begin()` of the `snakeHistory`.
+4. `erase` the oldest `Creature` at the end of the the `vector` to keep the same length.
 
 {{< imgcard diagram_snake_move_insert_erase Link "diagram_snake_move_insert_erase.png">}}
 Step by step.
@@ -179,8 +189,8 @@ Step by step.
 
 ### Growing A Snake:
 1. When you eat a fruit, create a Creature called newTail
-2. Give it the x and y coordinates of the last Creature in snakeHistory
-3. Add it onto the back of snakeHistory.
+2. You want to put it at the end, so start with the `x` and `y` coordinates of the oldest `Creature` at the end of `snakeHistory`
+3. Add it onto the back of `snakeHistory`.
   
 ### Vector functions we use:
     * vector::insert(), vector::erase().
