@@ -158,6 +158,9 @@ The code:
 
 So, if batty is real, and behind her is a trail of snapshots of her past, many old battys, we could call that `battyHistory`.
 
+{{< imgcard battyHistory>}}
+{{< /imgcard >}}
+
 Every time **she is about to move**, we create a **new snapshot**, an `oldBatty` at her current position, **insert it** into `battyHistory` at the **beginning**, and then move her.
 
 That **new snapshot makes her body one piece longer**, which is **not okay** because she only grows when she eats, not every time she moves. 
