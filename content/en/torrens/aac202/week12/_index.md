@@ -10,6 +10,14 @@ description: >
 
 Marking is 90% done, will be up this afternoon. The level of effort was high enough that everyone who submitted got at least a credit, so don't stress.
 
+## A3
+
+### Reviewing week 11 work
+
+I saw people have commented. If you haven't updated your discussion post with your pier/wharf bits all added and polished, do it now!
+
+[Wharf/Pier discussion thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804661_1&message_id=_1912076_1)
+
 ## Refining
 
 * Anything that's too repetitive?
