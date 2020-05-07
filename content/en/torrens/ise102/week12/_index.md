@@ -34,6 +34,9 @@ Download these to follow along: executable examples of batty/snake in action, an
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_snake_trail_exercise1.zip" target="_blank">week12_snake_trail_exercise1.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+## VECTOR EXERCISE OUTDATED, REPLACE WITH IMPROVED VERSION
+(Complete version is done, need to remove key lines and replace with //..)  
+
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_vector_exercise.zip" target="_blank">week12_vector_exercise.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## A Segmented Snake
@@ -136,19 +139,50 @@ What about all those damn variables though? Do you have to make like 100, 1000 v
 
 
 ## Collections: The vector
-A vector object can hold any number of a chosen data type(int, float, string, Bag, Creature, Fruit)
+A vector object can hold any number of a chosen data type(int, float, string, Bag, Creature, Fruit). Then you can read or write individual values in the collection using an index.
 
-CODE: c++ code with a vector called bagCheck, another called battyHistory.
+Declaring a collection of stuff:
+```cpp
+  // We declare a vector type, then the type it contains, and give it a name.
+  vector<int> scores;
+  vector<string> studentNames;
+  vector<float> heights;  // in metres
+  
+  // versus a single one of those things
+  int score;
+  string studentName;
+  float preciseDistance;
+```
+You can initialise a vector's first _n_ entries using set notation, which you learned about in high school maths (and maths 1 here at uni)
+```cpp
+  vector<int> scores = { 25, 2, 108, 60 };
+  vector<string> studentNames = { "Miles Morales", "Chen Guo", "Gwanda Stacey" };
+```
 
-Creating
-Adding
-Accessing
+New entries can be added with `push_back()`: 
+```cpp
+  studentNames.push_back("Another name");`
+```
+
+{{< alert title="Accessing Entries With Array Notation" color= "primary" >}}
+To access the first score in the scores collection, use `scores[0]`. For the second use `scores[1]`.
+
+Critically, `scores[0]` behaves just like a single variable name, like `scores0` would. You can assign to it, use it in expressions.
+```cpp
+scores[0] = 22;
+scores[0] = garysScore;
+int secondScore = scores[1];
+int scoreBuffed = scores[2] + 20;
+```
+
+{{< /alert >}}
 Note: array access notation
 
 {{< imgcard screen_vector_exercise Link "screen_vector_exercise.png">}}
 Using collections
 {{< /imgcard >}}
 
+## OLD CODE BELOW, REPLACE WITH THE IMPROVED VERSION
 The code:
 
 {{< imgcard code_vector_exercise Link "code_vector_exercise.png">}}
