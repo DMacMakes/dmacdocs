@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Danny Docs"
+title = "DM DOCS"
 
 enableRobotsTXT = true
 
@@ -55,7 +55,7 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Danny Docs"
+title = "DM docs"
 description = "Torrens Subject Documentation"
 languageName ="English"
 # Weight used for sorting.
