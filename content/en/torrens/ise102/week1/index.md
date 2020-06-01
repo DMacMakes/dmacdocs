@@ -11,114 +11,191 @@ resources:
 ---
 ## Software Requirements
 
-Before we can do any programming, you need to have the right software on hand. If you haven't installed _Visual Studio_ and _Flowgorithm_ follow the link:
+Before we can do any programming, you need to have the right software on hand. If you haven't installed _Visual Studio_ and _Flowgorithm_ you need to follow the link and do so! 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources">ISE102 Resources
-</a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources">ISE102 Resources</a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#basic-console-program-template">Console Program Template</a>
 
 ## Hello!
 
-Some people are still installing, so let's get acquainted.
+Let's get acquainted.
 
-## What Is Programming?
+## Programming is just recipes
 
-Programming evokes the idea of computers and code and binary. That's just the end of the process, the execution. 
+First, good news. Programming is something you have been doing your whole life, it's just that for many of you it's not on computers. For those people, programming might sound a bit offputting because it evokes the idea of computers and code and zeros and ones; but that's just the details at the end of the process, the execution. 
 
-Programming at its heart is something much more basic: **describing how a task is done**. 
+What you'll learn in this class is that programming at its heart is something much more basic: **a recipe for completing a task**. 
 
 {{< alert color="secondary">}}
-If a baker writes down a recipe for her chocolate ganache, she's writing a program that causes another human to reproduce that tasty dessert.
+If a baker writes down a recipe for her chocolate ganache, she's **writing a program** that enables another human to do one specific task: reproduce her tasty dessert. Again: A program is just a recipe for completing a task.
 {{< /alert >}}
 
-### It's Just Instructions
+### Recipes are simple
 
-I don't just mean computer instructions, I mean any instructions!
+A recipe is usually just:
+1. A bunch of ingredients and their quantities
+2. A list of instructions for preparing and cooking them.
 
-{{< imgproc instructions_eng Resize "400x" Link "https://www.english-at-home.com/giving-instructions/" >}}
-Giving instructions is something we learned at school and at home.
-{{< /imgproc >}}
+If you've never seen or followed a recipe, here's an example.
+
+{{< alert title="Good Old Pancakes" color= "secondary" >}}
+
+_Credit: Dakota Kelly, allrecipes.com_
+
+
+![Pancakes](pancakes.png)
+
+**Ingredients:**
+* 1 1/2 cups plain flour
+* 3 1/2 teaspoons baking powder
+* 1 teaspoon salt
+* 1 tablespoon white sugar
+* 1 1/4 cups milk
+* 1 egg
+* 3 tablespoons butter, melted
+
+**Directions:**
+1. In a large bowl, sift together the flour, baking powder, salt and sugar. 
+2. Make a well in the center
+3. Pour in the milk, egg and melted butter.
+4. Mix until smooth.
+5. Heat a lightly oiled griddle or frying pan over medium high heat. 
+6. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. 
+7. Brown on both sides and serve hot.
+{{< /alert >}}
+
+### Instructions: you've all given them.
 
 Maybe you haven't written a recipe, but **you've given someone instructions**. Maybe you asked your dad to drive you to your friend's house. When you told him the time to leave and your friend's address, you could say you did some _Parental Programming_.
 
+{{< imgproc instructions_eng Resize "600x" Link "https://www.english-at-home.com/giving-instructions/" >}}
+Giving instructions is something we learned at school and at home.
+{{< /imgproc >}}
+
+<!--
 {{% alert title="Parental Programming" color="warning" %}}
 My 3 year old son is an expert programmer of parents. When he wants warm milk but can't instruct the microwave to prepare it, he **instructs an adult:**
 
 ```
 // Here is the program Harvey speaks to his mum:
-"Mum, I want a bottle please. Can you make it better?"
+"Mum, I want a bottle please."
 ```
 {{% /alert %}}
 
 ### Interpreting The Program
 
-Mum, like any good computer, has an _**instruction set**_. Each instruction encoded in Harvey's program translates predictably an action she can perform:
+Mum, like any good computer, has an _**instruction interpreter**_. Each instruction encoded in Harvey's program translates predictably an action she can perform:
 
 ```
 Instruction: "Mum"
-Action: Begin accepting program input
+Action: Begin new program on machine "mum"
 
 Instruction: "I want a bottle please"
-Action: Place 250ml of milk in a baby bottle
+Action: Get a baby bottle. fill with 250ml of milk.
+
 
 Instruction: "Can you make it better?"
 Action: Warm it for 40 seconds in the microwave.
 ```
+-->
 
-## Requirements For Programming
+## New program: Dad drives me to my friends house
 
-Mum was able to infer a lot from Harvey's simple instructions. There's something going on there, some rules of communication they're using.
+Say you want dad to drive you to Charlene's house at 7:30 tonight, for reasons he doesn't need to know. You're going to need to _instruct_ him.
+* He's old so you need to have a **plan**.
+* You'll need to use just the **right phrases** or he won't run the program.
 
-Let's break them out by looking at what Dad needs to drive us to our friend's house.
+Let's break it down.
 
 {{< imgproc dad_car Resize "900x" >}}
-Dad remembering the days before he had kids.
+Dad loves helping out.
 {{< /imgproc >}}
 
 ### What Do We Need For Dad Programming To Work?
 
-1. **Dad**, so we can program him  
-2. A list of **instructions** for him to follow, eg  
-    - Drive me in the car  
-    - At this time  
-    - Along this route to my friend's house  
+1. **Dad**, so we can program him
+1. Ingredients: 
+  * A car: Dad's car
+  * A destination address: Charlene's address
+  * A time: 7:30pm
+2. A recipe or list of **instructions** for him to follow
+    - When the time is 7:30
+    - Drive me in your car
+    - to Charlene's address
+    - Go home!
+    - Wait for my call
 3. A common **language**:  
     - Something you both speak to people in general  
-    - Better: particular phrases and keywords known to **motivate** dad.  
-4. A **car** for him to drive and some **roads** to drive on  
+    - Better: particular phrases and keywords known to.. _motivate_ dad.  
+4. A setting this can all happen in: in this case it's a city on planet earth with **roads** to drive on.
   
-### What We Need For General Programming  
+```
+PROGRAM driveMeToCharlenes
 
+car = yourCar
+goTime = 7:30
+charlenesAddress = 14 Stampy Rd, Fairfield
+
+START
+  if it's goTime and I get in your car
+    look up directions to charlenesAddress
+    drive until we get there
+    let me out
+    go home!
+    wait for my call
+END
+```
+
+### What we need for general programming  
+
+We'll be writing different programmings for different tasks, so lets 
 If we remove the dad, the car and the route, we have a handy way thinking about programming a human/device to solve a given problem: 
 
-1. A **_subject_**  
+1. **Helper**  
    - A human (dad) or a computer that you will you program to do the work
-1. A list of _**instructions**_  
-   - Steps which, performed correctly, will lead to a completed task.
-1. A common spoken/written _**language**_  
-   - An agreed _grammar_: how the words are arranged to have meaning.  
-   - An agreed _instruction set_: keywords which trigger actions in your subject.  
-1. An agreed setting or **_context_** where the work happens:  
-   - Dad (_subject_) needs a car and the roads (_context_) to do the work  
-  
-#### Summarised
+2. **A common language** 
+   - An agreed _grammar_: eg English words arranged in sentences
+   - An agreed _instruction set_: keywords which trigger actions in your helper.  
+3. **Context** agreed setting or **_context_** where the work happens:  
+4. Some **ingredients** or data needed to do the task
+5. A list of _**instructions**_
+   - Steps which, performed correctly, with the right ingredients, will lead to a completed task.
 
-For a given **task or problem**, we need:
-
-| Requirement     | Description                           |
-|-----------------|---------------------------------------|
-| _Subject_       | The device or creature doing the work |
-| _Context_       | Setting where the work is applied     |
-| _Language_      | Words and grammar                     |
-| _Instructions_  | Steps required to complete the work   |
 -----
 
 ## Programming A Computer With C++
 
-Okay, before we get to the actual task or problem, we can apply three rows of the table:
+Let's start with filling in our requirements:
 
-### Subject: PC
+| Requirement     | Description                           |
+|-----------------|---------------------------------------|
+| _Helper_        | Windows PC                            |
+| _Language_      | C++ (in Microsoft Visual Studio 2019) |
+| _Context_       | Windows Console application           |
+| _Ingredients_   | Data, including _variables_           |
+| _Instructions_  | Our English recipe instructions converted into lines of code |
+
+### Helper: PC
 
 This is easy. The subject is a computer. In our case a **PC with an Intel Processor**, with all the usual bits and peripherals (keyboard, mouse etc)
+
+### Language  
+  
+We'll be using **C++**, a programming language first created in the early 1980s.  
+
+* Built on a language called C
+* "Close to the hardware"
+* In some ways dated
+* At the same time it's the most relied on programming language on PCs. Where you'll find it:
+    - Huge amounts of the code in Windows and Linux (more on MacOS later)
+    - Major applications like Word, Photoshop and Chrome,
+    - The game engines behind any AAA and most indie titles.
+* Used in Planes, fridges, satellites, watches, particle colliders. (picture)
+* Quite familiar to `Java`, `C#`, `ActionScript` programmers.
+* Somewhat familiar to `Python` coders, and in some ways strange.
+  
+We'll use Visual Studio to write our source code and turn that into programs (though other environments exist).
 
 ### Context: Windows Command Prompt
 
@@ -151,24 +228,6 @@ Open the Command Prompt and **try out the commands** above for yourself.
     - `echo %PROCESSOR_IDENTIFIER%`  
     - `ping www.reddit.com`  
   
-
-### Language  
-  
-We'll be using **C++**, a programming language first created in the early 1980s.  
-
-* Built on a language called C
-* "Close to the hardware"
-* In some ways dated
-* At the same time it's the most relied on programming language on PCs. Where you'll find it:
-    - Huge amounts of the code in Windows and Linux (more on MacOS later)
-    - Major applications like Word, Photoshop and Chrome,
-    - The game engines behind any AAA and most indie titles.
-* Used in Planes, fridges, satellites, watches, particle colliders. (picture)
-* Quite familiar to `Java`, `C#`, `ActionScript` programmers.
-* Somewhat familiar to `Python` coders, and in some ways strange.
-  
-We'll use Visual Studio to write our source code and turn that into programs (though other environments exist).
-
 ### Instructions.
 
 <div class="-bg-200 p-2">  
