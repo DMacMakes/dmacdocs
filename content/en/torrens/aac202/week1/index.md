@@ -116,7 +116,9 @@ Wikipedia: <https://en.wikipedia.org/wiki/Subdivision_surface>
 
 ## Exercise 1: Maya Subdivisions
 
-Open scene with cube and magnifying glass good topo, mag bad topo, in layers, only cube visible.
+<!--Open scene with cube and magnifying glass good topo, mag bad topo, in layers, only cube visible.-->
+Grab and open this Maya Project (unzip to a folder, set project, open scene):
+[week1_subdivs_maya.zip](week1_subdivs_maya.zip)
 
 ### Preview Subdivisions
 
