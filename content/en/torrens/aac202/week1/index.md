@@ -1,6 +1,6 @@
 ---
-title: "Week 1: High Poly Props"
-linkTitle: "W.1 High poly props"
+title: "Week 1: High Detail Props"
+linkTitle: "W.1 High Detail Props"
 weight: 10
 description: >
   High resolution modelling in Maya with Subdivision Surfaces. 
@@ -30,96 +30,115 @@ resources:
     
 ---
 
-## Welcome Back
-
-{{< imgproc welcome_back Resize "700x" >}}
-Good holiday?
-{{< /imgproc >}}
-
-
-## NEW APPROACH
-
-Biggest cross-subject problem right now: assignments are due on a sunday, not 1 week after the class.
-
-W1: 
-- Do not teach about the game mesh or painter yet! Introduce once this first idea is rock solid.
-- Leave out "high" and "low" poly where possible. Use "unsmoothed" and "smoothed", "subdivided".
-- Pic an object from the provided concept in first hour.
-- Demo of SubD modeling. Understanding that the subd mesh has two views/states.
-- Together we model something step by step
-- They start on their model. Forget the whole planning angle, was too confusing. People mixed up all the meshes and though they thought they grocked the normals, it was usually misinterpreted.
-
-W2: 
-  - More subD modeling and refining, finishing
-  - Looking at problems people have
-  - Fixing one or two meshes for people in front of class
-  - Get it finalised. Name everything part1_subd, thing_subd.
-
-W3: 
-- Describe goal: lets make a game mesh that is as close as possible to our subd in smoothed mode.
-- You can start with a new mesh, or with a duplicate of the subd with all the supports removed.
-- Call parts part1_game, thing_game.
-- Key challenge? How do you model something in the same space as another model (the subd) and compare them?
-  - Using layers with R turned on
-  - Making objects visible/invisible
-  - game res prefers staying inside the high res.
-  - approximating smooth curves with minimal geometry (use example both big curves and tight curves)
-Our game res model is going to have texture maps generated from the geometry of the smoothed subdiv!
-Use always: Freeze modifiers, delete history! Especially important in UV.
-- Uv unwrapping game model.
-  - Recapping the unwrap process
-  - How to set up our normals:
-    - In edge mode, uv editor -> select -> select texture borders. Harden edges.
-    - Inverse edge selection. Soften edges.
-Has to be finishd this week. Post to journal.
-
-W4: 
-  - Work together demo: download and open painter demo scene. (maybe download all demo assets start of trimester?)
-    - scene has a baked button in it when opened
-    - edit -> project configuration, import a diff game meshes
-    - Texture Set Settings -> Bake Mesh Maps, select diff subd meshes
-    - Hit bake, see results.
-    - Explain that the game res  mesh is our true mesh, and the new normal maps we just got are generated from the high res.
-      - Diagram showing how it looks in front and behind, then uses angle of surface for x,y,z (r,g,b) values. 1,0,1 for purple.
-  - Do it with theirs, debug what's not working.
-Open painter sample scene
-
-
 ## AAC202 Overview
 
-* 2D for games
-* Art fundamentals
-* Immerse yourself in drawing. Practise always, and practise productively.
-* Bring a wacom/drawing tablet!
-* Sure, some assessments. 
+Welcome back and hello new people!
 
-## This week
+* Modern, current-generation 3D graphics.
+* Learning Maya, ZBrush, some Substance.
+* Immerse yourself in modeling. Practise always, just like drawing.
+* Get your hands on a wacom or other drawing tablet! From week 5 we'll be using it every class and for homework.
+* Assessments.
 
-* 3D Creation pipelines, strategies
+### Recap
 
-1. In Class: 3d asset pipeline activity.
-1. Class/Home: design breakdown
-1. Assessment progress: Design Sheet
+ACR103: 
+  - Low poly modeling
+    - Blocking out
+    - Detailing
+  - Rendering
+  - UV unwrapping
+  - Hand painted textures
 
-## Assessment 1: High Poly Props
+## High detail modeling
+
+This semester we're going to be working towards current-gen assets, with techniques that apply to both cartoony and realistic models.
+
+{{< imgproc klaayas_room_wireframe_javier_rodriguez Resize "600x" Link "klaayas_room_wireframe_javier_rodriguez.jpg">}}
+Round vs sharp, countour control!
+{{< /imgproc >}}
+
+Last trimester our goal was to make **low surface detail** props, using **hundreds of triangles**. To make up for the lacking geometry, we'd use [diffuse](https://docs.unity3d.com/Manual/shader-NormalDiffuse.html) textures, flat hand-painted images. Something like you see here:
+
+{{< imgproc barrels_low_poly_textured Resize "500x" >}}
+Low poly cartoony barrels.
+{{< /imgproc >}}
+
+**High detail** meshes can be made many ways and are **defined differently** depending on whether you're making games or film, whether the year's 2005 or 2020 and so on. Then those high poly details are brought into games using some tricks that we'll worry about that later.
+
+{{< imgproc destiny_gun_1 Resize "900x" Link "destiny_gun_1.jpg" >}}
+caption
+{{< /imgproc >}}
+
+{{% alert title="Why more polygons?" %}}
+The end goal of adding polygons is to support **smoothly curving surfaces** and **fine details**.
+{{% /alert %}}
+
+More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/).
+
+You could work toward high detail assets using our low poly process but.. on its own it would take a looong time. 
+
+### New methods
+
+ZBrush. We'll be covering weeks 5-12.
+Subdivision modeling, which takes a low detail model as input and uses an algorithm to divide up each polygon into several, while smoothing the whole mesh.
+
+## Subdivision surfaces
+
+{{< imgcard subdivision_cube_wikipedia >}}
+Subdividing a cube three times - wikpedia
+{{< /imgcard >}}
+
+#### Subdivision: 
+* Take a square, draw a vertical and horizontal line through the middle. 
+* You've subdivided it into 4 squares.
+
+#### Smoothing
+
+Once your mesh is subdivided and has lots more edges and verts, a smoothing algorithm is applied. In it's simplest form, it's kind of averaging out the space between all the vertices on the model, averaging out the area of all the faces, averaging out all the angles. It eventually leads to a sphere.
+
+Imagine you can sew:
+* You get some soft, elastic fabric, cut out the shapes of the polygons in your model, and sew them together.
+* Fill it with little foam balls (bean bag beans)
+
+{{< imgproc cube_cushion Resize "500x">}}
+Cube cushion
+{{< /imgproc >}}
+
+Or just imagine your model as a baloon:
+{{< imgproc jett_balloon Resize "500x">}}
+The Super Wings?
+{{< /imgproc >}}
+
+{{< alert title="Further Reading" color= "primary" >}}
+Wikipedia: <https://en.wikipedia.org/wiki/Subdivision_surface>
+{{< /alert >}}
+
+## Exercise 1: Maya Subdivisions
+
+Open scene with cube and magnifying glass good topo, mag bad topo, in layers, only cube visible.
+
+### Preview Subdivisions
+
+1. Enable wireframe-on-shaded in your viewport
+2. With cube selected, try 1, 2, 3 on keyboard.
+Maya is applying subdivisions in memory and showing you the result, without changing your model.
+
+### Real subdivisions
+
+1. Duplicate the cube, call it cube_smooth
+2. Move it to the right of the original cube so you can see them both.
+3. With cube_smooth selected, press 1.
+4. Open the mesh smooth dialogue: Mesh->Smooth [] (you have to click the square for the dialogue)
+
+### Magnifying Glass
+
+
+## Assessment 1: High Detail Props
 
 Choose and create prop for the provided environment.
-Particulars on the [AAC202 Assessments page](../assessments/#assessment-1-high-poly-props).
+Particulars on the [AAC202 Assessments page](../assessments/#assessment-1-high-detail-props).
 
-### Deliverable This Week
-
-1. Choose or design a prop for the environment below, using the style reference provided.
-2. Create a thread in the [Module 1 Discussion Forum](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804652_1). Call it "_yourname_'s Prop Concept".
-3. Either choose an existing prop:
-  - Outline it in the environment concept
-  - Carefully lasso select's shape and copy/paste it to a new image with a grey background. 
-4. Or if you decide to design a prop:
-  - Draw up your design
-  - Provide an image of it placed in context in the concept
-  - Provide an image of it on a grey background
-5. Post the images in your prop thread.
-  - Also collect and post real world reference of your object for details you'll need
-  
 ### The Environment Concept 
 
 {{< imgproc retro_building_krzysztof-maziarz Resize "1024x" Link "retro_building_krzysztof-maziarz.jpg" >}}
@@ -181,164 +200,145 @@ Here's a wireframe to discuss
 Mostly hitting corners. Leaves and cacti use more even geometry. Click to zoom.
 {{< /imgproc >}}
 
-### The specs
+### Photo Reference
 
-1. Game prop. week 4 showcase.  
-2. 2000 triangles and 1 material, Multiple textures per prop (Need at least albedo, smooth/metalness for PBR, normals for shape)  
+This week you’re going to grab reference for the other sides of your chosen concept. Back ports of computer? Back of arcade unit etc. fan for aircon?
 
-## A2 and A3
+{{< alert title="Homework Is Critical" color= "danger" >}}
+This is a second year course, and the material is too complex to learn in class. The homework you are given is:
+1. A part of your assessments
+2. To flesh out what you learned in class
+2. To build the required base for next week's work.
 
-2: Character workflow in ZBrush
-3: Upgrade some chosen ACR103 levels.
+Each week you'll be working along with me **using things you made and collected for your homework**. I will help people with issues they've had but we won’t be holding back class to finish the homework or to explain at length concepts you didn't learn during the week.
 
-## Planning? 
-Planning and then modelling high res object. 
+Each week you are expected to put at least 10 hours into this subject, including the 2-3 hours we spend in class. That's at least 7 hours at home.
+{{< /alert >}}
 
-First you need to know what that means in production terms. What is a high poly model?
-
-What tools and techniques are used to make current-gen quality models? What are the tradeoffs at each stage? When do we model poly by poly and when do we cheat? 
-
-## High Poly?
-
-Last trimester our goal was to make **low poly** props, using **hundreds of triangles**. We'd then create and apply [diffuse](https://docs.unity3d.com/Manual/shader-NormalDiffuse.html) textures, something like you see here:
-
-{{< imgproc barrels_low_poly_textured Resize "500x" >}}
-Low poly cartoony barrels.
-{{< /imgproc >}}
-
-**High poly** meshes can be made many ways and are **defined differently** depending on whether you're making games or film, whether the year's 2005 or 2020 and so on. Then those high poly details are brought into games on **mid poly** meshes! We'll worry about that later.
-
-{{% alert title="Why more polygons?" %}}
-The end goal of adding polygons is to support **smoothly curving surfaces** and **fine details**.
-{{% /alert %}}
-
-More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/).
-
-## Method 1: Adding Polys And Texturing.
-
-Make lots of polygons, then add stuff into the normal map
-
-{{< imgproc sf_barrel_gameanax_1 Resize "800x" Link "https://www.artstation.com/artwork/NAZg5" >}}
-Barrels in space
-{{< /imgproc >}}
-
-{{< imgproc sf_barrel_gameanax_2 Resize "800x" Link "https://www.artstation.com/artwork/NAZg5" >}}
-Revealing the geometry
-{{< /imgproc >}}
-
-You use a bunch of pre made normal map stamps to add surface detail.
-
-{{< imgproc stamp_normal_map_dave_wilson Resize "800x" >}}
-Revealing the geometry
-{{< /imgproc >}}
-
-[Video tutorial of the above](https://www.youtube.com/watch?v=KTxiKaIzG_c)
-
-## Method 2: Sculpting
-
-You:
-1a. Make a barrel with **many millions** of polygons in say, ZBrush.
-
-1b. Make a barrel in Maya and import into, say, ZBrush to add **many millions** of polygons.
-
-2. Trace a model over it that can run in a game engine, maybe 2K-15K polygons.
-3. Bake over the high res details to the low ad a normal map.
-
-{{< imgproc barrel_high_lauren-duke Resize "750x" Link "https://www.artstation.com/artwork/QzxBEl">}}
-High poly stylised barrel <i>(with normal map)</i>
-{{< /imgproc >}}
-
-We all know ZBrush is tasty.. but that's for assessment 2.
-
-## Method 3: Subdivision Surfaces
-
-{{< imgproc maya_subdiv_edge_cgi Resize "640x">}}
-Control loops and subdivisions</i>
-{{< /imgproc >}}
-Need better picture. Link to wacom pen tute, kukri tute.
-
-1. Model in quads, with certain rules.
-2. Let the computer multiply the polygons with smoothing, and you can have smooth curves and sharp corners.
-
-You might this thing, with these many polys, then subdivide. That cuts each quad across opposing edges, making it into 4 quads. It's like doubling the size of an image, you end up with 4 times the pixels.
-
-**Needs examples**
-
-You could divide it 2 times, 10 times, this count goes up and things get smoother.
-
-Then you have the option of:
-1. Applying the smoothing as real polygons, if the resulting count isn't too high.
-2. Creating a very highly divided output (50k+ polys) and then baking the details to a normal map on a mesh that can hold the silhouette pretty well.
-
-{{< imgproc pistol_subdiv_janis_eidins Resize "700x" Link "https://www.artstation.com/artwork/968qv" >}}
-Clean subdivision model</i>
-{{< /imgproc >}}
-
-{{< imgproc pistol_mapped_janis_eidins Resize "700x" Link "https://www.artstation.com/artwork/968qv">}}
-Details projected onto model with maps</i>
-{{< /imgproc >}}
-
-**ADD PICTURE OF WIRES** and a link to the 3d viewer on artstation: 
-https://www.artstation.com/artwork/968qv
-
-Pros
-- You can change long sweeping curves with a single edge move (like a bezier curve)
-Cons
-- Very laborious, difficult to achieve seemingly simple outcomes.
-- It can quickly get very tricky to achieve some forms.
+## Learning Resources
 
 Flipped Normals how to model curved hard surfaces.
 https://www.youtube.com/watch?v=U7HG6XJsKoQ
 
-{{% alert title="More info" %}}
-Created at **Pixar**<br />
-Maya allows you to **preview** the smoothed form without increasing your polygons.<br />
-Can be exported to FBX in smoothed, high density form while remaining low density in Maya.
-{{% /alert %}}
 
-** More Youtube guides **
-<!--  [Maya Interface Tour on YT](https://www.youtube.com/watch?v=okaC2_NxPYQ&list=PLD8E5717592CF5C26&index=10) -->
-<!-- {{< youtube okaC2_NxPYQ >}} -->
+{{< youtube okaC2_NxPYQ >}}
+_Reviewing: Maya Interface tour_
 
-## Exercise
+### Subdiv Learning
 
-First, demo of curvey cube.
+Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
 
-Next, we make some of it.
+For that reason, I'll be skimming several videos today, and leaving it to each of you to watch the ones in the order that works for your prop.
 
-## Back to my High res stuff
+{{< alert title="Tip: Work Large To Small" color= "warning" >}}
+Always work large to small. You don't know yet how many small details you'll need to get your point across, or how hard they'll be. Get the silhouettes, proportions and corners right first.
+{{< /alert >}}
 
-Blizzard cards
+#### Fundamentals
 
-Look dev of motorcycle gal. Later: metal gadget, reference boards.
+Ways to support corners:
+{{< youtubetime HPrj4FbVnRM 122 >}}
 
-## Breaking down spanner
+* Bevels
+* Fencing (or support loops)
+* Creases
+    - Appear to be the holy grail at first, but have real limitations.
+ 
+#### Working with cylinders
 
-{{< imgproc spanner Resize "600x" Link "spanner.png" >}}
-What forms of this would be 1. high res  2: game res  3. normals 
-{{< /imgproc >}}
+Some straightforward controlling of volume and end shapes:
 
-### Breakdown
-1. Target resolution?
-2. What method?
-3. What are it's dimensions in the game's reality? 10cm cubed? 10m?
-4. Is it on your player's wrist, or will it be 30 feet above your head in dim light?
-5. Draw over in photoshop to figure out Topology
+{{< youtubetime iyZqmWf5x_c 223 >}}
 
-{{% alert title="Definition: Topology" %}}
-The layout of vertices, edges and faces that you will create to make your model. How will the edges flow? How will you avoid triangles?
-{{% /alert %}}
+But how do you add features to one small area without breaking the that perfectly circular cross section:
+{{< youtubetime RCSijbeXujs 38 >}}
 
-### Setting up
-1. Have reference in pureref
-2. Set up Maya project
-3. Set up grid units in Maya to make sense for object
-4. Get a primitive in there right away for scale. Box, cylinder, whatever.
-5. Save scene as maya ascii in spanner.001.ma (numbering supports incremental saving)
-6. Ensure autosave is turned on in preferences.
+The first 10 minutes here show us how to break up the mesh without gaps and distortions.
+{{< youtube ryPIKJkNzPI >}}
 
-### Model some spanner
+#### More Complex
 
-## Choice Of Prop
+More by Elementza:
 
-Level pictures.
+{{< youtube 0WZ8zfKOTr0 >}}
+
+#### Sharp Things, Hiding Triangles
+
+One to subdivision modeling is that **pointy volumes** are naturally form **pyramids/triangles**: how do we handle those with quads?
+
+{{< youtube "Z9wgKy-F1Rw" >}}
+
+{{< alert title="Disaster: I don't know 3DS Max!" color= "danger" >}}
+Relaxing. He's using 3DS Max, but he's using subdivision surfaces and **his solutions apply just as well in Maya**. The video's full of great techniques despite the weird tool names (turbosmooth = Maya's smoothed display, etc).
+{{< /alert >}}
+
+Another challenge he helps you manage: **adding details** means adding lots of edge loops. How do we **avoid a loopfest** that makes the model unmanageable and messes up curves?
+* If we terminate those edges that'll make a triangle, right? Won't that mess up the surface?
+  * First, there are **sneaky ways of shaping quads** 
+  * Second, triangles and ngons  create bumpy artefacts on curved surfaces, but **flat surfaces handle bad geometry better**
+
+## Summary
+
+This week we
+* Learned about high detail modelling using sub division surfaces
+* Tried some basic techniques and learned about the challenges
+* Covered our first assessment
+* Introduced resources you'll need to learn from
+* Have homework to do!
+
+## Homework
+
+1. Watch videos provided 
+2. Consider what techniques you think will solve your problems
+3. Draw over the concept in photoshop/krita to show pieces, and again to show ideas of edges/topology
+4. Document your answers in a post on the forum. 
+
+<!--
+## NEW APPROACH
+
+Biggest cross-subject problem right now: assignments are due on a sunday, not 1 week after the class.
+
+W1: 
+- Do not teach about the game mesh or painter yet! Introduce once this first idea is rock solid.
+- Leave out "high" and "low" poly where possible. Use "unsmoothed" and "smoothed", "subdivided".
+- Pic an object from the provided concept in first hour.
+- Demo of SubD modeling. Understanding that the subd mesh has two views/states.
+- Together we model something step by step
+- They start on their model. Forget the whole planning angle, was too confusing. People mixed up all the meshes and though they thought they grocked the normals, it was usually misinterpreted.
+
+W2: 
+  - More subD modeling and refining, finishing
+  - Looking at problems people have
+  - Fixing one or two meshes for people in front of class
+  - Get it finalised. Name everything part1_subd, thing_subd.
+
+W3: 
+- Describe goal: lets make a game mesh that is as close as possible to our subd in smoothed mode.
+- You can start with a new mesh, or with a duplicate of the subd with all the supports removed.
+- Call parts part1_game, thing_game.
+- Key challenge? How do you model something in the same space as another model (the subd) and compare them?
+  - Using layers with R turned on
+  - Making objects visible/invisible
+  - game res prefers staying inside the high res.
+  - approximating smooth curves with minimal geometry (use example both big curves and tight curves)
+Our game res model is going to have texture maps generated from the geometry of the smoothed subdiv!
+Use always: Freeze modifiers, delete history! Especially important in UV.
+- Uv unwrapping game model.
+  - Recapping the unwrap process
+  - How to set up our normals:
+    - In edge mode, uv editor -> select -> select texture borders. Harden edges.
+    - Inverse edge selection. Soften edges.
+Has to be finishd this week. Post to journal.
+
+W4: 
+  - Work together demo: download and open painter demo scene. (maybe download all demo assets start of trimester?)
+    - scene has a baked button in it when opened
+    - edit -> project configuration, import a diff game meshes
+    - Texture Set Settings -> Bake Mesh Maps, select diff subd meshes
+    - Hit bake, see results.
+    - Explain that the game res  mesh is our true mesh, and the new normal maps we just got are generated from the high res.
+      - Diagram showing how it looks in front and behind, then uses angle of surface for x,y,z (r,g,b) values. 1,0,1 for purple.
+  - Do it with theirs, debug what's not working.
+Open painter sample scene
+-->
+
