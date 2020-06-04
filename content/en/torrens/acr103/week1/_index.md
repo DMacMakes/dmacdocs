@@ -21,7 +21,7 @@ Game Art: <http://www.artstation.com/dmacdraws/>
 
 ## This week
 
-* Get into modelling in Maya 2019!
+* Get into modelling in Maya 2020!
 * A little course chat 
 * Links to resources to study at home
 
@@ -49,8 +49,6 @@ Assessments, Resources, Notes.
 
 Quick tour.
 * Open
-* Open a model
-  - pic of dagger or chest -
 * tumble, pan, zoom.
 * Space bar, views
 * Workspaces and resetting the worspace if you can't find something.
