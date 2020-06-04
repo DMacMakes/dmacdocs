@@ -14,19 +14,36 @@ resources:
 
 **Me:** Danny McGillick. Computer Science @ UTS, Web dev, Creative technologist in advertising (flash/actionscript, unity), 2D and 3D artist for Torus, Halfbrick, Blowfish studios. Keyboard enthusiast, bits maker.
 
-https://cargocollective.com/dmac/ - Flash/Unity 
-http://www.artstation.com/dmacdraws/ - game art
+Flash, Unity: <https://cargocollective.com/dmac/>  
+Game Art: <http://www.artstation.com/dmacdraws/>
 
 **You:** The next makers with long futures.
 
 ## This week
 
 * Get into modelling in Maya 2019!
-* Won't into the course too much
+* A little course chat 
 * Links to resources to study at home
 
 ![barrel concept](barrel_simple_solo.jpg)
 _We'll model a similar barrel to this, designed by Alvaro Vera_
+
+## dmdocs, Blackboard and Discord
+
+**dmdocs** is helper next to Blackboard. One I can update quickly
+Assessments, Resources, Notes.
+
+**Blackboard** is official uni information and assessment submissions.
+* pdf briefs for assessments
+* **submission pages for each assessment** 
+* my announcements
+* discussion forums where you're required to post some deliverables counting toward assessments
+
+**Discord** is where we have fast interaction. 
+* Join my discord: [https://discord.gg/nC7b5tN](https://discord.gg/nC7b5tN)
+* **Change your nickname** on the server so we know who's who, using this format: SarahT, RaxH, AhmedF
+* Be in the #aac202 channel on my server during class. 
+* Join #aac202 today and **type "here"** so I can give you the aac202 role.
 
 ## What is Maya?
 
@@ -106,6 +123,16 @@ _**Mirror settings 2.**_
 ![table go deep](table_go_deeper.png)
 
 ---
+
+## Assessments
+
+**Discussion deliverables** and **final file deliverables**
+* In weeks **2**, **6** and **10** there are deliverables required on the **discussion forums**
+* In weeks **4**, **8** and **12** you'll submit final files via **Blackboard** 
+
+> **Props:** Weeks 1-4  
+> **Levels:** Weeks 5-8  
+> **Characters:** Weeks 9-12  
 
 ## Make a Barrell
 
