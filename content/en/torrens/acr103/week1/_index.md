@@ -42,8 +42,8 @@ Assessments, Resources, Notes.
 **Discord** is where we have fast interaction. 
 * Join my discord: [https://discord.gg/nC7b5tN](https://discord.gg/nC7b5tN)
 * **Change your nickname** on the server so we know who's who, using this format: SarahT, RaxH, AhmedF
-* Be in the #aac202 channel on my server during class. 
-* Join #aac202 today and **type "here"** so I can give you the aac202 role.
+* Be in the #acr103 channel on my server during class. 
+* Join #acr103 today and **type "here"** so I can give you the aac202 role.
 
 ## What is Maya?
 
@@ -186,6 +186,8 @@ Need loops/edges around body.
 ## Homework
 
 Model more things this week! If you want to be a 3D modeller and you just made two whole objects in class, you'll be keen now to go home and create **at least 2 more**.
+
+Screenshot your results and post them 
 
 ![Home 1](home_concepts_1.jpg)
 ![Home 1](home_concepts_2.png)

@@ -290,8 +290,8 @@ This week we
 
 ## Homework
 
-1. Watch videos provided 
-2. Consider what techniques you think will solve your problems
+1. Watch videos provided, take notes about some of the techniques and challenges of subdivision/hard surface modeling that you discover.
+2. Consider what techniques you think will solve your problems.
 3. Draw over the concept in photoshop/krita to show pieces, and again to show ideas of edges/topology
 4. Document your answers in new threads in the module one forum. [See my post for instructions](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866553_1&message_id=_2124709_1).
 
