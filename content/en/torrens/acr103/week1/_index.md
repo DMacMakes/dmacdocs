@@ -187,7 +187,7 @@ Need loops/edges around body.
 
 Model more things this week! If you want to be a 3D modeller and you just made two whole objects in class, you'll be keen now to go home and create **at least 2 more**.
 
-Screenshot your results and post them 
+Screenshot your results and post them in the module 1, [week 1 homework submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_91934_1&nav=discussion_board_entry&conf_id=_157930_1&forum_id=_851210_1&message_id=_2133775_1) in the discussion forums. Read the first post in the thread for more detailed instructions.
 
 ![Home 1](home_concepts_1.jpg)
 ![Home 1](home_concepts_2.png)
