@@ -19,7 +19,6 @@ Testing your understanding of the **ideas in programming**, along with knowledge
 
 An online, 90 minute exam you will complete **on Blackboard**. The exam will be available to start at any point from Sunday end of week 3 **until Sunday end of week 4**. 
 
-  * The exam will be made available on the Friday of week 8 on the ISE102 _Assessment 2_ page on _Blackboard_.
   * Once started, you have to complete it within **90 minutes**.
   * You can **return** to the exam **during** those 90 minutes if your machine/internet goes down, but **not after**.
   * If a serious technical issue stops you from returning to it, please contact me. 
