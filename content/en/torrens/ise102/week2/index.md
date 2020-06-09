@@ -10,6 +10,10 @@ description: >
 ---
 
 
+## Welcome Matt
+
+Helping!
+
 ## Week 1 Recap And Homework
 
 * Adding the `cin` code.
@@ -163,6 +167,10 @@ Let's say our character is falling from the sky, and only needs to stop falling 
 {{< alert title="Definition: Conditionals" color= "primary" >}}
 _Conditional logic_ or _control logic_ is code that lets us choose what is executed next. It allows branching: we can choose our code to divert along one branch (do this) or another (do that).
 {{< /alert >}}
+
+## Assessment 1: Exam
+
+Let's pop over to my [ise102 assessment page](../assessments/#assessment-1-exam)
 
 ## Other relationship tests
 

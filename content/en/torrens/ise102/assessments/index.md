@@ -11,6 +11,8 @@ description: >
 
 **Due:** End of week 4
 
+Click for the [Assessment page and PDF brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948578_1&course_id=_90315_1)
+
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. Reading the textbook, testing out _C++_ statements in a coding environment and working through _SoloLearn_ will make all the difference in this one.
 
 ### Deliverable
