@@ -5,12 +5,18 @@ weight: 20
 description: >
   Modelling our chosen props as smooth, very high resolution models, leveraging subdivision surfaces. Creating a game rez version.
 resources:
-- src: "barrel_alvaro_vera.jpg"
+- src: "*mp.*"
+  params: 
+    byline: "Art: Mary Palmer"
+- src: "*jh.*"
   params:
-    byline: "Art: Alvaro Vera"
-- src: "*zombie*"
+    byline: "Credit: Joseph Harford"
+- src: "*fc.*"
   params:
-    byline: "Art: David Jankes"
+    byline: "Art: Felice Calchi"
+- src: "*as.*"
+  params:
+    byline: "Art: Apratim Sarkar"
 - src: "*javier_rodriguez*"
   params:
     byline: "Art: Javier Rodriguez (Artstation)"
@@ -20,9 +26,24 @@ resources:
 - src: "*krzysztof-maziarz*"
   params:
     byline: "Art: Krzysztof Maziarz (Artstation)"
+- src: "concept_vs_technical_drawing"
+  params:
+    byline: "Art: Cape Horn Illust. (A), Krzysztof Maziarz (B), Mary Palmer (C)"
 ---
 
-
+<!--
+W2: 
+  - Show examples of magnifying glass, get people to start with the blank and work up to where I was.
+  - Or something else modelled in style of inspiration? Show how to create that style, how the bevels and curves and exaggeration work?
+  - Should I give out a super rough block out of the scene for scale?
+  - Give out a project folder with sub-folders, get people structured and using it from the start.
+  - People have been asked how they'd cut up their models iirc, I should show my answers for that. Drawovers.
+  - Students start on models.
+  - More subD modeling and refining, finishing
+  - Looking at problems people have
+  - Fixing one or two meshes for people in front of class
+  - Get it finalised. Name everything part1_subd, thing_subd.
+-->
 ## Assessment 1
 
 * Review the [updated Assessments page](../assessments/#assessment-1-high-poly-props) (and week1 notes from there)
@@ -32,26 +53,55 @@ resources:
 The concept
 {{< /imgcard >}}
 
-## Modeling To Match Our Style
+## Modeling To A Style
 
-We'll need subdivs, but it shouldn't get too technical. The style was chosen so we'd get a long way by focusing on just corners: the smart use of fencing, bevels and maybe some creases.
+To model to a style we need to be able to analyze it first. In acr101 you (probably) looked at how to break down a 2D style into the elements that define it.
+  * Use of colour, proportion, line quality
+  * tone transitions, detail vs simplification
+  * Technical drawing vs dynamic, off-form drawing to add movement and interest.
 
-{{< imgcard style_pancakes_paul_chambers Link "style_pancakes_paul_chambers.png" >}}
+{{< imgproc static_dynamic_2d_1 Resize "1024x" Link "static_dynamic_2d_1.png" >}}
+Environment sketch styles: both lines are dynamic, but one has a flat, static perspective.
+{{< /imgproc >}}
+
+Styles can communicate a lot, but one common dichotomy is conveying accurate information about a subject vs conveying the feel/experience of encountering a subject. Compare the concept I've supplied to the more technical drawings below. What do you think Kryzysztof's goal was when he drew the concept art, what might he want to convey to the 3D artist and eventual player?
+
+{{< imgproc concept_vs_technical_drawing Resize "1024x" Link "concept_vs_technical_drawing.png" >}}
+Is there more that sets apart image A and B than just perspective? Consider C.
+{{< /imgproc >}}
+
+
+### 3D style elements:
+
+Breaking down 3D style is a similar process, once you define the qualities you'll be looking for
+* Use of proportion (realistic, exaggerated, shifting)
+* Dynamism: are shapes static and boxy, or dynamic and exciting? Maybe shambolic? Do you see a lot of parallel lines, mechanical looking lines? Or are there more dynamic shapes, with corners meeting at all sorts of angles and lines bending?
+* How are transitions between surfaces/planes handled? Are outer corners sharp, or do they have a balooned look? Often it's a mix, and you need to look at a few edges in various situations to decide.
+
+{{< imgproc plane_changes_fc Resize "900x" Link "plane_changes_fc.png" >}}
+Look ath the difference between simplified planes of the face (A) and the variety of real transitions they present (B). Finally, how does the artist approach rendering each of these transitions (C) in pencil?
+{{< /imgproc >}}
+
+{{< imgproc style_chest_paul_chambers  Resize "600x" Link "style_chest_paul_chambers.png" >}}
+Chest. Click to zoom.
+{{< /imgproc >}}
+
+{{< imgproc style_pancakes_paul_chambers Resize "600x" Link "style_pancakes_paul_chambers.png" >}}
 Pancake breakfast. Click to zoom.
-{{< /imgcard >}}
+{{< /imgproc >}}
 
-{{< imgcard klaayas_room_wireframe_javier_rodriguez Link "klaayas_room_wireframe_javier_rodriguez.jpg" >}}
-Klayaas Room subdiv wires
-{{< /imgcard >}}
+{{< imgproc static_3d_building_3 Resize "600x" Link "static_3d_building_3" >}}
+Would Krzysztof sign off on this style?
+{{< /imgproc >}}
 
-{{< imgcard klaayas_room_javier_rodriguez Link "klaayas_room_javier_rodriguez.jpg" >}}
-Klayaas Room 
-{{< /imgcard >}}
+{{< imgproc dynamic_3d_house_as Resize "600x" Link "dynamic_3d_house_as.png" >}}
+How about this?
+{{< /imgproc >}}
 
-
-
-
-**Style summary:** Simple volumes but without those impossibly sharp, computer generated corners.
+**Style summary:** 
+* Simple volumes 
+* Round out and soften those perfectly sharp, computer generated corners.
+* Get rid of 90 degree angles and parallel lines as much as possible.
 
 ## Subdiv Learning
 

@@ -22,7 +22,7 @@ description: >
 
 We're exploring a new game called **_Guessy Number_**. Let's type it in, then break it down.
 
-### Exercise: Enter The Source Code
+### Exercise: Coding guessy number
 
 1. Make a **new project** using the `ise102_console` template (use the search field).
     - If you can't remember how, visit [the resources](resources/#visual-studio-c-templates) and start from **step 3**.
@@ -36,18 +36,41 @@ Click the code if it's too small.
 3. Select _Debug > Start without debugging_ from the top menu, or press `ctrl+F5`.
 4. Test the game.
 
-## New Processing Tools
+## The power to choose!
 
 In _Guessy Number_, Two new types of **processing** help the computer to be our playmate. They are:
 
 1. **Comparing** two things to decide what is **true**.
 2. **Choosing** what to do next.
 
-They're new to us in _C++_, but were figuring out true/false and acting on it before we figured out toilets.
+Sure, in _C++_ this stuff is new to us, but we understood `true` or `false` and making decisions before we figured out _toilets_.
 
 {{< imgproc vegetables_true Resize "1024x" >}}
 <i>Peas</i> yo!
 {{< /imgproc >}}
+
+{{< alert title="True and False: Booleans" color= "secondary" >}}
+People use true and false comparisons every day and have a great feel for it, but to really gain power over them we need some language. 
+
+_George Boole_ spent so much time on figuring out how to use `true` and  `false` in maths (along with _and_, _or_ and _not_) that computer scientitsts ended up using the term _**Boolean logic**_.
+
+```cpp
+// Declaring variables of type `bool` or boolean.
+// They can only store the values `true` or `false`.
+bool doorIsOpen;
+bool sunIsVisible;
+bool dogPeedOnFloor;      // maybe if floorPuddleColour == "yellow"?
+bool xGreaterThanY;
+int x = 10;
+int y = 5;
+
+sunIsVisible = true;
+xGreatherThanY = (x > y);     // Is x greater than y? That's either true or false.
+```
+
+Remember, when we talk about _Boolean logic_ or _Boolean operators_, we're discussing things that end up being `true` or `false`.
+
+{{< /alert >}}
 
 ### Testing equality with `==`
 
@@ -55,45 +78,95 @@ They're new to us in _C++_, but were figuring out true/false and acting on it be
 What's happening here?
 {{< /imgcard >}}
 
-How do we compare two things for **equality**? Well, the single `=` is already taken, it's used for **assigning** a value. Looking at the example below, It makes the demand "Let `myName` equal `"Mrs Pimplemouse"`."
+How do we compare two things for **equality**? 
+* Can we use `=`? Why not?
+  * `=` already has a job: it's used for **assigning** a value to a variable
 
 ``` cpp
-string myName;
-bool nameTestResult; // A new type of variable, it can only hold `true` or `false`
+int secretNumber;
+// ..code snipped
 
-// Let myName equal Mrs Pimplemouse.
-// Also means: store the value "Mrs Pimplemouse" in the box labelled myName. 
-myName = "Mrs Pimplemouse";
+// We "assign" (give) secretNumber a new value, 2.
+secretNumber = 2;    
 ```
-For testing "is equal to" we use the _operator_ `==`, two equals signs. It asks the question "`is `myName` equal to `"Mrs Pimplemouse"`?" This returns `true` or `false`.
+
+Instead, we test "is equal to" or "is the same" using the operator `==`, which is just two equals signs. 
+
+The test `(a == b)` is a question: is `a` is equal to `b`?  There are only **two possible answers**: `true` or `false`.
 
 ```cpp
-string myName;
-bool nameTestResult;
+secretNumber = 2;
 
-myName = "Mrs Pimplemouse";
+// assume the player enters 4 here, so
+// the value stored in playerGuess becomes 4
+cin >> playerGuess;   
 
-// Is myName equal to "Mrs Pimplemouse"?
-// It looks in the memory labelled myName and checks
-// if it contains "Mrs Pimplemouse"
-nameTestResult = (myName == "Mrs PimpleMouse"); 
-
-// nameTestResult should contain the value `true`.
-cout << nameTestResult;
-
-// Outputs "1"
-// (C++ thinks of false as 0 and true as 1)
-
+if (playerGuess == secretNumber) {
 ```
-{{% alert title="Challenge:" color="warning" %}}
-The code above will **not run** because it doesn't have the `#include` statements or the `main` function. Could you make it work?
 
-Could you make `cout` print bools as `true`/`false` (instead of `0`/`1`) with a bit of googling?
+When our program runs (run time) and it gets to `playerGuess == secretNumber`, C++ knows it has  the job of _testing_ if the two numbers are equal. It has to return us a value of `true` or `false`. 
+
+At run time the _expression_ **`playerGuess == secretNumber` is effectively replaced  with `true` or `false`**, depending on the result:
+
+```cpp
+if (true)
+```
+
+or
+
+```cpp
+if (false)
+```
+
+## Deciding The Next Action
+
+{{< imgcard if_else_playerGuess >}}
+How does this work?
+{{< /imgcard >}}
+
+Once we make a comparison, how do we decide our next action? `==` returned `true` or `false`, so we have two paths available to us. How can we head down one of two different paths in _C++_?
+
+{{% alert title="New Tool: The <b>if</b> Statement" color= "primary " %}}
+Any code in the first _code block_ (the first curly braces) is executed when the comparison evaluates to `true`.
+
+If the comparison resutls in `false`, the second _code_block_ after `else` is executed.
+```cpp
+  if ( a == b )
+  {
+    // Do things if a and b were the same
+  } else
+  {
+    // Do things if a and b were different
+  }
+```
 {{% /alert %}}
 
-## Other Relationships
+### The Test In `if`
 
-`==` evaluates the **relationship** between two things, in this case 'are they equal?' _C++_ and other languages have a family of them, known as...
+In the parentheses `()` we have the relational test `a == b`, but you can replace it with any test that returns `true` or `false`. You can even use a single `bool` because they can only be `true` or `false`.
+
+### `else` is optional
+
+You don't always have to supply an `else` action. For example, you only show error messages if errors happen, otherwise you continue as normal.
+
+Let's say our character is falling from the sky, and only needs to stop falling if they hit the ground..
+
+```cpp
+  if (metersAboveGround == 0)
+  {
+    // stop the player falling
+    playerFallingSpeed = 0;
+    cout << youLandedMessage << endl;
+  }
+```
+
+{{< alert title="Definition: Conditionals" color= "primary" >}}
+_Conditional logic_ or _control logic_ is code that lets us choose what is executed next. It allows branching: we can choose our code to divert along one branch (do this) or another (do that).
+{{< /alert >}}
+
+## Other relationship tests
+
+`==` tests the **relationship** between two things, in this case 'are they equal?' _C++_ and other languages have a family of them, known as...
 
 {{< alert title="New Tool: Relational Operators" color= "primary" >}}
 A _relational operator_ is something in _C++_ that checks how two variables/values relate to eachother and returns `true` or `false`.
@@ -117,49 +190,6 @@ int yourDollars = 5;
 int ourBudget = myDollars + yourDollars;
 ```
 There are operators for arithmetics (`+`,`-`,`/`), input/output (`<<`,`>>`), assignment (`=`), logic (`&&` is _and_, `||` is _or_) and more.
-
-
-## Deciding The Next Action
-
-{{< imgcard if_else_playerGuess >}}
-How does this work?
-{{< /imgcard >}}
-
-Once we make a comparison, how do we decide our next action? Our relational operators returned `true` or `false`, so we have two paths available to us. How can we head down one of two different paths in _C++_?
-
-{{% alert title="New Tool: The <b>if</b> Statement" color= "primary " %}}
-Any code in the first _code block_ (the first curly braces) is executed when the comparison evaluates to `true`.
-
-If the comparison resutls in `false`, the second _code_block_ after `else` is executed.
-```cpp
-  if ( a > b )
-  {
-    // Do things if a was larger
-  } else
-  {
-    // Do things if b was larger
-  }
-```
-{{% /alert %}}
-
-### The Test In `if`
-
-In the parentheses `()` we have the relational test `a > b`, but you can replace it with any test that returns `true` or `false`. You can even use a single `bool` because they can only be `true` or `false`.
-
-### `else` is optional
-
-You have two paths available when you make an evaluation. For example, you only need to display an error if something is wrong. When you **only want to act to true, leave off the `else`**.
-
-```cpp
-  if (errorMsg != "")
-  {
-    cout << errorMsg << endl;
-  }
-```
-
-{{< alert title="Definition: Conditionals" color= "primary" >}}
-_Conditional logic_ or _control logic_ is code that lets us choose what is executed next. It allows branching: we can choose our code to divert along one branch (do this) or another (do that).
-{{< /alert >}}
 
 ## The Power Of Names
 
