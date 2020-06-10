@@ -1,6 +1,6 @@
 ---
 title: "ACR101: 2D Asset Creation"
-linkTitle: "2D Asset Creation"
+linkTitle: "ACR101: 2D assets"
 weight: 30
 menu:
   main:

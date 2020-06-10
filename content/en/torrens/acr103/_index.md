@@ -1,6 +1,6 @@
 ---
 title: "ACR103: Intro to 3D Asset Creation"
-linkTitle: "Intro 3D Assets"
+linkTitle: "ACR103: Intro 3D"
 weight: 15
 menu:
   main:

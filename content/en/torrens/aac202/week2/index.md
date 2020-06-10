@@ -70,7 +70,6 @@ Styles can communicate a lot, but one common dichotomy is conveying accurate inf
 Is there more that sets apart image A and B than just perspective? Consider C.
 {{< /imgproc >}}
 
-
 ### 3D style elements:
 
 Breaking down 3D style is a similar process, once you define the qualities you'll be looking for
@@ -102,6 +101,49 @@ How about this?
 * Simple volumes 
 * Round out and soften those perfectly sharp, computer generated corners.
 * Get rid of 90 degree angles and parallel lines as much as possible.
+
+## A1 base scene
+
+I've provided a base scene with a rough block out of our building and the scale of a few props. Hopefully you'll find it's a fair bit easier than working in a big empty space.
+
+There's also a copy of the concept image in the _front_ viewport for easy reference and checking. 
+  * Keep in mind this is a 3/4 view so the side to side dimensions won't be perfect.
+
+{{< alert title="Fitting your prop to your game" color= "primary_warning_danger" >}}
+When you model for games your assets need to fit with everything else. On well organised projects it's handled at a few stages, including in your modeling tool and in-engine
+
+Dropping your asset into a game level in-engine (Unity/Unreal) is a great habit to get into. The earlier and more often you check, the better your outcome. Unfortunately for our project:
+  * That level has to exist already
+  * If you don't update and check it for a while you can get yourself into trouble
+
+Early on, like in the assessment, we can start with a common base scene with some assets already complete/blocked in. In the US it's often called an "asset gym".
+  * You can start out with **confidence** that you're on track.
+  * Helpful for basic **silhouette** style matching - dynamic vs static, proportions etc
+  * You can replace items in there as other people in your company complete work, importing ma or fbx files.
+{{< /alert >}}
+
+
+## Deliverable This Week
+
+1. Add another post to your Prop Concept thread in the [Module 1 Discussion Forum](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804652_1). Describe your plan of attack for this model.
+   * What key modelling will you need for the silhouette while staying under 2000 polygons.
+   * Where will the subdivisions help (for smooth clean, mechanical looking shapes).
+   * Where do you think you'll need control loops?
+   * What do you think can be added in normal maps?
+   * It's probably easiest if you draw over and annotate your concept with some planned topology 
+2. Continue modelling your prop using the style, ideas and techniques we discuss in class. 
+   * Post images of your model
+     * Smooth shaded with wireframes and ambient occlusion turned off, from a few angles
+     * A shot or two without wireframes.
+3. First attempt at the game resolution model.
+
+
+
+
+
+
+
+## OLD CONTENT
 
 ## Subdiv Learning
 
