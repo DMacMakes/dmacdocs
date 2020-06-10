@@ -97,6 +97,12 @@ Would Krzysztof sign off on this style?
 How about this?
 {{< /imgproc >}}
 
+### Chest drawover demo
+
+{{< imgcard chest_drawover_demo>}}
+Drawing over to figure out style, topology.
+{{< /imgcard >}}
+
 **Style summary:** 
 * Simple volumes 
 * Round out and soften those perfectly sharp, computer generated corners.
@@ -109,40 +115,56 @@ I've provided a base scene with a rough block out of our building and the scale 
 There's also a copy of the concept image in the _front_ viewport for easy reference and checking. 
   * Keep in mind this is a 3/4 view so the side to side dimensions won't be perfect.
 
-{{< alert title="Fitting your prop to your game" color= "primary_warning_danger" >}}
+{{< imgcard a1_prop_base_maya Link "A1_props_base.zip" >}}
+Click to download the zip file. Right click and open image in new tab to view full resolution.
+{{< /imgproc >}}
+
+{{< alert title="Fitting your prop to your game" color= "secondary" >}}
 When you model for games your assets need to fit with everything else. On well organised projects it's handled at a few stages, including in your modeling tool and in-engine
 
-Dropping your asset into a game level in-engine (Unity/Unreal) is a great habit to get into. The earlier and more often you check, the better your outcome. Unfortunately for our project:
+1. **Get your asset in-engine**: place it in one of the game levels in your engine (Unity/Unreal) is a great early and often. The more you check, the better your outcome. Unfortunately for our project:
   * That level has to exist already
   * If you don't update and check it for a while you can get yourself into trouble
 
-Early on, like in the assessment, we can start with a common base scene with some assets already complete/blocked in. In the US it's often called an "asset gym".
+2. **Model from a starting scene with other assets**: Early on, like in the assessment, we can start with a common base scene with some assets already complete/blocked in. In the US games companies it's been referred to as an **_asset gym_**.
   * You can start out with **confidence** that you're on track.
   * Helpful for basic **silhouette** style matching - dynamic vs static, proportions etc
   * You can replace items in there as other people in your company complete work, importing ma or fbx files.
 {{< /alert >}}
 
+## Modeling Demo
+
+Separating out parts
+Loops to define boundaries
+Loops to support boundaries
+Soft and sharp
 
 ## Deliverable This Week
 
-1. Add another post to your Prop Concept thread in the [Module 1 Discussion Forum](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804652_1). Describe your plan of attack for this model.
-   * What key modelling will you need for the silhouette while staying under 2000 polygons.
-   * Where will the subdivisions help (for smooth clean, mechanical looking shapes).
-   * Where do you think you'll need control loops?
-   * What do you think can be added in normal maps?
-   * It's probably easiest if you draw over and annotate your concept with some planned topology 
-2. Continue modelling your prop using the style, ideas and techniques we discuss in class. 
-   * Post images of your model
-     * Smooth shaded with wireframes and ambient occlusion turned off, from a few angles
-     * A shot or two without wireframes.
-3. First attempt at the game resolution model.
+1. We'll add threads to a new discussion in the module 2 section (coming)
+ * Copy your concept into a new file with some space around it and:
+    * Add notes/drawings to the concept of the prop to plan style
+    * Add notes and draw over a duplicate of the concept to plan your topology
+ * Model your prop :
+   * Block in the pieces with 1. dynamic silhouettes considered 2. Topology that won't cause problems
+   * Use edges and creases to apply bevelling and rounding
+   * Refine, add details.
+  
+2. Post images of your model BY TUESDAY
+  * 5-7 images
+    * 2-3 images of your model with smooth preview off (press `1`)
+    * 2-3 images of your model with smooth preview on (press `3`)
+    * A shot of your model with all parts selected and the outliner visible
+  * Each image is a screenshot of the model in Maya 
+    * Enable Shaded view, wireframe on shaded, ambient occlusion
+    * Pick some angles that show off the model but also your solutions
+
+3. On WEDNESDAY before class comment on two other students work, offering helpful thoughts on:
+  1. What they did well
+  2. Improvements they could consider
 
 
-
-
-
-
-
+<!--
 ## OLD CONTENT
 
 ## Subdiv Learning
@@ -256,3 +278,4 @@ Danny Mac (I know). Does some head retopo here in 3D Coat, showing nice techniqu
 3. First attempt at the game resolution model.
 
 
+-->
