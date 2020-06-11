@@ -15,8 +15,6 @@ Over the week you've worked on your blockouts. Let's detail them.
 2. Add detail
 3. Import into first render scene
 
-
-
 ### Adding in edges after Booleans
 
 Booleans create polygons with a lot of faces (n-gons). We can **clean them up** with:
