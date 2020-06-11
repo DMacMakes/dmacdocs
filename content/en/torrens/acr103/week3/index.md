@@ -15,76 +15,7 @@ Over the week you've worked on your blockouts. Let's detail them.
 2. Add detail
 3. Import into first render scene
 
-## Renaming lots of objects at once
 
-Amazing time saver. 
-
-![](rename_toolbar.png)
-
-Select similar objects (in outliner or scene) then rename them from the right end of the modeling toolbar [like in this video:](http://raconteuranimation.com/10-second-maya-tips-rename-multiple-objects/)
-
-## Damage!
-
-![](stones_damaged_tim.png)
-_Timo Ehrenfellner on Arstation_
-
-* Shields, walls, and tables in raucous taverns can take blows from axes and swords. 
-* Rocks can split just from overnight dew and frost. Collisions can knock corners off stone blocks.
-
-![](stone_wood_gouges_firrka.png)
-_Firrka on Arstation_
-![](damaged_wood_orb.jpg)
-_Orb/Vicente on Artstation_
-
-### Splits and gouges: multi cut, bridge.
-
-Multi cut can add edges between vertices, add new loops, or get serious and cut through any geometry in any direction. It's manual and slow, but gives control.
-
-![](multicut_edges.png)
-
-We can:
-1. Creat the outline of our missing chunk
-2. Select and delete the unwanted faces.
-3. Select and bridge edges to create new faces.
-  
-Learn more about multi cut to add all the extra edges you need.
-  * [Youtube tute by Jofftech](https://www.youtube.com/watch?v=4reh8fRLPT0), demoing features/tendencies, providing shortcuts.
-  * [Autodesk knowledge base](https://knowledge.autodesk.com/support/maya-lt/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/MayaLT-Modeling/files/GUID-12DF0D57-6E5E-48E3-8FBF-F787BA4E5410-htm.html) 
-
-### Booleans
-
-We saw these pictures of boolean operations last week. Let's see them work in Maya.
-
-![](assets/week2/booleans_2.png)
-![](assets/week2/booleans_3.png)
-
-Select your objects in this order:
-1. Object A: This will be retained
-2. Object B: This will be subtracted from A.
-
-![](boolean_table.png)
-In the top menu, click _Mesh -> Booleans -> Difference_.
-
-![](boolean_table2.png)
-
-### Bevel an edge
-
-Wear takes off edges. So do carpenters with routers.
-
-![](bevel_table.png)
-
-Beveling a single edge.
-
-![](bevel_table2.png)
-
-Beveling after a boolean.
-
-![](bevel_width.png)
-![](bevel_segments.png)
-![](bevel_depth.png)
-
-
-Bevels on [Autodesk knowledgebase](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/Maya-Modeling/files/GUID-A1C5EC72-AD48-4A7D-8577-1823B3832E14-htm.html)
 
 ### Adding in edges after Booleans
 

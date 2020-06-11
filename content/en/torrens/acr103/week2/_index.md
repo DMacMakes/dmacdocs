@@ -29,6 +29,7 @@ Let's pick something achievable and fun to model. You have **30 mins** to:
 ![](assess_1_concepts_a.png)
 
 
+<!--
 ### Presentation
 
 30 mins **Present** Come up front and describe what you'll model. Classmates can offer ideas, constructive thoughts.
@@ -36,12 +37,9 @@ Let's pick something achievable and fun to model. You have **30 mins** to:
   2. Are you making any changes?
   3. What bits do you feel like you can already make (and how)?
   4. What's a part you're very unsure about? (each concept potentially has that)
+-->
 
----
-![](break_tea_1.gif)
-_Break time._
----
-
+<!--
 ## Block out time
 Now you need to try things, find the barriers, the challenges you'll need to overcome
 
@@ -50,8 +48,38 @@ So start **blocking out** your models. We're just going for **big shapes**.
   - Primitives with some scaling
   - Cut off parts where needed
   - Make sure you move around and hit all needed pieces. Don't stop to detail.
+-->
+## Setting up for your assessment
 
-### PureRef
+Reference!
+
+## Damage!
+
+![](stones_damaged_tim.png)
+_Timo Ehrenfellner on Arstation_
+
+* Shields, walls, and tables in raucous taverns can take blows from axes and swords. 
+* Rocks can split just from overnight dew and frost. Collisions can knock corners off stone blocks.
+
+![](stone_wood_gouges_firrka.png)
+_Firrka on Arstation_
+![](damaged_wood_orb.jpg)
+_Orb/Vicente on Artstation_
+
+## A1 Base and Modeling demo
+
+I'll continue blocking and partly refining a model
+[Grab this zip](DannyMcGillick_A1Prop_ACR103.zip)
+
+### Clean up! Rename things first
+
+Amazing time saver. 
+
+![](rename_toolbar.png)
+
+Select similar objects (in outliner or scene) then rename them from the right end of the modeling toolbar [like in this video:](http://raconteuranimation.com/10-second-maya-tips-rename-multiple-objects/)
+
+### Reference! Don't work blind
 
 Optional (great) way to keep your reference visible. 
 * Grab it from [pureref.com](http://www.pureref.com) to install on a personal machine.
@@ -78,18 +106,55 @@ _**c-drag a square selection to crop, ctr-alt-drag the image to resize**_
 * **ctrl-alt-drag** on an image to resize
 * **c-drag** to crop, **ctrl-shift-c** to remove cropping.
 
+### Splits and gouges: multi cut, bridge.
 
-### Upcoming assignment learning
+Multi cut can add edges between vertices, add new loops, or get serious and cut through any geometry in any direction. It's manual and slow, but gives control.
 
-**Week 3:**
-  1. How to add details, add flat material colour
+![](multicut_edges.png)
 
-**Week4:**
-  1. Rendering, shading.
+We can:
+1. Creat the outline of our missing chunk
+2. Select and delete the unwanted faces.
+3. Select and bridge edges to create new faces.
+  
+Learn more about multi cut to add all the extra edges you need.
+  * [Youtube tute by Jofftech](https://www.youtube.com/watch?v=4reh8fRLPT0), demoing features/tendencies, providing shortcuts.
+  * [Autodesk knowledge base](https://knowledge.autodesk.com/support/maya-lt/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/MayaLT-Modeling/files/GUID-12DF0D57-6E5E-48E3-8FBF-F787BA4E5410-htm.html) 
 
-## Modeling demo
+### Booleans
 
-I'll block out and partly detail a simple concept
+We saw these pictures of boolean operations last week. Let's see them work in Maya.
+
+![](assets/week2/booleans_2.png)
+![](assets/week2/booleans_3.png)
+
+Select your objects in this order:
+1. Object A: This will be retained
+2. Object B: This will be subtracted from A.
+
+![](boolean_table.png)
+In the top menu, click _Mesh -> Booleans -> Difference_.
+
+![](boolean_table2.png)
+
+### Bevel an edge
+
+Wear takes off edges. So do carpenters with routers.
+
+![](bevel_table.png)
+
+Beveling a single edge.
+
+![](bevel_table2.png)
+
+Beveling after a boolean.
+
+![](bevel_width.png)
+![](bevel_segments.png)
+![](bevel_depth.png)
+
+
+Bevels on [Autodesk knowledgebase](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/Maya-Modeling/files/GUID-A1C5EC72-AD48-4A7D-8577-1823B3832E14-htm.html)
 
 ### The pivot point
 
@@ -102,7 +167,7 @@ I'll block out and partly detail a simple concept
 
 Can be changed via the modelling toolkit or double clicking the transform controls on left side toolbar.
 * Control what you **xform relative to**: world/object/tangent/normal and other
-* Control what happens when snapping with multiple elements selected (maintain distance)
+* Control what happens when **snapping with multiple elements selected** (maintain distance)
 * Also available in w-right-click, e-right-click and r-right-click context menus
 
 ### Channel Box
@@ -111,6 +176,7 @@ Can be changed via the modelling toolkit or double clicking the transform contro
 * Precise position/rotation/scale
 * Renaming (along with outliner)
 
+<!--
 ### Freeze transformations
 
 ### Bevels
@@ -143,3 +209,5 @@ _**- picture of flat ribbon -**_
 ![](ngons_1.png)
 ![](ngons_2.png)
 ![](ngons_3.png)
+
+-->
