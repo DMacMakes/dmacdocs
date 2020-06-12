@@ -241,9 +241,19 @@ We discussed the importance and power of names.
 
 ## Homework:
 
+When you've completed typing and running the code below **submit the `main.cpp` file for each project to Matt**. Matt's email will be sent to you via Blackboard announcements (and Discord).
+  
 1. Read the rest of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, where you'll learn about arithmetic operators, data types and more.
     - Take notes
     - In a new Visual Studio project, **type and run** _Game Stats 2.0_ on **page 24**.
 2. Read [Chapter 2](../resources/cpp_through_games_2.pdf) up to a **page 48**
     - Take notes
     - Create another project _Score Rater 3_ and **type and run** the code on **page 47**.
+
+{{< alert title="Where's the main.cpp file?" color= "secondary" >}}
+You can find the `main.cpp` file for a project in its **project folder**. 
+
+* If you're following our class conventions, those project folders will be in `ise102/week2`.
+* If you aren't sure were to find it, right click the project name in the visual studio _solution explorer_ and go to _open folder in file explorer_.
+
+{{< /alert >}}

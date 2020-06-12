@@ -57,7 +57,7 @@ So start **blocking out** your models. We're just going for **big shapes**.
 Assessment 1 Base file, [download it here](DannyMcGillick_A1Prop_ACR103.zip)
 
 1. Double click the zip to view the contents.
-2. Drag the folder inside (DannyMcGillick_etc) into your computer's torrents/aac202 folder. It contains two folders.
+2. Drag the folder inside (DannyMcGillick_etc) into your computer's torrents/acr103 folder. It contains two folders.
 3. Place the png or jpg of your concept (that you've already cut out) in the ref_a1Prop folder.
 
 ### Concept reference: don't work blind!
