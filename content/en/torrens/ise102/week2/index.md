@@ -241,7 +241,9 @@ We discussed the importance and power of names.
 
 ## Homework:
 
-When you've completed typing and running the code below **submit the `main.cpp` file for each project to Matt**. Matt's email will be sent to you via Blackboard announcements (and Discord).
+When you've completed typing and running the code below **submit the `main.cpp` file for each project to Matt**. 
+   * Email it to him with the subject _"ISE102 Homework Week 2"_
+   * Matt's email will be sent to you via Blackboard announcements (and _Discord_).
   
 1. Read the rest of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, where you'll learn about arithmetic operators, data types and more.
     - Take notes
