@@ -113,7 +113,7 @@ _(hint: variable, relational operator, variable)_
 2. Replace the code in `main.cpp` with the following:
 3. Test it out.
 
-{{< imgcard code_guessy_help Link "code_guessy_help.png">}}
+{{< imgcard code_guessy_help_blanks Link "code_guessy_help_blanks.png">}}
 Using <i>repetition</i> for multiple guesses and <i>selection</i> for hints.
 {{< /imgcard >}}
 
@@ -174,7 +174,7 @@ Right now we have a very simple test to end our game: `playerGuess == secretNumb
 
 ### Exercise: Enter GuessyNumber_Limit
 
-{{< imgcard code_guessy_tries Link "code_guessy_tries.png">}}
+{{< imgcard code_guessy_tries_blanks Link "code_guessy_tries_blanks.png">}}
 Limiting the players to 3 games sets a new standard in high stakes gaming. 
 {{< /imgcard >}}
 
