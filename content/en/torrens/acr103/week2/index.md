@@ -184,6 +184,12 @@ Can be changed via the modelling toolkit or double clicking the transform contro
 * Precise position/rotation/scale
 * Renaming (along with outliner)
 
+## Homework: Assessment 1 Deliverables
+
+Make sure these are done and submitted before next class if you don't want to fail assessment 1!
+
+[Assessment 1 Week 2 Deliverables](../assessments/#week_2_submission_details)
+
 <!--
 ### Freeze transformations
 
