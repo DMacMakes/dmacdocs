@@ -3,16 +3,18 @@ title: "4: Exam Week Review"
 linkTitle: "W.4 Review"
 weight: 40
 description: >
-  For loops, enums, literals, initialisation. Working through problems.
+  Boolean logic, for loops, enums, literals, initialisation. Working through problems.
 ---
+
+# FIX EXAM TIMING, QUESTIONS, OPEN AND CLOSE. ADD MORE ON BOOLEAN LOGIC TO NOTES
 
 ## Week 3 Recap And Homework
 
-End of Chap 2, code:  
+End of Chap 2, code.
 
 [Week 3 Homework](../week3/#homework)
 
-### How did we do? 
+### How did we do with homework menu?
 
 * Comprehension of the brief
   * Did you carefully read how the code should react in each situation?
@@ -20,7 +22,16 @@ End of Chap 2, code:
   * Examples of approaches
   * Common mistakes
   * Unusual mistakes
-* How would I do it?
+* How would I do it? CRISP, SIMPLE
+
+## Chapter 2 FLESH OUT
+
+More on Boolean logic from chapter 2.
+
+Add two or more cleaner, crisper examples of multiple conditions.
+
+Truth tables!
+
 
 ## Initialisation _Part 1_
 
