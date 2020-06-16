@@ -24,22 +24,22 @@ There are deliverables for **week 1**, **week 2** and **week 4**.
 
 ### Week 2 submission details
 
-Summary:
+#### Summary
 1. Add your work to new replies to [THIS DISCUSSION](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866554_1&message_id=_2100660_1) on the forums **by Tuesday**. 
 2. Comment on two other student's work **BEFORE Wednesday's class**.
 
 #### Work to do  
 
-Copy the **concept image** into a new file and:  
+Copy the concept image into a new file and:  
   1. Add notes/drawings to the concept of the prop to **plan style**
   2. Add notes and draw over a duplicate of the concept to plan your **topology**
  
 **Model** your prop :
-  1. Block in the model (in pieces) with:   
+  1. **Block in** the model (in pieces) with:   
       * dynamic silhouettes considered   
       * topology that won't cause problems for subdivisions  
-  2. Then use edges and creases to apply bevelling and rounding  
-  3. Refine, add details.  
+  2. Then use edges and creases to create **bevelling/rounding** and smooth shapes.  
+  3. **Refine** your model, add details.
   
 #### Process images due TUESDAY by end of day:
 
@@ -50,16 +50,18 @@ Copy the **concept image** into a new file and:
     * **1 image** of your model with all parts selected and the **outliner** visible (to see your objects and their naming)
   
 {{< alert title="Image qualities" color= "secondary" >}}
-> Screenshots of the model in Maya need these qualities:
->  * Shaded view, wireframe on shaded and ambient occlusion are enabled
->  * Camera angles show off the model and also the geometry you used to achieve the right smoothed forms.
->  * Viewport is large and model is large within it, producing clear images. No tiny thumbnails.
+> All images should have plenty of resolution (at least **1024x768** and preferably higher). Deliver as 24bit PNGs or JPGs of 85% or greater quality.  
+> 
+> Screenshots of the model in Maya:
+> * Have shaded view, wireframe on shaded and ambient occlusion enabled
+> * Use camera angles that show off the model and also the geometry you used to achieve the right smoothed forms.
+> * Are from a viewport that is large and with the model zoomed large within it, producing clear images. No tiny thumbnails.
 {{< /alert >}}
   
 #### Comments due WEDNESDAY, before class (3pm)
-Comment on two other students work, offering helpful thoughts on:
-1. What they did well  
-2. Improvements they could consider  
+Comment on two other students work, offering well thought out feedback:
+1. In matching capturing the concepts and matching the 3D style what did they do well?
+2. What changes/additions might improve the model?
 
 ### Week 4 deliverables
 Your final deliverable will be screenshots and an export from Substance Painter. More details soon.
