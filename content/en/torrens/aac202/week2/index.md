@@ -132,36 +132,18 @@ When you model for games your assets need to fit with everything else. On well o
   * You can replace items in there as other people in your company complete work, importing ma or fbx files.
 {{< /alert >}}
 
-## Modeling Demo
+## Modeling demo
 
 Separating out parts
 Loops to define boundaries
 Loops to support boundaries
 Soft and sharp
 
-## Deliverable This Week
+## Week 2 submission details
 
-1. We'll add threads to a new discussion in the module 2 section (coming)
- * Copy your concept into a new file with some space around it and:
-    * Add notes/drawings to the concept of the prop to plan style
-    * Add notes and draw over a duplicate of the concept to plan your topology
- * Model your prop :
-   * Block in the pieces with 1. dynamic silhouettes considered 2. Topology that won't cause problems
-   * Use edges and creases to apply bevelling and rounding
-   * Refine, add details.
-  
-2. Post images of your model BY TUESDAY
-  * 5-7 images
-    * 2-3 images of your model with smooth preview off (press `1`)
-    * 2-3 images of your model with smooth preview on (press `3`)
-    * A shot of your model with all parts selected and the outliner visible
-  * Each image is a screenshot of the model in Maya 
-    * Enable Shaded view, wireframe on shaded, ambient occlusion
-    * Pick some angles that show off the model but also your solutions
+Get these done and submitted before next class if you don't want to fail assessment 1!
 
-3. On WEDNESDAY before class comment on two other students work, offering helpful thoughts on:
-  1. What they did well
-  2. Improvements they could consider
+[Assessment 1 Week 2 Deliverables](../assessments/#week-2-submission-details)
 
 
 <!--

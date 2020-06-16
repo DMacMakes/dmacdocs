@@ -188,7 +188,7 @@ Can be changed via the modelling toolkit or double clicking the transform contro
 
 Make sure these are done and submitted before next class if you don't want to fail assessment 1!
 
-[Assessment 1 Week 2 Deliverables](../assessments/#week_2_submission_details)
+[Assessment 1 Week 2 Deliverables](../assessments/#week-2-submission-details)
 
 <!--
 ### Freeze transformations
