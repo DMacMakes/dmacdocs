@@ -56,7 +56,7 @@ Consider a cylinder with a height of 2 units and a diameter of 1 unit. It's an i
 _**The arrangement of polygons currently representing that ideal cylinder is our model's topology.**_
 
 It's the same with the models in our game. When you play on Ultra graphics, Tracer (a character in Overwatch) might have say 20k triangles. Run on Low graphics and maybe she has 4k. The same character, just represented with different _topology._ If you squint, they even look the same.
-{{< /alert >}}DEFINITION: TOPOLOGY
+{{< /alert >}}
 
 ## Making the game ready mesh
   
@@ -68,7 +68,7 @@ It's the same with the models in our game. When you play on Ultra graphics, Trac
 ### Download
 Grab this [breakfast mug maya project](week3_breakfast.zip)
 
-### HOW
+### How's it possible?
 There are a few ways to do it, but they all involve making a game-resolution mesh in the same space as the smooth reference model so you can match them as close as possible.
 This takes organisation and some Maya knowledge, because otherwise you're going to not be able to see or select the game mesh half the time!
 
