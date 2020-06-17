@@ -20,14 +20,17 @@ How far did people get with subdivs?
 * How much fixing do we need to do? 
 * When it's done we can move on and look at retopo 🎉
 
-## How is this subd thing useful for games.
-_**Unsmoothed**_ subd models are goofy,they have all these weird edges purely for the smooth algorithm. No good in games, too much pointless geometry, and they look low poly.
+## How is this useful?
+
+These meshes don't make sense for games. 
+
+**Unsmoothed subd models** have all these weird edges purely for the smooth algorithm. No good in games, too much pointless geometry, and they can be really far from the final silhouette.
 
 {{< imgproc mug_smoothing_xray_comparison Resize "850x" Link "mug_smoothing_xray_comparison.png" >}}
 Different: the subdiv mesh's pre- and post-smoothing silhouettes
 {{< /imgproc >}}
 
-**_Smoothed_** subd models look good but are too high poly for game engines. They might be 200K polys where we want say 2K or less.
+**Smoothed subd models** look good but are too high poly for game engines. They might be 200K polys where we want say 2K or less.
 
 ### Something in between
 
@@ -43,7 +46,7 @@ What if we had something in the middle?
 _(Just an illustration: don't move meshes side by side or duplicate your smoothed subd)_
 {{< /imgproc >}}
 
-## WHAT IS A GAME RES MESH
+## What's a game ready mesh?
   
 A game ready model is one that will look as much like our prop as possible but is light enough (in triangles and textures) that it won't slow our frame rate down too much or eat up all the memory.
 
