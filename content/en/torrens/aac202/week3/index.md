@@ -89,18 +89,27 @@ Tools:
 
 ### Modeling the new mesh
       
-1. Model near it: slap down a new primitive and start modeling again, trying to match the silhouette.
-or
-2. Duplicate the unsmoothed subd mesh, call that the game mesh, then heavily modify it:
+**Model from scratch**: slap down a new primitive and start modeling again, around the subd, trying to match the silhouette.
+
+_or_
+
+**Duplicate the unsmoothed subd mesh**, call that the game mesh, then heavily** modify it**:
   * Reduce the poly count
     * Remove loops that don't affect the silhouette. Support edges mostly don't.
     * Remove edges that do support the silhouette but won't be missed too much: eg reducing a cylinder from 16 to 8 sides.
   * Move points/loops/edges around until you approximate the smoothed model but with less polys
-2. Trace the mesh using live mode and quad draw.
+
+_or_
+
+**Duplicate and smooth the subd mesh** using `edit mesh -> smooth []` with `level=1` and then **modify/optimise** that mesh.
+
+_or_
+
+**mix all those approaches**!
+<!--2. Trace the mesh using live mode and quad draw.
 * Make subd_heavy a live mesh
 * Start quad drawing on it.
-* turn off live, make other changes.
-
+* turn off live, make other changes.-->
 {{< imgproc subd_and_game_mesh_intersecting Resize "500x" Link "subd_and_game_mesh_intersecting.png" >}}
 Game meshes (blue) occupying the same space as the subd meshes (transparent red). Contrasting materials make life a lot easier.
 {{< /imgproc >}}
