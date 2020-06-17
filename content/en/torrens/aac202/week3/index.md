@@ -98,6 +98,19 @@ or
 
  Table showing the four meshes and their use.
 
+## Homework
+
+1. Apply feedback to and finalise your subd models. Give them the suffix _sub, ie: `screenGlass` becomes `screenGlass_subd`
+2. Create game ready meshes for each element using what you learned in week 3 about retopology. Suffix them with `_game`, as in `screenGlass_game`
+3. **Uv unwrap** all your game ready models (_not_ the subd models) and use layout to pack them all into the same UV space (see final video of week 3 class for review of uv unwrap).
+
+[Reply to this thread on Blackboard](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866555_1&message_id=_2100661_1) and post:
+1. Your concept image
+2. Images of your finished subd meshes with smooth preview on and:
+   * with wireframe onshaded on
+   * then off.
+3. An image of your your checkerboarded models next to finished UVS.
+
 <!--
 ## Overview
 
