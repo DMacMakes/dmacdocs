@@ -86,12 +86,15 @@ Tools:
       * I've hotkeyed it to alt-shift-f (in the hotkey editor you need to search for _template toggle_).
 
 ### Get set up
-* Make a duplicated, 1-2x smoothed version of the subd mesh (maybe 30K+ polys). Give it a layer of its own. subd_heavy This is ANOTHER mesh needed.
-* Hide the original subd (can be edited later if need be)
-* Give the subd_heavy it's own material (red) and make it x-ray.
+<!-- Make a duplicated, 1-2x smoothed version of the subd mesh (maybe 30K+ polys). Give it a layer of its own. subd_heavy This is ANOTHER mesh needed.
+* Hide the original subd (can be edited later if need be) -->
+* Give the subd meshes the suffix `_subd`, as in `body_subd`
+* Add a bright red material to the subds so we can tell them apart.
 
 ### Modeling the new mesh
-      
+
+Whichever way you go about modeling them, give the game meshes the suffix `_game` and a blue material to stand out from the subd ones.
+
 **Model from scratch**: slap down a new primitive and start modeling again, around the subd, trying to match the silhouette.
 
 _or_
