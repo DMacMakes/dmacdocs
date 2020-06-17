@@ -23,7 +23,7 @@ How far did people get with subdivs?
 ## How is this subd thing useful for games.
 _**Unsmoothed**_ subd models are goofy,they have all these weird edges purely for the smooth algorithm. No good in games, too much pointless geometry, and they look low poly.
 
-{{< imgproc mug_smoothing_xray_comparison Resize "850x" Link "mug_smoothing_xray_comparison" >}}
+{{< imgproc mug_smoothing_xray_comparison Resize "850x" Link "mug_smoothing_xray_comparison.png" >}}
 Different: the subdiv mesh's pre- and post-smoothing silhouettes
 {{< /imgproc >}}
 
@@ -38,6 +38,11 @@ What if we had something in the middle?
     * More on how to do this next week.
     * A bit like skinning a wolf and wearing it as a cloak. You look way hairy but you actually have a very simple, smooth surface.
   
+{{< imgproc subd_vs_game_mesh Resize "800x" Link "subd_vs_game_mesh" >}}
+1. A subd mesh without smoothing | 2. A game ready mesh | 3. The subd mesh again smoothed.  
+_(Just an illustration: don't move meshes side by side or duplicate your smoothed subd)_
+{{< /imgproc >}}
+
 ## WHAT IS A GAME RES MESH
   
 A game ready model is one that will look as much like our prop as possible but is light enough (in triangles and textures) that it won't slow our frame rate down too much or eat up all the memory.
@@ -77,11 +82,12 @@ Tools:
       * It's in _Modeling Toolkit's_ `Object` menu.
       * I've hotkeyed it to alt-shift-f (in the hotkey editor you need to search for _template toggle_).
 
-    * Make a duplicated, 1-2x smoothed version of the subd mesh (maybe 30K+ polys). Give it a layer of its own. subd_heavy This is ANOTHER mesh needed.
-    * Hide the original subd (can be edited later if need be)
-    * Give the subd_heavy it's own material (pink) and make it x-ray.
+### Get set up
+* Make a duplicated, 1-2x smoothed version of the subd mesh (maybe 30K+ polys). Give it a layer of its own. subd_heavy This is ANOTHER mesh needed.
+* Hide the original subd (can be edited later if need be)
+* Give the subd_heavy it's own material (red) and make it x-ray.
 
-Then you can do one of a few things:
+### Modeling the new mesh
       
 1. Model near it: slap down a new primitive and start modeling again, trying to match the silhouette.
 or
@@ -89,12 +95,15 @@ or
   * Reduce the poly count
     * Remove loops that don't affect the silhouette. Support edges mostly don't.
     * Remove edges that do support the silhouette but won't be missed too much: eg reducing a cylinder from 16 to 8 sides.
-  * 
   * Move points/loops/edges around until you approximate the smoothed model but with less polys
 2. Trace the mesh using live mode and quad draw.
 * Make subd_heavy a live mesh
 * Start quad drawing on it.
 * turn off live, make other changes.
+
+{{< imgproc subd_and_game_mesh_intersecting Resize "500x" Link "subd_and_game_mesh_intersecting.png" >}}
+Game meshes (blue) occupying the same space as the subd meshes (transparent red). Contrasting materials make life a lot easier.
+{{< /imgproc >}}
 
  Table showing the four meshes and their use.
 
@@ -102,6 +111,10 @@ or
 
 1. Apply feedback to and finalise your subd models. Give them the suffix _sub, ie: `screenGlass` becomes `screenGlass_subd`
 2. Create game ready meshes for each element using what you learned in week 3 about retopology. Suffix them with `_game`, as in `screenGlass_game`
+{{< imgproc naming_meshes Resize "800x" Link "naming_meshes.png" >}}
+How to name your meshes. (DO NOT move your meshes side by side, this image only demonstrates naming)
+{{< /imgproc >}}
+
 3. **Uv unwrap** all your game ready models (_not_ the subd models) and use layout to pack them all into the same UV space (see final video of week 3 class for review of uv unwrap).
 
 [Reply to this thread on Blackboard](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866555_1&message_id=_2100661_1) and post:
@@ -111,6 +124,9 @@ or
    * then off.
 3. An image of your your checkerboarded models next to finished UVS.
 
+{{< imgproc mug_uvs Resize "800x">}}
+All mug parts selected, uv checkerboard on, image > dim on
+{{< /imgproc >}}
 <!--
 ## Overview
 
