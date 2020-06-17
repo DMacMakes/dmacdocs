@@ -1,6 +1,6 @@
 ---
-title: "3: Game Res and Exporting"
-linkTitle: "W.3 Substance Prep"
+title: "Wk 3: Game ready topology"
+linkTitle: "3 | Retopology"
 weight: 30
 description: >
   Preparing models for substance, baking maps to feed into the texturing process.
@@ -10,6 +10,95 @@ resources:
     byline: "Art: Alvaro Vera"
 ---
 
+## Last week's deliverables
+How far did people get with subdivs?
+* Did everyone watch the vid with alex?
+* Looking at images delivered
+* Checking out comments
+    
+### Progress?
+* How much fixing do we need to do? 
+* When it's done we can move on and look at retopo 🎉
+
+## How is this subd thing useful for games.
+_**Unsmoothed**_ subd models are goofy,they have all these weird edges purely for the smooth algorithm. No good in games, too much pointless geometry, and they look low poly.
+
+{{< imgproc mug_smoothing_xray_comparison Resize "850x" Link "mug_smoothing_xray_comparison" >}}
+Different: the subdiv mesh's pre- and post-smoothing silhouettes
+{{< /imgproc >}}
+
+**_Smoothed_** subd models look good but are too high poly for game engines. They might be 200K polys where we want say 2K or less.
+
+### Something in between
+
+What if we had something in the middle? 
+  * a totally new, hand made, mid weight mesh (say 2K)
+  * It has a silhouette that looks more like the smoothed subd mesh than the unsmoothed one, but it's still faceted.
+  * It could somehow steal the smoothed subd mesh's skin, then wear it like a suit (creepy) but still run fast (really useful). 
+    * More on how to do this next week.
+    * A bit like skinning a wolf and wearing it as a cloak. You look way hairy but you actually have a very simple, smooth surface.
+  
+## WHAT IS A GAME RES MESH
+  
+A game ready model is one that will look as much like our prop as possible but is light enough (in triangles and textures) that it won't slow our frame rate down too much or eat up all the memory.
+
+{{< alert title="Definition: Topology" color= "secondary" >}}
+Consider a cylinder with a height of 2 units and a diameter of 1 unit. It's an ideal volume, an idea of perfect roundness with perfect flatness at the top and bottom. Our model isn't that though, it's a bunch of triangles that only _approximate_ it. It could use 100, 1k or 1m triangles. 
+
+_**The arrangement of polygons currently representing that ideal cylinder is our model's topology.**_
+
+It's the same with the models in our game. When you play on Ultra graphics, Tracer (a character in Overwatch) might have say 20k triangles. Run on Low graphics and maybe she has 4k. The same character, just represented with different _topology._ If you squint, they even look the same.
+{{< /alert >}}DEFINITION: TOPOLOGY
+
+## Making the game ready mesh
+  
+**Goal** Produce a mesh that:
+1. Has a triangle count that fits in a given range (say 1000-2500 polygons). (defined by certain production and hardware realities)
+2. Provides a silhouette closely matching that of the smoothed mesh, though more faceted.
+3. Sits at the same point in space and is the same size, which will be important later.
+
+### Download
+Grab this [breakfast mug maya project](week3_breakfast.zip)
+
+### HOW
+There are a few ways to do it, but they all involve making a game-resolution mesh in the same space as the smooth reference model so you can match them as close as possible.
+This takes organisation and some Maya knowledge, because otherwise you're going to not be able to see or select the game mesh half the time!
+
+{{< imgproc object_shared_space_problem Resize "500x">}}
+When objects need to share space, how do you model?
+{{< /imgproc >}}
+
+Tools:
+  1. **XRay modes!** Xray the scene or individual meshes
+    * In a viewport enable `Shading -> X Ray`. I've hotkeyed to alt-x for now.
+    * X Ray one object in _Modeling Toolkit's_ `Object` menu.
+  2. **Freeze (template) toggle!**
+      * It does what the T (template) mode for a layer does, but for an object.
+      * It's in _Modeling Toolkit's_ `Object` menu.
+      * I've hotkeyed it to alt-shift-f (in the hotkey editor you need to search for _template toggle_).
+
+    * Make a duplicated, 1-2x smoothed version of the subd mesh (maybe 30K+ polys). Give it a layer of its own. subd_heavy This is ANOTHER mesh needed.
+    * Hide the original subd (can be edited later if need be)
+    * Give the subd_heavy it's own material (pink) and make it x-ray.
+
+Then you can do one of a few things:
+      
+1. Model near it: slap down a new primitive and start modeling again, trying to match the silhouette.
+or
+2. Duplicate the unsmoothed subd mesh, call that the game mesh, then heavily modify it:
+  * Reduce the poly count
+    * Remove loops that don't affect the silhouette. Support edges mostly don't.
+    * Remove edges that do support the silhouette but won't be missed too much: eg reducing a cylinder from 16 to 8 sides.
+  * 
+  * Move points/loops/edges around until you approximate the smoothed model but with less polys
+2. Trace the mesh using live mode and quad draw.
+* Make subd_heavy a live mesh
+* Start quad drawing on it.
+* turn off live, make other changes.
+
+ Table showing the four meshes and their use.
+
+<!--
 ## Overview
 
 * Talking [week 2](../week2/#deliverable-this-week) homework
@@ -182,3 +271,4 @@ These settings are for both subd meshes export and game meshes export.
 {{< /imgcard >}}
 
 
+-->

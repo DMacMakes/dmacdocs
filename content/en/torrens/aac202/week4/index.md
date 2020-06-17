@@ -6,7 +6,7 @@ description: >
   Turning 3D art into playable game assets means exporting to a real time **game engine**. Today we'll learn how to move our models from Maya and Painter into Unreal/Unity. From there you can light and screenshot them for your **final deliverables** of Assessment 1.
 ---
 
-## Productive Class Time
+<!-- ## Productive Class Time
 
  
 We're here learning to do something extremely hard, in week 4 of a second year subject. The amount of knowledge and ability you need to have any chance in game art now is higher than it's ever been. 
@@ -35,7 +35,7 @@ It's just.. _confusing_ and weird when you rebel in here, because I'm literally 
 {{< /alert >}}
 
 If you don't succeed in seeing and take those opportunities yourself, you will be asked to.
-
+-->
 ## Finalising Models And Exporting
 
 Open your Maya projects. We're going to try to resolve any problems you're having exporting your files for baking in Painter.
