@@ -91,6 +91,10 @@ Tools:
 * Give the subd meshes the suffix `_subd`, as in `body_subd`
 * Add a bright red material to the subds so we can tell them apart.
 
+{{< imgproc game_model_prep Resize "600x" Link "game_model_prep.png" >}}
+The three meshes with a the `_subd` suffix and red material. (body_game and handle_game are hidden)
+{{< /imgproc >}}
+
 ### Modeling the new mesh
 
 Whichever way you go about modeling them, give the game meshes the suffix `_game` and a blue material to stand out from the subd ones.
