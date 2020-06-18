@@ -6,55 +6,169 @@ description: >
   Finding your forms.
 ---
 
-**----- NEEDS MAYA SCENE FILES INCLUDED -----**
+## DOWNLOAD
 
-## Assessment 1 continued
+[Week 3 Maya demo project: Tweaking a table](week3_table_demo.zip)
 
-Over the week you've worked on your blockouts. Let's detail them.
-1. Assess and tweak our blockouts.
-2. Add detail
-3. Import into first render scene
+## Last week's deliverable
+
+How did we go completing last week's deliverables?
+[Assessment 1 Week 2 Deliverables](../assessments/#week-2-submission-details)
+
+### Looking over and reviewing: 
+* Images supplied
+  * Hitting brief
+    * Right images with right maya settings
+    * Stayed with blockout stage and minimal details
+  * Matching feel of concept
+    * Is the silhoutte in proportion to the concept?
+    * Are the volumes natural and maybe dynamic, or geometric and static?
+    * Is it easily changeable?
+* Comments
+  * Did you post 2?
+  * Do they go deeper than compliments/generalities, and show insight and understanding of the topics we covered last week?
+  * How to address that.
+
+
+## Modifying big shapes, volumes
+
+How can we make the big shapess less computer generated? 
+* Zoom out and compare the silhouette
+
+**If you've kept your blockout basic:**
+You can probably transform single verts or faces verts and change the silhouette.
+You can add edge loops to allow convex and concave shapes.
+
+**Once blockout has more edges and breaks in forms:**
+Now moving individual verts or faces becomes less useful for big silhouette changes. We need transforms that **respect existing geometry** and **tools that affect areas**
+
+### Respecting geometry with slide and pivot
+
+Week 2 scene.
+
+1. Look at end of notched table plank (topSlat2). Select it use viewport's isolate button  to hide others.
+2. Select 3 parts of edge and bevel.
+3. Now how could we make this less parallel? Rotating edges changes volumes (try).
+4. With rotate enabled, three edges and rotate with slide (ctrl-shift-drag). Better but still bad pivot
+5. Hit d, then drag along the far right bottom edge of bevel. Pivot is now at end point
+6. Rotate slide again (ctrl-shift-drag)
+
+Think of other ways to use slide with scale, rotate and translate. Change your pivot point.
+
+### Soft select 
+
+Soft select mode. With table slat in vertex edit mode and one vertex selected:
+1. Select translate tool
+2. Hit the `b` key to go into soft select mode. Yello means selected, red not, orange is in between.
+3. Move around.
+4. Undo.
+5. _Press and hold_ `b` now and drag your mouse/pen to resize the area of influence.
+6. Move it now
+7. Undo
+8. Holding down the grave/tilda key (`\`` / `~`) next to the `1` key click and drag on a different vertex. Now it's like an instant nudge or smudge tool.
+
+### Lattice deformation
+
+If you started out with a simple plank but now it has lots of detail, Maya (and other tools) can still treat it like that simple box.
+
+Lattice deformers let you modify a simple shape, and that skews, warps and influences your mesh.
+
+## Adding details
+
+Bevels, notches we did those last week with multi cut.
+
+### Cutting one mesh with another
+
+Booleans. Cut a hole out of a table by subtracting a cylinder.
+
+![boolean no ngons](boolean_no_ngons.png)
+
+![booleans](menu_booleans.png)
+
 
 ### Adding in edges after Booleans
 
 Booleans create polygons with a lot of faces (n-gons). We can **clean them up** with:
+* First, _edit -> delete by type -> history_
 * multi cut, adding edges manually or 
 * Use _Mesh -> Cleanup.._ geometry.
+* Aftwerwards always _edit -> delete by type -> history_
 
 ![](ngons_cleanup.png)
 Set it to _Cleanup matching polygons_ and, under _Fix by Tesselation_, target _Faces with more than 4 sides_.
 
 > 'Tesselate' means to add in edges until we have no more ngons or quads, just triangles.
 
-### Bevel a vertex
+## Combining and separating meshes
 
-Beveling a vertex is just lopping off a corner:
+Good maya hygiene
 
-![](bevel_vertex.png)
+Combinging and separating create some nasty history and unwanted groups.
+  * Getting out of the group (shift p or middle drag in outliner)
+  * Deleting the history then gets rid of the garbage group
+  * rename.
+  Don't put this off! The scene will corrupt or become too heavy or the modeling tools will become unpredicatble.
 
-You end up with weird **rendering errors** because the new edges have been set to **soft**. It's a shading trick used on cylinders, spheres etc to make them look less faceted.
-
-> Soft edges only render well on big obtuse angles, like 170 degrees.You can't fake a round edge on a 90 degree turn!
-
-![](edge_harden_normals.png)
-**We can fix it easily:**
-1. Select the edges
-2. _Mesh Display -> Harden Edge_
+  SmartMesh Tools
+   - This script offers buttons that automate the combine/separate cleaning, and let you better control the name/pivot outcomes.
+   - Learn to download/install it.
 
 
-### Go planar, edit, extrude
+## Thin stuff: cloth, straps
 
-Sometimes, rather than fussing with so many surfaces (bottom, side, top) it's easier to just:
-1. Delete the walls and top
-2. Cut away at our base
-3. Extrude it back up to the old height
-4. Reverse normals if it's black.
+Lets make cloth, and straps/bands.
+
+### Plane, extrude
+
+Make a plane, move it to a surface, start extruding.
+
+![](table_chunked_2.png)
+
+
+### Quad draw
+
+1. Make a surface live
+2. Enter Quad draw
+3. Draw and delete verts
+4. Create faces with shift
+5. Delete things with alt
+6. Exit quad draw, turn off live surface.
+7. Separate new geometry
+8. Extrude bits
+9. Finally, extrude the cloth (test this along the way with bigger/complex cloth, do and undo)
+
 _remember to regularly edit > delete by type > history_
 
-![](edit_plane_extrude.png)
 
+### Holes in cloth
 
-## Working faster with Marking Menus
+Very easy, because we did it with cutting chunks. 
+
+1. Draw out cloth
+2. Add edges for holes
+3. Select and delete faces where the hole goes
+4. Extrude cloth.
+
+## Extras
+
+### Clean up the garbage groups
+
+If you've used mirror, separate (shells) or extract faces, you've seen garbage groups in your _Outliner_. They are a butt pain. 
+
+![](fix_groups_example_garbage.png)
+The example above is a single metal bracket after I finished a few _mirror_ operations. It has two parents, both pointless extra transform thingies.
+
+![](fix_groups_drag_select.png)
+**To fix:**
+1. **SAVE YOUR SCENE** just in case, before any big operation. To save incrementally and keep your old version, use _File -> Increment And Save_.
+1. Drag in the _viewport_ to **select all the objects** in your prop. 
+2. See that **they're hilighted** in the _outliner_ (shown above)
+3. **_Unparent_ them all** by either **a)** clicking _**edit->unparent**_ in the menus or **b)** hitting the **shift-p** keyboard shortcut.
+4. _File -> **Optimize Scene Size** -> Ok_.
+
+![](fix_groups_optimise.png)
+
+### Working faster with Marking Menus
 
 **In maya we have 'marking' menus**. They're **like 'right click'** menus in other programs, but feature packed enough to deserve their own name.
 
@@ -87,85 +201,3 @@ You can drag right past one of those options and it'll select when you release t
 3. Try it again, but to the 1:30 position on a clock, or North East on a compass. That's object mode.
 
 > **Polygonal:** made of polygons. Pronounced **'poh-ligg-onal'**, like 'original' with a hard 'guh' g.
-
-
-## Render Scene
-
-I've created a basic render scene for you guys to work in. It'll help when we start looking at shading/rendering next week.
-1. It'll be supplied to you soon.
-1. It uses the packaged-with-Maya Arnold renderer.
-2. The lighting is a free hdr image from the web (Maxine Roz).
-3. You'll be able to import your scene into it, and scale your object up to around the size of mine (for consistent lighting).
-4. Hit render to see a pretty picture.
-
-![](render_scene_table.png)
-
-> **Note**: the scene above uses **NVidia** machine learning technology to remove noise from the image. If **you don't have an Nvidia card**, there's another version. You'll be able to remove the noise with your cpu by turning up the 'samples', it'll just take longer.
-
-## Thin stuff: cloth, straps
-
-Lets make cloth, and straps/bands.
-
-### Plane, extrude
-
-Make a plane, move it to a surface, start extruding.
-
-![](table_chunked_2.png)
-
-
-### Quad draw
-
-1. Make a surface live
-2. Enter Quad draw
-3. Draw and delete verts
-4. Create faces with shift
-5. Delete things with alt
-6. Exit quad draw, turn off live surface.
-7. Separate new geometry
-8. Extrude bits
-9. Finally, extrude the cloth (test this along the way with bigger/complex cloth, do and undo)
-
-_remember to regularly edit > delete by type > history_
-
-## Fixing garbage groups and history
-
-The object history feature in Maya is powerful, but causes problems and a lot of housework. How to fix?
-
-### Turn it off
-
-The slash and burn approach is to just turn it off completely. I'm trying out working this way at the moment.
-
-![](history_button.png)
-That blue button in the menu next to the render icons? **Click it to disable history**.  If you can't see the button, click a vertical divider in that area, see if it expands.
-
-### Clean up the garbage groups
-
-If you've used mirror, separate (shells) or extract faces, you've seen garbage groups in your _Outliner_. They are a butt pain. 
-
-![](fix_groups_example_garbage.png)
-The example above is a single metal bracket after I finished a few _mirror_ operations. It has two parents, both pointless extra transform thingies.
-
-![](fix_groups_drag_select.png)
-**To fix:**
-1. **SAVE YOUR SCENE** just in case, before any big operation. To save incrementally and keep your old version, use _File -> Increment And Save_.
-1. Drag in the _viewport_ to **select all the objects** in your prop. 
-2. See that **they're hilighted** in the _outliner_ (shown above)
-3. **_Unparent_ them all** by either **a)** clicking _**edit->unparent**_ in the menus or **b)** hitting the **shift-p** keyboard shortcut.
-4. _File -> **Optimize Scene Size** -> Ok_.
-
-![](fix_groups_optimise.png)
-
-### Holes in cloth
-
-Very easy, because we did it with cutting chunks. 
-
-1. Draw out cloth
-2. Add edges for holes
-3. Select and delete faces where the hole goes
-4. Extrude cloth.
-
-_remember to regularly edit > delete by type > history_
-
-_r t r e > dbt > h_
-
-[Arnold sky](https://docs.arnoldrenderer.com/pages/viewpage.action?pageId=40111029)
