@@ -29,6 +29,16 @@ How did we go completing last week's deliverables?
   * Do they go deeper than compliments/generalities, and show insight and understanding of the topics we covered last week?
   * How to address that.
 
+## Reducing triangle count
+
+Low poly: think <1000 triangles.
+
+* View the poly stats (heads up display)
+* Deleting edge loops. 
+* Starting with simpler primitives (8 edges instead of 16 or 32)
+* Working with powers of 2
+* Collapsing edges
+* Target Weld.
 
 ## Modifying big shapes, volumes
 
