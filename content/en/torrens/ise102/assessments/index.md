@@ -11,18 +11,30 @@ description: >
 
 **Due:** End of week 4
 
-Click for the [Assessment page and PDF brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948578_1&course_id=_90315_1)
+Click for the [Assessment page and PDF brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?course_id=_90315_1&content_id=_8948578_1&mode=reset)
 
-Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. Reading the textbook, testing out _C++_ statements in a coding environment and working through _SoloLearn_ will make all the difference in this one.
+Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
 
 ### Deliverable
 
-An online, 90 minute exam you will complete **on Blackboard**. The exam will be available to start at any point from Sunday end of week 3 **until Sunday end of week 4**. 
+An online exam you will complete **on Blackboard**. The exam will be available to start at any point from Friday of week 4 **until Sunday end of week 4**. 
 
-  * Once started, you have to complete it within **90 minutes**.
-  * You can **return** to the exam **during** those 90 minutes if your machine/internet goes down, but **not after**.
-  * If a serious technical issue stops you from returning to it, please contact me. 
-  * The uni will require a legitimate reason, so make sure that when you sit down you have time to complete it without interruption from family/friends/responsibilities.  
+* Once started, you have to complete it the time specified.
+* You can **return** to the exam **during** that time if your machine/internet goes down, but **not after**.
+* If a serious technical issue stops you from returning to it, please contact me. 
+    * The uni will require a legitimate reason, so make sure that when you sit down you have time to complete it without interruption from family/friends/responsibilities.  
+
+{{< alert title="Preparation" color= "secondary" >}}
+You will need to have 
+1. Attended and/or watch recordings of **ALL of EVERY class**, and worked through the **exercises and homework**
+1. Carefully read and understood the **first two chapters of the textbook** (available on the resources page)
+1. Work through sololearn.
+1. Reading and quizzes won't get you far on their own: for these principles to stick you need to have written, **tested and experimented/played with code** from the textbook and the weekly lectures. 
+
+Coding is like any other craft or science: if you don't practise, if you don't break it apart and put it back together, if you don't switch it around to see what happens, you won't learn it.
+
+**#1 tip:** If you think you really understood the example you typed out and toyed with, close the project, create a new one and **rewrite it from memory.** If you don't get anything wrong first go, it's not a hard enough exercise!
+{{< /alert >}}
 
 ## Assessment 2: Slot Machine
 **Due:** End of week 8

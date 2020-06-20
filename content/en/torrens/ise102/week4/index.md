@@ -32,6 +32,12 @@ Add two or more cleaner, crisper examples of multiple conditions.
 
 Truth tables!
 
+## Exercise: Grab and start Sololearn
+
+1. Jump to the [resources page](../resources/#sololearn-c-tutorial), install it along with the c++ tutorial.
+2. In the C++ tutorial, jump into _Basic Concepts_
+3. Complete _What is C++_ and _Hello, world!_
+4. Type S for Sololearn in stream chat when you're done
 
 ## Initialisation _Part 1_
 
@@ -202,19 +208,6 @@ cout << "You're tall now: " << height << " meters";
 // If you can work out why the result is 2.01 you're a universe brain.
 
 ```
-
-## SoloLearn
-
-Very solid app for learning a new programming language. It's structured to teach and quiz constantly as you progress, helping to force recall and help you remember what you learn.
-
-Download from the iOS App Store (iPhone) or Google Play (Android). 
-- You want just _SoloLearn_, not a specialised older version. 
-- Create and account to log in
-- Under _My Courses_ Grab the _C++ Tutorial_
-- Start doing it now in class, go as far as you can.
-- I'll let you know when to stop in class.
-- Continue it at home to prep for the exam.
-- At home you can stop at arrays.
 
 ## Enum
 

@@ -93,7 +93,20 @@ Next:
 7. Visual studio will now open your Solution/Project. Expand the `Source Files` folder in the **Solution Explorer** and double click `main.cpp` to view your source code.  
 ![Project Open](project_open_main_cpp.png)  
   
-  
+## Sololearn C++ Tutorial
+
+Sololearn provides a system for learning a new programming language: It's structured to both teach and quiz you at each stage progress, helping to confirm understanding and lock in what you learn.
+
+![Sololearn](../week4/sololearn_cpp.png)
+
+Download from the [iOS App Store](https://apps.apple.com/us/app/sololearn-learn-to-code/id1210079064) (iPhone) or [Google Play](https://play.google.com/store/apps/details?id=com.sololearn&hl=en_AU) (Android). 
+- You want just _SoloLearn_, not a specialised older version. 
+- Create an account to log in
+- Under _My Courses_ Grab the _C++ Tutorial_
+- Put the app on your phone's home screen and start doing it today! Do not put it off or you'll forget it exists.
+- After you answer a question, read the comments to see how other people fared or what tips they offer. 
+- Read up to and including data types: you can stop when you reach arrays.
+
 ## Windows Options  
 
 ### 1. Install Inside/Alongside Your OS
