@@ -6,7 +6,7 @@ description: >
   Boolean logic, for loops, enums, literals, initialisation. Working through problems.
 ---
 
-# FIX EXAM TIMING, QUESTIONS, OPEN AND CLOSE. ADD MORE ON BOOLEAN LOGIC TO NOTES
+
 
 ## Week 3 Recap And Homework
 
@@ -24,20 +24,21 @@ End of Chap 2, code.
   * Unusual mistakes
 * How would I do it? CRISP, SIMPLE
 
-## Chapter 2 FLESH OUT
-
-More on Boolean logic from chapter 2.
-
-Add two or more cleaner, crisper examples of multiple conditions.
-
-Truth tables!
-
 ## Exercise: Grab and start Sololearn
 
 1. Jump to the [resources page](../resources/#sololearn-c-tutorial), install it along with the c++ tutorial.
 2. In the C++ tutorial, jump into _Basic Concepts_
 3. Complete _What is C++_ and _Hello, world!_
 4. Type S for Sololearn in stream chat when you're done
+
+## Chapter 2 FLESH OUT
+
+## MORE ON BOOLEAN LOGIC
+More on Boolean logic from chapter 2.
+
+Add two or more cleaner, crisper examples of multiple conditions.
+
+Truth tables!
 
 ## Initialisation _Part 1_
 
