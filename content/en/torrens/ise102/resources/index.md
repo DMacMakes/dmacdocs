@@ -48,6 +48,14 @@ What's critical for us is that, when asked what `Workloads` you want to install,
 
 ![Desktop development with C++](visual_studio_cpp_desktop.png)
 
+### Handy extra: JDoodle
+This isn't an install, but instead a on online C++ ide where you can type out and test snippets of code without starting a new Visual Studio solution.
+
+<div class="mx-auto">
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.jdoodle.com/online-compiler-c++17/" target="_blank">JDoodle C++<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	</a>
+</div>
+
 ## Flowgorithm
 
 Flowchart-based programming with Flowgorithm.
