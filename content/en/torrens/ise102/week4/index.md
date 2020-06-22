@@ -10,11 +10,15 @@ description: >
 
 ## Week 3 Recap And Homework
 
-End of Chap 2, code.
+[Week 3 homework in the notes](../week3/#homework)
 
-[Week 3 Homework](../week3/#homework)
+### Review Chap 2 
+
+You read from page 48 on. Let's skim.
 
 ### How did we do with homework menu?
+
+You made changes to the textbook code.
 
 * Comprehension of the brief
   * Did you carefully read how the code should react in each situation?
@@ -22,7 +26,7 @@ End of Chap 2, code.
   * Examples of approaches
   * Common mistakes
   * Unusual mistakes
-* How would I do it? CRISP, SIMPLE
+* How would I do it? **EXAMPLE &&&&&&&&&&&&&&&&&&**
 
 ## Exercise: Grab and start Sololearn
 
@@ -36,7 +40,7 @@ End of Chap 2, code.
 ## MORE ON BOOLEAN LOGIC
 More on Boolean logic from chapter 2.
 
-Add two or more cleaner, crisper examples of multiple conditions.
+Add two or more cleaner, crisper examples of multiple conditions, or FIND THEM IN CHAPTER 2 READING
 
 Truth tables!
 
