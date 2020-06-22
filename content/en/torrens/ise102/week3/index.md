@@ -239,7 +239,7 @@ This week we:
   - `&&`, `||` and `!`
 
 ## Homework:
-This week you will **submit part your homework code**!.
+This week you will again **submit your homework code**.
 
 1. Read the rest of [Chapter 2](../resources/cpp_through_games_2.pdf) of the textbook, where you'll learn about other types of loops. If you're caught up on the reading, you're beginning from **page 48**. If not, catch up from where you left off and continue to the end of chapter 2.
     - Take notes
