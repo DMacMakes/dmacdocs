@@ -24,7 +24,7 @@ Click to read
 | [Chapter2 ](cpp_through_games_2.pdf) | Truth, Branching, `while` Looops, `do` loops, logical operators, random numbers |
 | [Chapter3 ](cpp_through_games_3.pdf) | `for` Loops and nesting, String objects, `array` (collections), multi-dimensional arrays, word jumble. |
 | [Chapter4](cpp_through_games_4.pdf) | `vector` collections, algorithms library, planning with pseudocode (hangman). |
-| [Chapter5](cpp_through_games_5.pdf) | Functions, including scope, arguments, overloading.
+| [Chapter5](cpp_through_games_5.pdf) | Functions, including scope, arguments, overloading. |
 
 
 ## Subject Software Installs
