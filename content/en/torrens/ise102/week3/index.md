@@ -242,7 +242,7 @@ This week we:
 This week you will again **submit your homework code**.
 
 1. Read the rest of [Chapter 2](../resources/cpp_through_games_2.pdf) of the textbook, where you'll learn about other types of loops. If you're caught up on the reading, you're beginning from **page 48**. If not, catch up from where you left off and continue to the end of chapter 2.
-    - Take notes
+    - Take notes  
     - In a new `ise102_console` project, **type and run** _Play Again 2.0_ on **page 54**.
     - Change the game to use a menu with 2 entries (shown below) and look for `1` or `2` as their input.
       - tip: remember to change `char` to `int`

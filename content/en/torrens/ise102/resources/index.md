@@ -6,6 +6,27 @@ description: >
   Resources that we'll use in **ise102** throughout this trimester.
 ---
 
+## ISE102 Textbook
+
+We don't just have a pretty good textbook, _**"Beginning C++ Through Game Programming"**_, we have free access to it.
+
+You can read it online or download PDF chapters from Ebook Central:
+
+{{< imgproc book_cpp_through_games Resize "250x" Link "https://ebookcentral-proquest-com.ezproxy.laureate.net.au/lib/think/detail.action?docID=3136727" >}}
+Click to read
+{{< /imgproc >}}
+
+**Download chapters** below in PDF format:
+
+| Link   | Topics/features covered  |  
+|------------|--------------------------|  
+| [Chapter1 ](cpp_through_games_1.pdf)  | Types, Variables, Input and Output |  
+| [Chapter2 ](cpp_through_games_2.pdf) | Truth, Branching, `while` Looops, `do` loops, logical operators, random numbers |
+| [Chapter3 ](cpp_through_games_3.pdf) | `for` Loops and nesting, String objects, `array` (collections), multi-dimensional arrays, word jumble. |
+| [Chapter4](cpp_through_games_4.pdf) | `vector` collections, algorithms library, planning with pseudocode (hangman). |
+| [Chapter5](cpp_through_games_5.pdf) | Functions, including scope, arguments, overloading.
+
+
 ## Subject Software Installs
 
 {{% alert title="Important: Windows Required" color="primary" %}}
@@ -53,22 +74,6 @@ Portable software can run straight from its folder, no install required.
 {{% /alert %}}
 
 
-## ISE102 Textbook
-
-We don't just have a pretty good textbook, _**"Beginning C++ Through Game Programming"**_, we have free access to it.
-
-You can read it online or download PDF chapters from Ebook Central:
-
-{{< imgproc book_cpp_through_games Resize "250x" Link "https://ebookcentral-proquest-com.ezproxy.laureate.net.au/lib/think/detail.action?docID=3136727" >}}
-Click to read
-{{< /imgproc >}}
-
-I've also pre-saved chapters for downloading direct from the notes (more to come)
-
-**Direct PDF Links:**
-* [Chapter 1:](cpp_through_games_1.pdf) Types, Variables, Input and Output
-* [Chapter 2:](cpp_through_games_2.pdf) Truth, Branching, the Game Loop
-* [Chapter 3:](cpp_through_games_3.pdf) `for` Loops, Strings and Arrays
 
 ## Visual Studio C++ Templates
 
