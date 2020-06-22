@@ -18,16 +18,15 @@ Click to read
 
 **Download chapters** below in PDF format:
 
-| Link   | Topics/features covered  |  
-|------------|--------------------------|  
+| Link       | Topics/features covered  |  
+| ---- | ---- |  
 | [Chapter1 ](cpp_through_games_1.pdf)  | Types, Variables, Input and Output |  
-| [Chapter2 ](cpp_through_games_2.pdf) | Truth, Branching, `while` Looops, `do` loops, logical operators, random numbers |
-| [Chapter3 ](cpp_through_games_3.pdf) | `for` Loops and nesting, String objects, `array` (collections), multi-dimensional arrays, word jumble. |
-| [Chapter4](cpp_through_games_4.pdf) | `vector` collections, algorithms library, planning with pseudocode (hangman). |
-| [Chapter5](cpp_through_games_5.pdf) | Functions, including scope, arguments, overloading. |
+| [Chapter2 ](cpp_through_games_2.pdf) | Truth, Branching, `while` Looops, `do` loops, logical operators, random numbers |  
+| [Chapter3 ](cpp_through_games_3.pdf) | `for` Loops and nesting, String objects, `array` (collections), multi-dimensional arrays, word jumble. |  
+| [Chapter4](cpp_through_games_4.pdf) | `vector` collections, algorithms library, planning with pseudocode (hangman). |  
+| [Chapter5](cpp_through_games_5.pdf) | Functions, including scope, arguments, overloading. |  
 
-
-## Subject Software Installs
+## Subject Software Installs  
 
 {{% alert title="Important: Windows Required" color="primary" %}}
 The software and projects in this subject require the _Windows Operating System_.
