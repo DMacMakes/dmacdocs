@@ -39,7 +39,8 @@ You made changes to the textbook code.
 * Execution of the brief
   
   Write it in English first.. Pseudocode.
-  I enter it into my file as comments.
+  Here are the comments from my code. I'll translate them to a kind of Psuedocode.
+
   ```
   /// START PlayAgainMenu
 	/// `again` was fine for a yes/no answer, but i want to have numbered choices.
@@ -55,12 +56,10 @@ You made changes to the textbook code.
   /// They quit. Say goodbye.
   /// END
   ```
-  Draw a flowchart?
-    
-  * Common mistakes
-  * Unusual mistakes
+* Questions before I show answer?
 * How would I do it? 
   * **Visual Studio step through**
+  * As flowchart?
 
 {{< alert title="Continuing on NOT equal??" color= "secondary" >}}
 It can seem strange at first to continue a loop by testing that something isn't equal, or isn't true. 
@@ -109,15 +108,6 @@ How about `( !playerIsDead ) // keep playing`
 2. In the C++ tutorial, jump into _Basic Concepts_
 3. Complete _What is C++_ and _Hello, world!_
 4. Type S for Sololearn in stream chat when you're done
-
-## Chapter 2 FLESH OUT
-
-## MORE ON BOOLEAN LOGIC
-More on Boolean logic from chapter 2.
-
-Add two or more cleaner, crisper examples of multiple conditions, or FIND THEM IN CHAPTER 2 READING
-
-Truth tables!
 
 ## Initialisation _Part 1_
 
