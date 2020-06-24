@@ -1,6 +1,6 @@
 ---
-title: "W.4: Bake, Texture, Present"
-linkTitle: "W.4 Present"
+title: "4 | Bake, Texture, Present"
+linkTitle: "4 | Baking maps"
 weight: 40
 description: >
   Turning 3D art into playable game assets means exporting to a real time **game engine**. Today we'll learn how to move our models from Maya and Painter into Unreal/Unity. From there you can light and screenshot them for your **final deliverables** of Assessment 1.
@@ -36,8 +36,61 @@ It's just.. _confusing_ and weird when you rebel in here, because I'm literally 
 
 If you don't succeed in seeing and take those opportunities yourself, you will be asked to.
 -->
+
+## Assessment 1 progress
+
+Where did you get to?
+[Week 3 Homework in the notes](../week3/#homework)
+
+### Reviewing and helping
+
+* Alex poly count
+* Lucas multi cut errors.
+
+## Transferring the details
+
+Normal mapping!
+Substance Painter!
+
+{{< imgcard axe_zb Link "https://dmcgits.github.io/mds/workshops/painter/painter_notes.html">}}
+Click here to open the Painter workshop notes
+{{< /imgcard >}}
+
+Requirements:
+
+**Two collections of meshes.** Each collection can be saved into an fbx format file.
+
+1. Very **detailed meshes** of the prop parts that look very nice but are too heavy for games. 
+2. The **game ready mesh** with uv maps.
+   * These should have hard edges wherever there are seams/texture borders in the uv map, and soft edges everywhere else.
+   * Freeze any scaling (probably already done for uv unwrap)
+
+**Magic software:** It **scans the surface** of the high detail meshes, tosses away the polygons, and **makes an image** from their skin that **the game ready mesh will wear** like a suit.
+
+![](skin_suit.jpg)
+
+### Our mug exports
+
+![](mug_export_game_subd.png)
+
+1. **mug_game.fbx**: The _game meshes of the mug body, handle and coffee. 
+   * This is only about 50KBs.
+   * Make sure they all have the same material.
+2. **mug_subd.fbx**: The _subd meshes of the mug parts, but subdivided and smoothed for real. We'll use Maya to export the subd meshes and apply the smooth and subdivide algorithms along the way, producing tens or hundreds of thousands of real triangles.
+   * This sounds backwards but you have to have _smooth meshes_ **un**selected when you export the subd meshes, or they'll export the unsmoothed versions. You got it right if the file will be megabytes in size.
+
+### Painter, the magic
+
+Create a project from mug_game.fbx.
+Go to texture baking and select the subd meshes.
+The right settings.
+Hit bake.
+
 ## Finalising Models And Exporting
 
+
+
+<!-- 
 Open your Maya projects. We're going to try to resolve any problems you're having exporting your files for baking in Painter.
 
 First, if you:
@@ -52,7 +105,7 @@ Other problems we'll look at:
   - Errors stopping Maya unfolding/laying out your game mesh.
   - Everything looks to be set up right.. but the bake is failing/has errors  
   - It's baking but the result still looks low poly
-
+--->
 ### Updated Arcade Stick Files
 
 These also contain the baking project you'll use today to import your model.
