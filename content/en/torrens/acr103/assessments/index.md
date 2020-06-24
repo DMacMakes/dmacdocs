@@ -4,6 +4,13 @@ linkTitle: "Assessments"
 weight: 2
 description: >
   Assessment dates, briefs, deliverables etc.
+resources:
+- src: "*isometric*"
+  params:
+    byline: "Art: RGBFumes on Deviantart"
+- src: "*lulemero*"
+  params:
+    byline: "Art: Lulemero (Instagram)"
 ---
 
 ## Assessment 1: Low Poly Prop
@@ -50,7 +57,33 @@ You need to have **blocked out your model** in sufficient detail to communicate 
 
 ### Week 4 submission details
 
-Images of final model, maya project.
+#### Deliver:
+1. Create a folder for your final deliverables. Call it `Firstname_Lastname_A1_acr103`
+2. Copy into the folder:
+    * Your **final maya scene file**. In your scenes folder, find your latest `.ma` or `.mb` file.
+    * The **renders and screenshots** described below
+3. Zip up the folder and submit the `Firstname_Lastname_A1_acr103.zip` file to the [assessment 3 page on blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920015_1&course_id=_91934_1)
+  
+**Renders:**  
+Images rendered in Arnold and saved/screenshot with plenty of resolution (1280+)
+
+**1 Hero shot** (or more). Camera angle and lighting that shows your model at its best.
+**2 3/4 isometric** shots. From different 45 degree vantage points.
+
+**Viewport shots:**
+**3 orthographic shots**. Top, side and front orthographic views in Maya
+  - Polygon count displayed
+  - Smooth shading, wireframe on shaded, ambient occlusion on.
+  - Don't shoot all three at once: hit space to enlarge each view before screenshotting.
+
+{{< imgproc isometric_angle_rgbfumes Resize "300x">}}
+Isometric projection.
+{{< /imgproc >}}
+
+Deliver PNG24 files or jpgs of at least 85% (8.5/10) compression quality.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week4/">Back To Week 4 Notes<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
 
 ## Assessment 2: Environment
 

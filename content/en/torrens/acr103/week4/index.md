@@ -4,52 +4,35 @@ linkTitle: "W.4 Rendering"
 weight: 40
 description: >
   Delivery, rendering.
+resources:
+- src: "*krzysztof-maziarz*"
+  params:
+    byline: "Art: Krzysztof Maziarz (Artstation)"
+- src: "*lulemero*"
+  params:
+    byline: "Art: Lulemero (Instagram)"
 ---
 
 ## Assessment 1
 
-What counts towards marks, according the the assessment PDF.
-
-* Assessment page on Blackboard is [here](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8008775_1&course_id=_75841_1)
-* PDF Brief is [here](https://laureate-au.blackboard.com/bbcswebdav/pid-8008804-dt-content-rid-14342462_1/xid-14342462_1)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-4-submission-details">Assessment 1 Final Deliverables<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
 
 #### Marking covers three components:
-  - week 2 block/chat done: 40
-  - Detailed modelling: 30
-  - Shading: 30
-
-### Blocking
-Everyone participated well on blocking, and instead of written forum posts we had class presentation and blocking during lesson.
-
-#### Deliver: 
-* Just a brief note (readme.txt) summarising in a paragraph what you said during week -why you picked/designed your concept, what challenges you had expected, and what turned out to be the real challenges. Not very formal, just something to help me understand how you’re going.
+You've already covered the first: week 2 block/discussion is worth 40.
+Remaining:
+  - Detailed modelling: **30**
+  - Shading: **30**
 
 ### Detailed Modelling
 * How you applied the techniques taught in class
 * How successfully did you capture the details and evoke the feel of the concept art
 * How much control did you achieve over the tools.
 
-#### Deliver:
-* **Your maya scene file**. Either .ma or .mb extension. Zip it up.
-* File naming:
-  - **A1_prop_danny_mcgillick_table.ma.zip** 
-
 ### Shading
 
 Lighting the model and positioning the camera to see its forms.
 Creating, selecing, applying and changing materials to make enhance your model.
-
-#### deliver
-Use lighting to get maximum form across.
-
-**Renders:**
-When you render with arnold you can either save out the image, or just screenshot it.
-
-Deliver PNG or JPG files, zipped into a single archive.
-
-1.**2+ images**. Hero shots: A hero shot is whatever you think shows off your model best.
-2. **2 images**. 3/4 isometric from two opposing sides. Think Diablo view.
-3. **3 images**. Top, side and front: Simple structural shots. screenshot your viewport with "wireframe on shaded" enabled.
 
 ## Intro to Rendering with Arnold
 
@@ -64,10 +47,10 @@ _Groot in Guardians 2, rendered with Arnold. See more Arnold renders [on the Arn
 
 ### Pre made arnold rendering scene
 
-Grab the **scene file** with size reference [here](prop_maya_arnold.zip)
+Grab the **scene file** with placeholder cube [here](prop_maya_arnold.zip)
 
-![](arnold_scene.png)
-_An arnold render next to the perspective view_
+![](arnold_render_scene.png)
+_Our Arnold render scene with placeholder cube_
 
 #### Opening the render view
 
