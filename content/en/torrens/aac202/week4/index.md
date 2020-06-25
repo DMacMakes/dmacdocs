@@ -79,15 +79,14 @@ Requirements:
 2. **mug_subd.fbx**: The _subd meshes of the mug parts, but subdivided and smoothed for real. We'll use Maya to export the subd meshes and apply the smooth and subdivide algorithms along the way, producing tens or hundreds of thousands of real triangles.
    * This sounds backwards but you have to have _smooth meshes_ **un**selected when you export the subd meshes, or they'll export the unsmoothed versions. You got it right if the file will be megabytes in size.
 
-### Painter, the magic
+## Baking your model in Painter
 
-Create a project from mug_game.fbx.
-Go to texture baking and select the subd meshes.
-The right settings.
-Hit bake.
+Grab these:
 
-## Finalising Models And Exporting
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="A1_bake.zip">A1 Painter Baking Files<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
 
+Watch this:
 
 
 <!-- 
@@ -105,7 +104,7 @@ Other problems we'll look at:
   - Errors stopping Maya unfolding/laying out your game mesh.
   - Everything looks to be set up right.. but the bake is failing/has errors  
   - It's baking but the result still looks low poly
---->
+
 ### Updated Arcade Stick Files
 
 These also contain the baking project you'll use today to import your model.
@@ -143,7 +142,7 @@ In _Painter_:
 * Choose your `thing_parts_subd.fbx` file.
 * Click _Bake game_meshes_mat Mesh Maps_
 
-<!-- Video later -->
+
 {{< imgcard baking_project_configuration Link "baking _project_configuration.png">}}
 The baking project has a button and its trim. You'll replace the meshes with your own.
 {{< /imgcard >}}
@@ -229,5 +228,5 @@ Mask by color selection.
 3. Importing meshes and baking high res details to texture maps.
 3. Deliverables
 3. Lighting/materials
-
+-->
 
