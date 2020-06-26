@@ -88,6 +88,7 @@ Grab these:
 
 Watch this:
 
+{{< youtube v5b0z5FLXDk >}}
 
 <!-- 
 Open your Maya projects. We're going to try to resolve any problems you're having exporting your files for baking in Painter.
