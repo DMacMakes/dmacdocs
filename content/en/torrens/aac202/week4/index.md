@@ -93,8 +93,9 @@ Watch this:
 ## Week 4 Final Submission details
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-4-submission-details">Week 4 submission details<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
-<!-- 
+</a>  
+  
+<!--- 
 Open your Maya projects. We're going to try to resolve any problems you're having exporting your files for baking in Painter.
 
 First, if you:
