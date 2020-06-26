@@ -63,9 +63,31 @@ Comment on two other students work, offering well thought out feedback:
 1. In matching capturing the concepts and matching the 3D style what did they do well?
 2. What changes/additions might improve the model?
 
-### Week 4 deliverables
-Your final deliverable will be screenshots and an export from Substance Painter. More details soon.
+### Week 4 submission details
 
+**Delivery:**
+1. Create a folder for your final deliverables. Call it `Firstname_Lastname_A1Final_AAC202`
+2. Copy into the folder:
+    * Your **final maya scene file**. In your scenes folder, find your latest `.ma` or `.mb` file. This contains your final `_game` and `_subd` meshes.
+    * The **renders and screenshots** described below
+3. Zip up the folder and submit the `Firstname_Lastname_A1Final_AAC202.zip` file to the [assessment 1 page on blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8989774_1&course_id=_89547_1)
+
+**Images Required:**
+**Normal Mapped Renders**  
+Screenshots of your normal mapped prop in Substance Painter (as shown in week4 baking video). Bake your textures at 2048 and turn on 4x4 anti aliasing.
+
+**Hero shots** Pick a camera angle and lighting that shows your model at its best. Then screenshot once with wireframes on, once with them off (also in baking video)
+**3/4 isometric** shot. From 45 degree vantage points as seen below
+**Detail shots**. A few closer in shots of your details, showing how the normal mapping worked out.
+
+{{< imgproc isometric_angle_rgbfumes Resize "300x">}}
+Isometric projection.
+{{< /imgproc >}}
+
+Deliver **PNG24 files** or jpgs of at least 85% (8.5/10) compression quality.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week4/#baking-your-model-in-painter">Back to Week 4 Baking<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
 ___
 
 ## Assessment 2: High Poly Character

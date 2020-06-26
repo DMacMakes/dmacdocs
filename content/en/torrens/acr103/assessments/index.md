@@ -62,7 +62,7 @@ You need to have **blocked out your model** in sufficient detail to communicate 
 2. Copy into the folder:
     * Your **final maya scene file**. In your scenes folder, find your latest `.ma` or `.mb` file.
     * The **renders and screenshots** described below
-3. Zip up the folder and submit the `Firstname_Lastname_A1Final_ACR103.zip` file to the [assessment 3 page on blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920015_1&course_id=_91934_1)
+3. Zip up the folder and submit the `Firstname_Lastname_A1Final_ACR103.zip` file to the [assessment 1 page on blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920015_1&course_id=_91934_1)
   
 **Renders:**  
 Images rendered in Arnold and saved/screenshot with plenty of resolution (1280+)
