@@ -24,17 +24,32 @@ Remaining:
   - Detailed modelling: **30**
   - Shading: **30**
 
-### Detailed Modelling
+## Detailed Modelling
 * How you applied the techniques taught in class
 * How successfully did you capture the details and evoke the feel of the concept art
 * How much control did you achieve over the tools.
 
-### Shading
+### Reducing poly count and squashing n-gons
+
+Seb asked how he could reduce the number of polygons in his scene and deal with n-gons. 
+
+This kind of work sees us using **Multicut, Target Weld and Delete Edges** a lot. Maya can easily produce weird, hard to solve geometry corruptions with these tools, so I cover ways to use them safely. There's also **combining meshes** cleanly, getting rid of **zombie groups** and mass renaming. Witness  the power of these tools combined with **good Maya hygiene**.
+
+{{< youtube 7cDK5cD90V8 >}}  
+
+
+Did you make say 20 bolts and move/rotate them all into place? Did you figure you'd fix the high poly count later? Here I show Seb how to use **Match Transforms** combined with **good pivots** to avoid all that repositioning. 
+
+Never forget, Freeze your scale transforms and delete your history regularly!
+
+{{< youtube zIYSE1JcRKg >}}
+
+## Shading
 
 Lighting the model and positioning the camera to see its forms.
 Creating, selecing, applying and changing materials to make enhance your model.
 
-## Intro to Rendering with Arnold
+### Intro to Rendering with Arnold
 
 Arnold is what's called a "Ray Tracing Renderer". 
 
