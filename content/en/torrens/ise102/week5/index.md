@@ -275,26 +275,41 @@ To make it useful, you have to _define_ the function body in curly braces `{}`. 
 
 Here we'll **declare and define** twoTimes:
 
-[](function_twoTimes_code.png)
+![](function_twoTimes_code.png)
 
 The **output** or result of a function is called the **return value**. That's what will take the place of the function call when it has been processed
 
-[call twoDozen](call_twoDozen_code.png)
+![call twoDozen](call_twoDozen_code.png)
 
 ### Exercise: Creating the twoTimes program.
 
-Using this guide below and the code above, create the twoTimes program in Visual Studio.
+Using the code outline below and the real code above, create the twoTimes program in Visual Studio.
 
 ```cpp
-#include <_____>  // What do we need for cout?
-```
+#include <??????>  // Put the include needed for cout here.
 
+// Declare and define twoTimes here
+
+int main ()
+{
+  // call twotimes from here, with an argument, and store the value.
+
+  // Print out a message, include the result from the call to 2X
+}
+```
 The program should produce this output:
 
-[twoDozen output](twoDozen_output.png)
+![twoDozen output](twoDozen_output.png)
 
+## Assessment 2 and homework
 
-## Back to randoms: Ranges
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Assessment 2 Info<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+* Slot machine!
+* Homework counts!
+
+**Do not look at any slot machine code outside of class!** You'll end up using it even if you don't intend to. Look at fundamental code, documentation, other kinds of games: not a slot machine.
+
+## At home: Randoms in a custom range.
 
 `RAND_MAX` is already set in the _Standard Library_. To adjust the result of `rand()` to a **custom range** we have to use maths. One easy way: use the **remainder** of whole integer division.
 
