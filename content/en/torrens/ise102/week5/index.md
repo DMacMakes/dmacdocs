@@ -309,7 +309,7 @@ The program should produce this output:
 
 **Do not look at any slot machine code outside of class!** You'll end up using it even if you don't intend to. Look at fundamental code, documentation, other kinds of games: not a slot machine.
 
-## At home: Randoms in a custom range.
+## Randoms in a custom range
 
 `RAND_MAX` is already set in the _Standard Library_. To adjust the result of `rand()` to a **custom range** we have to use maths. One easy way: use the **remainder** of whole integer division.
 
@@ -367,29 +367,22 @@ This week we learned:
 
 **This homework is part of the assessment** and its completion will contribute to your overall mark.
 
+There's important reading and **two programs to deliver**.
+
 ### Reading
 
-Read [Chapter 5](../resources/cpp_through_games_5.pdf), pages blah to blah. Functions will be your bread and butter from now on, so get your head around them!
+Read [Chapter 5](../resources/cpp_through_games_5.pdf), pages **143 to 153**. You can stop when you reach 'Working with scopes'. 
 
-{{< alert title="Cautionary note" color= "danger" >}}
-You can **declare a function before main()** and **define the body after**. Be ready to see this in the textbook.
+{{< alert title="Separating declaration and definition" color= "danger" >}}
+You can **declare a function before main()** (like a variable declaration) and **define the body after**. 
+
+Be ready to see this in the textbook. Functions will be your bread and butter from now on, so get your head around them!
 {{< /alert >}}
 
 {{< imgproc cpp_through_games Resize "200x" Link "../resources/cpp_through_games_5.pdf" >}}
 <b>Click to download</b> Chapter 5.
 {{< /imgproc >}}
 
-
-
-### Random function
-
-Upgrading _Randoms\_introduction_ with functions. I've written the structure, it's up to you to replace the missing code. The lines (__, _____) don't always match the length of the answer.
-
-<!--
-{{< imgcard code_random_functions_gaps Link "code_random_functions_gaps.png">}}
-Click to expand.
-{{< /imgcard >}}
--->
 ### Calculatemore
 
 Two times calculator is a bit limited. The user has no control over the two numbers being multiplied.
@@ -402,5 +395,18 @@ Add the following features:
 
 The terminology of multiplication (from [wikipedia](https://en.wikipedia.org/wiki/Multiplication))
 > **multiplier** * **multiplicand** = **product**
+
+### Random function
+
+Upgrading _Randoms\_introduction_ with functions. I've written the structure, it's up to you to replace the missing code. The lines (__, _____) don't always match the length of the answer.
+
+You can use modulus and addition to convert numbers in one range into equivalent numbers in another. Or you can use division (percentages) and addition. See [randoms in a custom range](#randoms-in-a-custom-range) above.
+
+<!--
+{{< imgcard code_random_functions_gaps Link "code_random_functions_gaps.png">}}
+Click to expand.
+{{< /imgcard >}}
+-->
+
   
 
