@@ -10,7 +10,7 @@ int randInRange(int rangeMax)
   /// Generate a raw random in whatever range this system uses
   ___ rawRandom = ____;
 
-  /// You can use modulus here or float division (percentages)
+  /// You can use modulus here or ratios (percentages)
   /// to convert our raw random to a number between 0 and rangeMax
   /// Look at the week 5 notes for either approach.
   int ranged = ___________________;

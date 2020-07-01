@@ -309,75 +309,87 @@ The program should produce this output:
 
 **Do not look at any slot machine code outside of class!** You'll end up using it even if you don't intend to. Look at fundamental code, documentation, other kinds of games: not a slot machine.
 
-## Randoms in a custom range
+## Homework learning: randoms in a custom range
 
 `RAND_MAX` is already set in the _Standard Library_. To adjust the result of `rand()` to a **custom range** we have to use maths. One easy way: use the **remainder** of whole integer division.
 
 <!-- DEFINE RANGE -->
 
-#### Remainder as range
+## Randoms in range 1: Integer remainder
 
-The remainder of any number over 3 can only be 0, 1, or 2. This picture will help:
+In integer division, **dividing a by b,** produces a _**quotient**_, or how many times b divided **evenly** into a.
 
-{{< imgcard modulus_11_over_3 >}}
-There are <b>3</b> (quotient) sets of 3 balls. <b>2</b> (remainder) are left over.
-{{< /imgcard >}}
+The left over amount is the **remainder**. As you know, **a modulo b** gives us that.  
 
-We've had remainder 1, 2.. if we add another ball we'll have remainder 0. The rule then is:
+> a / b = quotient  
+> a % b = remainder 
 
-```cpp
-////  0, 1, 2 
-number0To2 = number % (3);
+### A pattern emerges:
 
-//// 0,1,2,3
-number0To3 = number % (4);
+If we keep dividing a by 3 what becomes obvious about the `b` and the remainder?
 
-//// A pattern emerges..
-number0ToN = number % (n + 1);
+|  a / b  | quotient | remainder |  
+|------|----------|------|  
+| 6 / 3 | 2 | **0** |  
+| 7 / 3 | 2 | **1** |  
+| 8 / 3 | 2 | **2** |  
+| 9 / 3 | 3 | **0** |  
+| 10 / 3 | 3 | **1** |  
+| 11 / 3 | 3 | **2** |  
+| 12 / 3 | 3 | **0** |
 
-```
+It looks like for **any value of a**, `a % b` produces a number from `0` to `b-1` before it divides evenly again.
 
-<!-- CHANGE TO CARTONS OF EGGS -->
-{{< alert title="Modulus: The Remainder" color= "primary" >}}
-**Dividing** one whole number by another gives us two results: the _**quotient**_ and _**remainder**_. 
-
-_C++_ gives us the _quotient_ with the division operator `/`, and the _remainder_ with the modulus operator, `%`. Look at **10 divided by 3:**
-
-![modulus_10_over_3](modulus_10_over_3.png)  
-
-There are **3** (quotient) sets of 3 balls. **1** (remainder) is left over.
-
-**In _C++_:**
-```cpp
-int quotient = 10 / 3;  // quotient == 3
-int remainder = 10 % 3;    // remainder == 1
-```
+{{< alert title="Rule: Maximum Remainder Size" color= "primary" >}}
+For any value of `a`, the **maximum remainder** of `a/b` is `b-1`.
 {{< /alert >}}
 
-## Converting random range to a ratio
+### Producing a range from 0 to n
+
+```cpp
+/// The rule above says anything % b maxes out at b minus one
+betweenZeroAndB_minus_one = anything % b;    
+
+/// So a % (b+1) gives us something from 0 to b right? 
+// Try 7 % (3+1).. which is 7 % 4.. remainder is 3. It works!
+betweenZeroAndB = anything % (b + 1)
+
+randomBetweenZeroAndB = rand() % (b+1);
+```
+
+{{< imgcard modulus_11_over_3 >}}
+There are <b>3</b> sets of 3 balls. <b>2</b> are left over. If we add one more.. it becomes 4 groups of three, with no leftovers.
+{{< /imgcard >}}
+
+## Randoms in range 2: Ratios
 
 A decimal between 0 and 1 is the ratio version of a percentage. If you multiply it by 100, you get the more recognisable percentage 0-100.
 
 **0.5 of something is 50%**, 0.1 is 10%, 0.99 is 99% etc.
 
-> At school you turned a fraction into a decimal ratio by dividing:  
-> _1/2 = 0.5_  
-> _1/4 = 0.25 (25%)_  
-> _2/4 = 0.5 (50%)_  
-> _3/4 = 0.75 (75%)_  
+At school you turned a **fraction** into a decimal **ratio** by dividing the top by the bottom:  
 
-So if we have a number `x` between zero and an upper limit (range maximum) we can figure out the ratio:  
+| Fraction  | Ratio  |  Percentage (ratio*100)  |  
+|------------|----------------------|-----------|  
+| 1/2   | 0.5   | 50%   |  
+| 1/4   | 0.25  | 25% |  
+| 2/4   | 0.5   | 50% |  
+| 3/4   | 0.75  | 75% |  
+
+So if we have a number **x** between **0** and a range's upper limit (**max**imum) we can figure out the ratio:  
 
 ```cpp
-ratio = x / current_range_maximum;
+ratio = x / max;
 ```
 
 ### Converting your ratio to a new range
 
-Once you **have a ratio**, you can easily express it as a number (y) in any range by multiplying the ratio by the new range maximum:  
+Once you **have a ratio**, you can easily express it as a number **y** in a new range: 
+
+**Multiply** the **ratio** by the **new** range **max**.
 
 ```cpp
-y = ratio * new_range_maximum;
+y = ratio * new_max;
 ```
 
 > 6 eggs in a carton that holds a dozen:  
@@ -390,22 +402,22 @@ y = ratio * new_range_maximum;
 | 0.5 | 20  |**10** |
 
 
-#### In C++
+### In C++
 
 ```cpp
 /// We already have accessto the maximum value
 /// of our random through RAND_MAX.
 int randomValue = rand();
 
-// `p = x / r` gives us percentage as a number from 0-1, so:
-float percentageDecimal = (float)randomValue / (float)RAND_MAX;
+// `r = x / max` gives us a ratio so:
+float ratio = (float)randomValue / (float)RAND_MAX;
 
-// We want a number between in range 0-100:
-int outOf100 = 100 * percentageDecimal;
+// So if we want it as a number from 0 to 10
+int outOf10 = ratio * 10;
 
 // We had to use (float) before each variable to force c++ to do
-// do floating point division. Otherwise, seeing two ints, it'll 
-// do integer division and truncate any number from 0-1 down to 0.
+// do floating point division. Otherwise it uses integer division.
+// Any decimal from 0 to 1 would be cut down to 0.
 ```
 ## Summary
 
