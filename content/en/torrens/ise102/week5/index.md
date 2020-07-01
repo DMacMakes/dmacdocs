@@ -301,6 +301,8 @@ The program should produce this output:
 
 ![twoDozen output](twoDozen_output.png)
 
+---
+
 ## Assessment 2 and homework
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Assessment 2 Info<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
@@ -309,11 +311,7 @@ The program should produce this output:
 
 **Do not look at any slot machine code outside of class!** You'll end up using it even if you don't intend to. Look at fundamental code, documentation, other kinds of games: not a slot machine.
 
-## Homework learning: randoms in a custom range
-
-`RAND_MAX` is already set in the _Standard Library_. To adjust the result of `rand()` to a **custom range** we have to use maths. One easy way: use the **remainder** of whole integer division.
-
-<!-- DEFINE RANGE -->
+---
 
 ## Randoms in range 1: Integer remainder
 
@@ -354,12 +352,15 @@ betweenZeroAndB_minus_one = anything % b;
 // Try 7 % (3+1).. which is 7 % 4.. remainder is 3. It works!
 betweenZeroAndB = anything % (b + 1)
 
+// Then for any random at all..
 randomBetweenZeroAndB = rand() % (b+1);
 ```
 
 {{< imgcard modulus_11_over_3 >}}
 There are <b>3</b> sets of 3 balls. <b>2</b> are left over. If we add one more.. it becomes 4 groups of three, with no leftovers.
 {{< /imgcard >}}
+
+---
 
 ## Randoms in range 2: Ratios
 
@@ -419,6 +420,9 @@ int outOf10 = ratio * 10;
 // do floating point division. Otherwise it uses integer division.
 // Any decimal from 0 to 1 would be cut down to 0.
 ```
+
+---
+
 ## Summary
 
 This week we learned:
@@ -431,11 +435,15 @@ This week we learned:
   * Descriptive function names
   * Returning values.
 
+___
+
 ## Homework
 
-**On-time submission of weekly homework is part of assessment 2** and non-submission (or low effort submissions) will impact your marks.
+{{< alert title="Homework is part of assessment 2" color= "danger" >}}
+On-time submission of weekly homework is part of assessment 2. Non-submission (or low effort submissions) will **impact your final mark.**
+{{< /alert >}} 
 
-There are three parts. **Submit** your two `main.cpp` files (Calculate_more) to Matt **by the end of Sunday, July 5.**
+It consists of assigned reading and two code projects. **Submit** your two `main.cpp` files (Calculate_more and Random_range) to Matt **by the end of Sunday, July 5.**
 
 ### 1: Reading
 
@@ -445,7 +453,7 @@ Read [Chapter 5](../resources/cpp_through_games_5.pdf), pages **143 to 153**. Yo
 <b>Click to download</b> Chapter 5.
 {{< /imgproc >}}
 
-{{< alert title="Separating declaration and definition" color= "danger" >}}
+{{< alert title="Separating declaration and definition" color= "primary" >}}
 You can **declare a function before main()** (like a variable declaration) and **define the body after**. 
 
 Be ready to see this in the textbook. Functions will be your bread and butter from now on, so get your head around them!
@@ -468,9 +476,7 @@ The terminology of multiplication (from [wikipedia](https://en.wikipedia.org/wik
 
 ### Random_range
 
-Create a new project called _Random\_range_.
-
-In this project you'll create a function called `randInRange()`. When you pass it a number (rangeMax), say 8, it'll generate a number in the range 0-8.
+Create a new project called _Random\_range_. In it you'll make a function called `randInRange()`. When you call it and pass an integer `rangeMax`, it'll return a random in the range `0` to `rangeMax` inclusive.
 
 I've written the structure, it's up to you to replace the missing code. _Note: The lines (\_\_, \_\_\_\_\_) don't always match the length of the answer._
 
@@ -481,7 +487,7 @@ The output (with your own program name) should look like this:
 {{< imgcard hw_rand_range_output Link "hw_rand_code_gaps.png">}}{{< /imgcard >}} 
 
 {{< alert title="That random code" color= "primary" >}}
-The approach you use to change your random from the default range `0`-`RAND_MAX` to the custom range `0`-`range_max` is up to you. Use either technique from the [randoms in a custom range](#randoms-in-a-custom-range) section above (modulus or percentage), whichever made more sense. Or do it your own way.
+The approach you use to change your random from the default range `0`-`RAND_MAX` to the custom range `0`-`range_max` is up to you. Use either technique from the section above (By remainder or ratio), whichever made more sense. Or do it your own way.
 {{< /alert >}}
 
 
