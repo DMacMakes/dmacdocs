@@ -366,20 +366,29 @@ A decimal between 0 and 1 is the ratio version of a percentage. If you multiply 
 > _2/4 = 0.5 (50%)_  
 > _3/4 = 0.75 (75%)_  
 
-So if we have a number `x` between zero and an upper limit (range maximum) we can figure out the ratio:
-**ratio = x / current_range_maximum**
+So if we have a number `x` between zero and an upper limit (range maximum) we can figure out the ratio:  
+
+```cpp
+ratio = x / current_range_maximum;
+```
 
 ### Converting your ratio to a new range
 
-Once you **have a ratio**, you can easily express it as a number (y) in any range by **multiplying the ratio by the new range maximum**:
-**y = ratio * new_range_maximum**
+Once you **have a ratio**, you can easily express it as a number (y) in any range by multiplying the ratio by the new range maximum:  
+
+```cpp
+y = ratio * new_range_maximum;
+```
 
 > 6 eggs in a carton that holds a dozen:  
 > _6/12 = 0.5 (50%)_  
->  
-> _0.5 * 4 = 2_  
-> _0.5 * 100 = 50_  
-> _0.5 * 20 = 10_  
+
+| Ratio  | Max  |  Ratio * Max = y  |
+|------------|----------------------|---------------|
+| 0.5 | 4   | **2** |
+| 0.5 | 100 | **50** |
+| 0.5 | 20  |**10** |
+
 
 #### In C++
 
