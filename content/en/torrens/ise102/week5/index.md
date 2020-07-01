@@ -461,22 +461,22 @@ Be ready to see this in the textbook. Functions will be your bread and butter fr
 
 ### 2: Calculate_more
 
-Two times calculator is a bit limited. The user has no control over the two numbers being multiplied.
+Two times calculator is a bit limited. **Create a new project** called _Calculate\_more_. You can copy+paste the code from the old calculator's `main.cpp` as a starting point.
 
-Create a new project, _Calculate\_more_. You can copy paste the code from your two times calculator's `main.cpp` file as a starting point.
-
-Add the following features:
+Instead of two times calculation, **give the program the features below**:
 * Ask the player to input a multiplier (int) and store it.
-* Now, ask them for a multiplicand (int) and store it
+* Also ask them for a multiplicand (int) and store it
 * Calculate the product by calling a "multiply" function which takes the two numbers as _arguments_ and returns an _int_. Store that value.
 * Print the product.
 
-The terminology of multiplication (from [wikipedia](https://en.wikipedia.org/wiki/Multiplication))
-> **multiplier** * **multiplicand** = **product**
+**Mathematical terminology** for `a * b = c`:
+> **multiplier** * **multiplicand** = **product**  
 
-### Random_range
+(from [wikipedia](https://en.wikipedia.org/wiki/Multiplication))
+ 
+### 3: Random_range
 
-Create a new project called _Random\_range_. In it you'll make a function called `randInRange()`. When you call it and pass an integer `rangeMax`, it'll return a random in the range `0` to `rangeMax` inclusive.
+**Create a new project** called _Random\_range_. In it you'll make a function called `randInRange()`. When you call it and pass an integer `rangeMax`, it'll return a random in the range `0` to `rangeMax` inclusive.
 
 I've written the structure, it's up to you to replace the missing code. _Note: The lines (\_\_, \_\_\_\_\_) don't always match the length of the answer._
 
