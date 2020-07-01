@@ -7,9 +7,13 @@
       "label": "Browse Localhost:1313/torrens",
       "type": "shell",
       "command": "start chrome http://localhost:1313/torrens/",
+      "presentation": {
+        "reveal": "silent",
+        "clear": true
+      },
       "group": {
         "kind": "build",
-        "isDefault": true
+        "isDefault": true,
       }
     }
     {

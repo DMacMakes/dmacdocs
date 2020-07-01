@@ -313,21 +313,7 @@ The program should produce this output:
 
 `RAND_MAX` is already set in the _Standard Library_. To adjust the result of `rand()` to a **custom range** we have to use maths. One easy way: use the **remainder** of whole integer division.
 
-{{< alert title="Modulus: The Remainder" color= "primary" >}}
-**Dividing** one whole number by another gives us two results: the _**quotient**_ and _**remainder**_. 
-
-_C++_ gives us the _quotient_ with the division operator `/`, and the _remainder_ with the modulus operator, `%`. Look at **10 divided by 3:**
-
-![modulus_10_over_3](modulus_10_over_3.png)  
-
-There are **3** (quotient) sets of 3 balls. **1** (remainder) is left over.
-
-**In _C++_:**
-```cpp
-int quotient = 10 / 3;  // quotient == 3
-int remainder = 10 % 3;    // remainder == 1
-```
-{{< /alert >}}
+<!-- DEFINE RANGE -->
 
 #### Remainder as range
 
@@ -347,10 +333,71 @@ number0To2 = number % (3);
 number0To3 = number % (4);
 
 //// A pattern emerges..
-number0ToRange = number % (range + 1);
+number0ToN = number % (n + 1);
 
 ```
 
+<!-- CHANGE TO CARTONS OF EGGS -->
+{{< alert title="Modulus: The Remainder" color= "primary" >}}
+**Dividing** one whole number by another gives us two results: the _**quotient**_ and _**remainder**_. 
+
+_C++_ gives us the _quotient_ with the division operator `/`, and the _remainder_ with the modulus operator, `%`. Look at **10 divided by 3:**
+
+![modulus_10_over_3](modulus_10_over_3.png)  
+
+There are **3** (quotient) sets of 3 balls. **1** (remainder) is left over.
+
+**In _C++_:**
+```cpp
+int quotient = 10 / 3;  // quotient == 3
+int remainder = 10 % 3;    // remainder == 1
+```
+{{< /alert >}}
+
+## Converting random range to a ratio
+
+A decimal between 0 and 1 is the ratio version of a percentage. If you multiply it by 100, you get the more recognisable percentage 0-100.
+
+**0.5 of something is 50%**, 0.1 is 10%, 0.99 is 99% etc.
+
+> At school you turned a fraction into a decimal ratio by dividing:  
+> _1/2 = 0.5_  
+> _1/4 = 0.25 (25%)_  
+> _2/4 = 0.5 (50%)_  
+> _3/4 = 0.75 (75%)_  
+
+So if we have a number `x` between zero and an upper limit (range maximum) we can figure out the ratio:
+**ratio = x / current_range_maximum**
+
+### Converting your ratio to a new range
+
+Once you **have a ratio**, you can easily express it as a number (y) in any range by **multiplying the ratio by the new range maximum**:
+**y = ratio * new_range_maximum**
+
+> 6 eggs in a carton that holds a dozen:  
+> _6/12 = 0.5 (50%)_  
+>  
+> _0.5 * 4 = 2_  
+> _0.5 * 100 = 50_  
+> _0.5 * 20 = 10_  
+
+#### In C++
+
+```cpp
+/// We already have accessto the maximum value
+/// of our random through RAND_MAX.
+int randomValue = rand();
+
+// `p = x / r` gives us percentage as a number from 0-1, so:
+float percentageDecimal = (float)randomValue / (float)RAND_MAX;
+
+// We want a number between in range 0-100:
+int outOf100 = 100 * percentageDecimal;
+
+// We had to use (float) before each variable to force c++ to do
+// do floating point division. Otherwise, seeing two ints, it'll 
+// do integer division and truncate any number from 0-1 down to 0.
+```
 ## Summary
 
 This week we learned:
@@ -365,13 +412,17 @@ This week we learned:
 
 ## Homework
 
-**This homework is part of the assessment** and its completion will contribute to your overall mark.
+**On-time submission of weekly homework is part of assessment 2** and non-submission (or low effort submissions) will impact your marks.
 
-There's important reading and **two programs to deliver**.
+There are three parts. **Submit** your two `main.cpp` files (Calculate_more) to Matt **by the end of Sunday, July 5.**
 
-### Reading
+### 1: Reading
 
 Read [Chapter 5](../resources/cpp_through_games_5.pdf), pages **143 to 153**. You can stop when you reach 'Working with scopes'. 
+
+{{< imgproc cpp_through_games Resize "200x" Link "../resources/cpp_through_games_5.pdf" >}}
+<b>Click to download</b> Chapter 5.
+{{< /imgproc >}}
 
 {{< alert title="Separating declaration and definition" color= "danger" >}}
 You can **declare a function before main()** (like a variable declaration) and **define the body after**. 
@@ -379,13 +430,11 @@ You can **declare a function before main()** (like a variable declaration) and *
 Be ready to see this in the textbook. Functions will be your bread and butter from now on, so get your head around them!
 {{< /alert >}}
 
-{{< imgproc cpp_through_games Resize "200x" Link "../resources/cpp_through_games_5.pdf" >}}
-<b>Click to download</b> Chapter 5.
-{{< /imgproc >}}
-
-### Calculatemore
+### 2: Calculate_more
 
 Two times calculator is a bit limited. The user has no control over the two numbers being multiplied.
+
+Create a new project, _Calculate\_more_. You can copy paste the code from your two times calculator's `main.cpp` file as a starting point.
 
 Add the following features:
 * Ask the player to input a multiplier (int) and store it.
@@ -396,17 +445,24 @@ Add the following features:
 The terminology of multiplication (from [wikipedia](https://en.wikipedia.org/wiki/Multiplication))
 > **multiplier** * **multiplicand** = **product**
 
-### Random function
+### Random_range
 
-Upgrading _Randoms\_introduction_ with functions. I've written the structure, it's up to you to replace the missing code. The lines (__, _____) don't always match the length of the answer.
+Create a new project called _Random\_range_.
 
-You can use modulus and addition to convert numbers in one range into equivalent numbers in another. Or you can use division (percentages) and addition. See [randoms in a custom range](#randoms-in-a-custom-range) above.
+In this project you'll create a function called `randInRange()`. When you pass it a number (rangeMax), say 8, it'll generate a number in the range 0-8.
 
-<!--
-{{< imgcard code_random_functions_gaps Link "code_random_functions_gaps.png">}}
-Click to expand.
-{{< /imgcard >}}
--->
+I've written the structure, it's up to you to replace the missing code. _Note: The lines (\_\_, \_\_\_\_\_) don't always match the length of the answer._
+
+{{< imgcard hw_rand_code_gaps Link "hw_rand_code_gaps.png">}}{{< /imgcard >}} 
+
+The output (with your own program name) should look like this:
+
+{{< imgcard hw_rand_range_output Link "hw_rand_code_gaps.png">}}{{< /imgcard >}} 
+
+{{< alert title="That random code" color= "primary" >}}
+The approach you use to change your random from the default range `0`-`RAND_MAX` to the custom range `0`-`range_max` is up to you. Use either technique from the [randoms in a custom range](#randoms-in-a-custom-range) section above (modulus or percentage), whichever made more sense. Or do it your own way.
+{{< /alert >}}
+
 
   
 
