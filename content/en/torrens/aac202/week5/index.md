@@ -1,6 +1,6 @@
 ---
-title: "6: ZBrush"
-linkTitle: "W.6 ZBrush"
+title: "5: ZBrush"
+linkTitle: "W.5 ZBrush"
 weight: 60
 description: >
   ZBrush is a critical tool for modern games studios; it's also the best way to sculpt on a computer.
@@ -19,7 +19,7 @@ Download link on the resources page:
 ### Class Working Files
 
 ZBrush demo scene, template scene and config files.
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="zbrush_week6_working_files.zip">Working Files<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="aac202_zbrush_resources.zip">AAC202 ZBrush Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 {{< imgproc zbrush_trial Resize "600x">}}
@@ -139,32 +139,12 @@ Pixelation?? Subdivision up down
 
 ## Free play
 
-Play around and make something. Ideas:
+Play around and make a madball for 25 mins. 
 
-* Mad ballz
-* Heart
-* Cake
-* Floaty droid (maybe light sabre practise thing from star wars?)
-* Muscley torso.
+[Screenshot it and post it here](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866557_1&message_id=_2191233_1)
   
 {{< imgcard madballz Link "madballz.png">}}
 Madballz
-{{< /imgcard >}}
-
-{{< imgcard play_heads Link "play_heads.jpg">}}
-Heads
-{{< /imgcard >}}
-
-{{< imgcard play_heads_2 Link "play_heads_2.jpg">}}
-More heads
-{{< /imgcard >}}
-
-{{< imgcard play_bunnies Link "play_bunnies.jpg">}}
-Bunnies
-{{< /imgcard >}}
-
-{{< imgcard play_frogs Link "play_frogs.jpg">}}
-Frogs
 {{< /imgcard >}}
   
 ## More Basics
@@ -190,10 +170,10 @@ Watch out:
 
 ## Due This Week
 
-Homework: Pick one of the madballz (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. The base of your sculpt is the sphere in Trying_Out_Brushes.zpr. If you overwrote it, get a fresh copy from [zbrush_week6_working_files.zip](zbrush_week6_working_files.zip).  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
+Homework: Pick one of the madballz (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. The base of your sculpt is the sphere in Trying_Out_Brushes.zpr. If you overwrote it, get a fresh copy from aac202_zbrush_resources.zip](aac202_zbrush_resources.zip).  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
 
 {{< alert title="Deliverables and Submission" color= "primary" >}}
-Reply to the `Module 6/Homework: Madballz` thread [on the subject discussion forums](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804657_1&message_id=_2001686_1). Post the **reference** of your chosen madball along with some **screenshots of the finished sculpt.** Have it done and posted **before next week's class**.
+Reply to the `Module 5/Homework: Madballz` thread [on the subject discussion forums](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866557_1&message_id=_2191238_1). Post the **reference** of your chosen madball along with some **screenshots of the finished sculpt.** Have it done and posted **before next week's class**.
 {{< /alert >}}
 
 _**Bonus:**_ ZBrush has a super helpful filter called **Clay Polish**. Look it up in the zbrush documentation or on youtube. To try it out, add some random shapes to your free-play sculpt and hit Clay Polish. For this kind of sculpt it's a bit of a magic "make art" button.
