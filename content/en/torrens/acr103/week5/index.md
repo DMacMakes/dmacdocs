@@ -75,6 +75,8 @@ _Components being arranged to make ledge/raised walkway modules_
 >  - click and drag the translate handle
 > -->
 
+Making pieces that snap together means using standard measurements so they meet up at the corners. It also means choosing a pivot point for each part that makes sense.
+
 * Set up grid
 
 ![](grid_options.png)
@@ -126,6 +128,7 @@ Assessment 2 brief [on blackboard](https://laureate-au.blackboard.com/webapps/bl
 
 **TECH SPECS, CREATIVE DIRECTION**
 1. Keep polycount low. Elements between 20 and 100 polys roughly.
+2. Strong focus on modularity: reusable pieces, fitting to a grid, instancing.
 2. UV unwrap models
 3. Keep textures minimal with little lighting. Keep individual textures at 512x512 or lower (256, 128, 64)
 4. Export to Unity and apply baked lighting (AO)
