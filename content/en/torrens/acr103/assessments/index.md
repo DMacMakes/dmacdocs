@@ -87,7 +87,30 @@ Deliver PNG24 files or jpgs of at least 85% (8.5/10) compression quality.
 
 ## Assessment 2: Environment
 
-..
+Create low poly, modular environment pieces. Assemble into a scene and drop into a game engine.
+
+### Week 5 submission details
+
+Deliverable 1:
+
+1. The chosen concept image you'll base your level off
+2. A sketch of the pieces you plan to use (digital or traditional)
+3. A sketch of the pieces used in at least one area of your level, better with 2. Consider units, how things join, adding variety.
+
+> Your images should be at least 1000 pixels wide, and exported as 24bit PNGS or JGPS at 85% plus quality (photoshop file->export->export as). 
+
+Reply to [my thread in the subject forums](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_91934_1&nav=discussion_board_entry&conf_id=_157930_1&forum_id=_851214_1), and add your images to the post. Use the insert image button, not insert attachment.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_91934_1&nav=discussion_board_entry&conf_id=_157930_1&forum_id=_851214_1">Week 5 Submission Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>  
+
+[Click here to return to the WEEK 5 NOTES.](../week5/#due-this-week)
+
+### Week 6 submission details
+
+1. Revised sketch of the pieces, incorporating the feedback for your pieces/modules.
+2.
+Maya file of your blocked out pieces with proper pivot points
+
 
 ## Assessment 3: Character
 

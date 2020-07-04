@@ -162,3 +162,44 @@ Sketch out an approximation of your idea (obviously more refining at home!)
 
 ### Figure out components you'll be making.
 Getting started here. What do you see in the image? wall, flor, railing, stairs, column, sign?
+
+## Due this week
+
+[Visit the assignment page](../assessments/#week-5-submission-details) **for the submission details**. Here's what you'll do to create them.
+
+### Choose your concept
+You're going to create a set of modular level pieces from a concept, including enough parts to make multiple parts of a level. 
+
+**FIND A CONCEPT.**  
+
+  When you look through concepts, you're trying to see one that puts an idea in your head, and one wher you can identify enough pieces to make a modular level building kit. It might be 2 or 3 rooms and a corridor of a dungeon (with a purpose to those rooms), the royal chambers in a castle, a seafront docks area in a 3d platformer etc, a traveller's stopover in an rpg, whatever.  
+  
+**DRAW OVER IT**  
+
+* Find and outline the pieces you can imagine pulling out.  
+* Can you see tileable bits of floor and wall? Corner features you can use to cover overlap? Barriers, doorways, stairs, tables, statues, signs, trees? Are there things for players to climb between areas, traps to jump over? Think of a game you like, say Fez or Mario or uncharted: what parts do you need for areas to be fun?  
+* Digital: Put the concept in a layer above a white background layer. Turn down the concept opacity. Draw outlines of your potential pieces.  
+* Traditional: Fade the contrast, print it out, draw over it with pens.  
+    
+**SKETCH/DRAW, PIECES, AREAS**
+
+  * You need **simple drawings of the pieces** you plan to make, and **also of the areas** you plan to make with them.   
+  * The drawings don't have to be pretty, they have to be **clear** about size and construction. Drawings are way easier to cross out and redo than 3d models.  
+  * This process is how you'll understand when you have the right pieces. Don't expect to imagine it all in your head, then model it.   
+  * Think about our 1u squares, 2u sections of wall etc, you're making a kids toyset in a way.  
+  * Make sure you have enough pieces to make more than one area of a level. A single bedroom or a corridoor with a treasure chest isn't enough, think how long a level of a game usually is!  
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-5-submission-details">Submission Details<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
+
+**Example kits:**
+
+![sci fi kit voltage](sci_fi_kit_voltage.png)
+
+{{< imgproc platformer_platfunner Resize "1024x" Link "https://www.unrealengine.com/marketplace/en-US/product/platformer-starter-pack" >}}
+Click the image to check out this kit on the unreal store. It's amazing what you can do with a few well considered pieces.
+{{< /imgproc >}}
+
+![](find_components_concept_1.png)
+I saw the pieces, and, giving myself the "not much time" excuse, didn't sketch out a scene to build from them. As always, "not much time" meant the sketch was even more important. I ended up wasting time modeling the wrong things and noodling trying to "make something happen", a euphemism for trying to pull something out of your.. hat.
+
