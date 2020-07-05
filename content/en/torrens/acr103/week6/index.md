@@ -1,6 +1,6 @@
 ---
 title: "Week 6: Modeling your environment components"
-linkTitle: "W.5 Modeling"
+linkTitle: "W.6 Modeling"
 weight: 60
 description: >
   Checking your plan, getting started.
@@ -27,6 +27,10 @@ More images of kits to learn from.
 We covered this last week. People just need to get started.
 I'll model some bits that aren't just a wall and floor.
 Short one this week with a catchup later in week where people need to have made progress. Feedback and live fixes/help session.
+
+### Style reference
+How many polygons do we use for a building, stairs? How much detail? Do we use detail to show wear, to add roundness, to show bevels?
+Those are style decisions, and since you can't generate a style till you make loads of environments, we'll do what we'd do in a studio: work to a style. **Style ref.** 
 
 ## Due this week
 

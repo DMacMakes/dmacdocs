@@ -151,28 +151,25 @@ Week 12:
 - Make simple prefabs
 - Snap pieces together
 
-### Choose your environment and style
-
-Lots of styles and concepts at the end of these notes, many more on [my acr103 pinterest board](https://www.pinterest.com.au/dmacdraws/acr103/)
-![](acr103_pinterest_levels.png)
-Can match existing style as closely as possible, work directly from concepts in 2D.
-
-### Rough design of your level
-Sketch out an approximation of your idea (obviously more refining at home!)
-
-### Figure out components you'll be making.
-Getting started here. What do you see in the image? wall, flor, railing, stairs, column, sign?
-
 ## Due this week
 
-[Visit the assignment page](../assessments/#week-5-submission-details) **for the submission details**. Here's what you'll do to create them.
+First the assessment page lists **the exact images you need to submit.**
 
-### Choose your concept
-You're going to create a set of modular level pieces from a concept, including enough parts to make multiple parts of a level. 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-5-submission-details" target="_blank">What To Submit<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-**FIND A CONCEPT.**  
+Now, here's **what you'll do to create them.**
+
+### How to do it.
+
+**CHOOSE A CONCEPT**  
+You're going to create a set of modular level pieces from a concept, including enough parts to make multiple parts of a level.
+
+{{< imgproc a2_environment_concepts Resize "450x" Link "https://www.pinterest.com.au/dmacdraws/acr103/a2-environments/">}}
+Click the image above to choose a concept. Do not choose the cgArt/DOFUS room, it's style reference.
+{{< /imgproc >}}
 
   When you look through concepts, you're trying to see one that puts an idea in your head, and one wher you can identify enough pieces to make a modular level building kit. It might be 2 or 3 rooms and a corridor of a dungeon (with a purpose to those rooms), the royal chambers in a castle, a seafront docks area in a 3d platformer etc, a traveller's stopover in an rpg, whatever.  
+
   
 **DRAW OVER IT**  
 
@@ -189,7 +186,7 @@ You're going to create a set of modular level pieces from a concept, including e
   * Think about our 1u squares, 2u sections of wall etc, you're making a kids toyset in a way.  
   * Make sure you have enough pieces to make more than one area of a level. A single bedroom or a corridoor with a treasure chest isn't enough, think how long a level of a game usually is!  
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-5-submission-details">Submission Details<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-5-submission-details">What To Submit<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 **Example kits:**

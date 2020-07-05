@@ -93,7 +93,7 @@ Create low poly, modular environment pieces. Assemble into a scene and drop into
 
 Deliverable 1:
 
-1. The chosen concept image you'll base your level off
+1. The chosen concept image you'll base your level off - [choose from this pinterest board](https://www.pinterest.com.au/dmacdraws/acr103/a2-environments/) (except the cgart/DOFUS room)
 2. A sketch of the pieces you plan to use (digital or traditional)
 3. A sketch of the pieces used in at least one area of your level, better with 2. Consider units, how things join, adding variety.
 
