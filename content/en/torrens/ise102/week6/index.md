@@ -6,6 +6,13 @@ description: >
   Programs inside programs!
 ---
 
+## Week 5 Homework
+
+1. The reading
+2. The programs
+
+[Week 5 Homework tasks in Week 5 notes](../week5/#homework)
+
 ## Assessment 2: Slots
 
 The brief pdf [on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/15836406?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27ISE102_Assessment%25202%2520Brief_14112019.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200323T002852Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200323%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=79ee9923fd485563a89cf9cbb31a3dfb27f1b2a5885a18ad85ec1ca65766012a)
@@ -16,55 +23,63 @@ The brief pdf [on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s
 * Also remember to check against that and the real brief throughout the time you work on it.
 * Break a big problem into smaller problems
 
-## Approaching big jobs
+## Approaching big problems
 
-The way humans approach big jobs is simple: **break them up!**
+The way humans solve big problems is simple: **break them up into smaller problems** till we find ones we can solve. **Add up the solutions**, and you solve the big problem.
 
-{{< alert title="The job of a Game-Program" color= "primary_warning_danger" >}}
+{{< alert title="The Game-Program problem" color= "primary" >}}
 What you're usually getting when you download a game, say a soccer game, is **a program that, among other things, lets you play the game (soccer)**. It usually, but optionally, also allows you to configure the game, access statistics and more. It doesn't just load up and drop you into the action.
 
-The a game program, then **wraps up the game screen (and others) in a menu (loop)**
+A game program, at the highest level solves the problem of **wrapping up the game screen (and others) in a menu (loop)**
 {{< /alert >}}
 
-### Our big job
+### Our big problem
 
-Our game's big job is, as with any game to **Start up and display a screen**. That screen has to **accept input**, providing access to other screen(s) (slots game and related screens). Finally, if the user chose to exit, that has to happen.
+Our game's big problem to solve is:
 
-A big job needs an owner or a lead.
+> Starting up and displaying a menu _screen_ that accepts input providing access to other _screen(s)_ (slots game and related _screens_). 
+>
+> Finally, if the user chose to exit, that has to happen.
 
-`int main()`, our main function, is the lead on our job. It'll be splitting up the work and handing out jobs to its own underlings. They'll be functions too. You can see why we talked about them as sub programs.
+A big problem needs someone to solve it, and they usually need help.
 
-### Medium sized jobs
+`int main()`, our main function, is the lead problem solver on our job. It can't handle the whole problem, so it breaks it into separate smaller problems, which it can hand off to other functions.
 
-First, we break our big job down to medium sized jobs that, done in some order, will achieve the big job.
+### The screens
 
-Let's look at a flowchart of our game, and maybe a picture.
+Let's have a look at the _screens_ that our program will have, before we get into how to get to them.
 
-(image of screens in program)
+(image of screens in program.. plus a flowchart)
 (image of pokies, credits list in a program)
 
-//Menu, Slots Game, Credits. 
+### What are _screens_?
 
-If it were a real online gambling game we'd expect it to take user money in, and returns winnings or the remains of their money (if any).
+We're in fuzzy territory. They're not literal surfaces of literal monitors. 
 
-1. Display a menu screen that allows a player to make a choice.
-Use that choice data, show more screens or, if the player choice to quit, exit.
+It basically means **a section of our program**, and what that section would display on screen.
 
-Notice the relationships between the jobs are important: what input do these medium jobs need, and what do they produce? Each job should probably take some input from the job before it, and output its own. A chain that leads from start to finish.
+It's a bit.. _abstract_. 
 
-3. Continue breaking down the 
+## We need to talk about abstractions.
 
-Each of these medium jobs, and the smaller ones, and the very small ones below that: each are just ways of talking about involved tasks in the _abstract_.
+Lot's of things we're talking about are _abstractions_, and we need a way to think about that.
 
 {{< alert title="Definition: Abstraction" color= "primary" >}}
-An abstraction is just the most minimal, top level simplification of something. 
+An abstraction is just the most minimal, top level simplification of a an idea, or system, or type of thing. 
 
-Abstraction lets us talk about detailed, complex things in a simple way. A 'computer', a 'fruit', a 'car', all have a great deal going on but if you bring them up in conversation people have a crystal clear notion of what you're talking about, even if it might take from hours to years to explain them in great detail. 
+Abstraction lets us evoke detailed, complex things in a word or two: _Job_, _fruit_, _computer_,_game_, _memory_, _city, _car_, _meal_, _loop_, _company_. 
 
-More examples: 'student', 'company', 'ecosystem', 'game controller", 'loop', 'program', they're all abstractions.
+All those are complex things you can spend forever explaining, but if you bring them up in conversation people have a crystal clear notion of what you're talking about.
 
-Abstraction, in this sense, is **the reduction of a complex system or idea to its general properties and interface**.
+Importantly, an abstraction isn't a single instance of thing. **A _car_ is an idea.** Your mum's 2008 White Range Rover is an individual thing
 {{< /alert >}}
+
+**The power of an abstraction**:
+* We can talk about it at a high level:
+  * what it can do, what problem it solves, what it requires, what it produces.  
+* Then we can **combine abstractions** to solve bigger problems!
+  * Go somewhere: Car plus driver plus gps.
+  * Learn programming: University course plus computer plus effort over time.
 
 ### Exercise: Spot the abstractions
 
@@ -77,64 +92,121 @@ Abstraction, in this sense, is **the reduction of a complex system or idea to it
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_90315_1&nav=discussion_board_entry&conf_id=_153571_1&forum_id=_857301_1&message_id=_2200384_1" target="_blank">Abstraction Exercise Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<!--
-### Powerful words: Abstraction and Encapsulation
+#### Levels
 
-We've talked about words giving us power over ideas, power to discuss and challenge them. _Conditional_ is one of those: it lets us talk about decision making in code that can be done several ways in infinite combinations, **but in a single word.** 
+What you just did, breaking down a _car_ into other, smaller abstractions, you just used **levels of abstraction** to understand a car. Top to bottom, or bottom to top, levels of abstraction make it manaageable!
 
-In a more mechanical/practical sense, "car" is a hell of an abstraction. Think about all the things that come together in a car, all the variations available, but in a word we evoke the entire thing. 
+## Slots: Medium sized problems
 
-"Plant" is another. "Food". "Cooking". If we had to go into all the details of what these things actually mean, all the concepts and knowledge they combine, just to water our cactus or a heat up a frozen pie, we'd never get anyhere.
-textbook pp143 and pp152 
+Back to our slot machine. We need to break our big job down to medium sized problems that, done in some order, will add up to a solution to our _Game Program_ problem. 
 
-More powerful than all of those is the word "abstraction". 
+When I talk about these problems as simple things with inputs and outputs, you'll know I'm treating them as _abstractions_. If you're thinking ahead you'll realise that, yes:
 
+**functions offer a simple input, output way of thinking of bigger problems.. they helps us use levels of abstraction** 
 
+If we break our program into solvable problems, handled by functionsthem out and chain their inputs and outputs.. we can expect a solution to our big problem. 
 
-#### Spot the abstractions
-
-> **A car** is a four wheeled vehicle, below a certain size, usually controlled by a single person, for the transporting of one or more human passengers and their property. They offer a steering wheel, along with controls for stopping, accelerating and gear selection (wether manual or partly automated). It typically (though optionally) encloses its passengers, separating them from their evironment and the weather. It's powered by combustion or electricity, using a fuel or power source contained in the vehicle, which can be periodically refreshed from an external source. 
-
-1. Open _notepad_ and write down 5 abstractions of systems you can find in that description.
-2. Choose one of them and write a brief description of that system, like I've done for car.
-3. Write down 3 abstractions you find in your description.
-4. When that's all done, open this thread and reply to it with your answers. 
-
-## Code with abstraction
-
-### Bullet points
-
-I like to set up bullet points first, before any psuedocode. As you write them out, you start to see how parts will work, smaller problems you'll need to serve. Like a todo list, it clarifies and organises.
-
-It'll probably consist of the top level abstractions in your game: menus, screens, game modes, settings.
+1. Display a menu screen that allows a player to input a choice (and shows their cash remaining)
+Based on that data, we need to be able to
+1. Display a slots screen
+2. Display a credits screen
+3. Display an exit message screen.
 
 ```
-"My pencil and I are smarter than I am." - Einstein
+/// Very roughly, the next level of functions down from main.
+int main()
+{
+  displayMenuGetChoice();
+  displaySlots();
+  displayCredits();
+  displayGameOver();
+}
 ```
 
-* Make **entire** slots game **app** (too monolithic)
+### Stringing it together
 
-1. Make a **menu**
-    * Show menu w cash total
+The relationships between the jobs are very important: what do they need, and what do they provide? 
+
+It's the job of `main()` to give out, receive back and pass along data to the next level of functions.
+
+What input needs the cash amount to display it, and the slots screen will need to know about cash as well
+
+Notice  what input do these medium jobs need, and what do they produce? Each job should probably take some input from the job before it, and output its own. A chain that leads from start to finish.
+
+
+## Bullet points, Pseudocode, Code.
+
+It's all getting pretty theoretical sounding, and you're not sure your brain will survive if we move to code now. Good news:
+
+**My first step**, after reading the brief and maybe drawing things on a pad, is **writing a bullet list.** I **put in whatever I think the brief is asking** me for.
+
+{{< alert title="My Slots Game bullet list" color= "primary" >}}
+
+1. Make a **menu screen** which **gets a choice**  
+  * Needs cash remaining (to display)  
+  * Returns choice  
+2. Make the slots **screen**  
+  * Needs cash total  
+  * Returns cash remaining  
+3. Make **credits screen**  
+  * Needs nothing, returns nothing. `void` function.  
+4. Make **quitting screen** with **feedback** (my add on)    
+  * Needs their cash remaining (to comment on)  
+{{< /alert >}}
+
+**Step two:** Try writing it in pseudocode, of the top level, figuring out your top level functions and what they need.
+
+**Step three:** Try writing the game loop with some function skeletons in Visual studio.
+
+Big problem: Make **entire** slots game **app** (too monolithic)
+
+
+You just keep going down levels, doing this till everything is done.
+
+1. **menu screen**
+    * Display cash total (argument)
+    * Display choices
     * Get Choice
-    * Go to sub-screen or quit  
-2. Make the slots **game part**  
+    * Check if valid choice
+    * Show error and get choice again if no good
+    * return choice
+2. **slots screen**  
     * Show cash
     * Get user bet, check it
-    * Take away bet
-    * show 3 random numbers 2-7
-    * Check for wins
+    * if valid, Take away bet
+    * if invalid, say why and ask again.
+    * generate and show 3 random numbers 2-7
+    * Check for winning combos
     * Calculate winnings
     * Display win/loss info
     * Return to menu.
-3. Make **credits** part  
+3. Make **credits screen**
     * Show credits (think film credits: who made what)  
-    * Return to menu  
-4. Make **quitting** part
-    * Tell them how they did
-    * Thank them or pick on them.
+    * Ask them to press a key to return to menu
+    * Wait for key press, return to menu
+4. Make **quitting screen**
+    * Depending on their score, thank them or console/pick on them
 
-That's still a lot to do, but we don't have to do it all at once. 
+
+## Abstraction benefits 2: Readability
+
+With other functions on hand, and well planned roles for each, `main()` becomes **a short summary of your program**.
+Main() here is short and readable. Functions do a single job.
+
+## Homework
+
+### Reading
+
+Coming tomorrow
+
+### Fleshing out code skeleton
+
+Coming tomorrow
+
+* Adding dummy and real functionality to your functions.
+
+
+<!--
 
 ### Code skeleton
 
@@ -280,6 +352,4 @@ From the _Online Etymology Dictionary:_
 2. **Add** a function to show the 3 random numbers (just fake the data).
 3. **Add** an enum for outcome of spin: no win, pair, three of a kind, three sevens.
 
-<!--**Return** an int from the function for the outcome (something from the enum)
-**Reading** needed to get functions dialled now.  
 -->
