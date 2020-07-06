@@ -37,22 +37,20 @@ A game program, at the highest level solves the problem of **wrapping up the gam
 
 Our game's big problem to solve is:
 
-> Starting up and displaying a menu _screen_ that accepts input providing access to other _screen(s)_ (slots game and related _screens_). 
->
+> Starting up and displaying a menu _screen_ that accepts input providing access to other _screen(s)_ (slots game and related _screens_).  
 > Finally, if the user chose to exit, that has to happen.
 
-A big problem needs someone to solve it, and they usually need help.
+A big problem needs someone to solve it, and they usually need help. **`int main()`, our main function, is the lead problem solver in any program.** 
 
-`int main()`, our main function, is the lead problem solver on our job. It can't handle the whole problem, so it breaks it into separate smaller problems, which it can hand off to other functions.
+It can't handle the whole problem, so it breaks it into separate smaller problems, which it can hand off to other functions.
 
-### The screens
+#### The screens
 
 Let's have a look at the _screens_ that our program will have, before we get into how to get to them.
 
-(image of screens in program.. plus a flowchart)
-(image of pokies, credits list in a program)
+(drawing time)
 
-### What are _screens_?
+#### What are _screens_?
 
 We're in fuzzy territory. They're not literal surfaces of literal monitors. 
 
