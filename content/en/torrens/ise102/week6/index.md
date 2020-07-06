@@ -125,12 +125,9 @@ int main()
 
 The relationships between the jobs are very important: what do they need, and what do they provide? 
 
-It's the job of `main()` to give out, receive back and pass along data to the next level of functions.
+It's the job of `main()` to give out, receive back and pass along data to the next level of functions. What input do these medium jobs need, and what do they produce?
 
-What input needs the cash amount to display it, and the slots screen will need to know about cash as well
-
-Notice  what input do these medium jobs need, and what do they produce? Each job should probably take some input from the job before it, and output its own. A chain that leads from start to finish.
-
+---
 
 ## Bullet points, Pseudocode, Code.
 
@@ -140,15 +137,15 @@ It's all getting pretty theoretical sounding, and you're not sure your brain wil
 
 {{< alert title="My Slots Game bullet list" color= "primary" >}}
 
-1. Make a **menu screen** which **gets a choice**  
+1. **MENU SCREEN** which **gets a choice**  
   * Needs cash remaining (to display)  
   * Returns choice  
-2. Make the slots **screen**  
+2. **SLOTS SCREEN**  
   * Needs cash total  
   * Returns cash remaining  
-3. Make **credits screen**  
+3. **CREDITS SCREEN**  
   * Needs nothing, returns nothing. `void` function.  
-4. Make **quitting screen** with **feedback** (my add on)    
+4. **QUIT SCREEN** with **feedback** (my add on)    
   * Needs their cash remaining (to comment on)  
 {{< /alert >}}
 
