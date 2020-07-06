@@ -1,10 +1,10 @@
----
+<!--
 title: "6: Functions 2"
 linkTitle: "W.6 Functions 2"
 weight: 60
 description: >
   Programs inside programs!
----
+-->
 
 ## Assessment 2: Slots
 
@@ -16,66 +16,10 @@ The brief pdf [on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s
 * Also remember to check against that and the real brief throughout the time you work on it.
 * Break a big problem into smaller problems
 
-## Approaching big jobs
+## Approaching Big Jobs
 
-The way humans approach big jobs is simple: **break them up!**
+Break it down into smaller and smaller tasks, until you can find stuff you can do.
 
-{{< alert title="The job of a Game-Program" color= "primary_warning_danger" >}}
-What you're usually getting when you download a game, say a soccer game, is **a program that, among other things, lets you play the game (soccer)**. It usually, but optionally, also allows you to configure the game, access statistics and more. It doesn't just load up and drop you into the action.
-
-The a game program, then **wraps up the game screen (and others) in a menu (loop)**
-{{< /alert >}}
-
-### Our big job
-
-Our game's big job is, as with any game to **Start up and display a screen**. That screen has to **accept input**, providing access to other screen(s) (slots game and related screens). Finally, if the user chose to exit, that has to happen.
-
-A big job needs an owner or a lead.
-
-`int main()`, our main function, is the lead on our job. It'll be splitting up the work and handing out jobs to its own underlings. They'll be functions too. You can see why we talked about them as sub programs.
-
-### Medium sized jobs
-
-First, we break our big job down to medium sized jobs that, done in some order, will achieve the big job.
-
-Let's look at a flowchart of our game, and maybe a picture.
-
-(image of screens in program)
-(image of pokies, credits list in a program)
-
-//Menu, Slots Game, Credits. 
-
-If it were a real online gambling game we'd expect it to take user money in, and returns winnings or the remains of their money (if any).
-
-1. Display a menu screen that allows a player to make a choice.
-Use that choice data, show more screens or, if the player choice to quit, exit.
-
-Notice the relationships between the jobs are important: what input do these medium jobs need, and what do they produce? Each job should probably take some input from the job before it, and output its own. A chain that leads from start to finish.
-
-3. Continue breaking down the 
-
-Each of these medium jobs, and the smaller ones, and the very small ones below that: each are just ways of talking about involved tasks in the _abstract_.
-
-{{< alert title="Definition: Abstraction" color= "primary" >}}
-An abstraction is just the most minimal, top level simplification of something. 
-
-Abstraction lets us talk about detailed, complex things in a simple way. A 'computer', a 'fruit', a 'car', all have a great deal going on but if you bring them up in conversation people have a crystal clear notion of what you're talking about, even if it might take from hours to years to explain them in great detail. 
-
-More examples: 'student', 'company', 'ecosystem', 'game controller", 'loop', 'program', they're all abstractions.
-
-Abstraction, in this sense, is **the reduction of a complex system or idea to its general properties and interface**.
-{{< /alert >}}
-
-### Exercise: Spot the abstractions
-
-> **A car** is a four wheeled vehicle, below a certain size, usually controlled by a single person, for the transporting of one or more human passengers and their property. They offer a steering wheel, along with controls for stopping, accelerating and gear selection (wether manual or partly automated). It typically (though optionally) encloses its passengers, separating them from their evironment and the weather. It's powered by combustion or electricity, using a fuel or power source contained in the vehicle, which can be periodically refreshed from an external source. 
-
-1. Open _notepad_ and write down 5 abstractions of systems you can find in that description.
-2. Choose one of them and write a brief description of that system, like I've done for car.
-3. Write down 3 abstractions you find in your description.
-4. When that's all done, open this thread and reply to it with your answers. 
-
-<!--
 ### Powerful words: Abstraction and Encapsulation
 
 We've talked about words giving us power over ideas, power to discuss and challenge them. _Conditional_ is one of those: it lets us talk about decision making in code that can be done several ways in infinite combinations, **but in a single word.** 
@@ -87,7 +31,11 @@ textbook pp143 and pp152
 
 More powerful than all of those is the word "abstraction". 
 
+{{< alert title="Definition: Abstraction" color= "primary" >}}
+Abstraction lets us talk, in a single word, about all that stuff I just talked about that. A 'computer', a 'controller', a 'button', they're all abstractions.
 
+Abstraction, in this sense, is **the reduction of a complex system or idea to its general properties and interface**.
+{{< /alert >}}
 
 #### Spot the abstractions
 
@@ -153,14 +101,14 @@ The game loop works, the winnings are accruing.
 {{< /imgcard >}}
 
 
-### From screens to functions
+<!-- ### From screens to functions
 
 The abstractinos here basically amounted, in my mind, to screens in a game, and then the things they need done.
 
 What screens do we need? What output do we need from the menu screen? What information do we need to give the slot machine? What do we need back from the slot machine screen when it's done?
 
 The best part: we don't need our functions to do their real job: a function that checks for wins, for example, just needs to take three numbers and return a result
-
+-->
 
 ## Strategy: Making Functions Work As A Team
 
@@ -280,4 +228,3 @@ From the _Online Etymology Dictionary:_
 
 <!--**Return** an int from the function for the outcome (something from the enum)
 **Reading** needed to get functions dialled now.  -->
--->
