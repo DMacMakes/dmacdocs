@@ -68,12 +68,14 @@ Abstraction, in this sense, is **the reduction of a complex system or idea to it
 
 ### Exercise: Spot the abstractions
 
-> **A car** is a four wheeled vehicle, below a certain size, usually controlled by a single person, for the transporting of one or more human passengers and their property. They offer a steering wheel, along with controls for stopping, accelerating and gear selection (wether manual or partly automated). It typically (though optionally) encloses its passengers, separating them from their evironment and the weather. It's powered by combustion or electricity, using a fuel or power source contained in the vehicle, which can be periodically refreshed from an external source. 
+> **A car** is a four wheeled vehicle, self propelled, usually controlled by a single person. The driver's seat provides a steering wheel and pedals to change the direction and speed, also allowing sudden stopping. They have variable speed, and can be brought to a sudden halt. They use a variety of methods to protect occupants from harm and the.They are often enclosed to protect you from the environment. Combustion of hydrocarbons or a battery provide a source of power to the engine, which in turn powers the axels and on board electronics. A car, when unlocked, commonly provides doors as access points.
 
-1. Open _notepad_ and write down 5 abstractions of systems you can find in that description.
+1. Open _notepad_ and write down 5 abstractions you can find (written or implied) in that description.
 2. Choose one of them and write a brief description of that system, like I've done for car.
-3. Write down 3 abstractions you find in your description.
-4. When that's all done, open this thread and reply to it with your answers. 
+3. Name 3 more abstractions within that system you've described.
+4. When that's all done, **open this thread and reply** to it with your answers. 
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_90315_1&nav=discussion_board_entry&conf_id=_153571_1&forum_id=_857301_1&message_id=_2200384_1" target="_blank">Abstraction Exercise Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!--
 ### Powerful words: Abstraction and Encapsulation
@@ -279,5 +281,5 @@ From the _Online Etymology Dictionary:_
 3. **Add** an enum for outcome of spin: no win, pair, three of a kind, three sevens.
 
 <!--**Return** an int from the function for the outcome (something from the enum)
-**Reading** needed to get functions dialled now.  -->
+**Reading** needed to get functions dialled now.  
 -->
