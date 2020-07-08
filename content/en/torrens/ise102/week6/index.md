@@ -259,13 +259,62 @@ int main()
   //display exitscreen
 }
 
+## Psuedocode to C++
+
+Or logic looks pretty solid. I'll translate it to C++ and compile as I go to test my assumptions.
+
+
+
+## Go for readability
+
+With other functions on hand, and well planned roles for each, `main()` becomes **a short, readable overview of your program**. You'll aim to have your functions short and readable too.
+
+## Homework
+
+You have **two tasks:** to complete the code below and then plan two functions (including pseudocode).
+
+### Task one: Complete the functions
+
+The code below function declarations and function calls commented out, and they're incomplete. Your job is to complete the functions and move the appropriate code from `main` into them.
+
+1.**Create a project** _Slotso_base_ and write out the code below, **including the comments**.   
+2. **Run it.** Try the slots and credits screen. Finally, enter 2 to exit and make sure it all works.  
+3. **Uncomment** the `displayExitScreen()` function declaration (with definition), then do the same for the call to the function near the end of main.  
+4. **Identify the functionality** that belongs in `displayExitScreen()` and **move it** there.  
+5. **Run it**, and make sure the program outputs what it did before.   
+6. **Repeat** for the **other 3** functions.  
+  * You can figure out the function types and argument types from the comments, or the code you'll be moving into them. Look at the bullet lists and flowcharts too.  
+  * Meaningful variable names in the functions make life easier.  
+  
+{{< alert title="Easy or impossible?" color= "secondary" >}}
+It **should be quite easy** if you've understood functions and the basic structure I built in class. If it's hard, if you find yourself moving things around and it never works, there's a good chance you haven't really watched and participated in class 5 and/or 6 with full focus. 
+* If you skim or 'watch' the classes while doing another subject's work, **you won't get there**.
+* If you **skipped week 5's homework** (at least half the class did) and think that moving on to week 6's will fix what you don't know about functions, **it probably won't**. 
+* **This stuff becomes easy** when it clicks, but **it won't until you do the leg work**.
+* Read (don't skim) the required textbook sections. 
+{{< /alert >}}
+
+{{< imgproc slotso_code_homework Resize "800x" Link "slotso_code_homework.png" >}}
+Middle-click to open, larger, in new window.
+{{< /imgproc >}}
+
+{{< imgcard slotso_output>}}
+The output before changes.
+{{< /imgcard >}}
+
+### Task two: Pseudocode two functions
+
+1. Look at the bullet list in [_Next level down_](#next-level-down) below and **plan out + write pseudocode for:**
+    * the **credits** screen
+    * the **menu** screen.
+
 ### Next level down
 
-Our screens so far are just abstractions. is to write out fuller descriptions of what they do.
+Our screens so far are basic abstractions. Our next step is to describe those in more detail, so we can plan their code too.
 
-Youll find new abstractions, like we did with the in class exercise, and some of those will be worth writing a function for.
+Of course, youll find new abstractions, like we did with the in **car abstraction exercise**, and some of those will be worth writing a function for.
 
-You just keep going down levels, doing this till everything is done.
+You just keep going down levels, doing this till everything is done and no further functions are needed.
 
 1. **menu screen**
     * Display cash total (argument)
@@ -292,22 +341,6 @@ You just keep going down levels, doing this till everything is done.
     * Depending on their score, thank them or console/pick on them
 
 
-## Abstraction benefits 2: Readability
-
-With other functions on hand, and well planned roles for each, `main()` becomes **a short summary of your program**.
-Main() here is short and readable. Functions do a single job.
-
-## Homework
-
-### Reading
-
-Coming tomorrow
-
-### Fleshing out code skeleton
-
-Coming tomorrow
-
-* Adding dummy and real functionality to your functions.
 
 
 <!--
