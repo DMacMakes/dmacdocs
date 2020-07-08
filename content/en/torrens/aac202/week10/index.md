@@ -1,90 +1,135 @@
 ---
-title: "Week 10: Environment Modeling"
-linkTitle: "W10: Environments"
+title: "Week 10: Environments 2"
+linkTitle: "W10: Enviro 2"
 weight: "100"
 description: >
-  Creating high res environments in ZBrush, working to a style.
-  
+  Turning parts into structures.
 ---
 
-## Assessment 3: Rock n Wood
+## Detailing: Fixes/improvements to parts we did
 
-The brief on the assessments (dmdocs) page:
+Your progress:
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-high-poly-environments">Assessment 3</a>
+[Week 10 Discussion](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804661_1&message_id=_1912076_1)
 
-Teams of 2. 
-* Stone Mason
-* Carpenter
+## Finishing Our Assets
 
-Note: If you have reachability and file exchange problems due to serious ongoing internet issues, work solo as carpenter or mason.
+{{< alert title="PSA: Ask Michael" color= "primary" >}}
+Each of you will be facing different challenges now and need to go deeper. Since I can't cover it all in class, it's time to spread your wings and start learning what you need to. 
 
-{{< imgcard mk_concept_all Link "mk_concept_all.jpg">}}
-Mercanary Kings concept (left) and the area we'll sculpt (right)
+To do that, your primary source should be [this playlist](https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq1ae09h1dht4S6M) by Michael Pavlovic.
+
+<a href="https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq1ae09h1dht4S6M"><img src="pavlovic_zbrush_basics.jpg"></a>
+{{< /alert >}}
+
+
+### Modules
+
+Consider how you could break up the larger form into Modules to save time/resources
+(drawover)
+
+### Dupe And Flip
+
+ Dupe Subtool: Tool > Subtool > Duplicate 
+
+* Methods for duplication
+  
+* Mirroring
+  * Axis
+  * Local symmetry
+
+### Subtools Vs Polygroups Again
+
+Gizmo: duplicating within a subtool
+
+{{< youtube F8O8gq2l4LE >}}
+
+* Splitting to sep subtools, using solo/xray mode (performance upside too)
+* Working with many meshes in one subtool
+  * Only do this when close to done
+  * Make sure your subdivision levels match (example: 5 levels in all meshes)
+
+### Moving Subtools Alone Or Together
+
+Gizmo!
+
+{{< youtube ECzbIVoVHOI >}}
+
+
+## Making The Other Bits
+You've got the main piece sorted. Now add the features and props to give it character. Arrow in the wood? Oysters? Crab?
+
+
+
+### Model In Maya, Import
+
+Importing fbx files.
+Decimating and exporting to Maya .
+
+{{< youtube "PmymBtiO9tw" >}}
+
+### ZBrush Primitives
+
+Ways to make primitives in ZBrush.
+1. Primitives + init + make polymesh3d
+4. Intermediate: Using the Gizmo cog.
+
+Creating starting shapes using _primitives_
+{{< youtube "wkBo64Ciapc" >}}
+
+Turning a primitive into a usable, sculptable _polymesh3D_
+{{< youtube "2cFUMTjGz6I" >}}
+
+### ZBrush Poly Modeling 
+
+Start with a cube (or other _polymesh3D_), use **ZModeler** brush.
+
+1. Start with a 2x2 cube by clicking the button in my UI's right tray.
+   * Select the cube it appended to the end of your subtool list
+   * Turn on solo: **alt-shift-s**
+   * Turn on polyframe: **shift + f**
+2. Select the ZModeler Brush: **b, z**
+3. Hover over an edge
+5. Click and drag on any edge to insert a loop.
+4. Hover over an edge
+5. Hold `space` to see all edge tools. 
+
+{{< imgcard zmodeler_insert_loop >}}
+A whole new wooorld.
 {{< /imgcard >}}
 
-{{< imgcard mk_concept_crop Link "mk_concept_crop.png">}}
-Close up of our zone
+Watch this great demo and explanation by Michael Pavlovic. You can 100% learn ZBrush to an industry level from this guy's tutorials.
+
+{{< youtube "UJ1-UfKfzh0" >}}
+
+### Creases And Subdivision
+
+With no subdivisions we can use dynamic subdivisions. This is the same as hitting 3 in Maya.
+
+You can use support edges to make corners, like we did in Maya, but then when you subdivide you'll end up with a lot of density there. In ZBrush you can mostly get there with creases.
+
+1. Create a 2x2 cube.
+2. Click **Dynamic** in the right tray, or hit `d`.
+3. You can toggle it on and off with `d`, `shift d`. 
+4. Try setting _SmoothSubdiv_ to 3, 4, 5 in righ tray.
+2. Select _ZModeler_ brush.
+3. Hover over an edge and choose _crease_ and _edge loop complete_
+4. Set CreaseLvl to 3. Click an edge to crease it. 
+
+{{< imgcard crease_edgeloop >}}
 {{< /imgcard >}}
 
-Michael vicente work
-[pinterest](https://pinterest.com/dmacdraws/aac202)
-
-## Pier Project, New UI And Resources
-
-1. Copy contents of the Zbrush 2020 folder to your ZBrush 2020 folder.
-2. Copy UI cfg file to your desktop and load UI into ZBrush
-[w10_zbr_resources.zip](w10_zbr_resources.zip)
-
-1. Unzip into to a week 10 working folder.
-[w10_pier_base.zip](w10_pier_base.zip)
-2. Open the pureref file in ref__pier
-3. Open the ZPR file in ZBrush_pier
-
-## Michael Orb Vicente
-
-Michael vicente brushes and materials
-
-{{< imgcard orb_brushes >}}
-The stone brushes created by Orb.
+{{< imgcard dynamic_subdivs_creases >}}
+Crease level 3 means the crease will only hold till the 3rd subdivide. Afte that it starts to smooth the edge.
 {{< /imgcard >}}
 
-## Stylised Wood And Stone
 
-Some examples of stylised wood and stone. If you want to go more detailed you can, by collecting your own reference. Keep in mind the brushes provided won't especially help with detailed work in default state.
+### GoZ
 
-{{< imgcard fish_1_lary_kummer Link "https://www.artstation.com/artwork/xzAd9Y">}}
-Fishmonger store - more stylised, more dynamic shapes, less details
-{{< /imgcard >}}
+Another Maya option where you can go back and forth
 
-{{< imgcard fish_2_lary_kummer Link "https://www.artstation.com/artwork/xzAd9Y">}}
-Fishmonger store - Large, soft grain, big bevels.
-{{< /imgcard >}}
-
-{{< imgcard mountain_giant_1_michael_vicente Link "https://www.artstation.com/artwork/1eBN8">}}
-Mountain giant
-{{< /imgcard >}}
-
-{{< imgcard towers_alexis Link "https://www.artstation.com/artwork/Kz6x9">}}
-Towers.
-{{< /imgcard >}}
-
-## Modeling Stone
-
-Brushes, tools, techniques.
-Style reference.
-
-{{< imgproc howto_stone_zbrush Resize "200x" Link "howto_stone_zbrush.jpg">}}
-Great guide, click to view.
-{{< /imgproc >}}
-
-## Modeling Wood
-
-Brushes, tools, techniques.
-Style reference.
 
 ## Homework
+Build out the asset using the parts you made last week.
 
-1. Gather style reference
-2. Gather photo reference
-3. Model up key pieces (two planks & two logs/ x amount of bricks & pavers) that will later be duplicated and modified to make up the rest of the structure.
+Differentiate them without losing your silhouette.

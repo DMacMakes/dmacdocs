@@ -1,72 +1,90 @@
 ---
-title: "Polish again, render, deliver."
-linkTitle: "W.9 Render"
+title: "Week 9: Environment Modeling"
+linkTitle: "W9: Environments"
 weight: "90"
 description: >
-    Dynameshing, seam removal, rendering passes, compositing.
+  Creating high res environments in ZBrush, working to a style.
+  
 ---
 
-## Review Of Progress
+## Assessment 3: Rock n Wood
 
-1. Looking through the discussion:
-[Assessment 2 Progress Thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804660_1&message_id=_2037897_1)
+The brief on the assessments (dmdocs) page:
 
-Stuff that was **easy**? Stuff **less easy** than expected?
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-high-poly-environments">Assessment 3</a>
 
-## Rendering How
+Teams of 2. 
+* Stone Mason
+* Carpenter
 
-Turning on and tuning **shadows**
-* Shadows
-  * Change direction to match material?
-* Ambient Occlusion
-* Filling with material:
-    * Making some things glossy (eyes), some matte
-    * Wax/subsurface scattering
-* Subpixels (sampling)
+Note: If you have reachability and file exchange problems due to serious ongoing internet issues, work solo as carpenter or mason.
 
-### Rendering What
-
-* Angles
-  * EXAMPLES 
-* Closeups
-  * EXAMPLES
-
-## Render Passes
-
-Making passes and exporting to photoshop/Krita for more editing.
-
-### Photoshop Method
-
-* In the _Zplugin_ menu you'll find ZBrush To Photoshop CC. Select passes like shadow, bpr, AO, lights, and _Send To Photoshop CC_.
-    * It will ask where the photoshop executable is on your hard drive. Browse to it. (probably `c:\program files\adobe\Photoshop\Photoshop.exe` or similar)
-    * It will take a while and do a lot of stuff in zbrush, turning subtools on and off etc.
-    * Click yes when photoshop asks if you want to run a script.
-
-{{< imgcard zbrush_to_photoshop Link "zbrush_to_photoshop.jpg">}}
-Click the passes you want, let the plugin automate the exports.
+{{< imgcard mk_concept_all Link "mk_concept_all.jpg">}}
+Mercanary Kings concept (left) and the area we'll sculpt (right)
 {{< /imgcard >}}
 
-
-### No Photoshop Method
-
-* Ensure shadows, ambient occlusion are on in _Render \> Render Properties_
-* Make a BPR render in zbrush (shift R or click the button)
-* Look _Render -> BRP RenderPass_: click on a pass to download it as an image. Default type is single layer PSD, but it also has TIFF.
-
-{{< imgcard zbrush_bpr_renderpass Link "zbrush_bpr_renderpass.jpg">}}
-Click individual passes to export.
+{{< imgcard mk_concept_crop Link "mk_concept_crop.png">}}
+Close up of our zone
 {{< /imgcard >}}
 
-## Using Render Passes
+Michael vicente work
+[pinterest](https://pinterest.com/dmacdraws/aac202)
 
-Here's a render with some a bit of quick processing/painting over
-  - rim lighting painted in
-  - right light pass added
-  - shadows purpled up
-  - eyelashes, gloss on lips, scar quickly dropped in
-  - radial gradient behind, cool colour photo filter on top
-  - Camera raw: quick add grain, sharpen, individual hues adjusted, vignette
+## Pier Project, New UI And Resources
 
-{{< imgcard izzy_comp_passes Link "izzy_comp_passes.jpg">}}
-Left: Render passes exported to photoshop  Right: With some editing
+1. Copy contents of the Zbrush 2020 folder to your ZBrush 2020 folder.
+2. Copy UI cfg file to your desktop and load UI into ZBrush
+[w10_zbr_resources.zip](w10_zbr_resources.zip)
+
+1. Unzip into to a week 10 working folder.
+[w10_pier_base.zip](w10_pier_base.zip)
+2. Open the pureref file in ref__pier
+3. Open the ZPR file in ZBrush_pier
+
+## Michael Orb Vicente
+
+Michael vicente brushes and materials
+
+{{< imgcard orb_brushes >}}
+The stone brushes created by Orb.
 {{< /imgcard >}}
+
+## Stylised Wood And Stone
+
+Some examples of stylised wood and stone. If you want to go more detailed you can, by collecting your own reference. Keep in mind the brushes provided won't especially help with detailed work in default state.
+
+{{< imgcard fish_1_lary_kummer Link "https://www.artstation.com/artwork/xzAd9Y">}}
+Fishmonger store - more stylised, more dynamic shapes, less details
+{{< /imgcard >}}
+
+{{< imgcard fish_2_lary_kummer Link "https://www.artstation.com/artwork/xzAd9Y">}}
+Fishmonger store - Large, soft grain, big bevels.
+{{< /imgcard >}}
+
+{{< imgcard mountain_giant_1_michael_vicente Link "https://www.artstation.com/artwork/1eBN8">}}
+Mountain giant
+{{< /imgcard >}}
+
+{{< imgcard towers_alexis Link "https://www.artstation.com/artwork/Kz6x9">}}
+Towers.
+{{< /imgcard >}}
+
+## Modeling Stone
+
+Brushes, tools, techniques.
+Style reference.
+
+{{< imgproc howto_stone_zbrush Resize "200x" Link "howto_stone_zbrush.jpg">}}
+Great guide, click to view.
+{{< /imgproc >}}
+
+## Modeling Wood
+
+Brushes, tools, techniques.
+Style reference.
+
+## Homework
+
+1. Gather style reference
+2. Gather photo reference
+3. Model up key pieces (two planks & two logs/ x amount of bricks & pavers) that will later be duplicated and modified to make up the rest of the structure.

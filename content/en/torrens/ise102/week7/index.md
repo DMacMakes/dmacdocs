@@ -6,11 +6,20 @@ description: >
   X-Ray vision: looking at your program as it runs
 ---
 
+## Week 6 Homework Review
+
+
+## New tricks: pausing, clearing the screen.
+
+* `_getch` waits for any keypress. Requires `#include <conio.h>`.
+* `system("cls");` clears the console. It calls `cls`, a command in the windows console.
+* A `do.. while()` loop in the flesh.
+
+## Debugging: What's WRONG With This Code?
+
 {{< imgcard see_code_agents>}}
 Hello, Mr Smith.
 {{< /imgcard >}}
-
-## Debugging: What's WRONG With This Code?
 
 We have total control over the **_writing_** of our code. We can plan it, craft it carefully, line by line. We can tidy things into neat little packages, functions that promise to take what we have and give us what we need. We **mentally step over it**, imagining a user typing in responses, and see that.. yes, this will work very well, if I haven't missed something.
 
@@ -132,7 +141,7 @@ Encourage your program to tell you things.
 {{< /imgproc >}}
 
 This is called `debug output`, and like a gun in Samuel L Jackson's hand, it makes the program more _verbose_.
-
+<!--
 #### Example
 
 Say we were calling `spinWheels()` in our slot machine to 1. generate 3 numbers and 2. check for a win. If the winnings were wrong for a given bet we might need to see variable values at certain times. We can do that with lots of cout statements. The word "DEBUG:" is just for readability.
@@ -239,6 +248,8 @@ Each function alone reads like a pretty simple program. Manageable chunks that y
 * `_getch` waits for any keypress. Requires `#include <conio.h>`.
 * `system("cls");` clears the console. It calls `cls`, a command in the windows console.
 * A `do.. while()` loop in the flesh.
+
+-->
 
 ## Coding Conventions
 

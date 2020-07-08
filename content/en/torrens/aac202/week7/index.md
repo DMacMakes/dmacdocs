@@ -1,6 +1,6 @@
 ---
-title: "7: ZBrush 2"
-linkTitle: "W.7 ZBrush 2"
+title: "7: Polish"
+linkTitle: "W.7 Polish"
 weight: 70
 description: >
   Working clean: subtools, automasking, base meshes, remeshing.
@@ -10,262 +10,180 @@ resources:
     byline: "Art: Patri Balanovsky (Artstation)"
 ---
 
-## Last Week's Homework
+## Discussing Week 6 Sculpt
 
-Madballs: 2 hours of try-harding.
+What was good? What was tricky?
 
-Q&A
-1. What was easy to do on Madballs in ZBrush?
-2. What was hard to do in zbrush?
-3. Got stuck in a weird mode?
+## New ZBrush Resource Pack
 
-Today we'll learn to do things that were hard with the basic subdividing workflow.
+Download my updated [ZBrush Resources and ui zip](Zbr_wk3_resources.zip)
 
-(Doing stuff close together, clean work with crisp transitions, eyeballs and eyelids!)
-
-## Assessment 2: Character Sculpt
-Look at assignment brief
-
-## Beyond Pushing Clay
-
-More than just adding and removing clay. Now we take advantage of digital tools.
-
-### New  Resources
-
-Exit ZBrush and, in explorer, open the `C:\Program Files\Pixologic\ZBrush 2020\` folder.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="Zbr_wk2_resources.zip">Download Zbr_wk2_resources.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
-
-**ZTools:**
-  * Copy whole `BaseMeshes` folder into `C:\Program Files\Pixologic\ZBrush 2020\ZTools`
-  * Low poly, quad based **character blockout** with good, mixed gender topology. Broken up into parts.
-  * One file for **whole character**, another with **head + body**, one with **just eyes** near world origin (x,y,z = 0)
-
-{{< imgproc res_ztools Resize "650x">}}
-Stylised human basemeshes.
-{{< /imgproc >}}
-
-**Brushes:**
-  * Copy files into `C:\Program Files\Pixologic\ZBrush 2020\ZStartup\BrushPresets`
-  * _DM_ClayBuildMushy:_ Like Clay Buildup with softer, rounder shape.
-  * _JACCut_A:_ Like a combo of Dam Standard and Pinch. Sharp creases, edges.
-  * _Orb_Cracks:_ Great crack-in-stone brush.
-  * _SK_ClayFill_ Fill in cavities with less cleanup required than clay buildup.
-
-{{< imgcard res_brushes>}}
-New brushes this week.
+{{< imgcard Zbr_wk3_ui_brice_base Link "Zbr_wk3_ui_brice_base.jpg" >}}
+The new UI and brushes/materials/plugin
 {{< /imgcard >}}
 
-**Materials:**
-  * Copy files into `C:\Program Files\Pixologic\ZBrush 2020\ZStartup\Materials`
-  * _IJ_Clay:_ Bright with rimlight, good for exaggerating form.
-  * _mah_modelling:_ Great all round modelling brush, like grey_matcap.
-  * _zbro_EyeReflection_ellipse:_ Glossy eye material
-  * _zbro_Viewport_Skin4:_ Change your colour to a skin tone for a decent realtime skin.
+## Refining The Sculpt
 
-{{< imgcard res_materials >}}
-New materials this week.
+We're still using a small subset of ZBrush's features, and some areas remain difficult to work with.
+
+* How can I work cleaner with last week's tools?
+* What new tools will help?
+
+### Demo Project
+
+Grab [Week8_hand.zip](Week8_hand.zip)
+
+### Masking: Revision
+
+The masking The shortcuts below will be your main way of creating and editing masks in ZBrush.
+
+| Command           | Shortcut                              |
+|-----------        |------------                           |
+| Activate masking    | `ctrl`                                          | 
+| Draw mask on mesh   | `ctrl + left drag (mouse)`                      | 
+| Erase mask on mesh  | `ctrl + alt + left drag`                        | 
+| Clear mask          | `ctrl + left drag` on canvas                    | 
+| Invert mask         | `ctrl + left click` on canvas                   | 
+| Blur mask           | `ctrl + left click` on mesh                     | 
+| Sharpen mask        | `ctrl + alt + left click` on mesh               | 
+
+There's also a helpful _Masking_ subpalette in the _Tools_ palette, which is on the right side of ZBrush by default.
+
+## Colour
+
+Perfectly visualising the final product before it's painted is hard even for a seasoned sculptor.  Applying colour early can:
+* help you better compare your model to the character.
+* reveal issues with the eyes and get them solved quicker.
+* save on oversculpting, uncertainty and noodling.
+
+Enable colour/polypaint
+Fill object
+Custom brush DM_FlatHardPaint
+Polygons = pixels, so subdivide.
+Good materials for polypainting
+Hiding/showing the paint job
+Eyelids: creasing to keep the eyelid forms. 
+  - Crease by angle (crease level 3)
+
+### Exercise: Colour Character Head
+
+If you didn't get it done, borrow [Callum's](Long_head_joe_CA.zip).
+
+## Assessment 2: Character Bust
+
+Jump to the my [assessment page](http://localhost:1313/torrens/aac202/assessments/#assessment-2-high-poly-character).
+
+## Topology
+
+A soccerball is always the same general **_form_**: a sphere. The panels that make up the surface can vary enormously. The layout of these panels is the ball's _**topology**_
+
+{{< imgcard topology_footballs>}}
+Some of the many panel layouts.
 {{< /imgcard >}}
 
-## Follygon's ZBrush Process
-
-{{< youtube cYE_bVG98OQ >}}
-
-### How To Add Eyeballs And Eyelids!
-
-Sometimes having everything in one mooshy, continuous mass makes life hard. Consider eyes:
-
-{{< imgcard moana_disney Link "https://www.pinterest.com.au/dmacdraws/aac202/">}}
-Moana's lower lids are more visible as she looks upward. Also visible are the thick edges of her upper lids.
-{{< /imgcard >}}
-
-* **Eyeballs**, apart from a bump on the front, are **perfectly round**, glossy balls. 
-    * Maintaining perfect shapes is hard in sculpting.
-* **Eyelids** criss cross them at strange angles depending on expression and genetics.
-    * Humans are sensitive to the slightest movement of eyelids and brows.
-    * As a modeller you need to change them constantly.
-
-To freely modify one while leaving the other perfect, **we need different surfaces**.
-
-{{< imgproc bust_chef_pixar Resize "500x" Link "https://www.pinterest.com.au/dmacdraws/aac202/">}}
-This real clay chef sculpt from Pixar is extremely stylised. You can see the eyes and lids are not sculpted out of the main mass.
-{{< /imgproc >}}
-
-### Tools and Subtools
-
-To access the new files in _ZTools_ we'll start ZBrush and use the _lightbox_. It usually opens when ZBrush starts. If it doesn't, hit comma `,` or click the _lightbox_ button, top left.
-
-{{< imgproc lightbox Resize "800x">}}
-Projects, models, materials, brushes that don't load with ZBrush can be loaded from the lightbox.
-{{< /imgproc >}}
-
-A Tool can have multiple subtools. While you're in a ZBrush project you can load in new ones or save them out.
-
-{{< imgproc subtools_jaw Resize "800x">}}
-Jaw is a subtool of our character tool. Note the ear subtool has two meshes.
-{{< /imgproc >}}
-
-| Category |  Definition/Place                            |
-|-----|-----                                              |
-| Tools | Objects in the Tools palette.                   |
-| Subtools | Objects in the Subtools list                 |
-| Meshes   | Shells of contiguous polygons. Found inside subtools. |
-
-#### Importing Subtools
-
-{{< alert title="Definition: Subtools" color= "primary" >}}
-A bit like objects in Maya. Can have multiple meshes.
+{{< alert title="Definition: Topology" color= "warning" >}}
+The shape, number and layout of polygons that make up the surface of your model.
 {{< /alert >}}
 
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_class.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
-
-1. Download My Madball Demo File
-2. Unzip, it contains `madball_demo.zpr` and `eyes.ztl` files. 
-3. Open `madball_demo.zpr`
-5. Click `tool->subtool->append` and choose the `polysphere3D`. 
-
-{{< imgcard ui_append>}}
-Append an object as a Subtool
-{{< /imgcard >}}
-   
-#### Moving With The Gizmo
-
-The  gizmo is like the Maya transform manipulators.
-* Press `w` to use it (or `e` or `r`)
-* Press `q` to return to brushing
-* If you see a weird line with circled ends instead of gizmo, press `y` to switch.
-
-{{< imgproc gizmo Resize "300x" >}}
-The Gizmo and its menu.
-{{< /imgproc >}}
-  
-Gizmo tool moving things
-	* Individually
-	* As a group
-	* Locking/unlocking and changing the gizmo pivot `alt` or gizmo edit widget (like `d` in Maya`)
-	* Back to center of visible objects
-	* Can scale/rotate also.
-
-
-* Modifying eyes
-  	* Deforming with gizmo (`w`)
-  	* We have one subtool for eyes and eyelids. How work on eyelids without messing up eye
-  	* Back to Sculpt/Draw: `q`
-  	* Move brush `b, m, v`
-      	* masks (in draw mode)
-        		* `ctrl-left drag` to mask out
-        		* `ctrl-left drag` on background, not touching model, to clear mask.
-        		* `ctrl-left click` on background to flip mask.
-    		* With automask polygroup (in brush menu)
-      			* View popugroups with shift F
-    		* automask topological
-    		* masking with ctrl
-    		* Now try Move Elastic `b, m, e`
-
-{{< imgproc brice_head_pg Resize "500x">}}
-Brice head with polygroups visible.
-{{< /imgproc >}}
-This is a nice sitting position, I can type pretty easy too. typing way easier with a bigass tilt to the keeb dohn u fing.
-I wonder if i can type prtty cosy like. yeah that's real cosy like.super cosy like if i could get my arms held up like this.
-
-#### Find Short Tute Video Of Eyes
-
-### Exercise: Madball Eyes
-
-Re-do them on your model.
-
-## Modelling From Existing Blockout
-
-A blockout is what we saw last week: a whole made out of smaller, simpler pieces.
-- don't have to worry about joining and topology
-- can edit pieces safely without messing up neighbouring anatomy.
-
-Brice Laville Saint Martin doing it:
-
-{{< youtube "Ay-UY6JTbF4" >}}
-
-Now we'll do it with his basemesh 👌
-
-{{< imgcard res_ztools Link "Zbr_wk2_resources.zip">}}
-Brice Saint Laville's starting files.
+{{< imgcard topology_cubes>}}
+A cube's topology can vary infinitely while remaining a cube.
 {{< /imgcard >}}
 
-* Open the aa starting file in `Lightbox->Projects`
-* Select a star or cylinder tool from tool palette
-* Go to `Lightbox->Tools->Base Meshes` and load the head basemesh.
+### Character Topology
 
-## Demo: Greeno
+We started with a lower density mesh, made of quads, and the quads flowed fairly well with the forms.
 
-Starting a character bust from a basemesh using reference.
-
-{{< imgcard ui_drawMenu_frontReference>}}
-The starting file along with good <i>Draw</i> menusettings for a reference plane.
+{{< imgcard brice_head>}}
+Our starting point, the brice head.
 {{< /imgcard >}}
 
-### Joining The Pieces
+The polygon _density_ was fairly consistent on a lot of the surface, with extra density in areas like the features of the nose, the edges of the eyelids, the ears. We **increased the density** across entire subtools of the mesh by _subdividing_ (ctrl-d).
 
-Dynamesh is a magical tool that didn't exist in ZBrush until it was over 15 years old. Everything changed for cartoony artists, concept artists. You could truly experiment and explore whole creatures in ZBrush with little friction.
+{{< alert title="Definition: Polygon Density" color= "warning" >}}
+The number of polygons making up a given area of a mesh. It can change from location to location on the mesh.
+{{< /alert >}}
 
-It'll be hard to see, but Brice merges everything with Dynamesh around 0:25. After that, you'll see the seams and cleanup. He's meticulous.
+### Continuity
+
+The Brice head is separated over multiple subtools, so **it's not a continuous mesh**.
+
+## Combining And Polishing
+
+### Merging Subtools
+
+* You've shaped and moved individual subtools
+* At some point it becomes more pain than benefit having them separate
+
+**Pro:** You can run a brush along the palm and onto a finger now, making it easier to sculpt the joints.
+**Con:** Now you risk messing up nearby fingers while you sculpt.
+
+It's easy to **merge** the subtools:
+1. Pick the top subtool
+2. In _Tools->Subtools->Merge click _MergeDown_.
+3. It'll ask if you're sure. Click yes + don't ask again.
+3. Continue merging down.
+4. If you enable polyframe (the button next to finger1 and finger2 in the image below) you'll see it on all the parts you've merged.
+
+{{< imgcard 1_hand_subtools Link "1_hand_subtools.jpg">}}
+Left: Multiple subtools with polyframe on. Right: After <pre>MergeDown</pre> applied to subtools.
+{{< /imgcard >}}
+
+### Topological Automask
+
+Work on a finger without masking or hiding its neighbours.
+
+_Brush->AutoMasking->Topological_. I've also added it to the custom UI.
+
+### Polygroups: Together, Alone
+
+If you don't have polygroups visible, hit `shift-f`.
+
+Auto groups, group visible (custom ui, _Tool->Polygroups_).
+
+In _Brush->AutoMasking_ there's a slider for Mask By Polygroups. 
+* Turn it up to 100 and it works just like Mask Topological for our hand subtool.
+* It's more powerful because you can have multiple polygroups on a single mesh with unbroken topology.
+
+### Hiding And Showing
+
+Hiding parts of meshes or polygroups makes it a lot easier to work in the spaces between things. If you don't have Polygroups visible, hit `shift+f`.
+
+| Command           | Shortcut                              |
+|-----------        |------------                           |
+| Activate hiding    | `ctrl-shift`                                     | 
+| Hide part of mesh   | `ctrl + left drag (mouse)` a rectangle over it  | 
+| Invert hiding       | `ctrl + left drag` on canvas                    | 
+| Show all            | `ctrl + left click` on canvas                   | 
+| Solo a polygroup    | `ctrl + left click` on mesh                     | 
+| Hide a polygroup    | `ctrl + alt + left click` on mesh               | 
+
+
+## Fusing and Remeshing with Dynamesh
+
+
+It'll be hard to see, but Brice merges everything with around 0:25. After that, you'll see the seams and cleanup. He's meticulous.
 {{< youtube "-ElecAWzP_Y" >}}
 
+### What Did We Just See
+
+Dynamesh completely recreates your model with the same form, as well as it can, with new topology. Your separate meshes are joined where they meet, somewhat like melting wax or plastic together, or welding metals.
+
 {{< imgcard brice_tao_dynamesh Link "brice_tao_dynamesh.jpg">}}
-Captured frame where he looks at the new topology. Teeny tiny quads.
+Captured frame where he looks at the new topology. Teeny tiny quads with no apparent flow.
 {{< /imgcard >}}
 
-Then I’ll dynamesh (give settings) and start cleaning up with sculptris (give settings).
+The new topology **has no flow**, but makes up for it with **quite high density** to match the smallforms and folds.
 
-## At Home:
+| Command           | Shortcut                              |
+|-----------        |------------                           |
+| Enable Dynamesh   | Click the _Dynamesh_ button inthe _Tools->Geometry->Dynamesh_ subpalette. |
+| Re-Dynamesh       | `ctrl + left drag` on canvas (like clear mask, so be careful) |
+| Project           | Button in the _Dynamesh_ subpallette. |
+| Change resolution | Slider in _Dynamesh_ subpalette. |
 
-Required, this will be part of assignment marking. 
+### Easier Dynamesh With Ryan's Tools
 
-###  Ways To Generate/Merge Geometry
-
-Show girl face vid by follygon, then the brice saville one.
-Approaches: 
-Follygon: traditional clay, very steoke intensice
-Brice: digital realm specific: block out low and clean, minimal final sculpting
-
-### To Do
-Using simple Character designs i’ll provide.
-
-Block out, merge, continue. 
-* watch folygon video send me questions.
-* I can make a video covering q&A
-* Model something at home from a base mesh: give them a head base mesh.
-	1: use move tool and other brushes along with auto masking to create character block out
-	2: dynamesh all but eyes and eyelids into single form, trying to keep detail without too much geo.
-	3: clean up some details with sculptris.
-
-{{< imgproc "patri-balanovsky-alien-faces-5" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
-faces-5
-{{< /imgproc >}}
-
-{{< imgproc "patri-balanovsky-alien-faces-8" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
-faces-8
-{{< /imgproc >}}
-
-{{< imgproc "patri-balanovsky-alien-faces-12" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
-faces-12
-{{< /imgproc >}}
-
-Week 8 we’ll use goZ to add stuff in maya and begin work on our final charcter. Learn material fill.
-
-Week 9 polypaint and solve people’s problems workshop.
-
-#### Resources
-
-ZBrush keyboard shortcuts:
-[http://docs.pixologic.com/user-guide/keyboard-shortcuts/shortcuts-by-category/](http://docs.pixologic.com/user-guide/keyboard-shortcuts/shortcuts-by-category/)
-
-My aac202 pinterest board.
-[https://www.pinterest.com.au/dmacdraws/aac202/](https://www.pinterest.com.au/dmacdraws/aac202/)
-
-My aac202 youtube playlist:
-[https://www.youtube.com/playlist?list=PLfWza-ietxyzCD459RKEL6Tg42Tgnq5gE](https://www.youtube.com/playlist?list=PLfWza-ietxyzCD459RKEL6Tg42Tgnq5gE)
-
-The middle tao pai pai video:
-{{< youtube "k2TPi-WaO20" >}}
+| Command           | Shortcut                              |
+|-----------        |------------                           |
+| Enable Dynamesh   | Click the _Dynamesh_ button inthe _Tools->Geometry->Dynamesh_ subpalette. |
+| Re-Dynamesh       | Select a density (1-10) where 1 is coarse and 2 very fine |

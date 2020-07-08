@@ -118,7 +118,8 @@ Danny's seat height was adjusted to 42cm above ground.
 
 ## Assessment 3: Snake
 
-
+Discuss brief, plan.
+<!--
 ## Moving
 
 ### Up Down Left Right
@@ -236,6 +237,7 @@ If you don't understand _Integer Division_ and _remainders_, it's officially on 
 
 Put an `if` around the code in `playBattyGame` that applies batty's `xDir` and `yDir` to her position. Try moving her every 10 frames, every 2 frames.. find a value that feels good.
 
+-->
 ## Homework
 
 When batty reaches the right border of the screen, she needs to teleport to the left border. Another way to word it: when she collides with the the right border she wraps around to the left side of the play area.

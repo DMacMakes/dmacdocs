@@ -10,24 +10,14 @@ description: >
 
 1. The reading
 2. The programs
-
 [Week 5 Homework tasks in Week 5 notes](../week5/#homework)
-
-## Assessment 1: Exam
-
-Exam.
 
 ## Assessment 2: Slots
 
 The brief pdf [on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/15836406?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27ISE102_Assessment%25202%2520Brief_14112019.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200323T002852Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200323%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=79ee9923fd485563a89cf9cbb31a3dfb27f1b2a5885a18ad85ec1ca65766012a)
 
-### Tips
 
-* Write the brief down in your own words.
-* Also remember to check against that and the real brief throughout the time you work on it.
-* Break a big problem into smaller problems
-
-## Approaching big problems
+## Solving programs
 
 The way humans solve big problems is simple: **break them up into smaller problems** till we find ones we can solve. **Add up the solutions**, and you solve the big problem.
 
@@ -37,7 +27,7 @@ What you're usually getting when you download a game, say a soccer game, is **a 
 A game program, at the highest level solves the problem of **wrapping up the game screen (and others) in a menu (loop)**
 {{< /alert >}}
 
-### Our big problem
+## Slots Level 1: The program as problem
 
 Our game's big problem to solve is:
 
@@ -48,19 +38,23 @@ A big problem needs someone to solve it, and they usually need help. **`int main
 
 It can't handle the whole problem, so it breaks it into separate smaller problems, which it can hand off to other functions.
 
-#### The screens
+### The screens
 
-Let's have a look at the _screens_ that our program will have, before we get into how to get to them.
+There's only so much you can do in your head while staring at text. I'll draw out the _screens_ that our program will have.
 
-(drawing time)
+{{< imgcard visualising_slots_program_1>}}
+Drawn in stream: A menu, a slots game, a credits screen, an exit with a message.
+{{< /imgcard >}}
 
-#### What are _screens_?
+### What are _screens_?
 
 We're in fuzzy territory. They're not literal surfaces of literal monitors. 
 
 It basically means **a section of our program**, and what that section would display on screen.
 
 It's a bit.. _abstract_. 
+
+---
 
 ## We need to talk about abstractions.
 
@@ -97,68 +91,179 @@ Importantly, an abstraction isn't a single instance of thing. **A _car_ is an id
 #### Levels
 
 What you just did, breaking down a _car_ into other, smaller abstractions, you just used **levels of abstraction** to understand a car. Top to bottom, or bottom to top, levels of abstraction make it manaageable!
+<!--
+## Stringing it together
 
-## Slots: Medium sized problems
+The relationships between the jobs are very important: what do they need, and what do they provide? 
 
-Back to our slot machine. We need to break our big job down to medium sized problems that, done in some order, will add up to a solution to our _Game Program_ problem. 
+It's the job of `main()` to give out, receive back and pass along data to the next level of functions. What input do these medium jobs need, and what do they produce?
+-->
+## Slots Level 2: Medium sized problems
 
-When I talk about these problems as simple things with inputs and outputs, you'll know I'm treating them as _abstractions_. If you're thinking ahead you'll realise that, yes:
+Back to our slot machine. Our _Game Program_ is an abstraction equivalent to our car, and it mentioned screens, Our screens are the next level of abstraction down. 
 
-**functions offer a simple input, output way of thinking of bigger problems.. they helps us use levels of abstraction** 
+We need to define a little bit more information about them, and how they will interface with main. Let's do it with some easy techniques.
 
-If we break our program into solvable problems, handled by functionsthem out and chain their inputs and outputs.. we can expect a solution to our big problem. 
+### Bullet points, Drawing, Pseudocode, Code.
 
-1. Display a menu screen that allows a player to input a choice (and shows their cash remaining)
-Based on that data, we need to be able to
+I drew the rough screens above, but I didn't cover what they need as input or what they give back to main.
+
+{{< imgproc visualising_slots_program_1 Resize "400x" Link "visualising_slots_program_1.png">}}
+Visualising what the screens do.
+{{< /imgcard >}}
+
+Instead of a new drawing, first I'll just write down that level of detail as a **bullet list**. You're not going down to low level detail, but make sure you **don't miss** any top level functionality **required by the brief**.
+
+### Step 1A: Bullet points 
+
+{{< alert title="My Slots Game bullet list" color= "primary" >}}
+1. **MENU SCREEN** which **gets a choice**  
+     * Needs cash left (to display)  
+     * Returns choice  
+2. **SLOTS SCREEN**  
+     * Needs cash total  
+     * Returns cash left  
+3. **CREDITS SCREEN**  
+     * Needs nothing, returns nothing. `void` function.  
+4. **QUIT SCREEN** with **feedback** (my add on)    
+     * Needs their cash left (to comment on)  
+{{< /alert >}}
+
+### Step 1B: Flowcharts, Screens, Diagrams
+
+I took it further with flowcharts, showing the flow of the program and some of the data needed/produced by each screen.
+
+{{< imgproc slotso_flows_1 Resize "700x" Link "slotso_flows_1.png" >}}
+<b>A:</b> Absolute top level, a menu that leads to screens.  <b>B:</b> Showing how main will actually decide whether to show screens or exit.
+{{< /imgproc >}}
+
+Next I broke out all the screens, and put in all the logic, input and output I think aren't accounted for, I'm really wanting something I can pseudocode now:
+
+{{< imgproc slotso_flows_2 Resize "600x" Link "slotso_flows_2.png" >}}
+Enough to jump to psuedocode.
+{{< /imgproc >}}
+
+{{< alert title="Tools, not rules." color= "secondary" >}}
+Sometimes you might prefer 1A over 1B, or vice versa, or a blend of them. You might do them each a bit differently to me, it depends how you figure these things out best. 
+
+They're just ways of organising your thinking and better exploring your plan.
+{{< /alert >}}
+
+### Step two: Psuedocode
+
+This step is very important. Try writing your top level program in pseudocode. This helps you formalise what you've outlined above without having to think about c++ syntax or enter visual studio. Use whatever text editor is on hand.
+
+Here's a very top level bit of psuedocode, keeping things very abstract. It just covers what jobs need doing, but not how we pass around the data.
+```
+constant STARTING_CASH = 2000
+cashLeft = STARTING_CASH
+
+MAIN
+  begin loop
+      display menu, cash, and get choice.
+      if choice is 1 show slots
+      otherwise if choice is 3 show credits
+  loop again (while choice is not 2)
+  display exit screen
+END
+```
+Reorganising things a bit, and adding the flow of data between screens.
+Notice I write where I'll store a result (choice =) and on the next line the things that have to happen before we get the result. That will eventually be a function call, but at first we can just write the code in-line.
+```
+MAIN
+    constant STARTING_CASH = 2000
+    cashLeft = STARTING_CASH
+
+    choice = 0
+    begin loop
+        choice =  
+            display Menu (needs cashLeft), get and return player choice
+
+        if choice is 1 
+            cashLeft = 
+                play slots and return whatever cash (if any) is left 
+        otherwise if choice is 3 
+            show credits
+        end if 
+    loop again (while choice is not 2)
+    display exit screen
+END
+```
+
+####  Psuedofunctions?
+
+I can see enough info there to give us our functions too. How?
+
+
+{{< alert title="Functions enable abstraction!" color= "primary" >}}
+Functions offer a simple input (arguments), output(return value) way of summarising solutions to problems.
+When you see a function, like the one below, think:
+
+**OUTPUT problemBeingSolved (INPUT, INPUT)**
+
+```cpp
+// A function that joins two parts of a name
+// together with a space
+
+string fullNameFromParts( string firstName, string lastName);
+```
+
+That means we can easily use functions to define new abstractions.
+{{< /alert >}}
+
+1. Display a menu screen 
+     that allows a player to input a choice (and shows their cash left). Get
 1. Display a slots screen
 2. Display a credits screen
 3. Display an exit message screen.
 
 ```
-/// Very roughly, the next level of functions down from main.
-int main()
-{
+/// In name only: the next level of functions I'll probably use
   displayMenuGetChoice();
-  displaySlots();
+  playSlots();
   displayCredits();
   displayGameOver();
-}
 ```
 
-### Stringing it together
+**OUTPUT problemBeingSolved (INPUT, INPUT...)**
 
-The relationships between the jobs are very important: what do they need, and what do they provide? 
+### **Step four: Code!**
 
-It's the job of `main()` to give out, receive back and pass along data to the next level of functions. What input do these medium jobs need, and what do they produce?
+Try writing the **skeleton** of your game: a **game loop with only very top level functionality**, you can fake the rest.
 
----
+I'll literally cut and paste my psuedocode in as comments, then on the lines below them write real code. Now it's just translation.
 
-## Bullet points, Pseudocode, Code.
+{{< alert title="WARNING: Compile as you go" color= "danger" >}}
+Never try to translate it all at once. Compile with just main. Compile with just some constants etc.
 
-It's all getting pretty theoretical sounding, and you're not sure your brain will survive if we move to code now. Good news:
-
-**My first step**, after reading the brief and maybe drawing things on a pad, is **writing a bullet list.** I **put in whatever I think the brief is asking** me for.
-
-{{< alert title="My Slots Game bullet list" color= "primary" >}}
-
-1. **MENU SCREEN** which **gets a choice**  
-  * Needs cash remaining (to display)  
-  * Returns choice  
-2. **SLOTS SCREEN**  
-  * Needs cash total  
-  * Returns cash remaining  
-3. **CREDITS SCREEN**  
-  * Needs nothing, returns nothing. `void` function.  
-4. **QUIT SCREEN** with **feedback** (my add on)    
-  * Needs their cash remaining (to comment on)  
+Compiling as you go means that when you have an error, it's related to something you just wrote, not the whole program.
 {{< /alert >}}
 
-**Step two:** Try writing it in pseudocode, of the top level, figuring out your top level functions and what they need.
+int main()
+{
+  //constant STARTING_CASH = 2000
+  //cashLeft = STARTING_CASH
 
-**Step three:** Try writing the game loop with some function skeletons in Visual studio.
+  //choice = 0
+  //begin loop
+    //choice = 
+    //  display Menu (needs cashLeft), get player choice and return it
 
-Big problem: Make **entire** slots game **app** (too monolithic)
+    //if choice is 1 
+      //cashLeft = 
+      //  play slots and return whatever cash (if any) is left 
+    //otherwise if choice is 3 
+      //show credits
+    //end if 
+  //loop again (while choice is not 2)
+  //display exitscreen
+}
 
+### Next level down
+
+Our screens so far are just abstractions. is to write out fuller descriptions of what they do.
+
+Youll find new abstractions, like we did with the in class exercise, and some of those will be worth writing a function for.
 
 You just keep going down levels, doing this till everything is done.
 

@@ -6,6 +6,9 @@ description: >
   How do we check if things collide? How can we use bunches of related objects easily? How do we add more screens to our game?
 ---
 
+## Last week's homework
+
+<!--
 ## Homework:
 
 To wrap around, or teleport to the other side of the garden:
@@ -16,8 +19,6 @@ To wrap around, or teleport to the other side of the garden:
 {{< imgcard edge_teleport_explained>}}
 Edge teleport: When Batty's somewhere bad, (B1) put her somewhere that isn't (B2).
 {{< /imgcard >}}
-
-
 
 ## More Screens
 
@@ -382,4 +383,4 @@ We have no way of dying right now, but we want that screen sorted, so we have **
 ### Game Modes
 
 To get more than a pass/credit, you want to have extra features and options in the game. See my ideas in _game over_, the ideas in the pdf brief, also just think of fun ideas.
-  
+-->

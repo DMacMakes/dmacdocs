@@ -26,6 +26,7 @@ The brief says the Snake game is a base. It rewards building new things, added s
     * Hazards like poison blocks or speed-up blocks?
     * Your previous best score
 
+<!--
 ## Downloads
 
 Download these to follow along: executable examples of batty/snake in action, and solutions you'll use as exercise bases.
@@ -228,7 +229,8 @@ Step by step.
 1. When you eat a fruit, create a Creature called newTail
 2. You want to put it at the end, so start with the `x` and `y` coordinates of the oldest `Creature` at the end of `snakeHistory`
 3. Add it onto the back of `snakeHistory`.
-  
+
+-->  
 ### Vector functions we use:
     * vector::insert(), vector::erase().
     * vector::front(), vector::back()
