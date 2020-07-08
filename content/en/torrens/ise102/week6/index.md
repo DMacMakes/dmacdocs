@@ -226,18 +226,20 @@ That means we can easily use functions to define new abstractions.
 
 **OUTPUT problemBeingSolved (INPUT, INPUT...)**
 
-### **Step four: Code!**
+## **Step four: Code!**
 
 Try writing the **skeleton** of your game: a **game loop with only very top level functionality**, you can fake the rest.
 
 I'll literally cut and paste my psuedocode in as comments, then on the lines below them write real code. Now it's just translation.
 
-{{< alert title="WARNING: Compile as you go" color= "danger" >}}
+{{< alert title="Safety First: Compile as you go" color= "danger" >}}
 Never try to translate it all at once. Compile with just main. Compile with just some constants etc.
 
 Compiling as you go means that when you have an error, it's related to something you just wrote, not the whole program.
 {{< /alert >}}
 
+Pasted pseudocode: 
+```cpp
 int main()
 {
   //constant STARTING_CASH = 2000
@@ -257,12 +259,26 @@ int main()
   //loop again (while choice is not 2)
   //display exitscreen
 }
+```
+### First pass
 
-## Psuedocode to C++
+{{< imgproc slots_making_code_1 Resize "800x" Link "slots_making_code_1.png">}}
+Super basic functionality: A menu, fake input (2), a loop that exits.
+{{< /imgproc >}}
 
-Or logic looks pretty solid. I'll translate it to C++ and compile as I go to test my assumptions.
+{{< imgcard slots_making_output_1>}}
+Even at this early stage, communication and spacing is important. 
+{{< /imgcard >}}
 
+### Second pass
 
+{{< imgproc slots_making_code_2 Resize "800x" Link "slots_making_code_2.png" >}}
+Real input. The ability to reach all the screens in our flowchart and then exit.
+{{< /imgproc >}}
+
+{{< imgcard slots_making_output_2>}}
+Communicate! This differentiates games from business apps. We engage and entertain.
+{{< /imgcard >}}
 
 ## Go for readability
 
