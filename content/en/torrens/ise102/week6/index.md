@@ -280,10 +280,10 @@ Real input. The ability to reach all the screens in our flowchart and then exit.
 Communicate! This differentiates games from business apps. We engage and entertain.
 {{< /imgcard >}}
 
-## Go for readability
+<!-- ## Go for readability
 
 With other functions on hand, and well planned roles for each, `main()` becomes **a short, readable overview of your program**. You'll aim to have your functions short and readable too.
-
+-->
 ## Homework
 
 You have **two tasks:** to complete the code below and then plan two functions (including pseudocode).
