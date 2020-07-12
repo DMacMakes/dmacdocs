@@ -8,11 +8,23 @@ description: >
 
 ## Week 6 Homework Review
 
+Screens
 
-## New tricks: pausing, clearing the screen.
+## Clarity: Refreshing the console
+
+How do we clear the console between screens instead of scrolling down?
+
+* `system("cls");` clears the console. It calls `cls`, a command in the windows console.
+
+
+
+How do we keep it from wiping everything off the screen before we've read what's there? We need a way to wait.
+* Time: Waiting for x seconds might work, but what about slow readers? Or fast readers.
+* Input: RPGs have lots of text to read, and you mash a button to move on.
+
 
 * `_getch` waits for any keypress. Requires `#include <conio.h>`.
-* `system("cls");` clears the console. It calls `cls`, a command in the windows console.
+
 * A `do.. while()` loop in the flesh.
 
 ## Debugging: What's WRONG With This Code?
@@ -132,6 +144,7 @@ Imagine you're the end user of a product. You can't change the code in any way. 
 
 In some cases, if you test enough inputs and notice a pattern in the outputs, you might just figure out what's happening.
 
+<!--
 ### Adding Debug Output
 
 Relying on the program's existing outputs is quite limiting, and we have to infer what's happening. We have a degree of freedom the user doesn't have.. we can make the computer output what it knows at any point. 
@@ -140,8 +153,9 @@ Relying on the program's existing outputs is quite limiting, and we have to infe
 Encourage your program to tell you things.
 {{< /imgproc >}}
 
-This is called `debug output`, and like a gun in Samuel L Jackson's hand, it makes the program more _verbose_.
-<!--
+This is called `debug output`, and like a 1g1un in Samuel L Jackson's hand, it makes the program more _verbose_.
+
+
 #### Example
 
 Say we were calling `spinWheels()` in our slot machine to 1. generate 3 numbers and 2. check for a win. If the winnings were wrong for a given bet we might need to see variable values at certain times. We can do that with lots of cout statements. The word "DEBUG:" is just for readability.
