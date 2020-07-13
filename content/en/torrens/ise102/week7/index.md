@@ -1,5 +1,5 @@
 ---
-title: "7: Debugging, Slots, Conventions"
+title: "7: Debugging, Slots"
 linkTitle: "W.7 Debugging"
 weight: 70
 description: >
@@ -8,18 +8,41 @@ description: >
 
 ## Week 6 Homework Review
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week6/#homework" target="_blank">Week 6 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+1. Move code to functions
+2. Pseudocode two other functions
+   - Display credits screen
+   - Display menu get choice
 * How did I do week 6's homework?
 * Why did I do it that way?
 
-Demo.
+## Exercise 1
 
-## Exercise 1: Enter the code
+Work along with me as I write out my solution to the homework:
+* If you didn't finish it
+* If you did it but have fixes
 
-If you typed along with me or got your code to where we're basically at the same point, have a break.
+I will start from blanked out code you had to type out to get started. If you haven't typed that, start doing it and keeping up as best you can. You'll have a little time to catch it up before exercise 2.
 
-If you didn't follow along with me or didn't keep up, type in the code below/add fixes to your homework and then we'll move on to clearing the screen.
+## Simultaneous activities:
 
-## Exercise: Refreshing the console
+While people are catching up on that code, I'll go over the trickier pickles in week 4's exam with those who are up to date.
+
+{{< alert title="Code catch up" color= "secondary" >}}
+If you didn't follow along with me or still have some to finish, type in the code below/add fixes to your homework. 
+
+If your code is similar enough to mine as makes no difference (just different variable names maybe?), skip this step. 
+
+**HOMEWORK CODE**
+
+{{< /alert >}}
+
+{{< alert title="Exam chat" color= "primary" >}}
+Common exam one problems.
+{{< /alert >}}
+
+## Exercise 2: Refreshing the console
 
 Our game is scrolling off down the screen like a chatroom. It's not a natural fit for our game, with its distinct screens.
 
@@ -34,30 +57,217 @@ Here's what happens if you type <i>cls &#8629;</i>  in a regular windows command
 
 ### Add screen clear to Slots
 
-> Adding `system("cls")` between screens.
+Adding `system("cls")` between screens.
 
 `main()`, the boss, controls what's showing next on screen by calling functions. 
 - functions don't know what happens before or after they're done. They just output stuff and pause.
 - This makes it `main()`'s job to trigger the clear.
 
-demo: adding clear.
+**Demo** adding clear.
+
 
 ### A bug appears
 
 > Our game returns to the main menu at random points? Why?
 
-It was always going back to main after drawing screens, but it wasn't wiping everything else away when it did.
+We have theories, and some of you know this answer right away. That might come from a bit of coding experience, or reading ahead, or just seeing the problem.
 
-We need to **wait before clearing the screen**.
-We could wait for:
-* Time: Waiting for x seconds might work, but what about slow readers? Or fast readers.
-* Player Input: RPGs have lots of text to read, and you mash a button to move on. That's a better fit.
+**We can't always rely on intuiting the problem.** We need a way to see what's happening, to slow things down or stop them, to see inside our program as it runs on our cpu.
 
-{{< alert title="Wait for character: getch" color= "primary" >}}
-`_getch` waits for any keypress. Requires `#include <conio.h>`.
+## Introducing the _Debugger_
+
+The debugger is a few things: 
+
+It's a **special interface mode** of Visual Studio that
+* Lets you stop and start program exection
+* Shows you the contents of variables without having to use `cout`
+
+{{< imgcard debugger_outcomes Link "debugger_outcomes.png">}}
+No cout required: the <i>debugger</i> halting and looking inside the program in real time
+{{< /imgcard >}}
+
+In the background it's also a program that is running and seeing into our program's memory, like Neo in the Matrix.
+   * It has special permission to **access and change** your program's data and instructions **in memory**
+   * It relies partly on code that visual studio compiles into your program
+
+{{< imgproc see_code_agents Resize "700x">}}
+Hello, Mr Smith.
+{{< /imgproc >}}
+
+### Breakpoints
+
+The first way we'll use it by **setting breakpoints**: points at which to take a break.
+  * Set a breakpoint in the credits screen function, just before it returns.
+  * Set a breakpoint in the play slots screen too.
+
+{{< imgcard debug_breakpoint_controls >}}
+Execution controls and the breakpoint marker
+{{< /imgcard >}}
+
+{{< alert title="The takeaway" color= "primary" >}}
+our program didn't start randomly going back to the menu screen. It was always displaying main after drawing screens, it just hadn't been wiping everything else away when it did. 
 {{< /alert >}}
 
-<!--
+## Making the computer wait
+
+We need to **wait for people to read before clearing the screen**. We could wait for:
+
+{{< alert title="Time" color= "secondary" >}}
+
+Waiting for x seconds might work.
+  * When a screen is done, we tell the program to wait or sleep for the right amount of time.. but do we know it?
+  * what about slow readers? 
+  * Or fast readers?
+{{< /alert >}}
+
+{{< alert title="Input" color= "primary" >}}
+Let the user decide.
+  * RPGs have lots of text to read, and they let you tap a button to move on. That's a better fit.
+  * How do we ask the computer to wait for a single key to be pressed?
+  * Where do we put the code?
+{{< /alert >}}
+
+### Wait for key press: _getch()
+`_getch` is a function available in `<conio.h>` that pauses the program until a key is pressed. It stands for _get character_ and returns a code for the key/character.
+
+If your program only needs to wait for any key press there's no need to save the return value. The waiting is useful in itself.
+
+### Who's in charge of pausing? 
+
+There are a few places `_getch()` could go now and get us the right result.. for the moment.
+
+If you don't think about which functions should do the job, you can come unstuck later.
+
+**Does main need to know** which screens need key press pausing and which don't? 
+  * What if some already have a natural pause at the end?
+  * What if some _do_ work better with timer, like maybe the exit screen?
+**Do the functions know** when they've displayed something that needs to be seen before returning to main?
+  * Yes, they do.
+
+Let's put them at the end of the functions, where our breakpoints went.
+
+
+## Squashing other bugs
+
+There are enough variations on mistakes that the bugs we can create are effectively infinite.
+Infinity is too many items to check, we need a smaller list. We need to use the power of **ABSTRACTION!**
+
+### Categorising bugs
+
+We need some categories (a form of abstraction) that almost all our bugs will fit in. Here are 3 
+
+Design bugs:
+Your way of solving the problem has logic issues.
+* The math doesn't actually solve the problem 
+  * eg: your formula for cylinder surface area actually gives cone surface area
+* Your test isn't testing what you think it's testing:
+  * Your logic is testing a smaller or larger range than you realise
+  * The order in which you test things misses certain cases
+
+#### Implementation bugs:
+
+A) Random mistakes (attention, coordination, lack of sleep)
+* Typing errors
+* Inconsistent upper/lower case
+
+B) Translation fail
+* Your design was solid. Your code doesn't actually do what the design does.
+* Overlaps a lot with C)
+
+C) C++ inexperience/knowledge shortfalls:
+* Your structure doesn't send 
+* We think an operator/keyword/function does one thing, in truth it does another.
+
+#### 'External' bugs:
+Things that either A) we didn't do, or B) that we did but not in the code or design.
+A) things:
+* Placing things in the wrong directory
+* Not informing Visual Studio that we put something in a  directory
+B) things:
+* Bugs in Visual Studio
+* Bugs in libraries we're using
+
+## Looking for bugs
+
+<!-- Looking for bugs follows the scientific process.
+1. Observe a problem.
+2. Theorise about the cause and solution.
+3. Devise a test that, if you are right, produces result x.
+   * A different input that proves the nature of the error?
+   * Some new code that should fix it?
+4. If x isn't produced, go back to 2.
+5. If x is produced, check your code and see if 
+-->
+### Look at the output symptoms
+This helps best when you have a rough idea of the problem and you're not too far wrong.
+
+1) What is the output?
+2) What output did you expect in this case?
+3) What other outputs to you expect in other cases? Plan them and test them.
+4) Add more outputs with `cout <<` or other methods. Called **debug outputs**.
+
+### Step through with debugger
+Watch it happen, find the unexpected. 
+* This is great for problems you've completely misunderstood from the symptoms. 
+* You'll often misunderstand the bugs from design errors and inexperience/knowledge shortfall 
+
+1) You still have to have expectations at each point of the program as you watch it run.
+2) When it does something totally unexpected, you have a new possible culprit!
+3) Form a new theory about the bug and test it.
+
+## Fleshing out pseudocoded functions
+
+Display menu loop.
+
+Pseudocode more detailed PlaySlots.
+
+## Summary
+
+This week we:
+* Learned to create screen-based program flow with `system("cls")` and `_getch()`;
+* Learned about the debugger
+
+## Homework
+
+Incoming. 
+
+<!--  
+
+old more slots 
+
+## More Slots
+
+{{< imgcard slots_3_output Link "slots_3_output.png">}}
+Slots 3 with real bets and fake spin. Click to expand.
+{{< /imgcard >}}
+
+{{< imgcard slots_3_output_2 Link "slots_3_output_2.png">}}
+Slots 3 after key press to return. Click to expand.
+{{< /imgcard >}}
+
+The game now:
+1. Has `spinwWheels()` function that (claims to) generate numbers and returns an `outcome`.
+1. Takes real bets and checking they're valid.
+1. Uses the player's `bet`
+1. Uses `outcome` and `bet` to calculate `winnings` (in `playSlots` function)
+1. Has an `enum` containing multipliers for each win type.
+1. Waits for keypress after a game, then clears screen and returns to menu.
+
+### Simple View: See The Pieces First
+
+{{< imgcard slots_skeleton_3b_collapsed Link "slots_skeleton_3b_collapsed.png">}}
+Reading these function signatures and the comment above each should tell you enough to understand what's going on.
+{{< /imgcard >}}
+
+### The Functions
+
+{{< imgcard slots_skeleton_3b Link "slots_skeleton_3b.png">}}
+Each function alone reads like a pretty simple program. Manageable chunks that you can write!
+{{< /imgcard >}}
+
+-->  
+
+<!-- 
 ## Debugging: What's WRONG With This Code?
 
 {{< imgcard see_code_agents>}}
@@ -174,8 +384,7 @@ Imagine you're the end user of a product. You can't change the code in any way. 
 2: Observing the output. 
 
 In some cases, if you test enough inputs and notice a pattern in the outputs, you might just figure out what's happening.
--->
-<!--
+
 ### Adding Debug Output
 
 Relying on the program's existing outputs is quite limiting, and we have to infer what's happening. We have a degree of freedom the user doesn't have.. we can make the computer output what it knows at any point. 
@@ -255,46 +464,8 @@ It's a few things:
 * Step through simple program.
 * Watch locals changed
 * Watch an if statement
-
-
-## More Slots
-
-{{< imgcard slots_3_output Link "slots_3_output.png">}}
-Slots 3 with real bets and fake spin. Click to expand.
-{{< /imgcard >}}
-
-{{< imgcard slots_3_output_2 Link "slots_3_output_2.png">}}
-Slots 3 after key press to return. Click to expand.
-{{< /imgcard >}}
-
-The game now:
-1. Has `spinwWheels()` function that (claims to) generate numbers and returns an `outcome`.
-1. Takes real bets and checking they're valid.
-1. Uses the player's `bet`
-1. Uses `outcome` and `bet` to calculate `winnings` (in `playSlots` function)
-1. Has an `enum` containing multipliers for each win type.
-1. Waits for keypress after a game, then clears screen and returns to menu.
-
-### Simple View: See The Pieces First
-
-{{< imgcard slots_skeleton_3b_collapsed Link "slots_skeleton_3b_collapsed.png">}}
-Reading these function signatures and the comment above each should tell you enough to understand what's going on.
-{{< /imgcard >}}
-
-### The Functions
-
-{{< imgcard slots_skeleton_3b Link "slots_skeleton_3b.png">}}
-Each function alone reads like a pretty simple program. Manageable chunks that you can write!
-{{< /imgcard >}}
-
-
-### New Tricks
-
-* `_getch` waits for any keypress. Requires `#include <conio.h>`.
-* `system("cls");` clears the console. It calls `cls`, a command in the windows console.
-* A `do.. while()` loop in the flesh.
-
 -->
+
 
 ## Coding Conventions
 
@@ -302,7 +473,3 @@ Agreeing on a style of code formatting and capitalisation.
 
 In my old week 6 notes:
 [https://dmcgits.github.io/mds/ISE102/week6_notes.html](https://dmcgits.github.io/mds/ISE102/week6_notes.html)
-
-
-
-
