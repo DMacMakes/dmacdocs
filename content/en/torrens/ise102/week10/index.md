@@ -119,7 +119,9 @@ Danny's seat height was adjusted to 42cm above ground.
 ## Assessment 3: Snake
 
 Discuss brief, plan.
+
 <!--
+
 ## Moving
 
 ### Up Down Left Right
