@@ -25,6 +25,10 @@ Work along with me as I write out my solution to the homework:
 
 I will start from blanked out code you had to type out to get started. If you haven't typed that, start doing it and keeping up as best you can. You'll have a little time to catch it up before exercise 2.
 
+{{< imgproc code_w7_slotso_base Resize "400x" Link "code_w7_slotso_base.png" >}}
+Middle click to view in new tab
+{{< /imgproc >}}
+
 ## Simultaneous activities:
 
 While people are catching up on that code, I'll go over the trickier pickles in week 4's exam with those who are up to date.
