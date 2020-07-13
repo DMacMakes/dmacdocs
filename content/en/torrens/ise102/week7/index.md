@@ -8,25 +8,56 @@ description: >
 
 ## Week 6 Homework Review
 
-Screens
+* How did I do week 6's homework?
+* Why did I do it that way?
 
-## Clarity: Refreshing the console
+Demo.
 
-How do we clear the console between screens instead of scrolling down?
+## Exercise 1: Enter the code
 
-* `system("cls");` clears the console. It calls `cls`, a command in the windows console.
+If you typed along with me or got your code to where we're basically at the same point, have a break.
 
+If you didn't follow along with me or didn't keep up, type in the code below/add fixes to your homework and then we'll move on to clearing the screen.
 
+## Exercise: Refreshing the console
 
-How do we keep it from wiping everything off the screen before we've read what's there? We need a way to wait.
+Our game is scrolling off down the screen like a chatroom. It's not a natural fit for our game, with its distinct screens.
+
+{{< alert title="cls: Clear Screen" color= "secondary" >}}
+`system("cls");` wipes the console clear and puts the cursor top left. 
+
+Basically we're using the `system()` function to run a command (`"cls"`) in the console by passing it as an argument.
+
+![cls in the console](cls_console.png)
+Here's what happens if you type <i>cls &#8629;</i>  in a regular windows command prompt. Don't worry, in c++ we won't see the `c:\Users\username` prompt.
+{{< /alert >}}
+
+### Add screen clear to Slots
+
+> Adding `system("cls")` between screens.
+
+`main()`, the boss, controls what's showing next on screen by calling functions. 
+- functions don't know what happens before or after they're done. They just output stuff and pause.
+- This makes it `main()`'s job to trigger the clear.
+
+demo: adding clear.
+
+### A bug appears
+
+> Our game returns to the main menu at random points? Why?
+
+It was always going back to main after drawing screens, but it wasn't wiping everything else away when it did.
+
+We need to **wait before clearing the screen**.
+We could wait for:
 * Time: Waiting for x seconds might work, but what about slow readers? Or fast readers.
-* Input: RPGs have lots of text to read, and you mash a button to move on.
+* Player Input: RPGs have lots of text to read, and you mash a button to move on. That's a better fit.
 
+{{< alert title="Wait for character: getch" color= "primary" >}}
+`_getch` waits for any keypress. Requires `#include <conio.h>`.
+{{< /alert >}}
 
-* `_getch` waits for any keypress. Requires `#include <conio.h>`.
-
-* A `do.. while()` loop in the flesh.
-
+<!--
 ## Debugging: What's WRONG With This Code?
 
 {{< imgcard see_code_agents>}}
@@ -143,7 +174,7 @@ Imagine you're the end user of a product. You can't change the code in any way. 
 2: Observing the output. 
 
 In some cases, if you test enough inputs and notice a pattern in the outputs, you might just figure out what's happening.
-
+-->
 <!--
 ### Adding Debug Output
 
