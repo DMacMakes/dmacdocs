@@ -12,9 +12,6 @@ resources:
 
 ## Last Week's Homework
 
-
-
-
 Madballs: 2 hours of try-harding.
 
 Q&A
@@ -203,18 +200,38 @@ Approaches:
 Follygon: traditional clay, very steoke intensice
 Brice: digital realm specific: block out low and clean, minimal final sculpting
 -->
-## At Home:
+## Homework:
 
-Required, this will be part of assignment marking. 
+1. You will **spend about 2-3hrs** modelling a head from one of concepts supplied below, starting from a supplied a base mesh.  
+2. **Post screenshots** of your head (with polyframe on _and_ off) to the discussion thread **before the start of (week7) class**.  
 
-### To Do
-Using simple Character designs i’ll provide.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866558_1&message_id=_2100665_1" target="_blank">Week 6 Homework Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-Block out, merge, continue. 
-* watch folygon video send me questions.
-* I can make a video covering q&A
-* Model something at home from a base mesh: give them a head base mesh.
-	1: use move tool and other brushes along with auto masking to create character block out
+This will be marked as **part of assessment 2.**
+
+### Details
+
+Using the Model one of the faces below.
+
+1. Pick a 2D character concept from the selection below (except blue octopus guy)
+2. Start a new project by going to _Lightbox->Project_ and opening _**1mCube.zpr**_
+3. In _Lightbox->Tool->BaseMeshes_ double click _**Brice_Head.ztl**_ 
+4. Using techniques of masking, gizo transforms and brushwork taught in class and seen in the _Tao Pai Pai_ youtube video, model the character.
+5. Screenshot images of your head with polyframe on and off. Make sure it's zoomed in, avoiding small and pixelated images. 
+   
+{{< alert title="What to focus on" color= "secondary" >}}
+Aim to reproduce the proportions of the character, creating a likeness, and capturing the stylised shapes and flow of the concepts.
+
+**Stay in the lowest subdivision** as long as possible. Try not to subdivide any mesh more than once.
+{{< /alert >}}
+
+{{< imgproc pipehead_polys_low Resize "600x" Link "pipehead_polys_low.png" >}}
+Here I'm attempting to get as far as I can (on a different concept) towards final before adding more subdivisions. <I>Click for high res.</I>
+{{< /imgproc >}}
+
+### Concepts
+
+Don't pick blue octopus guy, he requires too many extra models or too much subdividing of the unsuitable jaw mesh.
 
 {{< imgproc "patri-balanovsky-alien-faces-5" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
 faces-5
