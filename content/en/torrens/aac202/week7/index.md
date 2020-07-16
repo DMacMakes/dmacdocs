@@ -10,11 +10,22 @@ resources:
     byline: "Art: Patri Balanovsky (Artstation)"
 ---
 
+## Learning Today
+
+1. Easier ways to do the tricky things in the homework!
+2. Persistent masking to polygroups - it's the best.
+3. Working easily with multiple meshes in a single subtool
+4. Merging separate meshes with Easymesh/Dynamesh, and cleaning up the seams
+   
 ## Discussing Week 6 Sculpt
 
 What was good? What was tricky?
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../week6/#homework" target="_blank">Week 6 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+## Assessment 1
+
+Marking status.
 
 ## Refining The Sculpt
 
