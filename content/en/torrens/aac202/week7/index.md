@@ -14,15 +14,13 @@ resources:
 
 What was good? What was tricky?
 
-## New ZBrush Resource Pack
-
-Download my updated [ZBrush Resources and ui zip](Zbr_wk3_resources.zip)
-
-{{< imgcard Zbr_wk3_ui_brice_base Link "Zbr_wk3_ui_brice_base.jpg" >}}
-The new UI and brushes/materials/plugin
-{{< /imgcard >}}
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week6/#homework" target="_blank">Week 6 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Refining The Sculpt
+
+{{< imgproc refining_pipehead_2 Resize "800x" Link "refining_pipehead_2.png" >}}
+Another sculpt based on the Brice basemesh. Some geometry added, polygroups used for repeat masking.
+{{< /imgproc >}}
 
 We're still using a small subset of ZBrush's features, and some areas remain difficult to work with.
 
@@ -31,7 +29,14 @@ We're still using a small subset of ZBrush's features, and some areas remain dif
 
 ### Demo Project
 
-Grab [Week8_hand.zip](Week8_hand.zip)
+Download this hand project:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="Week7_hand.zip" target="_blank">Hand Basemesh Project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+
+{{< imgcard 1_hand_subtools Link "Week7_hand.zip">}}
+Hand basemesh (one subtool, multiple polygroups). <i>Click to download</I>
+{{< /imgcard >}}
 
 ### Masking: Revision
 
@@ -49,6 +54,10 @@ The masking The shortcuts below will be your main way of creating and editing ma
 
 There's also a helpful _Masking_ subpalette in the _Tools_ palette, which is on the right side of ZBrush by default.
 
+{{< imgproc mask_pipehead Resize "500x">}}
+Masking the upper face to move lower lip.
+{{< /imgproc >}}
+
 ## Colour
 
 Perfectly visualising the final product before it's painted is hard even for a seasoned sculptor.  Applying colour early can:
@@ -64,6 +73,10 @@ Good materials for polypainting
 Hiding/showing the paint job
 Eyelids: creasing to keep the eyelid forms. 
   - Crease by angle (crease level 3)
+
+{{< imgproc polypaint_pipehead Resize "800x" Link "polypaint_pipehead.png">}}
+UI things to look for when polypainting.
+{{< /imgproc >}}
 
 ### Exercise: Colour Character Head
 
@@ -174,6 +187,18 @@ Captured frame where he looks at the new topology. Teeny tiny quads with no appa
 
 The new topology **has no flow**, but makes up for it with **quite high density** to match the smallforms and folds.
 
+### Easier dynamesh with _Ryan's Tools_
+
+{{< imgproc easymesh_hand_1 Resize "1080x" Link "easymesh_hand_1.png" >}}
+Click for high res and check out the mesh changes.
+{{< /imgproc >}}
+
+| Command           | Shortcut                              |
+|-----------        |------------                           |
+| Easymesh to level 5   | Click the _EasyMesh_ below the main canvas on my custom UI  |
+| Easymesh to another level  | Undo the previous easymesh and drag the _Detail Level_ slider. 1 is coarse and 10 very fine |
+
+### Dynamesh directly
 | Command           | Shortcut                              |
 |-----------        |------------                           |
 | Enable Dynamesh   | Click the _Dynamesh_ button inthe _Tools->Geometry->Dynamesh_ subpalette. |
@@ -181,9 +206,3 @@ The new topology **has no flow**, but makes up for it with **quite high density*
 | Project           | Button in the _Dynamesh_ subpallette. |
 | Change resolution | Slider in _Dynamesh_ subpalette. |
 
-### Easier Dynamesh With Ryan's Tools
-
-| Command           | Shortcut                              |
-|-----------        |------------                           |
-| Enable Dynamesh   | Click the _Dynamesh_ button inthe _Tools->Geometry->Dynamesh_ subpalette. |
-| Re-Dynamesh       | Select a density (1-10) where 1 is coarse and 2 very fine |
