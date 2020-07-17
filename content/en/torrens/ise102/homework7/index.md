@@ -96,4 +96,31 @@ end DISPLAY_MENU_SCREEN
 ```
 {{< /alert >}}
 
-## Going to <i>C++</I>
+## Fill in the missing code
+
+Here's my fairly straight conversion from pseudocode to C++.
+
+To do this you'll need to **read the sections above**. Also notice the **new text** in `displayExitScreen` and `displayCreditScreen`. Heed it!
+
+{{< alert title="Option 1" color= "primary" >}}
+**Take your up to date base code** from the week 7 class and, using the code below:
+
+1. **Add** the `enum MenuChoices`
+2. Modify your **displayMenuGetChoice** to the new `displayMenuScreen` function below. 
+3. Add the "DO NOT HAND THIS IN UNCHANGED" text to your credits and exit screen if you haven't customised them.
+3. **Fill in the missing code**. 
+ 
+<i>Note: Underlines in the gaps wil be white or green, it's a syntax hilighting quirk</i>
+{{< /alert >}}
+
+{{< alert title="Option 2" color= "secondary" >}}
+1. Create a new project 
+2. Enter the following code including comments
+3. **Fill in the missing code**. 
+
+<i>Note: Underlines in the gaps wil be white or green, it's a syntax hilighting quirk</i>
+{{< /alert >}}
+
+{{< imgproc code_hw7_finish_menu Resize "900x" Link "code_hw7_finish_menu.png" >}}
+<i>Click/middle click image for full size</i>
+{{< /imgproc >}}
