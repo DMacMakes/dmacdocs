@@ -233,10 +233,11 @@ This week we:
 
 ## Homework
 
-Incoming. 
+Type out and complete the code:  
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../homework7/" target="_blank">Week 7 Homework Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!--  
-
 old more slots 
 
 ## More Slots
@@ -468,7 +469,6 @@ It's a few things:
 * Step through simple program.
 * Watch locals changed
 * Watch an if statement
--->
 
 
 ## Coding Conventions
@@ -477,3 +477,4 @@ Agreeing on a style of code formatting and capitalisation.
 
 In my old week 6 notes:
 [https://dmcgits.github.io/mds/ISE102/week6_notes.html](https://dmcgits.github.io/mds/ISE102/week6_notes.html)
+-->

@@ -43,7 +43,7 @@ extensions = ["hardLineBreak"]
 # Image processing configuration.
 [imaging]
 resampleFilter = "CatmullRom"
-quality = 75
+quality = 85
 anchor = "smart"
 
 [services]
@@ -99,7 +99,7 @@ offlineSearch = false
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = true
+sidebar_menu_compact = false
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 #  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
@@ -157,4 +157,3 @@ enable = false
 #	url = "https://example.org/mail"
 #	icon = "fa fa-envelope"
  #       desc = "Discuss development issues around the project"
-
