@@ -18,12 +18,14 @@ resources:
 4. Project management using sticky-note style _**agile/kanban** board_.
 5. Adding colour with **_colorterm.h_**
 
+## Delivering Your Assessment
 
-## Delivering Your Assessment Files
+* Confirming the Blackboard-related **extension to July 29**. 
+* If anything is going to stop you delivering on time, reach out/request extension BEFORE the day it's due.
 
-Follow this link and the instructions there carefully!!
+Visit the link, follow the instructions there carefully!!
 
-[Ise102 Assessment 2 Delivery instructions on dmdocs](../assessments/#assessment-2-slot-machine)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Delivery (Zip) File Creation on dmdocs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Assessment 2 progress
 
