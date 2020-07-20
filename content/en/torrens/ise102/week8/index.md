@@ -230,7 +230,7 @@ I've implemented parts of the pseudocode here in a basic way along with dummy re
 The rest has the pseudocode as comments. It's not a big leap from here to the finished function!
 
 {{< imgproc code_playSlots_wpseudo Resize "700x" Link "code_playSlots_wpseudo.png" >}}
-<i>Click/Middle click for full size.
+<i>Click/Middle click for full size.</i>
 {{< /imgproc >}}
 
 ---
@@ -293,7 +293,9 @@ END checkForWin
 ```
 
 {{< /alert >}}
+
 <!--
+
 ```
 START PlaySlots (needs: players cash amount to start)
   
@@ -318,6 +320,7 @@ START PlaySlots (needs: players cash amount to start)
   return playerCash value 
 END PlayerSlots
 ```
+
 -->
 
 ## More about what to submit.
