@@ -223,6 +223,16 @@ hint: enums (look at MenuChoices)
 I remember to check the Trello cards too.
 {{< /imgcard >}}
 
+### playSlots in C++ with pseudocode
+
+I've implemented parts of the pseudocode here in a basic way along with dummy results (faking a win by Pair). 
+
+The rest has the pseudocode as comments. It's not a big leap from here to the finished function!
+
+{{< imgproc code_playSlots_wpseudo Resize "700x" Link "code_playSlots_wpseudo.png" >}}
+<i>Click/Middle click for full size.
+{{< /imgproc >}}
+
 ---
 
 ## Filling in getValidBet
