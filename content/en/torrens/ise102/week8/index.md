@@ -252,13 +252,21 @@ START getValidBet (playerCash)
   error = ""
 
   while we don't have a valid player bet (betIsValid == false)
-    Ask user for a bet between 0 and playersCash
-    if they have messed it up before, show them the error.
+    
+    If they stuffed up previous attempt, show that error
 
+    Ask user for a bet between 0 and playersCash 
     If bet is above zero and they can afford it:
       set betIsValid to true
-      show them appropriate error message
+    else
+      if (bet is zero)
+        set error to "You can't bet nothin"
+      else
+        set error to "You can't bet what you don't got."
+      end if
+    end if
   end while
+  
   return the bet
 END getValidBet
 ```
