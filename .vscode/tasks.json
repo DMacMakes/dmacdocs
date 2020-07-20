@@ -15,7 +15,7 @@
         "kind": "build",
         "isDefault": true,
       }
-    }
+    },
     {
       "label": "Hugo serve",
       "type": "shell",

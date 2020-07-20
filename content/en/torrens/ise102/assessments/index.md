@@ -45,15 +45,23 @@ We'll make a text based slot machine using the `ise102_console` template. A _pro
 
 ### Deliverable 
 
-You'll deliver a zip file containing your Visual Studio solution. Work through the steps shown in the video carefully: if your submission is bloated, missing important files or misnamed it will cost marks.
+You'll deliver a **zip file** containing your Visual Studio solution. Work through the steps shown in the video carefully: if you miss submission requirements it will cost you easy marks.
+
+{{< alert title="Correct zip name" color= "danger" >}}
+**Ignore** the naming in the video. Use this, which matches the brief pdf:
+
+**ISE102_Assessment1_Lastname_Firstname**
+{{< /alert >}}
 
 {{< youtube H44emolQCz4 >}}
 
-{{< alert title="Where Is My Project Folder?" color= "primary" >}}
+{{< alert title="Where Is My Project Folder?" color= "secondary" >}}
 With your project open in Visual studio:
-  * Tight click the project in the _solution explorer_
+  * Right click the project in the _solution explorer_
   * Click _Open folder in file explorer_. 
   * You'll see several files there, including your `main.cpp`.
+
+If you have **a subfolder** in there with the name of your project, message me or Matt! Do not move its contents or delete it.
 {{< /alert >}}
 
 ### What You Should Delete
@@ -63,8 +71,8 @@ In your solution/project folder (same thing for us) you can **delete all** of th
 * _.vs_ 
     * visual studio will probably have to be closed for this one
     * If you can't see it, turn on "hidden items" in Windows explorer's _view_ ribbon.
-* _debug_
-* _release_
+* _Debug_
+* _Release_
 * _x86_
 * _x64_
 
