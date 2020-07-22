@@ -22,7 +22,9 @@ We're going to **push our model over to Painter**, which is different to last tr
 * I'll be **updating the deliverables** in the next few days.
 * It'll be a combination of working files and screenshots. 
 
-## Make a 1_baldy_in_parts.zpr file
+## Baldy in parts
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.dropbox.com/s/zd70nryct1p600y/Baldy_zb_to_painter.zip?dl=0" target="_blank">Download The Baldy Project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 He’ll have skull, lids, eyes, nose, ears, jaw.
 * No teeth or pipes.
