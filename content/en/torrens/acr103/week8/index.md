@@ -15,6 +15,16 @@ What we're working toward is less like a shippable product and more the beginnin
 
 (Maaaybe, time allowing, how to add one or two textures to basic rectangles.)
 
+## A2 Submission
+
+**Reminder:** extended due date Wednesday July 29
+
+General outline:
+* Your unity project
+* Some screenshots
+
+Details posted after today's class. 
+
 ## Lit Unity project
 
 Grab the project below. It contains the default unity 3D+extras sample scene, which we'll explore, and a base scene you could use to import your level.
