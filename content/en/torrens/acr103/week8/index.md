@@ -8,6 +8,7 @@ resources:
 - src: "*krzysztof-maziarz*"
   params:
     byline: "Art: Krzysztof Maziarz (Artstation)"
+carousel1: [slide1.png, slide2.png, slide3.png]
 ---
 You've already done a solid job of modeling enviro assets.
 What we're working toward is less like a shippable product and more the beginning of iteration, it's look dev and prototyping. We would do many passes on this and use what we learn as we go.
@@ -30,14 +31,26 @@ We learned how to
 5. How to enable light baking on models, lights (static, generate lightmap uvs, baked) 
 6. A little about baked light settings and progressive light mapping.
 
+## Exporting
+
+1. Delete all history.
+2. Export selected as FBX.
+**SETTINGS DIALOGUE PIC HERE**
+3. Export it to the unity projects Assets/Hut folder
+4. Rename the Hut folder to whatever your scene contains (Dungeon, HabboPad..)
+
+## Into Unity
+1. In Unity project "Add", navigate to the folder
+2. Open the project
+2. 
+
 ## Lights
 
 Concepts: Baking light for unmoving objects. Setting static, setting light type to mixed baked. Extra uvs. A little tricky when people don't know what UVs are.
 
-* Basic light bake with default sky?
-* Turn down sky a bit?
-* Add point lights
-* emissive lights
+* Basic light bake with default sky
+* Contains example spotlight and directional light
+* Another option: emissive materials
 * Setting static, 
 
 ##

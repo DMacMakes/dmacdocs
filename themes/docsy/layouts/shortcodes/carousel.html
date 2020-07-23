@@ -1,0 +1,9 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    {{ range $.Params "carousel1" }}
+      <div class="carousel-item active">
+        <img class="d-block img-fluid" src="{{ .carouselimage }}" alt="alt text">
+      </div>
+    {{ end }}
+  </div>
+</div>
