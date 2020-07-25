@@ -103,26 +103,26 @@ Select one of the heads you _didn't_ already sculpt. Using what you've learned i
 ### Deliverables And Submission
 
 1. Your final **ZPR file**
-2. **Renders** (`shift+r`) of your character from multiple angles.
+2. **Renders** (`shift+r`) of your character from multiple angles, with polypaint on.
    * **Side, front, back** (with perspective enabled: press `p`)
-   * A **beauty render 3/4 angle** to show off the character 
+   * A **beauty render 3/4 angle** to show off the character. You can polish it a bit in photoshop.
    * Don't have the character tiny in the middle of the canvas. Move zbrush to your largest screen and have the character take up most of the canvas.
+3. Screenshots of your character in _Substance Painter_
+   * A few shots to show off the quality of the Bake
+   * A shot with wireframe enabled to show the decimated mesh.
 
-The **beauty render** should be rendered to passes and taken into Photoshop or a similar image editor and polished up. 
-
-* **How to render passes**: [week9 notes \> render passes](../week9/#render-passes)
-  * If you have Photoshop you can use the Zbrush To Photoshop CC plugin to select and export them
-  * Otherwise use the RenderPass buttons to export individual passes.
-* Some **polishing** possibilities:
+Some **polishing** possibilities:
   * Cropping to a nice composition
   * Warming/cooling shadows, maybe improving the contrast
   * Adding rim light  
   * Adding gloss/specular hilight/shine to some elements
   * painting in eyelashes and eyebrows that you didn't have geometry for
     
+
 {{< alert title="Submitting Your Files" color= "primary" >}}
-1. Put your beauty render, other screenshots and your final ZPR file in a folder.
-2. **Rename that folder** `firstnameLastname_zbrushCharacter_AAC202`, zip it and and submit it on the **Blackboard** Assessment 2 page.
+1. Put your beauty render, other ZB screenshots, Painter screenshots and your final ZPR file in a folder.
+2. **Rename that folder** `AAC202_A2_Lastname_Firstname`, zip it and, if it's not too big, submit it on the **Blackboard** Assessment 2 page.
+3. If that file is very large (>100MB) use the Torrens LFS to upload it. If you don't know how to use the LFS, upload it to cloud storage like drive/dropbox/onedrive and provide a link when you submit.
 {{< /alert >}}
 
 
