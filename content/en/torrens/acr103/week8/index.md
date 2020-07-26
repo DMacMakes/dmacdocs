@@ -23,6 +23,8 @@ General outline:
 * Your unity project
 * Some screenshots
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#final-week-8-submission" target="_blank">A2 Final Submission Details<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 Details posted after today's class. 
 
 ## Lit Unity project

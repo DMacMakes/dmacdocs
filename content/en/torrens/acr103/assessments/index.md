@@ -15,7 +15,9 @@ resources:
 
 ## Assessment 1: Low Poly Prop
 
-> READ THE DELIVERABLES CAREFULLY: Every trimester students lose easy marks by skimming the deliverable details. Use the right settings, note the number of images and types of files to submit!
+_Complete_
+
+<!--  > READ THE DELIVERABLES CAREFULLY: Every trimester students lose easy marks by skimming the deliverable details. Use the right settings, note the number of images and types of files to submit!
 
 Your task is to model a high quality, low-polygon-count model from one of the concepts provided below:
 
@@ -83,13 +85,17 @@ Isometric projection.
 Deliver PNG24 files or jpgs of at least 85% (8.5/10) compression quality.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../week4/">Back To Week 4 Notes<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
+</a> -->
 
 ## Assessment 2: Environment
 
 Create low poly, modular environment pieces. Assemble into a scene and drop into a game engine.
 
-### Week 5 submission details
+### Week 5 and 6 submissions
+
+_Complete_
+
+<!--  ### Week 5 submission details
 
 Deliverable 1:
 
@@ -103,15 +109,47 @@ Reply to [my thread in the subject forums](https://laureate-au.blackboard.com/we
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_91934_1&nav=discussion_board_entry&conf_id=_157930_1&forum_id=_851214_1">Week 5 Submission Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>  
 
-[Click here to return to the WEEK 5 NOTES.](../week5/#due-this-week)
+[Click here to return to the WEEK 5 NOTES.](../week5/#due-this-week) -->
 
-### Week 6 submission details
+<!-- ### Week 6 submission details
 
 1. Revised sketch of the pieces, incorporating the feedback for your pieces/modules.
 2.
 Maya file of your blocked out pieces with proper pivot points
+-->
 
+### Final (Week 8) submission
+
+Submit **a link to a zip file (on _LFS_)** containing all deliverables to the [Blackboard Assessment 2 submission page](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920016_1&course_id=_91934_1) by **11:55pm, Wednesday July 29**. The zip file must be uploaded to the Torrens _LFS_ (see below).
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920016_1&course_id=_91934_1" target="_blank">Assessment 2 Submission Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< alert title="Deliverable Zip File" color= "secondary" >}}
+Create a zip file named ACR103_A2_Lastname_Firstname.zip containing the following:  
+  
+1. **3-4 Screenshots** showing off your environment in _**Maya**_. Enable wireframe-on-shaded, ambient occlusion in the viewport. Grid should be visible. 
+2. **3-4 Screenshots** showing off your environment in _**Unity**_ with baked-in lighting.
+2. Your final **maya scene file**: just the .ma or .mb file. `hut_level_modular.045.ma`, for example. DELETE ALL HISTORY.   
+3. Your **Unity project**, based on the project supplied in Week 8, with these folders DELETED from the project folder (if they exist):  
+  - `Library`, `Temp`, `Obj`, `Build`, `User settings`, `Logs`, `Builds`.
+
+_All images: PNG24 or high quality JPG with enough resolution to make out important details. No thumbnails._
+{{< /alert >}}
+
+{{< alert title="Linking a zip file from _LFS_" color= "primary" >}}
+The **_Torrens Large File Submission_** cloud drive is where you upload your large assessment files. 
+
+1. Follow the **video instructions** on the front page (scroll down) to upload your file into the `Trimester2 / ACR103 folder`  
+2. generate the **_share_ link** you need for your Blackboard submission.  
+  
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://lfs.torrens.edu.au" target="_blank">Torrens LFS<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< /alert >}}
+
+[ Click to go back to Week 8 Notes](../week8/#a2-submission)
+
+_Note: Blackboard doesn't show upload progress, so uploading big files is problematic._
 
 ## Assessment 3: Character
 
-..
+_Coming soon™_
