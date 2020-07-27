@@ -49,9 +49,12 @@ We'll learn how to:
 2. Delete all history.
 3. Click the <i>File->Export selected [ ]</I> menu item on the square for options, select fbx as the export format.
 
-{{< imgcard maya_fbx_export_settings>}}
+{{< imgcard maya_fbx_export_settings >}}
 Settings for the <i>Maya</i> fbx export options dialogue
 {{< /imgcard >}}
+
+> Blockquote text
+> looks like this.
 
 3. Export it to the unity projects Assets/Hut folder
 4. Rename the Hut folder to whatever your scene contains (Dungeon, HabboPad..)
@@ -75,7 +78,7 @@ The fbx file you import has some important settings that control its size and wh
 
 Internally, Unity **unfolds your level** as though it were made of paper and arranges it in a square. Then it checks what light is hitting each part of your model, and **renders** it all to a square image, a texture it can apply later as an overlay to your materials. 
 
-{{< imgcard baked_light_map>}}
+{{< imgcard baked_light_map >}}
 Unity has broken up our mesh into rectangles it can lay out flat, then rendered the light that hits each
 {{< /imgcard >}}
 
@@ -89,9 +92,9 @@ As you can imagine, if any lights or objects were to move in your game, the ligh
 4. You're going to probably export the same model several times from Maya. When you do, any new additions will not be static. You'll need to unset and set the _static_ checkbox again each time to ensure all children receive baked light.
 
 
-{{< imgcard set_static>}}
+{{< imgcard set_static >}}
 Click the checkbox to set objects (including a whole group) to <i>static</i>. Confirm <i>change children</i>
-{{< /imgcard >}}set_static
+{{< /imgcard >}}
 
 ## Lights
 

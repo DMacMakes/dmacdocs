@@ -10,11 +10,24 @@ resources:
       byline: "Original images: https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/ac3-1/CRT_Monitors.html"
 ---
 
-## Slots Is Done
+## What are we learning today?
+
+* Making frame based games: drawing the screen _30, 60 times a second_ (or more).
+* Drawing the the terminal, like it was a bitmap, but using text symbols!
+
+### Slots
+
+* Officially, we're done. Of course, due Wednesday night.
+* Any major questions throw them in today, but everything should be covered by now.
+* Extension effect!
+
+
+<!--
 
 * Thanks for submissions
 * Check Blackboard. Some people submitted the wrong files and I've messaged you about resubmitting. Each day costs marks so act now.
 * I haven't looked at the code yet, just that the file structure looked right.
+-->
 
 ## Beyond Text Entry Mode
 
