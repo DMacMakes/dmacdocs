@@ -10,11 +10,9 @@ resources:
     byline: "Art: Krzysztof Maziarz (Artstation)"
 ---
 
-## Character Modelling Priorities
+## Assessments 1 and 2
 
-1. Matching the concept
-2. Working to a 3D style
-3. Using few polygons.
+A1 Marked. A2 delivered and received.
 
 ## Character modeling!
 
@@ -30,7 +28,6 @@ It includes:
 * Great subtlety: the brain dedicates a lot of neurons to recognising human faces and forms. Tiny differences stand out.
 
 ![](rabbit_wires.jpg)
-
 
 >**Anyone\* can learn**, it's just practise + study:
 >- Anyone who is super invested
@@ -63,6 +60,15 @@ Modeling and diffuse texturing a character.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920017_1&course_id=_91934_1" target="_blank">Assessment 3 On Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+
+{{< alert title="Character Modelling Priorities" color= "primary" >}}
+These are the top goals of the modelling stage:
+
+1. Matching the concept
+2. Working to a 3D style
+3. Using few polygons, with no geometry problems.
+
+{{< /alert >}}
 
 ### Deliveries by week
 
