@@ -73,7 +73,7 @@ We'll be posting in [the Assessment 3 forum
 
 #### Week 10 Wednesday
 
-Due **Weds 20/11**, the day _before_ class day. Update discussion post with:
+Due **Weds Aug 5th**, the day _before_ class day. Update discussion post with:
 * A screenshot of pureRef displaying your :
   - 2D Concept image
   - 3D modeling/texturing style reference
@@ -82,7 +82,7 @@ Due **Weds 20/11**, the day _before_ class day. Update discussion post with:
 
 ### Week 11 Wednesday
 
-Due **Weds 27/11**, the day _before_ class day. Update discussion post with:
+Due **Weds Aug 12th**, the day _before_ class day. Update discussion post with:
 * Links to two other students' threads where you've commented on their model topology from week one
 * Two Maya screenshot of your UV unwrapped character
   * In Maya's UVS workspace: perspective panel, uv editor.
