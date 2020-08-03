@@ -6,11 +6,48 @@ description: >
   Objects and how to change their properties. Using an object as a moving game character.
 ---
 
-## Frame Based Loop
+1. Looping through frames
+2. How textpixels does it
+3. Listening for input - the game loop
 
-Last week we were putting our updates in draw. It was running at 60 fps, but we didn't look at how.
+## Frame based games
 
-It wasn't obvious from our squares on screen, but you could see the fps changing in the bottom corner.
+IMAGE: Gif of frames flip book
+
+Games we play have frames, like an animated movie. This happens maybe 60 times per second.This repeats for the lifetime of the game, so we're going to need.. **a loop*
+
+Here's the loop unrolled a little:
+
+* A character moves a teeny tiny bit, the camera moves a bit, maybe a nearby sheep begins falling from a block
+* _Draw to the screen: the world, as the camera sees it, including the character and sheep_
+* Character moves another bit, the camera as well, sheep continues falling from a block
+* _Draw to the screen: the slightly changed situation_
+**2/60ths of a second have now passed**
+etc.
+
+### Drawing frames
+
+Last week we learned to draw to the screen. What wasn't obvious, because our drawings didn't move, was that **we were doing it 60 times per second.**
+
+{{< alert title="textpixels draws our frames" color= "primary" >}}
+
+`textpixels` handles the drawing for us by:
+
+1. Letting us draw to a canvas or _buffer_ using functions like ```fillRect```, ```drawPixel``` and ```drawString```.
+2. Taking that canvas when we're done making rectangles etc and drawing it to the console. It's faster that way and prevents flickering
+3. Going to sleep for a bit, to keep the frame rate locked at 60 (it can go a lot faster) 
+4. Looping back to 1
+
+{{< /alert >}}
+
+In the week 9 project you did all your drawing (step 1 above) in a ```draw``` function. I hid the looping bit from you by leaving it in ```main```.
+
+In our first exercise you'll 
+
+### Getting the player involved
+
+Unless you're making a falling sheep simulator, you probably need to check if the player is pressing buttons or directions on a gamepad, or keys on a keyboard.
+
 
 A new game loop:
 
@@ -168,6 +205,19 @@ Danny's seat height was adjusted to 42cm above ground.
 
 Discuss brief, plan.
 
+
+## Homework
+
+When batty reaches the right border of the screen, she needs to teleport to the left border. Another way to word it: when she collides with the the right border she wraps around to the left side of the play area.
+
+1. Take a grid and, assuming she's moving right on row 10, draw the place she will be when she needs to teleport (hint: it's an illegal position, on a border)
+2. Draw the place she needs to appear (a legal one)
+3. Write down those x coordinates.
+4. Now, on **the line below** the one in which we apply yDir to her y:
+   * Check if her x location is on the disappear point.
+   * If true, change her x to the location she needs to appear.
+5. Apply the same process to going left, going up and going down.
+
 <!--
 
 ## Moving
@@ -288,14 +338,3 @@ If you don't understand _Integer Division_ and _remainders_, it's officially on 
 Put an `if` around the code in `playBattyGame` that applies batty's `xDir` and `yDir` to her position. Try moving her every 10 frames, every 2 frames.. find a value that feels good.
 
 -->
-## Homework
-
-When batty reaches the right border of the screen, she needs to teleport to the left border. Another way to word it: when she collides with the the right border she wraps around to the left side of the play area.
-
-1. Take a grid and, assuming she's moving right on row 10, draw the place she will be when she needs to teleport (hint: it's an illegal position, on a border)
-2. Draw the place she needs to appear (a legal one)
-3. Write down those x coordinates.
-4. Now, on **the line below** the one in which we apply yDir to her y:
-   * Check if her x location is on the disappear point.
-   * If true, change her x to the location she needs to appear.
-5. Apply the same process to going left, going up and going down.
