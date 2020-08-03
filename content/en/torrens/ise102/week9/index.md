@@ -223,28 +223,6 @@ The Tetris L piece.
     * Any two colours will do.
     * Hint: modulus (the remainder of integer division) is good at telling odd from even.
 
-## Go Deeper: Listen for input 
-
-We asked our programmer to make a program that fills the screen with red when the _R_ key is pressed, and yellow when _Y_ is pressed. If we don't have it up and running within 7 days we'll definitely go out of business.
-
-Our best programmer was on the task, but she hasn't yet returned from her Genetically Engineered Dinosaur Rescue Park holiday. The  working files are here, and she noted how to finish it in her comments. Can you finish it?
-
-It's above our heads: all we know is the function `keyIsDown('R')` returns `true` if the _R_ key is being held down. 
-
-Download [Week9_TapColours.zip](Week9_TapColours.zip) if you're programmer enough to do it.
-
-### In Sorta Pseudocode
-
-```
-Listen for R  or Y
-If it's R:
-  fill screen with red
-If it's Y: 
-  fill with yellow  
-```
-
-
-
 
 <!--
 ## New Game Loop
