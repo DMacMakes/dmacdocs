@@ -6,15 +6,63 @@ description: >
   Objects and how to change their properties. Using an object as a moving game character.
 ---
 
-## Week9 Homework
+## Frame Based Loop
 
-I left you guys a challenge: [Listen for input](../week9/#go-deeper-listen-for-input). Let's look through a possible solution.
+Last week we were putting our updates in draw. It was running at 60 fps, but we didn't look at how.
+
+It wasn't obvious from our squares on screen, but you could see the fps changing in the bottom corner.
+
+A new game loop:
+
+```
+while (player hasn't quit)
+  check for input
+  update state of all things in game
+  draw graphics to screen
+end while
+```
+
+### A look at the loop from last week
+
+I hid it in main last week to keep things simple.
+
+### Move it into draw.
+
+Each screen that you put in a game will have different needs. Some, like the exit screen, doesn't need to keep updating. 
+
+## Exercise: Listening for input
+
+We asked our programmer to make a program that fills the screen with red when the _R_ key is pressed, and yellow when _Y_ is pressed. If we don't have it up and running within 7 days we'll definitely go out of business.
+
+Our best programmer was on the task, but she hasn't yet returned from her Genetically Engineered Dinosaur Rescue Park holiday. The  working files are here, and she noted how to finish it in her comments. Can you finish it?
+
+It's above our heads: all we know is the function `keyIsDown('R')` returns `true` if the _R_ key is being held down. 
+
+Help us!
+
+Download [Week10_TapColours.zip](Week10_TapColours.zip)
+
+
+### In Sorta Pseudocode
+
+```
+Listen for R  or Y
+If it's R:
+  fill screen with red
+If it's Y: 
+  fill with yellow  
+```
+
+**_10 minutes_**
+
+### How did we go?
+
+How I'd approach it.
 
 ## Using Objects
  
  Objects are a **types of data** in C++ that have more features than your basic types (`int`, `float`, `char`). Objects we've used so far include `string`, `cin` and `cout`.
    
-
 ### Objects can
   
 Behave like a normal variable. Look at `string` for example:
