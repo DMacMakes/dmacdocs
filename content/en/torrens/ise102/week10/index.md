@@ -216,8 +216,6 @@ Danny's seat height was adjusted to 42cm above ground.
 ```
 -->
 
-<!--
-
 ## Moving
 
 ### Up Down Left Right
@@ -227,54 +225,30 @@ Danny's seat height was adjusted to 42cm above ground.
 
 So, we can move left and right by changing our x location.
 
-### Exercise 2a: Control Movement
-
-Here's an overview (functions and main) of a new structure we can use for our game. As you'll see next week, it'll help us use multiple screens.
-
-{{< imgcard code_flappy_functions Link "code_flappy_functions.png">}}
-{{< /imgcard >}}
+## Controlling Movement
 
 We'll use it now to move around. **Grab the base file** and **fill in** the missing bits from the code below.
 
-[Week10_snake_base.zip](Week10_snake_base.zip)
+[Snake_A3_incomplete.zip](Snake_A3_incomplete.zip)
 
-{{< imgcard code_flappy_1 Link "code_flappy_1.png">}}
+{{< imgcard code_playSnake_incomplete Link "code_playSnake_incomplete.png">}}
+The playGame function, like playSlots, just handles the gameplay screen.
 {{< /imgcard >}}
 
-## Revisiting The Game Loop
-
-Remember our old friends **input, storage, processing,output**? You just saw them in the loop in `playFlappyBat()`;
-
+{{< alert title="Frame based game loop" color= "primary" >}}
 The frame-based **loop during gamePlay**, at its simplest, is this:
 ```
 do:
   get input
   simulate everything(processing)
   ouput to screen
-while game hasn't ended
+while player hasn't quit/lost
 ```
-
-A more detailed explanation, in _C++_ comments:
-
-```cpp
-do
-{
-  /// CHECK INPUTS - mouse, keyboard, gamepad inputs. 
-  /// button is down, dpad direction is left, etc. Process and store them.
-  
-  /// PROCESSING/SIMULATION - model the events in the game. Move or shoot or use item
-  /// based on the inputs. Have enemies do their next thing as well. Check who gets shot,
-  /// lands on a platform, etc etc.
-  
-  /// OUTPUT
-  /// Now that the world has changed, draw it all to screen. Magic effects, new 
-  /// health level, new map location etc.
-  /// Also non visual output: play sounds, vibrate control pad etc.
-} while(!gameOver)  /// Do it all again next frame.
-```
+{{< /alert >}}Revisiting The Game Loop
 
 ### Exercise 2b: Add Up and Down
 
+Step through the TODOS in the program to get 
 1: Add constants for LEFT and RIGHT that can be used when setting value of xDir.
 2: Add constants for UP and DOWN.
 3: Look at the left right code; now implement up and down movement.
@@ -347,13 +321,6 @@ When batty reaches the right border of the screen, she needs to teleport to the 
    * Check if her x location is on the disappear point.
    * If true, change her x to the location she needs to appear.
 5. Apply the same process to going left, going up and going down.
-
--->
-
-
-
-
-
 
 
 
