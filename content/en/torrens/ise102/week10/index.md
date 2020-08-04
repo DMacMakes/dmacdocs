@@ -253,23 +253,19 @@ Step through the TODOS in the program to get
 2: Add constants for UP and DOWN.
 3: Look at the left right code; now implement up and down movement.
 
-## Too fast!
+## Too slow!
 
-Right now our loop runs 60 times per second. If we move one pixel every loop thats 60 pixels a second, and our window is only 30!
+Right now our loop runs 10 times per second. If we move one pixel every loop thats 10 pixels a second.
 
 maths: 
 60 loops * move 1 pixel in x = we moved right 60 pixels 1 second.  
 30 pixels in window / 60 moved per second = 0.5 seconds!
 
 How do we change the speed? 
-
-### Don't move so far each frame
-
-But we're moving 1 pixel, we'd have to move **move less than 1 pixel** per loop but.. fractions! That gets complicated: you have to use floats, and round to the nearest pixel etc.
     
 ### Easy Fix, Change The Framerate! 
 
-If the problem is that the game is running too fast, just run it slower!
+If the problem is that the game is running too slow, just run it faster!
 
 ### Exercise 2c: setFPS
 
