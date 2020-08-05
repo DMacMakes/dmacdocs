@@ -10,7 +10,11 @@ description: >
 
 Your progress:
 
-[Week 10 Discussion](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804661_1&message_id=_1912076_1)
+[Week 10 Discussion](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866561_1&message_id=_2243100_1)
+
+* Polygon density!
+* Style
+* Repetition
 
 ## Finishing Our Assets
 
@@ -55,11 +59,22 @@ Gizmo!
 
 {{< youtube ECzbIVoVHOI >}}
 
+### Modeling for reuse
+
+**Demo**
+
+It's tricky to model pieces that:
+* Repeat without being too samey or too different
+* Have plenty of style without standing out
+* Serve the role of unique piece without being too unique!
+
+## Homework
+Build out the asset using the parts you made last week.
+Differentiate them without losing your silhouette.
+Block in some other bits.
 
 ## Making The Other Bits
 You've got the main piece sorted. Now add the features and props to give it character. Arrow in the wood? Oysters? Crab?
-
-
 
 ### Model In Maya, Import
 
@@ -129,7 +144,3 @@ Crease level 3 means the crease will only hold till the 3rd subdivide. Afte that
 Another Maya option where you can go back and forth
 
 
-## Homework
-Build out the asset using the parts you made last week.
-
-Differentiate them without losing your silhouette.
