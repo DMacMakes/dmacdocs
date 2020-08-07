@@ -8,7 +8,6 @@ theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
 enableGitInfo = false
-
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
@@ -62,6 +61,7 @@ languageName ="English"
 weight = 1
 
 [markup]
+#defaultMarkdownHandler="blackfriday"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true

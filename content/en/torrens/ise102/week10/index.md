@@ -6,6 +6,7 @@ description: >
   Objects and how to change their properties. Using an object as a moving game character.
 ---
 
+
 1. Looping through frames
 2. How textpixels does it
 3. Listening for input - the game loop
@@ -253,19 +254,90 @@ Step through the TODOS in the program to get
 2: Add constants for UP and DOWN.
 3: Look at the left right code; now implement up and down movement.
 
-## Too slow!
+## Controlling speed
 
-Right now our loop runs 10 times per second. If we move one pixel every loop thats 10 pixels a second.
+**The game is too slow**. We need to move faster, so we need a way to define our speed. We know the speed (10 pixels per second) but it's **hard to get a feel for what that means**.
 
-maths: 
-60 loops * move 1 pixel in x = we moved right 60 pixels 1 second.  
-30 pixels in window / 60 moved per second = 0.5 seconds!
+### Setting a target
+Let's pick a more meaningful metric: **how long does it take to go across the level**?
 
-How do we change the speed? 
-    
+{{< alert title="Revision: The long Maccas Drive" color= "primary" >}}
+Your friend wants to go to his favourite maccas, but it's **100km** away. It's also through suburbia, so it's **50kph** the whole way. It sounds awesome, but you need to eat within three hours. Will you get there in time?
+
+Why did you know the answer? Because you know this formula:
+
+$$time = {distance \over speed}$$
+
+To check, lets plug the $distance$ (100km) and the $speed$ (50kph)
+
+$$time = {100 \over 50} = 2hrs$$
+
+Only 2 hours to Newcastle Maccas, let's go.
+{{< /alert >}}
+
+### Applied to our game
+
+The **distance** across our level is **35 pixels**, because that's what I set as the **`LEVEL_WIDTH`**
+
+![](code_snake_level_width.png)
+
+**Snakey's speed** is `10` pixels per second, because we're moving as much as 1 pixel per frame/loop
+
+![](code_snake_move.png)
+
+and because **I set the frames per second** (`fps`) to 10 in main, where I also used `LEVEL_WIDTH`:
+
+![](code_snake_fps10.png)
+
+
+{{< alert title="Plugging it in" color= "secondary" >}}
+Lets plug it distance = 35 and speed = 10 (both using "pixels")
+
+$$time = {35 \over 10} = 3.5sec$$
+
+**3.5 seconds** just to cross the level once. Gross.
+{{< /alert >}}
+
+
+
+### How to speed up
+
+Say we want to half our time to cross the level. Let's use a bit of algebra.
+
+Here's our formula with t (timeToCrossLevel), l (LEVEL_WIDTH)
+
+if ```timeToCrossLevel``` (t) is 
+
+To halve our time (t/2) we'll need to double speed to 20 pixels per second.
+
+What can we change to increase pixels per second?
+
+pixelsPerSecond = pixelsPerFrame * frames * 2
+
+I want to get there in half the time, 1.5 seconds! To get there in half the time, we need to double our speed. 
+
+pixels per second is 1/10
+I want to know how many pixels per second 
+To formalise it tho, we need to shift our equation around.
+
+t = w / p
+pt = w
+p = w/t
+
+pps = 30 / 1.5
+pps = 20.
+
+We move 1 pixel per frame/loop so we need 20 frames per second.
+
+so our desired pixels per second, to cross the screen is 20.
+
+
+
+Our speed 
+
 ### Easy Fix, Change The Framerate! 
 
-If the problem is that the game is running too slow, just run it faster!
+The game 
 
 ### Exercise 2c: setFPS
 
@@ -289,7 +361,7 @@ So _textpixels_ is sleeping 98.5% of every second, in gaps of about 65ms.
 
 If our game isn't running most of the time, and sleeps in 65ms blocks, **it's easy for textpixels to miss keypresses**.
 
-*ADD DIAGRAM*
+<!-- *ADD DIAGRAM -->
 
 ### Our Old Friend Modulus `&`
 
@@ -305,6 +377,15 @@ If you don't understand _Integer Division_ and _remainders_, it's officially on 
 
 Put an `if` around the code in `playBattyGame` that applies batty's `xDir` and `yDir` to her position. Try moving her every 10 frames, every 2 frames.. find a value that feels good.
 
+## Homework
+
+1. Move up and down
+2. Change movement speed by changing fps a little
+3. Change it way up to 100, but only draw the screen every 8 frames (use modulus)
+
+Deliver to Matt by Sunday night
+Danny will cover in class Monday.
+<!---
 
 ## Homework
 
@@ -318,126 +399,5 @@ When batty reaches the right border of the screen, she needs to teleport to the 
    * If true, change her x to the location she needs to appear.
 5. Apply the same process to going left, going up and going down.
 
+--->
 
-
-
-<!--
-
-## Moving
-
-### Up Down Left Right
-
-{{< imgcard xy_leftright_updown Link "xy_leftright_updown.jpg">}}
-{{< /imgcard >}}
-
-So, we can move left and right by changing our x location.
-
-### Exercise 2a: Control Movement
-
-Here's an overview (functions and main) of a new structure we can use for our game. As you'll see next week, it'll help us use multiple screens.
-
-{{< imgcard code_flappy_functions Link "code_flappy_functions.png">}}
-{{< /imgcard >}}
-
-We'll use it now to move around. **Grab the base file** and **fill in** the missing bits from the code below.
-
-[Week10_moving_batty_incomplete.zip](Week10_moving_batty_incomplete.zip)
-
-{{< imgcard code_flappy_1 Link "code_flappy_1.png">}}
-{{< /imgcard >}}
-
-## Revisiting The Game Loop
-
-Remember our old friends **input, storage, processing,output**? You just saw them in the loop in `playFlappyBat()`;
-
-The frame-based **loop during gamePlay**, at its simplest, is this:
-```
-do:
-  get input
-  simulate everything(processing)
-  ouput to screen
-while game hasn't ended
-```
-
-A more detailed explanation, in _C++_ comments:
-
-```cpp
-do
-{
-  /// CHECK INPUTS - mouse, keyboard, gamepad inputs. 
-  /// button is down, dpad direction is left, etc. Process and store them.
-  
-  /// PROCESSING/SIMULATION - model the events in the game. Move or shoot or use item
-  /// based on the inputs. Have enemies do their next thing as well. Check who gets shot,
-  /// lands on a platform, etc etc.
-  
-  /// OUTPUT
-  /// Now that the world has changed, draw it all to screen. Magic effects, new 
-  /// health level, new map location etc.
-  /// Also non visual output: play sounds, vibrate control pad etc.
-} while(!gameOver)  /// Do it all again next frame.
-```
-
-### Exercise 2b: Add Up and Down
-
-1: Add constants for LEFT and RIGHT that can be used when setting value of xDir.
-2: Add constants for UP and DOWN.
-3: Look at the left right code; now implement up and down movement.
-
-## Too fast!
-
-Right now our loop runs 60 times per second. If we move one pixel every loop thats 60 pixels a second, and our window is only 30!
-
-maths: 
-60 loops * move 1 pixel in x = we moved right 60 pixels 1 second.  
-30 pixels in window / 60 moved per second = 0.5 seconds!
-
-How do we change the speed? 
-
-### Don't move so far each frame
-
-But we're moving 1 pixel, we'd have to move **move less than 1 pixel** per loop but.. fractions! That gets complicated: you have to use floats, and round to the nearest pixel etc.
-    
-### Easy Fix, Change The Framerate! 
-
-If the problem is that the game is running too fast, just run it slower!
-
-### Exercise 2c: setFPS
-
-textpixels has a handy function to do it. Put it **inside main, before the game loop**
-```cpp
-  textpixel::setFPS(60);
-```
-Figure out the fps needed to cross the window (30 pixels) in 2 seconds. Apply it in the code. Looks good!
-
-### Looks Good Feels Bad: Responsiveness
-
-_textpixel_ locks the framerate by **sleeping** until you need it to draw another frame. The problem is: it's **so fast** at its job, it only takes about **0.001 of a second to draw a frame**. Since it sleeps the rest of the time, your game **misses keyboard inputs** because it's **barely ever running**.
-
-{{< alert title="How Often Is TextPixels Awake?" color= "danger" >}}
-It takes 1/1000th (0.001) of a second to do a frame's work. It sleeps the rest.
-
-**15 fps * 0.001 = 0.015** seconds of work per second: **it's awake 1.5%** of the time.
-
-So _textpixels_ is sleeping 98.5% of every second, in gaps of about 65ms.
-{{< /alert >}}
-
-If our game isn't running most of the time, and sleeps in 65ms blocks, **it's easy for textpixels to miss keypresses**.
-
-*ADD DIAGRAM*
-
-### Our Old Friend Modulus `&`
-
-If batty only moves every 2nd, 4th, or whatever frame, she'll move slower but we'll still catch all the keypresses.
-
-Modulus is great at doing things when certain divisions are reached: even, odd, every 20th, etc.
-
-{{< alert title="You Can't Not Know Integer Division" color= "danger" >}}
-If you don't understand _Integer Division_ and _remainders_, it's officially on you now. Go study it, **get it locked down**. It's taught in primary school so it was a long time ago, but it's very easy to re-learn. Look it up on wikipedia, call up your high school maths teacher, whatever, but DO IT NOW.
-{{< /alert >}}
-
-### Exercise 2d: Move Every X Frames
-
-Put an `if` around the code in `playBattyGame` that applies batty's `xDir` and `yDir` to her position. Try moving her every 10 frames, every 2 frames.. find a value that feels good.
-
--->
