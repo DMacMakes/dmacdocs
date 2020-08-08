@@ -137,10 +137,10 @@ What if we move **more often**?
 | ... | ... | ... |
 | 1 pixels | 23 | 23 pps |
 
-### Move more often with `setFPS(int fps);`
+### Move more often with `setFps(int fps);`
 
 1. Scroll to the `main` function 
-2. Change the value we're passing to `the textpixels::setFPS` to **our target: 23**. 
+2. Change the value we're passing to `the textpixels::setFps` to **our target: 23**. 
 3. Try it out, see what it's like to cross the screen in about 1.5 seconds.
 
 ![Set fps in main](code_snake_fps10.png)
