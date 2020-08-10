@@ -21,6 +21,10 @@ _easy:_ Collide with wall, end game. Add in a poison fruit.
 _hard:_ Add in teleporting, remove deadly walls. Game over: Offer option to play again.
 _advanced:_ Add second playmode, deadly walls. Pass as argument to playSnake.
 
+## A2 Slots marking
+
+Marking is basically complete and most results should go up tonight (in the hours after class).
+
 ## Assessment 3
 
 ## Last week's homework
@@ -66,11 +70,9 @@ Anything else?
 4. In the Visual Studio Solution Explorer, right click _Header Files -> Add -> Existing item.._ and choose the Fruit.h file.
 5. In Solution Explorer, Double-click Fruit.h to open it.
 6. Change this class to a Fruit class with the following properties:
-   - kind (an int)
-   - colour
-   - location (a )
-   - a constant you can assign to kind: BANANA, BLUEBERRY, PLUM, whatever.
-
+   - colour (short)
+   - location (use Point2d)
+   - value (1 pt, use int)
 ---
 
 ### Exercise1b: Create a fruit
