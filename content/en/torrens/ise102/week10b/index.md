@@ -56,8 +56,10 @@ I'd like to see everyone complete at least the easy and medium homework. Advance
 * _**ADVANCED**_  
   Set the framerate to 200, but only move and draw the snake every 15th frame.   
 
-**Deliver** to Matt Carr by **midday Monday, August 10**.  
-**Reviewed** by Danny in class Monday evening (this doesn't mean deliver the homework late).  
+1. **Zip the solution**  like you would for an assessment submission, taking care to **delete cache folders** like Debug and x86 
+2. **Email** to Matt Carr by **midday Monday, August 10**.
+  
+**Danny will review** Danny in class Monday evening (this doesn't mean deliver the homework late).  
 
 ## Speeding up Snakey
 
