@@ -124,6 +124,7 @@ Submit **a link to a zip file (on _LFS_)** containing all deliverables to the [B
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920016_1&course_id=_91934_1" target="_blank">Assessment 2 Submission Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+
 {{< alert title="Deliverable Zip File" color= "secondary" >}}
 Create a zip file named ACR103_A2_Lastname_Firstname.zip containing the following:  
   
@@ -136,6 +137,7 @@ Create a zip file named ACR103_A2_Lastname_Firstname.zip containing the followin
 _All images: PNG24 or high quality JPG with enough resolution to make out important details. No thumbnails._
 {{< /alert >}}
 
+
 {{< alert title="Linking a zip file from _LFS_" color= "primary" >}}
 The **_Torrens Large File Submission_** cloud drive is where you upload your large assessment files. 
 
@@ -143,12 +145,12 @@ The **_Torrens Large File Submission_** cloud drive is where you upload your lar
 2. generate the **_share_ link** you need for your Blackboard submission.  
   
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://lfs.torrens.edu.au" target="_blank">Torrens LFS<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
 {{< /alert >}}
 
-[ Click to go back to Week 8 Notes](../week8/#a2-submission)
 
+[Click to go back to Week 8 Notes](../week8/#a2-submission)  
 _Note: Blackboard doesn't show upload progress, so uploading big files is problematic._
+
 
 ## Assessment 3: Character
 
@@ -159,6 +161,7 @@ _Note: Blackboard doesn't show upload progress, so uploading big files is proble
    - **Feedback** on your classmates work.  
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_91934_1&nav=discussion_board_entry&conf_id=_157930_1&forum_id=_851219_1&message_id=_2089266_1" target="_blank">Week 10 submission thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 
 ### Week 12 Submission
 
@@ -176,9 +179,10 @@ Supply the following for your finished, textured character.
 > Place all the deliverables in a folder and zip them, name the file as follows:
 > **ACR103_A3_Lastname_Firstname.zip**
 
-Upload the file to _Torrens Large File Submission_ and provide the link when you submit your assessment on _Blackboard_:
+Upload the file to _Torrens Large File Submission_ and provide the link when you submit your assessment on _Blackboard_:  
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920017_1&course_id=_91934_1" target="_blank">Final submission on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 
 {{< alert title="Linking a zip file from _LFS_" color= "primary" >}}
 The **_Torrens Large File Submission_** cloud drive is where you upload your large assessment files. 
@@ -187,5 +191,4 @@ The **_Torrens Large File Submission_** cloud drive is where you upload your lar
 2. generate the **_share_ link** you need for your Blackboard submission.  
   
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://lfs.torrens.edu.au" target="_blank">Torrens LFS<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
 {{< /alert >}}
