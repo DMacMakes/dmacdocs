@@ -15,11 +15,12 @@ description: >
 6. Adding to score on fruit hit.
 7. Game over?
 
-## Homework due next week
-**Homework:**
-_easy:_ Collide with wall, end game. Add in a poison fruit.
-_hard:_ Add in teleporting, remove deadly walls. Game over: Offer option to play again.
-_advanced:_ Add second playmode, deadly walls. Pass as argument to playSnake.
+## Homework due next week  
+
+**Homework:**  
+_easy:_ Collide with wall, end game. Add in a poison fruit.  
+_hard:_ Add in teleporting, remove deadly walls. Game over: Offer option to play again.  
+_advanced:_ Add second playmode, deadly walls. Pass as argument to playSnake.  
 
 ## A2 Slots marking
 
@@ -33,9 +34,9 @@ Marking is basically complete and most results should go up tonight (in the hour
 
 ## Creating your own objects
 
-Creating an object is as easy as 
-1. Creating a _**myobject.h**_ file, known as a **header file** file (or less formal **dot h** file)
-2. Defining a **`class`**, which is basically a recipe/description of the object you want. 
+Creating an object is as easy as   
+1. Creating a _**myobject.h**_ file, known as a **header file** file (or less formal **dot h** file)  
+2. Defining a **`class`**, which is basically a recipe/description of the object you want.   
 
 An easy way is to copy a similar class and edit it. **Open your snake project** in Visual Studio and **look at the _snake.h_ file**.
 
