@@ -152,4 +152,40 @@ _Note: Blackboard doesn't show upload progress, so uploading big files is proble
 
 ## Assessment 3: Character
 
-_Coming soon™_
+### Week 10 Submission
+1. Due **11:55pm Wednesday** August 12th
+   - **Screenshots** of your polished character, short answers to a few **questions**  
+2. Due **1:00pm Thursday** August 13th
+   - **Feedback** on your classmates work.  
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_91934_1&nav=discussion_board_entry&conf_id=_157930_1&forum_id=_851219_1&message_id=_2089266_1" target="_blank">Week 10 submission thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Week 12 Submission
+
+Due **11:55pm Sunday** August 23rd (Week 12)
+
+Supply the following for your finished, textured character.
+1. Your final 3D Coat working file.
+2. Screenshots of your finished character in 3D Coat
+   - Must be in **unlit** mode, press **`2`** on the keyboard. This turns off the realtime light.
+   - Take screenshots from at least 4 angles
+   - For each angle you choose, take 2 screenshots of the character: 
+     - with **wireframe** on (press **`w`** on keyboard to toggle) and 
+     - with **wireframe off**.
+
+> Place all the deliverables in a folder and zip them, name the file as follows:
+> **ACR103_A3_Lastname_Firstname.zip**
+
+Upload the file to _Torrens Large File Submission_ and provide the link when you submit your assessment on _Blackboard_:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8920017_1&course_id=_91934_1" target="_blank">Final submission on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< alert title="Linking a zip file from _LFS_" color= "primary" >}}
+The **_Torrens Large File Submission_** cloud drive is where you upload your large assessment files. 
+
+1. Follow the **video instructions** on the front page (scroll down) to upload your file into the `Trimester2 / ACR103 folder`  
+2. generate the **_share_ link** you need for your Blackboard submission.  
+  
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://lfs.torrens.edu.au" target="_blank">Torrens LFS<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< /alert >}}
