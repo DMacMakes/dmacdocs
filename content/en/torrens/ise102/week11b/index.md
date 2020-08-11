@@ -18,10 +18,24 @@ Click image to visit the Trello
 {{< /imgproc >}}
 
 ## Homework
-**Homework:**
-_easy:_ Add in a poison fruit.
-_hard:_ Add in teleporting, remove deadly walls. Game over: Offer option to play again.
-_advanced:_ Add second playmode, deadly walls. Pass as argument to playSnake.
+
+This homework **MUST be attempted in order to pass the assessment**. Make a genuine attempt at completing AT LEAST the Easy and medium homework to qualify.
+
+Cleanup it up (delete unnecessary folders), zip it and submit it by email to Matt **by midnight this Sunday night, August 11.**
+
+_**EASY:**_   
+Add in a poison fruit. Add in deadly walls (collide with walls, game over.  
+_**MEDIUM:**_  
+Instead of deadly walls, move slithers to the other side of the screen (teleport).  
+_**HARD:**_  
+1. Add second playmode, deadly walls. Pass as argument to playSnake.   
+_**ADVANCED:**_  
+2. Game over: replayce ui with a game over message and option to play again or quit to menu. 
+   - Basically at the end of playSnake you you can call a little function with its own textpixels frame loop
+   - Draw over the place the regular gui is. You can basically copy _some_ of the draws from the drawLevelAndGui function.
+   - Listen for their keypress to quit or start game loop again. 
+   - Your choice how to get back to start of playSnake, but definitely don't call playSnake from within itself. 
+     - (You'll probably need to encapsulate everything in side playSnake in a regular loop, so it never returns the score until the player has finished playing. Maybe it doesn't return the score at all, but sets a global "best score" if it the score you just got is better, So many options!
 
 ## Bunches of data: collections!
  
@@ -120,6 +134,12 @@ It's that time to start gathering your own answers/worms.
   * Across languages, high level view: https://en.wikipedia.org/wiki/Switch_statement
   * Question and answer: https://stackoverflow.com/questions/31410393/c-switch-cases/31410441
   * Technical, authoritative: https://en.cppreference.com/w/cpp/language/switch
+
+-----------
+
+## OLDER MATERIAL
+
+This is from previous trimesters, you may find nuggets of nice info,especially on pass by reference.
 
 ## Ending the game
 A way to **end the game**. There's work to be done like:
