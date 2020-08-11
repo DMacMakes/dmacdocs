@@ -96,6 +96,24 @@ Click to for full size
 Edge teleport: When Batty's somewhere bad, (B1) put her somewhere that isn't (B2).
 {{< /imgcard >}}
 
+## Looking it up yourself
+
+{{< imgcard big_baby_bird>}}
+Time to open those wings mate.
+{{< /imgcard >}}
+
+It's that time to start gathering your own answers/worms.
+
+1) Learn what you've put off: `for` and `while`  loops, functions, `switch` statements: if you're not sure, do the googling and the reading now.
+2) Learn the range of sites that can help you, each with their own style: _geeksforgeeks_, _stackoverflow_, _Wikpedia_, _cppreference_ and _youtube_. If you take responsibility for learning, for being curious and active, these sites will see you there. 
+  * Detailed but not a reference sheet: https://www.geeksforgeeks.org/switch-statement-cc/
+  * Listicle style: https://www.geeksforgeeks.org/interesting-facts-about-switch-statement-in-c/
+  * Across languages, high level view: https://en.wikipedia.org/wiki/Switch_statement
+  * Question and answer: https://stackoverflow.com/questions/31410393/c-switch-cases/31410441
+  * Technical, authoritative: https://en.cppreference.com/w/cpp/language/switch
+
+
+
 ## Ending the game
 A way to **end the game**. There's work to be done like:
 * showing a game over message/screen
@@ -241,21 +259,6 @@ Yeah, in the same way adulthood is worth it. The rules get murkier and more conf
 -------------
 
 
-## Looking it up yourself
-
-{{< imgcard big_baby_bird>}}
-Time to open those wings mate.
-{{< /imgcard >}}
-
-It's that time to start gathering your own answers/worms.
-
-1) Learn what you've put off: `for` and `while`  loops, functions, `switch` statements: if you're not sure, do the googling and the reading now.
-2) Learn the range of sites that can help you, each with their own style: _geeksforgeeks_, _stackoverflow_, _Wikpedia_, _cppreference_ and _youtube_. If you take responsibility for learning, for being curious and active, these sites will see you there. 
-  * Detailed but not a reference sheet: https://www.geeksforgeeks.org/switch-statement-cc/
-  * Listicle style: https://www.geeksforgeeks.org/interesting-facts-about-switch-statement-in-c/
-  * Across languages, high level view: https://en.wikipedia.org/wiki/Switch_statement
-  * Question and answer: https://stackoverflow.com/questions/31410393/c-switch-cases/31410441
-  * Technical, authoritative: https://en.cppreference.com/w/cpp/language/switch
 
 <!-- ### Don't Push Code Around
 
