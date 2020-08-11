@@ -8,6 +8,15 @@ description: >
 
 ## Learning today
 
+
+## Things left to do
+
+Not sure what's left to do? Check the [Snake_T2 Trello](https://trello.com/b/aVYKZSK8/snaket2).
+
+{{< imgproc snake_trello Resize "500x" Link "snake_trello.png" >}}
+Click image to visit the Trello
+{{< /imgproc >}}
+
 ## Homework
 **Homework:**
 _easy:_ Add in a poison fruit.
@@ -111,8 +120,6 @@ It's that time to start gathering your own answers/worms.
   * Across languages, high level view: https://en.wikipedia.org/wiki/Switch_statement
   * Question and answer: https://stackoverflow.com/questions/31410393/c-switch-cases/31410441
   * Technical, authoritative: https://en.cppreference.com/w/cpp/language/switch
-
-
 
 ## Ending the game
 A way to **end the game**. There's work to be done like:
