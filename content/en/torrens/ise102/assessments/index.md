@@ -9,6 +9,10 @@ description: >
 
 ## Assessment 1: Exam
 
+_Done_
+
+<!--
+
 **Due:** End of week 4
 
 Click for the [Assessment page and PDF brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?course_id=_90315_1&content_id=_8948578_1&mode=reset)
@@ -36,7 +40,14 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 **#1 tip:** If you think you really understood the example you typed out and toyed with, close the project, create a new one and **rewrite it from memory.** If you don't get anything wrong first go, it's not a hard enough exercise!
 {{< /alert >}}
 
+-->
+
 ## Assessment 2: Slot Machine
+
+_Done_
+
+<!-- 
+
 **Due:** End of week 8
 
 We'll make a text based slot machine using the `ise102_console` template. A _prompt and response_ game loop.
@@ -80,20 +91,21 @@ In your solution/project folder (same thing for us) you can **delete all** of th
 Delete the folders.
 {{< /imgcard >}}
 
+-->
 
 ## Assessment 3: Realtime Game
 
-Playing at a constant frame rate and reacting to input.
+Make Snake!
 
-### Deliverable
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948580_1&course_id=_90315_1" target="_blank">See A3 brief pdf on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-Your **entire** Visual Studio solution must be zipped and submitted on Blackboard.
+You must use base code provided in class (week 10) and use learnings and techniques from the streamed classes.
 
-## Delivering Code Assessments
+### Deliverables 
 
-Coming shortly:
+1. Weekly homework submission contributes to your marks.
+2. **Week 11 homework** submission is **required to be considered for a pass!**
+   **Due:** Midnight, Sunday August 16. Submit via email to Mat Carr.
+3. Your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard.
 
-* Locating your solution on disk.
-* How to delete those large cache directories. (wth: 200MB slot machine??)
-* Naming your zip file.
-* How not to stuff up your solution (don't rename or move things!)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948580_1&course_id=_90315_1" target="_blank">Submit A3 zip on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>

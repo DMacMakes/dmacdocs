@@ -21,12 +21,12 @@ Click image to visit the Trello
 
 This homework **MUST be attempted in order to pass the assessment**. Make a genuine attempt at completing AT LEAST the _**easy**_ and _**medium**_ homework to qualify.
 
-Cleanup it up (delete unnecessary folders), zip it and submit it by email to Matt **by midnight this Sunday night, August 11.**
+Cleanup it up (delete unnecessary folders), zip it and submit it by email to Matt **by midnight this Sunday night, August 16.**
 
 {{< alert title="" color= "secondary" >}}
 * _**EASY:**_   
     Add in a poison fruit. Add in deadly walls (collide with walls, game over.  
-    
+
 * _**MEDIUM:**_  
     Instead of deadly walls, move slithers to the other side of the screen (teleport).  
 
