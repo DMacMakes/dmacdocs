@@ -17,25 +17,30 @@ Not sure what's left to do? Check the [Snake_T2 Trello](https://trello.com/b/aVY
 Click image to visit the Trello
 {{< /imgproc >}}
 
-## Homework
+## A3 deliverable: Homework
 
-This homework **MUST be attempted in order to pass the assessment**. Make a genuine attempt at completing AT LEAST the Easy and medium homework to qualify.
+This homework **MUST be attempted in order to pass the assessment**. Make a genuine attempt at completing AT LEAST the _**easy**_ and _**medium**_ homework to qualify.
 
 Cleanup it up (delete unnecessary folders), zip it and submit it by email to Matt **by midnight this Sunday night, August 11.**
 
-_**EASY:**_   
-Add in a poison fruit. Add in deadly walls (collide with walls, game over.  
-_**MEDIUM:**_  
-Instead of deadly walls, move slithers to the other side of the screen (teleport).  
-_**HARD:**_  
-1. Add second playmode, deadly walls. Pass as argument to playSnake.   
-_**ADVANCED:**_  
-2. Game over: replayce ui with a game over message and option to play again or quit to menu. 
-   - Basically at the end of playSnake you you can call a little function with its own textpixels frame loop
+{{< alert title="" color= "secondary" >}}
+* _**EASY:**_   
+    Add in a poison fruit. Add in deadly walls (collide with walls, game over.  
+    
+* _**MEDIUM:**_  
+    Instead of deadly walls, move slithers to the other side of the screen (teleport).  
+
+* _**HARD:**_  
+    Add second playmode, deadly walls. Pass as argument to playSnake.   
+
+* _**ADVANCED:**_  
+  Game over: replace ui with a game over message and option to play again or quit to menu. 
    - Draw over the place the regular gui is. You can basically copy _some_ of the draws from the drawLevelAndGui function.
    - Listen for their keypress to quit or start game loop again. 
+   - At the end of playSnake maybe you you can call a little function with its own textpixels frame loop
    - Your choice how to get back to start of playSnake, but definitely don't call playSnake from within itself. 
      - (You'll probably need to encapsulate everything in side playSnake in a regular loop, so it never returns the score until the player has finished playing. Maybe it doesn't return the score at all, but sets a global "best score" if it the score you just got is better, So many options!
+{{< /alert >}}
 
 ## Bunches of data: collections!
  
@@ -134,6 +139,11 @@ It's that time to start gathering your own answers/worms.
   * Across languages, high level view: https://en.wikipedia.org/wiki/Switch_statement
   * Question and answer: https://stackoverflow.com/questions/31410393/c-switch-cases/31410441
   * Technical, authoritative: https://en.cppreference.com/w/cpp/language/switch
+
+
+Go back to the top and **attempt the homework in order to qualify to pass the final assessment!**
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="#a3-deliverable-homework" target="_blank">Go to A3 deliverable Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 -----------
 
