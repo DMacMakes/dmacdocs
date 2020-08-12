@@ -12,6 +12,19 @@ I saw people have commented. If you haven't updated your discussion post with yo
 
 [Wharf/Pier discussion thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866562_1&message_id=_2100668_1)
 
+## Homework due next week
+
+After feedback this week:
+1. Go ahead and finish+place your remaining wood/stone elements to wrap up the main structures.
+2. Using Maya+GoZ, or directly in ZBrush, create the quad-based geometry for other items in the scene: the heat pipes and vent on the side of the wharf, or the lifesaver+mussles+tin can+wavey water of the pier.
+3. Do some first pass refinement on them but don't go ham until you have some feedback 👍
+
+This homework is recommended progress to be ready for next class and on track to finish the  assessment, it isn't a marked deliverable in itself. Still I'd like you all to take screenshots and post it to the discussion 
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866563_1&message_id=_2254758_1" target="_blank">Week 11 progress thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+Next week we'll look at how to render them in passes and post-process in photoshop, as you would if presenting to an art director/client for feedback.
+
 ## Refining
 
 * Anything that's too repetitive?
