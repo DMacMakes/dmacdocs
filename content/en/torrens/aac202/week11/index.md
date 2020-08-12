@@ -6,12 +6,6 @@ description: >
   Polishing our models, rendering for art director review. Submission!
 ---
 
-## Assessment 2
-
-Marking is 90% done, will be up this afternoon. The level of effort was high enough that everyone who submitted got at least a credit, so don't stress.
-
-## A3
-
 ### Reviewing week 10 work
 
 I saw people have commented. If you haven't updated your discussion post with your pier/wharf bits all added and polished, do it now!
