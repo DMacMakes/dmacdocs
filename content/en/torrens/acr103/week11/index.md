@@ -54,3 +54,7 @@ Lets look.
   * Jumping to photoshop and back
   * Using the right lighting mode
   * Baking in lighting for free, using as blend layer.
+
+## Homework and next week: How to paint good
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmcgits.github.io/mds/ACR103/week11_notes.html" target="_blank">Painting Light Notes<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
