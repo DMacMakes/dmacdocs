@@ -1,5 +1,5 @@
 ---
-title: "Week 1: Welcome, Recemt trends in comp. arch."
+title: "Week 1: Welcome, trends in comp. arch."
 linkTitle: "W1: Welcome"
 weight: "10"
 description: >
@@ -17,14 +17,12 @@ description: >
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_7966066_1&course_id=_76813_1" target="_blank">Cao201 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Activities
-We'll do two activities in class:
+We'll do one activity in class this week, and the other in homework.
 
 ### Activity one: introductions
 
 - write a paragraph
 - introduce yourself on video
-
-### Activity two:
 
 ## Me, what I've done
 
@@ -52,7 +50,7 @@ Teaching:
 Maths 101, Algorithms and data structures, ise102 (C++).
 - Welcome back if you're my ise102 peoples
 
-## Every week of this subject
+## Every week of this subject, and attendance
 
 This is taken from the Subject Planner on the [CAO201 Blackboard landing page](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_7966066_1&course_id=_76813_1). 
 
@@ -60,7 +58,19 @@ This is taken from the Subject Planner on the [CAO201 Blackboard landing page](h
 Every topic we'll cover, week by week.
 {{< /imgcard >}}  
 
-## This weeks reading and exercises
+I expect everyone to attend every class.
+
+If you work, it's time to talk to your boss about getting 3 hours off to make the most of your cash investment!
+
+## All 3 Assessments 
+
+Taken from the [CAO201 Assessments page on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_7966071_1&course_id=_76813_1&mode=reset).
+
+{{< imgcard assessments_all Link "assessments_all.png" >}}
+All three assessments and their delivery weeks
+{{< /imgcard >}}  
+
+## Activity 2 Homework: reading and exercises
 
 Yes, textbooks! Yes, homework!
 
@@ -79,10 +89,7 @@ I'll refer to assessments as A1, A2 for brevity, or by their content: labs, mult
 A1 is a series of programming labs, done partly in class and at home:
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_7966097_1&course_id=_76813_1" target="_blank">A1 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-
-
-
-## Mathjax test of Matrices
+<!-- ## Mathjax test of Matrices
 
 Can I haz matrix?
 Row, row, row your matrix.
@@ -91,3 +98,5 @@ $$ \begin{bmatrix}
     11 & 1  & 56 \\\\
     34 & 1  & 14 
     \end{bmatrix} $$
+
+-->
