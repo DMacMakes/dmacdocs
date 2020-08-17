@@ -21,17 +21,17 @@ Click image to visit the Trello
 
 This homework **MUST be attempted in order to pass the assessment**. Make a genuine attempt at completing AT LEAST the _**easy**_ and _**medium**_ homework to qualify.
 
-Clean it up (delete unnecessary folders), zip it and submit it by email to Matt **by midnight this Sunday night, August 16.**
+Clean it up (delete unnecessary folders), **ZIP YOUR PROJECT AND SUBMIT** by email to Matt **by midnight this Sunday night, August 16.**
 
 {{< alert title="" color= "secondary" >}}
 * _**EASY:**_   
-    Add in a poison fruit. Add in deadly walls (collide with walls, game over.  
+    Add in a poison fruit that ENDS THE GAME. Add in deadly walls (collide with walls), game over.  
 
 * _**MEDIUM:**_  
-    Instead of deadly walls, move slithers to the other side of the screen (teleport).  
+    Now, instead of deadly walls, move slithers to the other side of the screen (teleport).  
 
 * _**HARD:**_  
-    Add second playmode, deadly walls. Pass as argument to playSnake.   
+    Add a second playmode, deadly walls, so players can choose that mode or teleport style. (hint: pass as argument to playSnake, don't make a whole new playSnake)
 
 * _**ADVANCED:**_  
   Game over: replace ui with a game over message and option to play again or quit to menu. 
