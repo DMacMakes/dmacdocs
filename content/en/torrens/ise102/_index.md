@@ -1,7 +1,7 @@
 ---
 title: "ISE102: Intro to Software Engineering"
 linkTitle: "ISE102: Intro c++"
-weight: 30
+weight: 40
 menu:
   main:
     linkTitle: "ise102"

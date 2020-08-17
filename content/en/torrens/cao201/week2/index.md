@@ -1,8 +1,8 @@
 
 ---
 title: "Week 2: The Memory Heirarchy and fast matrices"
-linkTitle: "W1: Memory"
-weight: "10"
+linkTitle: "W2: Memory"
+weight: "20"
 description: >
   Refining our models, UVs.
 ---
@@ -23,7 +23,6 @@ DRAM (your DDR4 rgb _HyperWolf Ninja King_ ram)
 Solid State Drive (ssd)
 Hard Disk Drive (spinning rust)
 Cloud Drive folder
-
 
 ## Oh look, Matrices
 

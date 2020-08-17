@@ -9,24 +9,14 @@ description: >
 ## Homework:
 Fruit eating, score displaying, general progress.
 
-## How To Do Well In A3
 
-The brief says the Snake game is a base. It rewards building new things, added settings and features. When your tinker with it, when you flex a little.. we know you really understand it.
 
-* Go through rubric
-* Extra features! Things you can run into that change the game, difficulty settings, extra lives, best score recorded to disk.
-* Do more than the minimum! 
-* Don’t just do exactly as i do visually. You could:
-  * Change the window dimensions (`setupWindow(50,25)`)
-  * Have a double-thick wall
-  * What can you display in unicode? Are there emojis?
-  * Have a panel below the game showing 
-    * score
-    * different fruit types what they give you
-    * Hazards like poison blocks or speed-up blocks?
-    * Your previous best score
 
-<!--
+## Reminder: Submitting your files correctly
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable" target="_blank">Cleaning up and zipping your project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<!-- 
 ## Downloads
 
 Download these to follow along: executable examples of batty/snake in action, and solutions you'll use as exercise bases.
@@ -39,7 +29,7 @@ Download these to follow along: executable examples of batty/snake in action, an
 (Complete version is done, need to remove key lines and replace with //..)  
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_vector_exercise.zip" target="_blank">week12_vector_exercise.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
+-->
 ## A Segmented Snake
 
 A feature you've been asking for: the segmented snake.
@@ -66,11 +56,11 @@ Yes! Sort of! You moved to a bunch of squares and drew a pixel each time. Like w
 The only reason it's not there is.. you fill the background every frame, erasing your old bat/snake coloured pixels.
 {{< /alert >}}
 
-### Exercise 1: Drawing Batty's Trail
+### Exercise 1: Drawing Slithers' Trail
 
-Filling the screen with wall and grass has been hiding batty's trail. Stop it happening by commenting out a couple of lines.
+Filling the screen with wall and grass has been hiding slithers' trail. Stop it happening by commenting out a couple of lines.
 
-{{< imgcard batty_notrail_trail >}}
+{{< imgcard slithers_notrail_trail >}}
 No trail, trail. No trail, trail.
 {{< /imgcard >}}
 
@@ -101,8 +91,8 @@ This is just a guide: finishing all this and putting it together is up to you an
 
 **A trail is just history marked out.** A trail in a forest is just where a lot of feet have trodden the grass down. The memory of that travel is in the state of the plants and ground.
 
-* The trail we saw batty make, that was just the _screen buffer_ (the state of each textpixel on screen, stored) remembering the places batty had been drawn.
-* When we don't draw something new (the background) it's safe there. But we need to draw the background, and that overwrites the batty positions till we draw her again.
+* The trail we saw slithers make, that was just the _screen buffer_ (the state of each textpixel on screen, stored) remembering the places slithers had been drawn.
+* When we don't draw something new (the background) it's safe there. But we need to draw the background, and that overwrites the slithers positions till we draw her again.
 
 What if we just drew her again at all her old positions as well as her current position?
 
@@ -111,22 +101,23 @@ What if we just drew her again at all her old positions as well as her current p
 
 ### Exercise 2: Starting With 1
 
-We have batty. Make a new Creature, just like `batty`, called oldBatty, that follows her one pixel behind. It's one frame of batty's past. 
+We have slithers. Make a new Creature, just like `slithers`, called oldSlithers, that follows her one pixel behind. It's one frame of slithers' past. 
 
-1. Every frame, before we move batty, store (assign) her x and y positions to `oldBatty`'s x and y.  
-2. Then move batty.
-3. When you drawPixel `batty`, draw `oldBatty` (who has the old x and y positions of `batty`) next.
+1. Every frame, before we move slithers, store (assign) her x and y positions to `oldSlithers`'s x and y.  
+2. Then move slithers.
+3. When you drawPixel `slithers`, draw `oldSlithers` (who has the old x and y positions of `slithers`) next.
 
 {{< imgcard snapshots_onionskin>}}
 Leaving snapshots behind
 {{< /imgcard >}}
 
-oldBatty is just one snapshot of batty's past, being taken over and over again.
-What if, instead, we had a bunch of snapshots, and instead of updating them we just take new ones. When batty is about to move, take a snapshot and leave it there.
+oldSlithers is just one snapshot of slithers past, being taken over and over again.
+What if, instead, we had a bunch of snapshots, and instead of updating them we just take new ones. When slithers is about to move, take a snapshot and leave it there.
 
-> batty0, batty1, batty2, batty3..
+<!-- 
+> slithers0, slithers1, slithers2, slithers3..
 
-What about all those damn variables though? Do you have to make like 100, 1000 variables to store them? How do you even make new variables at run time? Hell, we don't even need all the names. Just batty0, 1, 2, 3.
+What about all those damn variables though? Do you have to make like 100, 1000 variables to store them? How do you even make new variables at run time? Hell, we don't even need all the names. Just slithers0, 1, 2, 3.
 
 ## Storing History In Collections
 
@@ -141,6 +132,7 @@ What about all those damn variables though? Do you have to make like 100, 1000 v
 
 ## Collections: The vector
 A vector object can hold any number of a chosen data type(int, float, string, Bag, Creature, Fruit). Then you can read or write individual values in the collection using an index.
+-->
 
 Declaring a collection of stuff:
 ```cpp
@@ -179,9 +171,7 @@ int scoreBuffed = scores[2] + 20;
 {{< /alert >}}
 Note: array access notation
 
-{{< imgcard screen_vector_exercise Link "screen_vector_exercise.png">}}
-Using collections
-{{< /imgcard >}}
+<!--
 
 ## OLD CODE BELOW, REPLACE WITH THE IMPROVED VERSION
 The code:
@@ -189,18 +179,20 @@ The code:
 {{< imgcard code_vector_exercise Link "code_vector_exercise.png">}}
 {{< /imgcard >}}
 
-### battyHistory
+-->
 
-So, if batty is real, and behind her is a trail of snapshots of her past, many old battys, we could call that `battyHistory`.
+### slithersHistory
 
-{{< imgcard battyHistory>}}
+So, if slithers is real, and behind her is a trail of snapshots of her past, many old slithers, we could call that `slithersHistory`.
+
+{{< imgcard battyHistory_in_flight>}}
 {{< /imgcard >}}
 
-Every time **she is about to move**, we create a **new snapshot**, an `oldBatty` at her current position, **insert it** into `battyHistory` at the **beginning**, and then move her.
+Every time **she is about to move**, we create a **new snapshot**, an `oldSlithers` at her current position, **insert it** into `slithersHistory` at the **beginning**, and then move her.
 
 That **new snapshot makes her body one piece longer**, which is **not okay** because she only grows when she eats, not every time she moves. 
 
-To prevent growing, we **snip off** the old, **unwanted snapshot** at the end of `battyHistory`
+To prevent growing, we **snip off** the old, **unwanted snapshot** at the end of `slithersHistory`
 
 ## Making a snake:
 * Say you have a `Creature` called `snakeHead`.
@@ -217,7 +209,7 @@ In a loop:
 
 ### Moving a snake:
 1. When you're about to move the head, make a snapshot, a `Creature` called `oldHead`
-2. Store `snakeHead.x` and `snakeHead.y` in `oldHead.x` and `oldHead.y` (like we did with `oldBatty`)
+2. Store `snakeHead.x` and `snakeHead.y` in `oldHead.x` and `oldHead.y` (like we did with `oldSlithers`)
 3. `insert` `oldHead` into the `begin()` of the `snakeHistory`.
 4. `erase` the oldest `Creature` at the end of the the `vector` to keep the same length.
 
@@ -226,12 +218,13 @@ Step by step.
 {{< /imgcard >}}
 
 ### Growing A Snake:
-1. When you eat a fruit, create a Creature called newTail
+1. When you eat a fruit, add to the snake's length variable.
 2. You want to put it at the end, so start with the `x` and `y` coordinates of the oldest `Creature` at the end of `snakeHistory`
 3. Add it onto the back of `snakeHistory`.
+  
+### Vector functions we can use:
 
--->  
-### Vector functions we use:
+Google them, they're your tools now.
     * vector::insert(), vector::erase().
     * vector::front(), vector::back()
     * vector::begin(), vector::end()
@@ -241,17 +234,38 @@ Step by step.
 * Edureka: https://www.edureka.co/blog/vectors-in-cpp/
 * Technical reference: http://www.cplusplus.com/reference/vector/vector/
 
+## Tips for good marks in Assessment 3
 
-## Catchups
-
-Contact me on Discord to catch up and discuss code problems.
-
-## CLARITY
+### CLARITY
 
 {{< alert title="The Golden Rule" color= "primary" >}}
 A player should never have to guess what happened.
 
 If they hit a rotten fruit, you have to make clear it was rotten fruit, and what penalty was paid.
-* Changing the top or bottom border to display "ROTTEN APPLE: -3 SCORE" for 2 seconds is one possible way.
-  * You could tutorialise it a bit by pausing the game for 2 seconds the first time it happens, so they def read the message.
+  - Changing the border to display "ROTTEN APPLE: -3 SCORE" for 2 seconds is one possible way.
+  - You could tutorialise it a bit by pausing the game for 2 seconds the first time it happens, so they def read the message.
+  - Have your fruit types and effects in the gui in the first place!
+If the they hit a poison fruit or deadly wall, tell them why the game ended.
+  - Game over popover: "You ate a poison fuit, they kill!" Use your own words though.
+  
 {{< /alert >}}
+
+## A3 Required:Doing more than the minimum
+
+The brief says the Snake game is a base. It rewards building new things, added settings and features. When your tinker with it, when you flex a little.. we know you really understand it.
+
+* Go through rubric
+* Extra features! Things you can run into that change the game, difficulty settings, extra lives, best score recorded to disk.
+* Do more than the minimum! 
+* Don’t just do exactly as i do visually. You could:
+  * Change the window dimensions (`setupWindow(50,25)`)
+  * Have a double-thick wall
+  * What can you display in unicode? Can you make the background or snake more interesting?
+* Use the gui to provide any info you want
+  * different fruit types what they give you
+  * Hints
+  * Your previous best score
+  * tell them how disappointing they are.
+* Action replay of the last 10 seconds?
+* Multiple game modes
+* Top 3 scores saved to disk and reopened each time app opens

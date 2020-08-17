@@ -1,7 +1,7 @@
 ---
 title: "CAO201: Computer Architecture and Operating Systems"
 linkTitle: "CAO201: Comp Arch"
-weight: 18
+weight: 50
 menu:
   main:
     weight: 5
