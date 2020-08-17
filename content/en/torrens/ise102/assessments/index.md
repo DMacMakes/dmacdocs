@@ -46,8 +46,6 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 _Done_
 
-<!-- 
-
 **Due:** End of week 8
 
 We'll make a text based slot machine using the `ise102_console` template. A _prompt and response_ game loop.
@@ -91,7 +89,6 @@ In your solution/project folder (same thing for us) you can **delete all** of th
 Delete the folders.
 {{< /imgcard >}}
 
--->
 
 ## Assessment 3: Realtime Game
 
