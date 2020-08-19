@@ -5,6 +5,13 @@ weight: "120"
 description: >
   Polishing our models, rendering for art director review. Submission!
 ---
+
+## Today
+
+1. Some feedback  
+2. Defining the last task for the assessment (how to render it this week)  
+3. Some learnin: How you might retopo your model for painter in your holidays/future  
+
 ## Finishing
 
 Rendering with Orb's setup.
