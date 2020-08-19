@@ -128,15 +128,49 @@ Some **polishing** possibilities:
 
 ## Assessment 3: High Poly Environments
 
-Individual/group
+Team of two: Work as Stone Mason (building a wharf) and Carpenter (building the wooden pier).
+Individual: Pick one role or the other.
 
-First, the [view the pdf brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8566879_1&course_id=_83852_1)
+First, the [view the pdf brief on Blackboard](https://laureate-au.blackboard.com/bbcswebdav/pid-8989823-dt-content-rid-18209833_1/xid-18209833_1)
 
-Enough starting material for 2-3 students given in one class (we have 2.5 weeks left) is challenging.
+You will model the stone wharf or wooden pier in the concept art found in week 9's lecture notes
 
-Wood person, rock person and metal person could be a start.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week9/#assessment-3-rock-n-wood" target="_blank">Concept in Week 9 Notes<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-Stone wall, metal fence and wooden gate? Dungeon/graveyard pack?
+### Deliverable 1:
+Images, answers to questions, comments on classmates work in the discussions for:
+  * [week 9](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866561_1&message_id=_2243100_1) and  
+  * [week 10](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866562_1&message_id=_2100668_1)   
+  
+  **Deliverables and guidelines** are in the **first post** in each thread.
 
-Specs: 
-polys per model
+### Deliverable 2:  
+
+Watch the step-by-step tutorial provided in the [finishing section of the week 12 notes](https://dmdocs.netlify.app/torrens/aac202/week12/#finishing). Create the required work, and submit the LFS file link on Blackboard.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8989776_1&course_id=_89547_1" target="_blank">Final A3 Submission on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< alert title="Submitting Your Files" color= "primary" >}}
+1. Put your beauty render, other ZB screenshots (described below) and your final ZPR file in a folder.
+2. **Rename that folder** `AAC202_A3_Lastname_Firstname`, zip it up.
+3. Use the Torrens LFS to upload it (instructions at bottom of page).
+4. Submit the link on the Blackboard submission page.
+{{< /alert >}}
+
+**Images**
+1. Using orb's method of rendering and then compositing in photoshop, **produce one final beauty render** of your model from what you feel is the best angle to show it off. Make sure it's not tiny on screen, we need resolution.
+   - I'd first investigate if the angle in the concept art is best, it may well be. 
+   - Export the image from photoshop (File - Export - Export As) as a 24 bit png.
+2. Take some screenshots of renders done within zbrush (shift-r) as well, showing off your work from various angles/zoom. **No more than 4** screenshots.
+
+## Torrens Large File System
+
+{{< alert title="Linking a zip file from _LFS_" color= "primary" >}}
+The **_Torrens Large File Submission_** cloud drive is where you upload your large assessment files. 
+
+1. Follow the **video instructions** on the front page (scroll down) to upload your file into the `Trimester2 / ACR103 folder`  
+2. generate the **_share_ link** you need for your Blackboard submission.  
+  
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://lfs.torrens.edu.au" target="_blank">Torrens LFS<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+{{< /alert >}}
+
