@@ -5,24 +5,19 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Current File",
-      "type": "python",
+      "name": "Hugo: run server",
+      "type": "PowerShell",
       "request": "launch",
-      "program": "${file}",
-      "console": "integratedTerminal"
-    },
-    {
+      "script": "c:\\Hugo\\bin\\hugo",
+      "args": ["serve"],
+      "cwd": "${workspaceFolder}"
+    }
+ /*   {
       "name": "PowerShell: Launch Script",
       "type": "PowerShell",
       "request": "launch",
       "script": "enter path or command to execute e.g.: ${workspaceFolder}/src/foo.ps1 or Invoke-Pester",
       "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "browser-preview",
-      "request": "launch",
-      "name": "Browser Preview: Local dmdocs launch",
-      "url": "http://localhost:1313/torrens"
-    }
+    }, */
   ]
 }
