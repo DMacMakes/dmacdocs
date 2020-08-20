@@ -169,7 +169,8 @@ Due **11:55pm Sunday** August 23rd (Week 12)
 
 Supply the following for your finished, textured character.
 1. Your final 3D Coat working file.
-2. Screenshots of your finished character in 3D Coat
+3. Your final Maya working scene
+3. Screenshots of your finished character in 3D Coat
    - Must be in **unlit** mode, press **`2`** on the keyboard. This turns off the realtime light.
    - Take screenshots from at least 4 angles
    - For each angle you choose, take 2 screenshots of the character: 
