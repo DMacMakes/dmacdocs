@@ -6,29 +6,18 @@ description: >
   What is CAO107? Recent history of high end computing.
 ---
 
-## Blackboard
-
-* 1 module per week
-  - Modules contain slides, code, **requirements for reading and viewing** each week
-* Assessment briefs and submission
-  - 3 assessments, **week 4, week 7, week 11**
-* Discussion forums
-  - Places we'll post intros, some exercise results
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219104_1&course_id=_94382_1" target="_blank">CAO107 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-## Discord
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-## Activities
-We'll do one activity in class this week, and the other in homework.
+## Hellos
 
 ### Hello part 1: written introductions
 
 - write a paragraph introducing your self
 
-## Me, what I've done
+## You guys, and things you've done
+
+Maths 101, Algorithms and data structures, ise102 (C++).
+- Welcome back if you're my ise102 peoples
+
+### Me, what I've done
 
 Danny. I like dogs and keyboards, character art and rockclimbing. I played a lot of games in the 90s and 20teens. I used to do those more, now I hang out a lot with a four year old so I'm pretty cool.
 
@@ -49,10 +38,20 @@ Computer Scientist:
 Teaching:
   - Last few years here at Torrens.
 
-## You guys, and things you've done
+## Blackboard
 
-Maths 101, Algorithms and data structures, ise102 (C++).
-- Welcome back if you're my ise102 peoples
+* 1 module per week
+  - Modules contain slides, code, **requirements for reading and viewing** each week
+* Assessment briefs and submission
+  - 3 assessments, **week 4, week 7, week 11**
+* Discussion forums
+  - Places we'll post intros, some exercise results
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219104_1&course_id=_94382_1" target="_blank">CAO107 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+## Discord
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## What will we learn?
 How to write very high performance code that will make the most of the computer power you have available.  This won't have a lot to do with understanding C++ better, though that'll be needed too. We'll learn more about how the hardware itself works, what's super slow (by electronic standards), and basically what exploits we need to know to outperform other programmers' code.
