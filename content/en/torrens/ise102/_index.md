@@ -32,7 +32,9 @@ It also outlines **required** reading in the subject textbook.
 
 ## Join Discord
 
-[I have my own Discord](https://discord.gg/nC7b5tN) because it'll take everyone a while to get the hang of Blackboard. You'll have lots of questions and need lots of links, and as gamers we're more likely to notice Discord than emails about blackboard. 
+Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 
 

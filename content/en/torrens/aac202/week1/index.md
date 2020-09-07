@@ -31,6 +31,7 @@ resources:
 ---
 
 NEW CONCEPT WITH objects that better show smooth to sharp etc.
+SIMPLE enough to model, retop, and then get to substance.
 
 ## AAC202 Overview
 
@@ -41,6 +42,12 @@ Welcome back and hello new people!
 * Immerse yourself in modeling. Practise always, just like drawing.
 * Get your hands on a wacom or other drawing tablet! From week 5 we'll be using it every class and for homework.
 * Assessments.
+
+## Join the Discord server
+
+Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Recap
 

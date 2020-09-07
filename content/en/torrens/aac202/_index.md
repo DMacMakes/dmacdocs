@@ -24,8 +24,7 @@ Install **the required software packages** as soon as possible. Links and info a
 
 ## Join Discord
 
-[I have a Discord server](https://discord.gg/nC7b5tN) as an easy point to reach eachother and share links etc. Please join the server and then jump in the aac202-3d channel.
+Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/nC7b5tN">Danny's Discord
-</a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 

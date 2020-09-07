@@ -17,9 +17,15 @@ Before we can do any programming, you need to have the right software on hand. I
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#basic-console-program-template">Console Program Template</a>
 
+## Join the Discord server
+
+Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 ## Hello!
 
-Let's get acquainted.
+Introduce yourself on the discussion forums.
 
 ## Programming is just recipes
 
@@ -234,6 +240,10 @@ Open the Command Prompt and **try out the commands** above for yourself.
 The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them. </div>  
 
 To have instructions though, we need a task to complete or problem to solve!  
+
+## Hello part 2
+
+Share your webcam and say hello to the class, tell us what you wrote in your thread post. It will have helped you get your thoughts together.
 
 ## Our first program: Knight's Journey
 
