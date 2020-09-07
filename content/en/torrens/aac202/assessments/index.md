@@ -17,16 +17,18 @@ You'll be **targeting an environment concept** provided in the Week 1 notes, and
 
 There are deliverables for **week 1**, **week 2** and **week 4**.
 
-### Week 1 Deliverables
-**Select** an object from the environment concept **or design** a fitting prop of your own. This will be posted to the subject **forums**. Concept, style reference and instructions are in the week 1 notes:
+### Week 1: Concept, style, tutorials
+**Select** a prop to model, share your choice. Choose style reference, watch and take notes on subdivision modeling videos. Follow the link for details and to submit your work:
 
-[Week 1 Deliverables in the notes](../week1/#deliverable-this-week)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902732_1&message_id=_2295833_1" target="_blank">A1 Week 1 Submissions<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-### Week 2 submission details
+### Week 2: Assessing, drafting, modelling.
 
-#### Summary
-1. Add your work to new replies to [THIS DISCUSSION](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866554_1&message_id=_2100660_1) on the forums **by Tuesday**. 
-2. Comment on two other student's work **BEFORE Wednesday's class**.
+**Assessing** style, **drafting** your topology, **modelling** your prop. You'll share the results with your classmates and offer eachother **feedback**. Follow the link to the discussion forum for details and to submit your work:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902733_1&message_id=_2278364_1" target="_blank">A1 Week 2 Submissions<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<!--
 
 #### Work to do  
 
@@ -62,6 +64,8 @@ Copy the concept image into a new file and:
 Comment on two other students work, offering well thought out feedback:
 1. In matching capturing the concepts and matching the 3D style what did they do well?
 2. What changes/additions might improve the model?
+
+-->
 
 ### Week 4 submission details
 
