@@ -30,6 +30,8 @@ resources:
     
 ---
 
+NEW CONCEPT WITH objects that better show smooth to sharp etc.
+
 ## AAC202 Overview
 
 Welcome back and hello new people!
