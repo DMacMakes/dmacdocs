@@ -1,10 +1,10 @@
 ---
-title: "AAC202: Advanced 3D Asset Creation"
-linkTitle: "AAC202: Adv. 3D"
-weight: 20
+title: "aac202: Advanced 3D Asset Creation"
+linkTitle: "aac202: Adv. 3D"
+weight: 10
 menu:
   main:
-    weight: 4
+    weight: 1
     linkTitle: "aac202"
 ---
 

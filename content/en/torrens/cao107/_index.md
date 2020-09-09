@@ -1,11 +1,11 @@
 ---
-title: "CAO107: Computer Architecture and Operating Systems"
-linkTitle: "CAO107: Comp Arch"
-weight: 50
+title: "cao107: Computer Architecture and Operating Systems"
+linkTitle: "cao107: Comp Arch"
+weight: 40
 menu:
   main:
-    weight: 5
-    linkTitle: "CAO107"
+    weight: 4
+    linkTitle: "cao107"
 ---
 
 ## Lecture Notes for CAO107

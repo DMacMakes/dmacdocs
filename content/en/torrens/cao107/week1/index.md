@@ -1,6 +1,6 @@
 ---
-title: "Week 1: Welcome, trends in comp. arch."
-linkTitle: "W1: Welcome"
+title: "1: Outline, High Performance Computing"
+linkTitle: "W1: Outline, HPC"
 weight: "10"
 description: >
   What is CAO107? Recent history of high end computing.
@@ -19,18 +19,16 @@ Maths 101, Algorithms and data structures, ise102 (C++).
 
 ### Me, what I've done
 
-Danny. I like dogs and keyboards, character art and rockclimbing. I played a lot of games in the 90s and 20teens. I used to do those more, now I hang out a lot with a four year old so I'm pretty cool.
+Most of you I've had classes with before, but for those who haven't, I'm Danny. I like keyboards, character art, dogs and rockclimbing. I played a lot of games in the 90s and 20teens. 
 
 Coder and artist in industry:
 - Coded a lot of interactive work for brands: experience websites, interactive posters, games in banner ads
   - Augmented reality, webcam motion sensing, 3d engines in flash, old school 2d driving games, interactive video, wayfinding etc
   - Nissan, Sony, eBay, New Line Cinema, Roadshow, St.George etc
-- Prop art and then character art for 2D and 3D games.
-  - Photoshop, Maya, Zbrush, Substance Painter. High res, low res, pixel art.
-  - Torus Games, Wayforward (USA), Halbrick, Blowfish.
-  - GBA, PS4, XBone, Switch, PC, iOS/Android
 - Systems guy
   - Building/maintaining/networking high performance computing (HPC) systems for film/tv effects and editingin early 2000s: SGI, Mac, PC. Demoing and training Houdini, Avid products.
+- Prop art and then character art for 2D and 3D games.
+  - Photoshop, Maya, Zbrush, Substance Painter. High res, low res, pixel art.
 
 Computer Scientist:
 - B Computing Science UTS

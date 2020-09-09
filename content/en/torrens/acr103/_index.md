@@ -1,11 +1,11 @@
 ---
-title: "ACR103: Intro to 3D Asset Creation"
-linkTitle: "ACR103: Intro 3D"
-weight: 15
+title: "acr103: Intro to 3D Asset Creation"
+linkTitle: "acr103: Intro 3D"
+weight: 30
 menu:
   main:
     weight: 3
-    linkTitle: "ACR103"
+    linkTitle: "acr103"
 ---
 
 ## Lecture Notes for ACR103 

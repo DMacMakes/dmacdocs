@@ -1,11 +1,11 @@
 ---
-title: "ISE102: Intro to Software Engineering"
-linkTitle: "ISE102: Intro c++"
-weight: 40
+title: "ise102: Intro to Software Engineering"
+linkTitle: "ise102: Intro c++"
+weight: 50
 menu:
   main:
     linkTitle: "ise102"
-    weight: 4
+    weight: 5
 description: >
   Programming principles and practise using C++. 
 ---
