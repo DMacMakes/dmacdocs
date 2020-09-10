@@ -27,5 +27,9 @@ Base given out: windows app with _File_ and _Exit_. _File - Load Image_ and _Fil
 
 Look for available resources: Cpu cores and Cuda hardware on a capable Nvidia Gpu. Create an interactive image of the mandelbrot set using these resources.
 
-Split work appropriately
+Zoom in and out.
 
+Split work appropriately between available resources to maximise speed.
+
+**Qs**
+** What windowing/multimedia library? SFML? SDL2?

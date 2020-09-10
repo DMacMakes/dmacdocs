@@ -24,5 +24,7 @@ _Homework_
 ## 6. GPU Coding
 
 ## 7. OPERATING SYSTEMS         -A2 DUE (3 wks) ALREADY?
+Talk to Noman about whether they learned windows gui use, listenening to menus, creating text lists whatever.
+How do they display all the images/sounds.
 
 ## 8. 
