@@ -1,6 +1,6 @@
 ---
-title: "Week 12: Rendering and post"
-linkTitle: "W12: Rendering"
+title: "12. Rendering and post"
+linkTitle: "12. Rendering"
 weight: "120"
 description: >
   Polishing our models, rendering for art director review. Submission!

@@ -1,6 +1,6 @@
 ---
-title: "Week 11: Environments 3"
-linkTitle: "W11: Enviro 3"
+title: "11. Environments"
+linkTitle: "11: Enviro 3"
 weight: "110"
 description: >
   Polishing our models, rendering for art director review. Submission!

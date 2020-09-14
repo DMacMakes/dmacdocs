@@ -1,263 +1,265 @@
 ---
-title: "2: Subdivisions Continued"
-linkTitle: "W.2 Subdivs"
+title: "2: Cleaner ZBrush"
+linkTitle: "2. Clean ZBrush"
 weight: 20
 description: >
-  Modelling our chosen props as smooth, very high resolution models, leveraging subdivision surfaces. Creating a game rez version.
+  Working clean: subtools, automasking, base meshes, remeshing.
 resources:
-- src: "*mp.*"
-  params: 
-    byline: "Art: Mary Palmer"
-- src: "*jh.*"
+- src: "*patri*"
   params:
-    byline: "Credit: Joseph Harford"
-- src: "*fc.*"
-  params:
-    byline: "Art: Felice Calchi"
-- src: "*as.*"
-  params:
-    byline: "Art: Apratim Sarkar"
-- src: "*javier_rodriguez*"
-  params:
-    byline: "Art: Javier Rodriguez (Artstation)"
-- src: "*paul_chambers*"
-  params:
-    byline: "Art: Paul Chambers (Artstation)"
-- src: "*krzysztof-maziarz*"
-  params:
-    byline: "Art: Krzysztof Maziarz (Artstation)"
-- src: "concept_vs_technical_drawing"
-  params:
-    byline: "Art: Cape Horn Illust. (A), Krzysztof Maziarz (B), Mary Palmer (C)"
+    byline: "Art: Patri Balanovsky (Artstation)"
 ---
 
-<!--
-W2: 
-  - Show examples of magnifying glass, get people to start with the blank and work up to where I was.
-  - Or something else modelled in style of inspiration? Show how to create that style, how the bevels and curves and exaggeration work?
-  - Should I give out a super rough block out of the scene for scale?
-  - Give out a project folder with sub-folders, get people structured and using it from the start.
-  - People have been asked how they'd cut up their models iirc, I should show my answers for that. Drawovers.
-  - Students start on models.
-  - More subD modeling and refining, finishing
-  - Looking at problems people have
-  - Fixing one or two meshes for people in front of class
-  - Get it finalised. Name everything part1_subd, thing_subd.
+## Last Week's Homework
+
+Madballs: 2 hours of try-harding.
+
+Q&A
+1. What was easy to do on Madballs in ZBrush?
+2. What was hard to do in zbrush?
+3. Got stuck in a weird mode?
+
+Today we'll learn to do things that were hard with the basic subdividing workflow.
+
+(Doing stuff close together, clean work with crisp transitions, eyeballs and eyelids!)
+
+## Assessment 2: Character Sculpt
+Look at assignment brief
+
+## What are we learning today?
+
+You'll learn how to:
+* make cleaner, more professional looking models.
+* create a wider variety of silhouettes and shapes 
+  * without worrying about stretching
+  * without needing as many divisions
+* work from basemeshes for fast, clean, on-model results
+
+## Beyond Pushing Clay
+
+More than just adding and removing clay. Now we take advantage of digital tools.
+
+
+{{< imgproc res_ztools Resize "650x">}}
+Stylised human basemeshes.
+{{< /imgproc >}}
+
+## Follygon's ZBrush Process
+
+{{< youtube cYE_bVG98OQ >}}
+
+### How To Add Eyeballs And Eyelids!
+
+Sometimes having everything in one mooshy, continuous mass makes life hard. Consider eyes:
+
+{{< imgcard moana_disney Link "https://www.pinterest.com.au/dmacdraws/aac202/">}}
+Moana's lower lids are more visible as she looks upward. Also visible are the thick edges of her upper lids.
+{{< /imgcard >}}
+
+* **Eyeballs**, apart from a bump on the front, are **perfectly round**, glossy balls. 
+    * Maintaining perfect shapes is hard in sculpting.
+* **Eyelids** criss cross them at strange angles depending on expression and genetics.
+    * Humans are sensitive to the slightest movement of eyelids and brows.
+    * As a modeller you need to change them constantly.
+
+To freely modify one while leaving the other perfect, **we need different surfaces**.
+
+{{< imgproc bust_chef_pixar Resize "500x" Link "https://www.pinterest.com.au/dmacdraws/aac202/">}}
+This real clay chef sculpt from Pixar is extremely stylised. You can see the eyes and lids are not sculpted out of the main mass.
+{{< /imgproc >}}
+
+### Tools and Subtools
+
+To access the new files in _ZTools_ we'll start ZBrush and use the _lightbox_. It usually opens when ZBrush starts. If it doesn't, hit comma `,` or click the _lightbox_ button, top left.
+
+{{< imgproc lightbox Resize "800x">}}
+Projects, models, materials, brushes that don't load with ZBrush can be loaded from the lightbox.
+{{< /imgproc >}}
+
+A Tool can have multiple subtools. While you're in a ZBrush project you can load in new ones or save them out.
+
+{{< imgproc subtools_jaw Resize "800x">}}
+Jaw is a subtool of our character tool. Note the ear subtool has two meshes.
+{{< /imgproc >}}
+
+| Category |  Definition/Place                            |
+|-----|-----                                              |
+| Tools | Objects in the Tools palette.                   |
+| Subtools | Objects in the Subtools list                 |
+| Meshes   | Shells of contiguous polygons. Found inside subtools. |
+
+#### Importing Subtools
+
+{{< alert title="Definition: Subtools" color= "primary" >}}
+A bit like objects in Maya. Can have multiple meshes.
+{{< /alert >}}
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_class.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
+
+1. Download My Madball Demo File
+2. Unzip, it contains `madball_demo.zpr` and `eyes.ztl` files. 
+3. Open `madball_demo.zpr`
+5. Click `tool->subtool->append` and choose the `polysphere3D`. 
+
+{{< imgcard ui_append>}}
+Append an object as a Subtool
+{{< /imgcard >}}
+   
+#### Moving With The Gizmo
+
+The  gizmo is like the Maya transform manipulators.
+* Press `w` to use it (or `e` or `r`)
+* Press `q` to return to brushing
+* If you see a weird line with circled ends instead of gizmo, press `y` to switch.
+
+{{< imgproc gizmo Resize "300x" >}}
+The Gizmo and its menu.
+{{< /imgproc >}}
+  
+Gizmo tool moving things
+	* Individually
+	* As a group
+	* Locking/unlocking and changing the gizmo pivot `alt` or gizmo edit widget (like `d` in Maya`)
+	* Back to center of visible objects
+	* Can scale/rotate also.
+
+
+* Modifying eyes
+  	* Deforming with gizmo (`w`)
+  	* We have one subtool for eyes and eyelids. How work on eyelids without messing up eye
+  	* Back to Sculpt/Draw: `q`
+  	* Move brush `b, m, v`
+      	* masks (in draw mode)
+        		* `ctrl-left drag` to mask out
+        		* `ctrl-left drag` on background, not touching model, to clear mask.
+        		* `ctrl-left click` on background to flip mask.
+    		* With automask polygroup (in brush menu)
+      			* View popugroups with shift F
+    		* automask topological
+    		* masking with ctrl
+    		* Now try Move Elastic `b, m, e`
+
+{{< imgproc brice_head_pg Resize "500x">}}
+Brice head with polygroups visible.
+{{< /imgproc >}}
+This is a nice sitting position, I can type pretty easy too. typing way easier with a bigass tilt to the keeb dohn u fing.
+I wonder if i can type prtty cosy like. yeah that's real cosy like.super cosy like if i could get my arms held up like this.
+
+_**Coming soon: making eyes and lashes short tute*_
+
+### Exercise: Madball Eyes
+
+Re-do them on your model.
+
+## Modelling From Existing Blockout
+
+A blockout is what we saw last week: a whole made out of smaller, simpler pieces.
+- don't have to worry about joining and topology
+- can edit pieces safely without messing up neighbouring anatomy.
+
+Brice Laville Saint Martin doing it:
+
+{{< youtube "Ay-UY6JTbF4" >}}
+
+Now we'll do it with his basemesh 👌
+
+{{< imgcard res_ztools Link "Zbr_wk2_resources.zip">}}
+Brice Saint Laville's starting files.
+{{< /imgcard >}}
+
+* Open the aa starting file in `Lightbox->Projects`
+* Select a star or cylinder tool from tool palette
+* Go to `Lightbox->Tools->Base Meshes` and load the head basemesh.
+
+## Demo: Greeno
+
+Starting a character bust from a basemesh using reference.
+
+{{< imgcard ui_drawMenu_frontReference>}}
+The starting file along with good <i>Draw</i> menusettings for a reference plane.
+{{< /imgcard >}}
+
+<!-- ### Joining The Pieces
+
+Dynamesh is a magical tool that didn't exist in ZBrush until it was over 15 years old. Everything changed for cartoony artists, concept artists. You could truly experiment and explore whole creatures in ZBrush with little friction.
+
+It'll be hard to see, but Brice merges everything with Dynamesh around 0:25. After that, you'll see the seams and cleanup. He's meticulous.
+{{< youtube "-ElecAWzP_Y" >}}
+
+{{< imgcard brice_tao_dynamesh Link "brice_tao_dynamesh.jpg">}}
+Captured frame where he looks at the new topology. Teeny tiny quads.
+{{< /imgcard >}}
+
+Then I’ll dynamesh (give settings) and start cleaning up with sculptris (give settings).
+
+###  Ways To Generate/Merge Geometry
+
+Show girl face vid by follygon, then the brice saville one.
+Approaches: 
+Follygon: traditional clay, very steoke intensice
+Brice: digital realm specific: block out low and clean, minimal final sculpting
 -->
-## Assessment 1
+## Homework:
 
-* Review the [updated Assessments page](../assessments/#assessment-1-high-poly-props) (and week1 notes from there)
-* Look at our prop choices.
+1. You will **spend about 2-3hrs** modelling a head from one of concepts supplied below, starting from a supplied a base mesh.  
+2. **Post screenshots** of your head (with polyframe on _and_ off) to the discussion thread **before the start of (week7) class**.  
 
-{{< imgcard retro_building_krzysztof-maziarz Link "retro_building_krzysztof-maziarz.jpg">}}
-The concept
-{{< /imgcard >}}
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866558_1&message_id=_2100665_1" target="_blank">Week 6 Homework Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-## Modeling To A Style
+This will be marked as **part of assessment 2.**
 
-To model to a style we need to be able to analyze it first. In acr101 you (probably) looked at how to break down a 2D style into the elements that define it.
-  * Use of colour, proportion, line quality
-  * tone transitions, detail vs simplification
-  * Technical drawing vs dynamic, off-form drawing to add movement and interest.
+### Details
 
-{{< imgproc static_dynamic_2d_1 Resize "1024x" Link "static_dynamic_2d_1.png" >}}
-Environment sketch styles: both lines are dynamic, but one has a flat, static perspective.
-{{< /imgproc >}}
+Using the Model one of the faces below.
 
-Styles can communicate a lot, but one common dichotomy is conveying accurate information about a subject vs conveying the feel/experience of encountering a subject. Compare the concept I've supplied to the more technical drawings below. What do you think Kryzysztof's goal was when he drew the concept art, what might he want to convey to the 3D artist and eventual player?
+1. Pick a 2D character concept from the selection below (except blue octopus guy)
+2. Start a new project by going to _Lightbox->Project_ and opening _**1mCube.zpr**_
+3. In _Lightbox->Tool->BaseMeshes_ double click _**Brice_Head.ztl**_ 
+4. Using techniques of masking, gizo transforms and brushwork taught in class and seen in the _Tao Pai Pai_ youtube video, model the character.
+5. Screenshot images of your head with polyframe on and off. Make sure it's zoomed in, avoiding small and pixelated images. 
+   
+{{< alert title="What to focus on" color= "secondary" >}}
+Aim to reproduce the proportions of the character, creating a likeness, and capturing the stylised shapes and flow of the concepts.
 
-{{< imgproc concept_vs_technical_drawing Resize "1024x" Link "concept_vs_technical_drawing.png" >}}
-Is there more that sets apart image A and B than just perspective? Consider C.
-{{< /imgproc >}}
-
-### 3D style elements:
-
-Breaking down 3D style is a similar process, once you define the qualities you'll be looking for
-* Use of proportion (realistic, exaggerated, shifting)
-* Dynamism: are shapes static and boxy, or dynamic and exciting? Maybe shambolic? Do you see a lot of parallel lines, mechanical looking lines? Or are there more dynamic shapes, with corners meeting at all sorts of angles and lines bending?
-* How are transitions between surfaces/planes handled? Are outer corners sharp, or do they have a balooned look? Often it's a mix, and you need to look at a few edges in various situations to decide.
-
-{{< imgproc plane_changes_fc Resize "900x" Link "plane_changes_fc.png" >}}
-Look ath the difference between simplified planes of the face (A) and the variety of real transitions they present (B). Finally, how does the artist approach rendering each of these transitions (C) in pencil?
-{{< /imgproc >}}
-
-{{< imgproc style_chest_paul_chambers  Resize "600x" Link "style_chest_paul_chambers.png" >}}
-Chest. Click to zoom.
-{{< /imgproc >}}
-
-{{< imgproc style_pancakes_paul_chambers Resize "600x" Link "style_pancakes_paul_chambers.png" >}}
-Pancake breakfast. Click to zoom.
-{{< /imgproc >}}
-
-{{< imgproc static_3d_building_3 Resize "600x" Link "static_3d_building_3" >}}
-Would Krzysztof sign off on this style?
-{{< /imgproc >}}
-
-{{< imgproc dynamic_3d_house_as Resize "600x" Link "dynamic_3d_house_as.png" >}}
-How about this?
-{{< /imgproc >}}
-
-### Chest drawover demo
-
-{{< imgcard chest_drawover_demo>}}
-Drawing over to figure out style, topology.
-{{< /imgcard >}}
-
-**Style summary:** 
-* Simple volumes 
-* Round out and soften those perfectly sharp, computer generated corners.
-* Get rid of 90 degree angles and parallel lines as much as possible.
-
-## A1 base scene
-
-I've provided a base scene with a rough block out of our building and the scale of a few props. Hopefully you'll find it's a fair bit easier than working in a big empty space.
-
-There's also a copy of the concept image in the _front_ viewport for easy reference and checking. 
-  * Keep in mind this is a 3/4 view so the side to side dimensions won't be perfect.
-
-{{< imgcard a1_prop_base_maya Link "A1_props_base.zip" >}}
-Click to download the zip file. Right click and open image in new tab to view full resolution.
-{{< /imgproc >}}
-
-{{< alert title="Fitting your prop to your game" color= "secondary" >}}
-When you model for games your assets need to fit with everything else. On well organised projects it's handled at a few stages, including in your modeling tool and in-engine
-
-1. **Get your asset in-engine**: place it in one of the game levels in your engine (Unity/Unreal) is a great early and often. The more you check, the better your outcome. Unfortunately for our project:
-  * That level has to exist already
-  * If you don't update and check it for a while you can get yourself into trouble
-
-2. **Model from a starting scene with other assets**: Early on, like in the assessment, we can start with a common base scene with some assets already complete/blocked in. In the US games companies it's been referred to as an **_asset gym_**.
-  * You can start out with **confidence** that you're on track.
-  * Helpful for basic **silhouette** style matching - dynamic vs static, proportions etc
-  * You can replace items in there as other people in your company complete work, importing ma or fbx files.
+**Stay in the lowest subdivision** as long as possible. Try not to subdivide any mesh more than once.
 {{< /alert >}}
 
-## Modeling demo
+{{< imgproc pipehead_polys_low Resize "600x" Link "pipehead_polys_low.png" >}}
+Here I'm attempting to get as far as I can (on a different concept) towards final before adding more subdivisions. <I>Click for high res.</I>
+{{< /imgproc >}}
 
-Separating out parts
-Loops to define boundaries
-Loops to support boundaries
-Soft and sharp
+### Concepts
 
-## Week 2 submission details
+Don't pick blue octopus guy, he requires too many extra models or too much subdividing of the unsuitable jaw mesh.
 
-Get these done and submitted before next class if you don't want to fail assessment 1!
+{{< imgproc "patri-balanovsky-alien-faces-5" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
+faces-5
+{{< /imgproc >}}
 
-[Assessment 1 Week 2 Deliverables](../assessments/#week-2-submission-details)
+{{< imgproc "patri-balanovsky-alien-faces-8" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
+faces-8
+{{< /imgproc >}}
 
+{{< imgproc "patri-balanovsky-alien-faces-12" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
+faces-12
+{{< /imgproc >}}
 
-<!--
-## OLD CONTENT
+<!-- 
+Week 8 we’ll use goZ to add stuff in maya and begin work on our final charcter. Learn material fill.
 
-## Subdiv Learning
-
-Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
-
-For that reason, I'll be skimming several videos today, and leaving it to each of you to watch the ones in the order that works for your prop.
-
-{{< alert title="Tip: Work Large To Small" color= "warning" >}}
-Always work large to small. You don't know yet how many small details you'll need to get your point across, or how hard they'll be. Get the silhouettes, proportions and corners right first.
-{{< /alert >}}
-
-### Fundamentals
-
-Ways to support corners:
-{{< youtubetime HPrj4FbVnRM 122 >}}
-
-* Bevels
-* Fencing (or support loops)
-* Creases
-    - Appear to be the holy grail at first, but have real limitations.
- 
-### Working with cylinders
-
-Some straightforward controlling of volume and end shapes:
-
-{{< youtubetime iyZqmWf5x_c 223 >}}
-
-But how do you add features to one small area without breaking the that perfectly circular cross section:
-{{< youtubetime RCSijbeXujs 38 >}}
-
-The first 10 minutes here show us how to break up the mesh without gaps and distortions.
-{{< youtube ryPIKJkNzPI >}}
-
-### More Complex
-
-More by Elementza:
-
-{{< youtube 0WZ8zfKOTr0 >}}
-
-### Sharp Things, Hiding Triangles
-
-One to subdivision modeling is that **pointy volumes** are naturally form **pyramids/triangles**: how do we handle those with quads?
-
-{{< youtube "Z9wgKy-F1Rw" >}}
-
-{{< alert title="Disaster: I don't know 3DS Max!" color= "danger" >}}
-Relaxing. He's using 3DS Max, but he's using subdivision surfaces and **his solutions apply just as well in Maya**. The video's full of great techniques despite the weird tool names (turbosmooth = Maya's smoothed display, etc).
-{{< /alert >}}
-
-Another challenge he helps you manage: **adding details** means adding lots of edge loops. How do we **avoid a loopfest** that makes the model unmanageable and messes up curves?
-* If we terminate those edges that'll make a triangle, right? Won't that mess up the surface?
-  * First, there are **sneaky ways of shaping quads** 
-  * Second, triangles and ngons  create bumpy artefacts on curved surfaces, but **flat surfaces handle bad geometry better**
-
-## Retopology
-
-The game model that receives the details from the subdiv model has different requirements, and we need different topology to suit. The missing detail will return in our normal map.
-
-{{< imgcard topology_zombie_high Link "topology_zombie_high.jpg" >}}
-The subdiv (or sculpted) mesh doesn't have perform well on a player's PC, just the artist's.
-{{< /imgcard >}}
-
-{{< imgcard topology_zombie_low Link "topology_zombie_low.jpg" >}}
-The in-game mesh has to animate well (characters) and support the silhouette/volumes.
-{{< /imgcard >}}
-
-..
-https://www.youtube.com/watch?v=8OADBBgk7oM
-..
-{{< alert title="Definition: Topology" color= "primary" >}}
-A cylinder is just an idea, it can be constructed lots of ways. The curved surface can have 8 faces, 16, 17, 28, whatever; more faces just make it more precise.
-The same can apply to a human head: there are infinite ways triangles can be rearranged to produce, to our eye, the same head.
-**The topology of a surface is the collection of points, edges and faces currently used to represent it.**
-{{< /alert >}}
-
-### Supporting Baked Details
-
-We need enough geometry to support the silhouette and believable normal map details.
-
-We can 
-1. Start with a copy of the model that is being subdivided
-  - Delete the support loops
-  - Scale loops to look more like the smoothed silhouette
-  - Add more geo for curves etc
-2. Start with the smoothed version
-  - It's too dense to easily clean up
-  - We can, though, make it a 'live' surface that geometry sticks to
-  - Use that stickiness to draw all our new quads right onto it.
-
-### Quad Draw And Live surfaces
-
-{{< youtube xpDWta5O3n8 >}}
-These guys can jibber jabber but they do share great skills.
-
-{{< youtubetime 3L8eZAwmG2E 100 >}}
-Danny Mac (I know). Does some head retopo here in 3D Coat, showing nice techniques for sharpening and smoothing the transitions between planes.
-
-## Deliverable This Week
-
-1. Add another post to your Prop Concept thread in the [Module 1 Discussion Forum](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_83852_1&nav=discussion_board_entry&conf_id=_133461_1&forum_id=_804652_1). Describe your plan of attack for this model.
-   * What key modelling will you need for the silhouette while staying under 2000 polygons.
-   * Where will the subdivisions help (for smooth clean, mechanical looking shapes).
-   * Where do you think you'll need control loops?
-   * What do you think can be added in normal maps?
-   * It's probably easiest if you draw over and annotate your concept with some planned topology 
-2. Continue modelling your prop using the style, ideas and techniques we discuss in class. 
-   * Post images of your model
-     * Smooth shaded with wireframes and ambient occlusion turned off, from a few angles
-     * A shot or two without wireframes.
-3. First attempt at the game resolution model.
-
-
+Week 9 polypaint and solve people’s problems workshop.
 -->
+#### Resources
+
+ZBrush keyboard shortcuts:
+[http://docs.pixologic.com/user-guide/keyboard-shortcuts/shortcuts-by-category/](http://docs.pixologic.com/user-guide/keyboard-shortcuts/shortcuts-by-category/)
+
+My aac202 pinterest board.
+[https://www.pinterest.com.au/dmacdraws/aac202/](https://www.pinterest.com.au/dmacdraws/aac202/)
+
+My aac202 youtube playlist:
+[https://www.youtube.com/playlist?list=PLfWza-ietxyzCD459RKEL6Tg42Tgnq5gE](https://www.youtube.com/playlist?list=PLfWza-ietxyzCD459RKEL6Tg42Tgnq5gE)
+
+The middle tao pai pai video:
+{{< youtube "k2TPi-WaO20" >}}

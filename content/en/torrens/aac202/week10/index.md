@@ -1,6 +1,6 @@
 ---
-title: "Week 10: Environments 2"
-linkTitle: "W10: Enviro 2"
+title: "10. Environments 2"
+linkTitle: "10. Enviro 2"
 weight: "100"
 description: >
   Turning parts into structures.

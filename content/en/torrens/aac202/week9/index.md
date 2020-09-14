@@ -1,6 +1,6 @@
 ---
-title: "Week 9: Environment Modeling"
-linkTitle: "W9: Environments"
+title: "9. Environment Modeling"
+linkTitle: "9: Enviro 1"
 weight: "90"
 description: >
   Creating high res environments in ZBrush, working to a style.

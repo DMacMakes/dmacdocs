@@ -20,10 +20,10 @@ _Homework_
 ## 4. THREADS 2 Challenges      - A1 DUE
 
 ## 5. GPU INTRO
-
 ## 6. GPU Coding
+Not relevant to this assessment, better weeks 8-11?
 
-## 7. OPERATING SYSTEMS         -A2 DUE (3 wks) ALREADY?
+## 7. OPERATING SYSTEMS         -A2 DUE (only 3 wks?)
 Talk to Noman about whether they learned windows gui use, listenening to menus, creating text lists whatever.
 How do they display all the images/sounds.
 

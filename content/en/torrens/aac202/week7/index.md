@@ -1,219 +1,148 @@
 ---
-title: "7: Polish"
-linkTitle: "W.7 Polish"
+title: "7. Game ready topology"
+linkTitle: "7. Retopology"
 weight: 70
 description: >
-  Working clean: subtools, automasking, base meshes, remeshing.
+  Preparing models for substance, baking maps to feed into the texturing process.
 resources:
-- src: "*patri*"
+- src: "barrel_alvaro_vera.jpg"
   params:
-    byline: "Art: Patri Balanovsky (Artstation)"
+    byline: "Art: Alvaro Vera"
 ---
 
-## Learning Today
+## Last week's deliverables
+How far did people get with subdivs?
+* Did everyone watch the vid with alex?
+* Looking at images delivered
+* Checking out comments
+    
+### Progress?
+* How much fixing do we need to do? 
+* When it's done we can move on and look at retopo 🎉
 
-1. Easier ways to do the tricky things in the homework!
-2. Persistent masking to polygroups - it's the best.
-3. Working easily with multiple meshes in a single subtool
-4. Merging separate meshes with Easymesh/Dynamesh, and cleaning up the seams
-   
-## Discussing Week 6 Sculpt
+## How is this useful?
 
-What was good? What was tricky?
+These meshes don't make sense for games. 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week6/#homework" target="_blank">Week 6 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+**Unsmoothed subd models** have all these weird edges purely for the smooth algorithm. No good in games, too much pointless geometry, and they can be really far from the final silhouette.
 
-## Assessment 1
-
-Marking status.
-
-## Refining The Sculpt
-
-{{< imgproc refining_pipehead_2 Resize "800x" Link "refining_pipehead_2.png" >}}
-Another sculpt based on the Brice basemesh. Some geometry added, polygroups used for repeat masking.
+{{< imgproc mug_smoothing_xray_comparison Resize "850x" Link "mug_smoothing_xray_comparison.png" >}}
+Different: the subdiv mesh's pre- and post-smoothing silhouettes
 {{< /imgproc >}}
 
-We're still using a small subset of ZBrush's features, and some areas remain difficult to work with.
+**Smoothed subd models** look good but are too high poly for game engines. They might be 200K polys where we want say 2K or less.
 
-* How can I work cleaner with last week's tools?
-* What new tools will help?
+### Something in between
 
-### Demo Project
-
-Download this hand project:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="Week7_hand.zip" target="_blank">Hand Basemesh Project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-
-{{< imgcard 1_hand_subtools Link "Week7_hand.zip">}}
-Hand basemesh (one subtool, multiple polygroups). <i>Click to download</I>
-{{< /imgcard >}}
-
-### Masking: Revision
-
-The masking The shortcuts below will be your main way of creating and editing masks in ZBrush.
-
-| Command           | Shortcut                              |
-|-----------        |------------                           |
-| Activate masking    | `ctrl`                                          | 
-| Draw mask on mesh   | `ctrl + left drag (mouse)`                      | 
-| Erase mask on mesh  | `ctrl + alt + left drag`                        | 
-| Clear mask          | `ctrl + left drag` on canvas                    | 
-| Invert mask         | `ctrl + left click` on canvas                   | 
-| Blur mask           | `ctrl + left click` on mesh                     | 
-| Sharpen mask        | `ctrl + alt + left click` on mesh               | 
-
-There's also a helpful _Masking_ subpalette in the _Tools_ palette, which is on the right side of ZBrush by default.
-
-{{< imgproc mask_pipehead Resize "500x">}}
-Masking the upper face to move lower lip.
+What if we had something in the middle? 
+  * a totally new, hand made, mid weight mesh (say 2K)
+  * It has a silhouette that looks more like the smoothed subd mesh than the unsmoothed one, but it's still faceted.
+  * It could somehow steal the smoothed subd mesh's skin, then wear it like a suit (creepy) but still run fast (really useful). 
+    * More on how to do this next week.
+    * A bit like skinning a wolf and wearing it as a cloak. You look way hairy but you actually have a very simple, smooth surface.
+  
+{{< imgproc subd_vs_game_mesh Resize "800x" Link "subd_vs_game_mesh" >}}
+1. A subd mesh without smoothing | 2. A game ready mesh | 3. The subd mesh again smoothed.  
+_(Just an illustration: don't move meshes side by side or duplicate your smoothed subd)_
 {{< /imgproc >}}
 
-## Colour
+## What's a game ready mesh?
+  
+A game ready model is one that will look as much like our prop as possible but is light enough (in triangles and textures) that it won't slow our frame rate down too much or eat up all the memory.
 
-Perfectly visualising the final product before it's painted is hard even for a seasoned sculptor.  Applying colour early can:
-* help you better compare your model to the character.
-* reveal issues with the eyes and get them solved quicker.
-* save on oversculpting, uncertainty and noodling.
+{{< alert title="Definition: Topology" color= "secondary" >}}
+Consider a cylinder with a height of 2 units and a diameter of 1 unit. It's an ideal volume, an idea of perfect roundness with perfect flatness at the top and bottom. Our model isn't that though, it's a bunch of triangles that only _approximate_ it. It could use 100, 1k or 1m triangles. 
 
-Enable colour/polypaint
-Fill object
-Custom brush DM_FlatHardPaint
-Polygons = pixels, so subdivide.
-Good materials for polypainting
-Hiding/showing the paint job
-Eyelids: creasing to keep the eyelid forms. 
-  - Crease by angle (crease level 3)
+_**The arrangement of polygons currently representing that ideal cylinder is our model's topology.**_
 
-{{< imgproc polypaint_pipehead Resize "800x" Link "polypaint_pipehead.png">}}
-UI things to look for when polypainting.
-{{< /imgproc >}}
-
-### Exercise: Colour Character Head
-
-If you didn't get it done, borrow [Callum's](Long_head_joe_CA.zip).
-
-## Assessment 2: Character Bust
-
-Jump to the my [assessment page](http://localhost:1313/torrens/aac202/assessments/#assessment-2-high-poly-character).
-
-## Topology
-
-A soccerball is always the same general **_form_**: a sphere. The panels that make up the surface can vary enormously. The layout of these panels is the ball's _**topology**_
-
-{{< imgcard topology_footballs>}}
-Some of the many panel layouts.
-{{< /imgcard >}}
-
-{{< alert title="Definition: Topology" color= "warning" >}}
-The shape, number and layout of polygons that make up the surface of your model.
+It's the same with the models in our game. When you play on Ultra graphics, Tracer (a character in Overwatch) might have say 20k triangles. Run on Low graphics and maybe she has 4k. The same character, just represented with different _topology._ If you squint, they even look the same.
 {{< /alert >}}
 
-{{< imgcard topology_cubes>}}
-A cube's topology can vary infinitely while remaining a cube.
-{{< /imgcard >}}
+## Making the game ready mesh
+  
+**Goal** Produce a mesh that:
+1. Has a triangle count that fits in a given range (say 1000-2500 polygons). (defined by certain production and hardware realities)
+2. Provides a silhouette closely matching that of the smoothed mesh, though more faceted.
+3. Sits at the same point in space and is the same size, which will be important later.
 
-### Character Topology
+### Download
+Grab this [breakfast mug maya project](week3_breakfast.zip)
 
-We started with a lower density mesh, made of quads, and the quads flowed fairly well with the forms.
+### How's it possible?
+There are a few ways to do it, but they all involve making a game-resolution mesh in the same space as the smooth reference model so you can match them as close as possible.
+This takes organisation and some Maya knowledge, because otherwise you're going to not be able to see or select the game mesh half the time!
 
-{{< imgcard brice_head>}}
-Our starting point, the brice head.
-{{< /imgcard >}}
-
-The polygon _density_ was fairly consistent on a lot of the surface, with extra density in areas like the features of the nose, the edges of the eyelids, the ears. We **increased the density** across entire subtools of the mesh by _subdividing_ (ctrl-d).
-
-{{< alert title="Definition: Polygon Density" color= "warning" >}}
-The number of polygons making up a given area of a mesh. It can change from location to location on the mesh.
-{{< /alert >}}
-
-### Continuity
-
-The Brice head is separated over multiple subtools, so **it's not a continuous mesh**.
-
-## Combining And Polishing
-
-### Merging Subtools
-
-* You've shaped and moved individual subtools
-* At some point it becomes more pain than benefit having them separate
-
-**Pro:** You can run a brush along the palm and onto a finger now, making it easier to sculpt the joints.
-**Con:** Now you risk messing up nearby fingers while you sculpt.
-
-It's easy to **merge** the subtools:
-1. Pick the top subtool
-2. In _Tools->Subtools->Merge click _MergeDown_.
-3. It'll ask if you're sure. Click yes + don't ask again.
-3. Continue merging down.
-4. If you enable polyframe (the button next to finger1 and finger2 in the image below) you'll see it on all the parts you've merged.
-
-{{< imgcard 1_hand_subtools Link "1_hand_subtools.jpg">}}
-Left: Multiple subtools with polyframe on. Right: After <pre>MergeDown</pre> applied to subtools.
-{{< /imgcard >}}
-
-### Topological Automask
-
-Work on a finger without masking or hiding its neighbours.
-
-_Brush->AutoMasking->Topological_. I've also added it to the custom UI.
-
-### Polygroups: Together, Alone
-
-If you don't have polygroups visible, hit `shift-f`.
-
-Auto groups, group visible (custom ui, _Tool->Polygroups_).
-
-In _Brush->AutoMasking_ there's a slider for Mask By Polygroups. 
-* Turn it up to 100 and it works just like Mask Topological for our hand subtool.
-* It's more powerful because you can have multiple polygroups on a single mesh with unbroken topology.
-
-### Hiding And Showing
-
-Hiding parts of meshes or polygroups makes it a lot easier to work in the spaces between things. If you don't have Polygroups visible, hit `shift+f`.
-
-| Command           | Shortcut                              |
-|-----------        |------------                           |
-| Activate hiding    | `ctrl-shift`                                     | 
-| Hide part of mesh   | `ctrl + left drag (mouse)` a rectangle over it  | 
-| Invert hiding       | `ctrl + left drag` on canvas                    | 
-| Show all            | `ctrl + left click` on canvas                   | 
-| Solo a polygroup    | `ctrl + left click` on mesh                     | 
-| Hide a polygroup    | `ctrl + alt + left click` on mesh               | 
-
-
-## Fusing and Remeshing with Dynamesh
-
-
-It'll be hard to see, but Brice merges everything with around 0:25. After that, you'll see the seams and cleanup. He's meticulous.
-{{< youtube "-ElecAWzP_Y" >}}
-
-### What Did We Just See
-
-Dynamesh completely recreates your model with the same form, as well as it can, with new topology. Your separate meshes are joined where they meet, somewhat like melting wax or plastic together, or welding metals.
-
-{{< imgcard brice_tao_dynamesh Link "brice_tao_dynamesh.jpg">}}
-Captured frame where he looks at the new topology. Teeny tiny quads with no apparent flow.
-{{< /imgcard >}}
-
-The new topology **has no flow**, but makes up for it with **quite high density** to match the smallforms and folds.
-
-### Easier dynamesh with _Ryan's Tools_
-
-{{< imgproc easymesh_hand_1 Resize "1080x" Link "easymesh_hand_1.png" >}}
-Click for high res and check out the mesh changes.
+{{< imgproc object_shared_space_problem Resize "500x">}}
+When objects need to share space, how do you model?
 {{< /imgproc >}}
 
-| Command           | Shortcut                              |
-|-----------        |------------                           |
-| Easymesh to level 5   | Click the _EasyMesh_ below the main canvas on my custom UI  |
-| Easymesh to another level  | Undo the previous easymesh and drag the _Detail Level_ slider. 1 is coarse and 10 very fine |
+Tools:
+  1. **XRay modes!** Xray the scene or individual meshes
+    * In a viewport enable `Shading -> X Ray`. I've hotkeyed to alt-x for now.
+    * X Ray one object in _Modeling Toolkit's_ `Object` menu.
+  2. **Freeze (template) toggle!**
+      * It does what the T (template) mode for a layer does, but for an object.
+      * It's in _Modeling Toolkit's_ `Object` menu.
+      * I've hotkeyed it to alt-shift-f (in the hotkey editor you need to search for _template toggle_).
 
-### Dynamesh directly
-| Command           | Shortcut                              |
-|-----------        |------------                           |
-| Enable Dynamesh   | Click the _Dynamesh_ button inthe _Tools->Geometry->Dynamesh_ subpalette. |
-| Re-Dynamesh       | `ctrl + left drag` on canvas (like clear mask, so be careful) |
-| Project           | Button in the _Dynamesh_ subpallette. |
-| Change resolution | Slider in _Dynamesh_ subpalette. |
+### Get set up
+<!-- Make a duplicated, 1-2x smoothed version of the subd mesh (maybe 30K+ polys). Give it a layer of its own. subd_heavy This is ANOTHER mesh needed.
+* Hide the original subd (can be edited later if need be) -->
+* Give the subd meshes the suffix `_subd`, as in `body_subd`
+* Add a bright red material to the subds so we can tell them apart.
 
+{{< imgproc game_model_prep Resize "600x" Link "game_model_prep.png" >}}
+The three meshes with a the `_subd` suffix and red material. (body_game and handle_game are hidden)
+{{< /imgproc >}}
+
+### Modeling the new mesh
+
+Whichever way you go about modeling them, give the game meshes the suffix `_game` and a blue material to stand out from the subd ones.
+
+**Model from scratch**: slap down a new primitive and start modeling again, around the subd, trying to match the silhouette.
+
+_or_
+
+**Duplicate the unsmoothed subd mesh**, call that the game mesh, then heavily** modify it**:
+  * Reduce the poly count
+    * Remove loops that don't affect the silhouette. Support edges mostly don't.
+    * Remove edges that do support the silhouette but won't be missed too much: eg reducing a cylinder from 16 to 8 sides.
+  * Move points/loops/edges around until you approximate the smoothed model but with less polys
+
+_or_
+
+**Duplicate and smooth the subd mesh** using `edit mesh -> smooth []` with `level=1` and then **modify/optimise** that mesh.
+
+_or_
+
+**mix all those approaches**!
+<!--2. Trace the mesh using live mode and quad draw.
+* Make subd_heavy a live mesh
+* Start quad drawing on it.
+* turn off live, make other changes.-->
+{{< imgproc subd_and_game_mesh_intersecting Resize "500x" Link "subd_and_game_mesh_intersecting.png" >}}
+Game meshes (blue) occupying the same space as the subd meshes (transparent red). Contrasting materials make life a lot easier.
+{{< /imgproc >}}
+
+ Table showing the four meshes and their use.
+
+## Homework
+
+1. Apply feedback to and finalise your subd models. Give them the suffix _sub, ie: `screenGlass` becomes `screenGlass_subd`
+2. Create game ready meshes for each element using what you learned in week 3 about retopology. Suffix them with `_game`, as in `screenGlass_game`
+{{< imgproc naming_meshes Resize "800x" Link "naming_meshes.png" >}}
+How to name your meshes. (DO NOT move your meshes side by side, this image only demonstrates naming)
+{{< /imgproc >}}
+
+3. **Uv unwrap** all your game ready models (_not_ the subd models) and use layout to pack them all into the same UV space (see final video of week 3 class for review of uv unwrap).
+
+[Reply to this thread on Blackboard](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866555_1&message_id=_2100661_1) and post:
+1. Your concept image
+2. Images of your finished subd meshes with smooth preview on and:
+   * with wireframe onshaded on
+   * then off.
+3. An image of your your checkerboarded models next to finished UVS.
+
+{{< imgproc mug_uvs Resize "800x">}}
+All mug parts selected, uv checkerboard on, image > dim on
+{{< /imgproc >}}
