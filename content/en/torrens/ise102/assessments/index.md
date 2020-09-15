@@ -9,13 +9,9 @@ description: >
 
 ## Assessment 1: Exam
 
-_Done_
-
-<!--
-
 **Due:** End of week 4
 
-Click for the [Assessment page and PDF brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?course_id=_90315_1&content_id=_8948578_1&mode=reset)
+Exam [sitting page and brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258117_1&course_id=_93608_1)
 
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
 
@@ -40,17 +36,13 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 **#1 tip:** If you think you really understood the example you typed out and toyed with, close the project, create a new one and **rewrite it from memory.** If you don't get anything wrong first go, it's not a hard enough exercise!
 {{< /alert >}}
 
--->
-
 ## Assessment 2: Slot Machine
-
-_Done_
 
 **Due:** End of week 8
 
 We'll make a text based slot machine using the `ise102_console` template. A _prompt and response_ game loop.
 
-[Slot Machine Brief](https://laureate-au.blackboard.com/bbcswebdav/pid-8547440-dt-content-rid-36256223_1/xid-36256223_1)
+[Slot Machine submission and brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258118_1&course_id=_93608_1)
 
 ### Deliverable 
 
@@ -86,15 +78,14 @@ In your solution/project folder (same thing for us) you can **delete all** of th
 * _x64_
 
 {{< imgcard folder_cleaning>}}
-Delete the folders.
+Delete the folders. DO NOT MOVE YOUR FILES if this folder is different to yours. Contact me.
 {{< /imgcard >}}
-
 
 ## Assessment 3: Realtime Game
 
 Make Snake!
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948580_1&course_id=_90315_1" target="_blank">See A3 brief pdf on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948580_1&course_id=_90315_1" target="_blank">A3 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 You must use base code provided in class (week 10) and use learnings and techniques from the streamed classes.
 
