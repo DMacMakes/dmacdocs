@@ -11,7 +11,7 @@ description: >
 
 **Due:** End of week 4
 
-Exam [sitting page and brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258117_1&course_id=_93608_1)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258117_1&course_id=_93608_1" target="_blank">Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
 
@@ -42,7 +42,7 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 We'll make a text based slot machine using the `ise102_console` template. A _prompt and response_ game loop.
 
-[Slot Machine submission and brief on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258118_1&course_id=_93608_1)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258118_1&course_id=_93608_1" target="_blank">A2 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Deliverable 
 
@@ -85,7 +85,7 @@ Delete the folders. DO NOT MOVE YOUR FILES if this folder is different to yours.
 
 Make Snake!
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948580_1&course_id=_90315_1" target="_blank">A3 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258119_1&course_id=_93608_1" target="_blank">A3 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 You must use base code provided in class (week 10) and use learnings and techniques from the streamed classes.
 
@@ -95,5 +95,3 @@ You must use base code provided in class (week 10) and use learnings and techniq
 2. **Week 11 homework** submission is **required to be considered for a pass!**
    **Due:** Midnight, Sunday August 16. Submit via email to Mat Carr.
 3. Your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948580_1&course_id=_90315_1" target="_blank">Submit A3 zip on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
