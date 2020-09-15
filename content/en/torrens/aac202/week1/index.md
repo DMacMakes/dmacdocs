@@ -6,6 +6,58 @@ description: >
   ZBrush is a critical tool for modern games studios; it's also the best way to sculpt on a computer.
 ---
 
+Welcome back and hello new people!
+
+* Modern, current-generation 3D graphics.
+* Learning Maya, ZBrush, some Substance.
+* Immerse yourself in modeling. Practise always, just like drawing.
+* Get your hands on a wacom or other drawing tablet! From week 5 we'll be using it every class and for homework.
+* Assessments.
+
+## Join the Discord server
+
+Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Recap
+
+ACR103: 
+  - Low poly modeling
+    - Blocking out
+    - Detailing
+  - Rendering
+  - UV unwrapping
+  - Hand painted textures
+
+## High detail modeling
+
+This semester we're going to be working towards current-gen assets, with techniques that apply to both cartoony and realistic models.
+
+{{< imgproc klaayas_room_wireframe_javier_rodriguez Resize "600x" Link "klaayas_room_wireframe_javier_rodriguez.jpg">}}
+Round vs sharp, countour control!
+{{< /imgproc >}}
+
+Last trimester our goal was to make **low surface detail** props, using **hundreds of triangles**. To make up for the lacking geometry, we'd use [diffuse](https://docs.unity3d.com/Manual/shader-NormalDiffuse.html) textures, flat hand-painted images. Something like you see here:
+
+{{< imgproc barrels_low_poly_textured Resize "500x" >}}
+Low poly cartoony barrels.
+{{< /imgproc >}}
+
+**High detail** meshes can be made many ways and are **defined differently** depending on whether you're making games or film, whether the year's 2005 or 2020 and so on. Then those high poly details are brought into games using some tricks that we'll worry about that later.
+
+{{< imgproc destiny_gun_1 Resize "900x" Link "destiny_gun_1.jpg" >}}
+caption
+{{< /imgproc >}}
+
+{{% alert title="Why more polygons?" %}}
+The end goal of adding polygons is to support **smoothly curving surfaces** and **fine details**.
+{{% /alert %}}
+
+More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/).
+
+You could work toward high detail assets using our low poly process but.. on its own it would take a looong time. 
+
 ## Download And Install ZBrush
 
 * Using 30 day trial for now:
@@ -141,7 +193,10 @@ Pixelation?? Subdivision up down
 
 Play around and make a madball for 25 mins. 
 
-[Screenshot it and post it here](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866557_1&message_id=_2191233_1)
+Screenshot it and post it in the Discussion forums:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902732_1&message_id=_2307470_1" target="_blank">Thread: class madball<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
   
 {{< imgcard madballz Link "madballz.png">}}
 Madballz
@@ -170,10 +225,14 @@ Watch out:
 
 ## Due This Week
 
-Homework: Pick one of the madballz (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. The base of your sculpt is the sphere in Trying_Out_Brushes.zpr. If you overwrote it, get a fresh copy from aac202_zbrush_resources.zip](aac202_zbrush_resources.zip).  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
+Pick a different Madball (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. Do starting from the base sphere provided in `Trying_Out_Brushes.zpr`. If you already overwrote that file working on the class Madball, get a fresh copy from [aac202_zbrush_resources.zip](aac202_zbrush_resources.zip).  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
 
 {{< alert title="Deliverables and Submission" color= "primary" >}}
-Reply to the `Module 5/Homework: Madballz` thread [on the subject discussion forums](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866557_1&message_id=_2191238_1). Post the **reference** of your chosen madball along with some **screenshots of the finished sculpt.** Have it done and posted **before next week's class**.
+
+Post the **reference** of your chosen madball along with some **screenshots of the finished sculpt** in the Discussion forum. Have it done and posted **before next week's class**.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902732_1&message_id=_2307472_1" target="_blank">Thread: Home madball submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 {{< /alert >}}
 
 _**Bonus:**_ ZBrush has a super helpful filter called **Clay Polish**. Look it up in the zbrush documentation or on youtube. To try it out, add some random shapes to your free-play sculpt and hit Clay Polish. For this kind of sculpt it's a bit of a magic "make art" button.
