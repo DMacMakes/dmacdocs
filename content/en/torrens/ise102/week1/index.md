@@ -270,7 +270,7 @@ Computer, please:
 
 ### Setting up
 
-Visit the [ise10 Resources page](/torrens/ise102/resources/) and: 
+Visit the [ise102 Resources page](/torrens/ise102/resources/) and: 
 1. Install Visual Studio Community 2019 with Desktop devopment in C++ (if you haven't already)
 2. Get the _ise102_console_ template, add it to Visual Studio
 3. Create a new Solution/project using the template.
@@ -374,7 +374,7 @@ The textbook is also linked from the [ise102 resources page](https://dmdocs.netl
 
 ### Adding Input
 
-Add input to the program in C++ and Flowgorithm. Bring the finished code to discuss next week.
+Add input to the program in C++ and Flowgorithm. Submit your finished code to Ivan by Sunday night.
 
 ![input](cpp_knightsJourney_input.png)
 

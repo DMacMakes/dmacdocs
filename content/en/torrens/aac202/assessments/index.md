@@ -6,27 +6,78 @@ description: >
   Assessment dates, briefs, deliverables etc.
 ---
 
-## Assessment 1: High Detail Props
+## Weeks 1-4: High Poly Character
+
+While this was officially assessment 2, we'll be completing it in weeks 1-4
+
+The brief for the assessment delves into things we won't actually be covering here or fitting in. That said, we'll still be delivering a sculpted character in rendered images (and working zpr file), and I'll go through how the marking rubric is still relevant.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9223158_1&course_id=_94273_1" target="_blank">Character assessment on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< alert title="Your task: Creating a bust from an existing 2D concept" color= "primary" >}}
+
+1. Select one of the heads you _didn't_ already sculpt. 
+2. Using the provided base mesh and what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.
+3. Using the ZBrush photoshop export plugin, send render layers to photoshop and composite a _beauty render_
+{{< /alert >}}
+
+### Deliverables And Submission
+
+1. Your final **ZPR file**
+2. **Renders** (`shift+r`) of your character from multiple angles, with polypaint on.
+   * **Side, front, back** (with perspective enabled: press `p`)
+   * A **beauty render 3/4 angle** to show off the character. You can polish it a bit in photoshop.
+   * Don't have the character tiny in the middle of the canvas. Move zbrush to your largest screen and have the character take up most of the canvas.
+3. Screenshots of your character in _Substance Painter_
+   * A few shots to show off the quality of the Bake
+   * A shot with wireframe enabled to show the decimated mesh.
+
+Some **polishing** possibilities:
+  * Cropping to a nice composition
+  * Warming/cooling shadows, maybe improving the contrast
+  * Adding rim light  
+  * Adding gloss/specular hilight/shine to some elements
+  * painting in eyelashes and eyebrows that you didn't have geometry for
+    
+
+{{< alert title="Submitting Your Files" color= "primary" >}}
+1. Put your beauty render, other ZB screenshots, Painter screenshots and your final ZPR file in a folder.
+2. **Rename that folder** `AAC202_A2_Lastname_Firstname`, zip it and, if it's not too big, submit it on the **Blackboard** Assessment 2 page.
+3. If that file is very large (>100MB) use the Torrens LFS to upload it. If you don't know how to use the LFS, upload it to cloud storage like drive/dropbox/onedrive and provide a link when you submit.
+{{< /alert >}}
+
+---
+
+## Weeks 5-8: High Detail Props Assessment
+
+While this was officially assessment 1, we'll be completing it in weeks 5-8
+
+<!--
 For Assessment 1 you'll create a **high detail, normal mapped** prop using **techniques shown in class** and developed at home. These will include subdivision modeling, normal mapping and PBR textures.
 
-* [Assessment 1 Submission Page on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8989774_1&course_id=_89547_1)
-* [Assessment 1 Brief](https://laureate-au.blackboard.com/bbcswebdav/pid-8989819-dt-content-rid-18209834_1/xid-18209834_1) on Blackboard (PDF)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9223157_1&course_id=_94273_1" target="_blank">A1 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 You'll be **targeting an environment concept** provided in the Week 1 notes, and **working to a style** provided there:
-[Assessment 1 in Week 1 Notes](../week1/#assessment-1-high-detail-props)
+[Assessment 1 in Week 1 Notes](../week5/#assessment-1-high-detail-props)
 
 There are deliverables for **week 1**, **week 2** and **week 4**.
 
-### Week 1: Concept, style, tutorials
+### Week 5: Concept, style, tutorials
 **Select** a prop to model, share your choice. Choose style reference, watch and take notes on subdivision modeling videos. Follow the link for details and to submit your work:
+
+NEEDS UPDATING
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902732_1&message_id=_2295833_1" target="_blank">A1 Week 1 Submissions<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-### Week 2: Assessing, drafting, modelling.
+### Week 6: Assessing, drafting, modelling.
 
 **Assessing** style, **drafting** your topology, **modelling** your prop. You'll share the results with your classmates and offer eachother **feedback**. Follow the link to the discussion forum for details and to submit your work:
 
+NEEDS UPDATING
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902733_1&message_id=_2278364_1" target="_blank">A1 Week 2 Submissions<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->
+
 
 <!--
 
@@ -67,7 +118,8 @@ Comment on two other students work, offering well thought out feedback:
 
 -->
 
-### Week 4 submission details
+<!--
+### Week 8 submission details
 
 **Delivery:**
 1. Create a folder for your final deliverables. Call it `Firstname_Lastname_A1Final_AAC202`
@@ -92,48 +144,20 @@ Deliver **PNG24 files** or jpgs of at least 85% (8.5/10) compression quality.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../week4/#baking-your-model-in-painter">Back to Week 4 Baking<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
-___
 
-## Assessment 2: High Poly Character
+-->
 
-The brief for the assessment delves into things we won't actually be covering here or fitting in. That said, we'll still be delivering a sculpted character in rendered images (and working zpr file), and I'll go through how the marking rubric is still relevant.
-
-[PDF Brief](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/4656692?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27AAC202%2520Assessment%25202_2018.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200409T012856Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200409%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=d84dec4be2e49818e35e4c680ae3f56a7a59bdd37e702a0eacd930e2f7ace1f8) on Blackboard
-
-### The Task
-
-Select one of the heads you _didn't_ already sculpt. Using what you've learned in your first attempt and in third ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.
-
-### Deliverables And Submission
-
-1. Your final **ZPR file**
-2. **Renders** (`shift+r`) of your character from multiple angles, with polypaint on.
-   * **Side, front, back** (with perspective enabled: press `p`)
-   * A **beauty render 3/4 angle** to show off the character. You can polish it a bit in photoshop.
-   * Don't have the character tiny in the middle of the canvas. Move zbrush to your largest screen and have the character take up most of the canvas.
-3. Screenshots of your character in _Substance Painter_
-   * A few shots to show off the quality of the Bake
-   * A shot with wireframe enabled to show the decimated mesh.
-
-Some **polishing** possibilities:
-  * Cropping to a nice composition
-  * Warming/cooling shadows, maybe improving the contrast
-  * Adding rim light  
-  * Adding gloss/specular hilight/shine to some elements
-  * painting in eyelashes and eyebrows that you didn't have geometry for
-    
-
-{{< alert title="Submitting Your Files" color= "primary" >}}
-1. Put your beauty render, other ZB screenshots, Painter screenshots and your final ZPR file in a folder.
-2. **Rename that folder** `AAC202_A2_Lastname_Firstname`, zip it and, if it's not too big, submit it on the **Blackboard** Assessment 2 page.
-3. If that file is very large (>100MB) use the Torrens LFS to upload it. If you don't know how to use the LFS, upload it to cloud storage like drive/dropbox/onedrive and provide a link when you submit.
-{{< /alert >}}
+---
 
 
 ## Assessment 3: High Poly Environments
 
 Team of two: Work as Stone Mason (building a wharf) and Carpenter (building the wooden pier).
 Individual: Pick one role or the other.
+
+<!--
+
+LINKS NEED UPDATING 
 
 First, the [view the pdf brief on Blackboard](https://laureate-au.blackboard.com/bbcswebdav/pid-8989823-dt-content-rid-18209833_1/xid-18209833_1)
 
@@ -166,6 +190,9 @@ Watch the step-by-step tutorial provided in the [finishing section of the week 1
    - I'd first investigate if the angle in the concept art is best, it may well be. 
    - Export the image from photoshop (File - Export - Export As) as a 24 bit png.
 2. Take some screenshots of renders done within zbrush (shift-r) as well, showing off your work from various angles/zoom. **No more than 4** screenshots.
+-->
+
+---
 
 ## Torrens Large File System
 
