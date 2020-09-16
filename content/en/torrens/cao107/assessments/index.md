@@ -59,6 +59,22 @@ How do you display 100 images and play 100 sound images. IMGUI
 Noman: It's about the windows context and callbacks. Not what they're taught.
 Did you have to teach windows programming during those weeks 5-7? Yes he did.
 
+From another version of my notes on laptop (oops):
+They should leverage the threadpool class from A1. Work with a fixed number of threads, not just create one per file.
+User can configure the fixed number of threads, load, and see how long it took. (Can see at what point threads stop helping)
+
+**From Learning Outcomes:**
+_Identify how operating systems bring the computer system components together to work cohesively._
+
+**How does this match lectures?**
+> * They'll need to add a display area for the timing results.
+> * How will they display a bunch of diff images if they don't fit in the space?
+> * Playing all the sounds at once will be a noisey mess, play them in sequence. Maybe a list box of some sort can be added to each side.
+> * Given they've already used threads in A1, this seems like a windows api/windowing exercise partly. Thus tying in to OS side of things? 
+> * Are we using windows api calls for loading or raw c++ file io?
+> * Seems like the threads are mostly going to be i/o limited, so it's going to be less about cores and more about things like DMA and buses?
+
+
 
 # Assessment 3: Cuda + Cpu threads Mandelbrot
 
