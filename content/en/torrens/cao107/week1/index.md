@@ -159,7 +159,15 @@ You probably will be surprised to hear you can use the gpu to run your own algor
 _This 1080p zoom took 4 weeks of calculation back in 2013_
 
 
-## Homework: reading and exercises
+## Homework
+
+### Watch
+
+{{< youtube TQCr9RV7twk >}}
+_Memory heirarchy_
+
+{{< youtube bHzrhH7yySA >}}
+_Some of this video will be out of your reach but there's a lot that will help. Don't worry about what "assembly programming" is for now._
 
 Reading, Videos. Exercise.
 
