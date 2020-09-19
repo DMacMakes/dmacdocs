@@ -8,10 +8,6 @@ description: >
 
 ## Hellos
 
-### Hello part 1: written introductions
-
-- write a paragraph introducing your self
-
 ## You guys, and things you've done
 
 Maths 101, Algorithms and data structures, ise102 (C++).
@@ -53,6 +49,11 @@ Teaching:
 
 ## What will we learn?
 How to write very high performance code that will make the most of the computer power you have available.  This won't have a lot to do with understanding C++ better, though that'll be needed too. We'll learn more about how the hardware itself works, what's super slow (by electronic standards), and basically what exploits we need to know to outperform other programmers' code.
+
+### Hello: written introductions
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94382_1&nav=discussion_board_entry&conf_id=_170938_1&forum_id=_901594_1&message_id=_2315366_1" target="_blank">Discussion: Introduce Yourself<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 
 ### Programming is like race driving
 
@@ -161,17 +162,34 @@ _This 1080p zoom took 4 weeks of calculation back in 2013_
 
 ## Homework
 
-### Watch
+1. **Introduce yourself on the discussion forum if you didn't in class.** _(If you have to log in after you click, it won't take you straight to the discussion: try clicking the link again.)_
 
-{{< youtube TQCr9RV7twk >}}
-_Memory heirarchy_
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94382_1&nav=discussion_board_entry&conf_id=_170938_1&forum_id=_901594_1&message_id=_2315366_1" target="_blank">Discussion: Introduce Yourself<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-{{< youtube bHzrhH7yySA >}}
-_Some of this video will be out of your reach but there's a lot that will help. Don't worry about what "assembly programming" is for now._
+2. **Watch the videos below:**  
+
+{{< youtube rL8X2mlNHPM >}}
+_Revise sorting and Big O notation with visual help. Watch up to 7:15_  
+
+If you come back to this later, here are some handy bookmarks:
+1:39 Selection Sort (_n_^2)
+4:29 Merge sort O(_n_ log _n_)
+
+{{< youtube TQCr9RV7twk >}}  
+_Learn about the memory heirarchy_  
+
+{{< youtube bHzrhH7yySA >}}  
+_Learn how we can abuse the cache for big speed increases. Some bits will be over your head, like "assembly programming", that's fine for now._  
 
 Reading, Videos. Exercise.
 
 Coming after class, due to be completed by Monday night.
+
+## Extra learning
+
+Want more Crash Course Computer Science? Here's the playlist.
+
+https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
 
 <!-- ## Mathjax test of Matrices
 
