@@ -168,26 +168,50 @@ _This 1080p zoom took 4 weeks of calculation back in 2013_
 
 2. **Watch the videos below:**  
 
+#### SORTING
+
+Revise sorting and Big O notation with visual help. Watch up to 7:15
+
+{{< alert title="Slow it down" color= "primary" >}}
+These videos pack a lot into a short time, and she **talks fast**.
+
+
+{{< /alert >}}
+
 {{< youtube rL8X2mlNHPM >}}
-_Revise sorting and Big O notation with visual help. Watch up to 7:15_  
 
 If you come back to this later, here are some handy bookmarks:
 1:39 Selection Sort (_n_^2)
 4:29 Merge sort O(_n_ log _n_)
+{{< /alert >}}
 
-{{< youtube TQCr9RV7twk >}}  
-_Learn about the memory heirarchy_  
+### Multitasking aka multiprogramming
 
-{{< youtube bHzrhH7yySA >}}  
-_Learn how we can abuse the cache for big speed increases. Some bits will be over your head, like "assembly programming", that's fine for now._  
+How a computer with a single CPU makes it look like multiple programs are running at once; switching super quickly between programs. **Demonstrated with jelly babies.**
 
-Reading, Videos. Exercise.
+{{< alert title="Words you might need" color= "primary" >}}
+**Process:** A program, like word or spotify or battlefield.
+**OS:** Operating system like windows or macos.
+**waiting:** Our program has hit a line in its code that is taking time, and it can't get to next line. Maybe it's sent a message to your email server, for example, and it can't say "message sent" on screen until the server confirms the email was sent.
+{{< /alert >}}
 
-Coming after class, due to be completed by Monday night.
+{{< youtube "MB0yDMQj1lU" >}}
 
 ## Extra learning
 
-Want more Crash Course Computer Science? Here's the playlist.
+### MULTIWHAT?
+
+Your computer does a lot at once but only has a single processor. How? You've heard about multitasking, multiprocessing and maybe multithreading. What do they all mean? Let Gary explain.
+
+{{< youtube "Tn0u-IIBmtc" >}}
+1:12 Multitasking - computer has different programs working at the same time.
+
+{{< youtube rtAlC5J1U40 >}}
+9:53 Multicore or multiprocessor systems.
+
+{{< youtube "7ENFeb-J75k" >}}
+Multithreading
+### Want more Crash Course Computer Science? Here's the playlist.
 
 https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
 
