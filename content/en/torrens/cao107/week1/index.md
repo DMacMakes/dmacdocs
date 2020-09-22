@@ -170,16 +170,18 @@ _This 1080p zoom took 4 weeks of calculation back in 2013_
 
 ### SORTING
 
-Revise sorting and Big O notation with visual help. Watch up to 7:15
-
-{{< alert title="Too fast?" color= "secondary" >}}
-These videos pack a lot into a short time, and she talks fast. **Slow down playback to 0.75x** if it helps!
-{{< /alert >}}
+Revise sorting and Big O notation with visual help. Watch up to 7:15.  
 
 {{< youtube rL8X2mlNHPM >}}
-If you come back to this later, here are some handy bookmarks:
-1:39 Selection Sort (_n_^2)
-4:29 Merge sort O(_n_ log _n_)
+*more bookmarks: 39 Selection Sort (_n_^2). 4:29 Merge sort O(_n_ log _n_)*
+
+{{< alert title="Too fast?" color= "secondary" >}}
+These videos pack a lot into a short time, and she talks fast. **Slow down playback to 0.75x** if it helps!  
+
+<img src ="youtube_speed.png" width=250 />>
+{{< /alert >}}
+
+
 
 ### MULTITASKING 1
 
