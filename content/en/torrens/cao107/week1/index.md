@@ -168,24 +168,26 @@ _This 1080p zoom took 4 weeks of calculation back in 2013_
 
 2. **Watch the videos below:**  
 
-#### SORTING
+### SORTING
 
 Revise sorting and Big O notation with visual help. Watch up to 7:15
 
-{{< alert title="Slow it down" color= "primary" >}}
-These videos pack a lot into a short time, and she **talks fast**.
-
-
+{{< alert title="Too fast?" color= "secondary" >}}
+These videos pack a lot into a short time, and she talks fast. **Slow down playback to 0.75x** if it helps!
 {{< /alert >}}
 
 {{< youtube rL8X2mlNHPM >}}
-
 If you come back to this later, here are some handy bookmarks:
 1:39 Selection Sort (_n_^2)
 4:29 Merge sort O(_n_ log _n_)
-{{< /alert >}}
 
-### Multitasking aka multiprogramming
+### MULTITASKING 1
+
+Jump to timestamp **3:14** to see how an old-timey supercomputer first did multiple jobs at once.
+
+{{< youtube 26QPDBe-NB8 >}} 
+
+## MULTITASKING 2 WITH JELLY BABIES
 
 How a computer with a single CPU makes it look like multiple programs are running at once; switching super quickly between programs. **Demonstrated with jelly babies.**
 
@@ -195,7 +197,7 @@ How a computer with a single CPU makes it look like multiple programs are runnin
 **waiting:** Our program has hit a line in its code that is taking time, and it can't get to next line. Maybe it's sent a message to your email server, for example, and it can't say "message sent" on screen until the server confirms the email was sent.
 {{< /alert >}}
 
-{{< youtube "MB0yDMQj1lU" >}}
+{{< youtube MB0yDMQj1lU >}}
 
 ## Extra learning
 
@@ -203,14 +205,12 @@ How a computer with a single CPU makes it look like multiple programs are runnin
 
 Your computer does a lot at once but only has a single processor. How? You've heard about multitasking, multiprocessing and maybe multithreading. What do they all mean? Let Gary explain.
 
-{{< youtube "Tn0u-IIBmtc" >}}
+{{< youtube Tn0u-IIBmtc >}}
 1:12 Multitasking - computer has different programs working at the same time.
-
-{{< youtube rtAlC5J1U40 >}}
-9:53 Multicore or multiprocessor systems.
 
 {{< youtube "7ENFeb-J75k" >}}
 Multithreading
+
 ### Want more Crash Course Computer Science? Here's the playlist.
 
 https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
