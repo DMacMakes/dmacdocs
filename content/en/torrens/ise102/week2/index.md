@@ -10,17 +10,13 @@ description: >
 ---
 
 
-## Welcome Matt
+## Goodbye Ivan
 
-Helping!
+It's all me from here.
 
 ## Week 1 Recap And Homework
 
-* Adding the `cin` code.
-* Who tried _Flowgorithm_?
-* Textbook chapter 1 game. How's the book?
-  
-[Week 1 Homework](../week1/#homework)
+**Review:** Hopefully you all watched the video before this. If not, you're going to struggle a bit. Always watch those sessions before the next class or, even better, attend!  
 
 ## This Week: A New Game
 
@@ -31,6 +27,7 @@ We're exploring a new game called **_Guessy Number_**. Let's type it in, then br
 1. Make a **new project** using the `ise102_console` template (use the search field).
     - If you can't remember how, visit [the resources](resources/#visual-studio-c-templates) and start from **step 3**.
     - Put it in a new folder `week2` and call the project `Guessy Number`.
+    - Remember: click the checkbox to **keep project and solution in the same folder.**
 2. Open `main.cpp`, select and delete all the code, then **type this in**:
  
 {{< imgcard guessy_code_vs Link "guessy_code_vs.png" >}}
@@ -218,7 +215,17 @@ We learned a few new and very powerful words today, and I don't want you to thin
 
 give you huge power because these are **common ideas in programming**. If you know how to look for these things in a **new language** you'll find them, and the language will open up very quickly.
 
-### Exercise
+
+
+## Summary
+
+Ths week we learned how to make comparisons between values, and then to decide what action to take. We matched the idea of **processing** and the use of **operators**.
+
+We discussed the importance and power of names.
+
+## Homework:
+
+### Flowgorithm Guessy 
 
 Lets implement the same game in **_Flowgorithm_**, using our new understanding of programming ideas.
 
@@ -233,17 +240,10 @@ Click if the flowchart is too small to read.
 {{< /imgcard >}}
 
 
-## Summary
 
-Ths week we learned how to make comparisons between values, and then to decide what action to take. We matched the idea of **processing** and the use of **operators**.
-
-We discussed the importance and power of names.
-
-## Homework:
-
-When you've completed typing and running the code below **submit the `main.cpp` file for each project to Matt**. 
-   * Email it to him with the subject _"ISE102 Homework Week 2"_
-   * Matt's email will be sent to you via Blackboard announcements (and _Discord_).
+When you've completed typing and running the code below **submit the `main.cpp` file for each project**. 
+   * Email to Danny _"ISE102 Homework Week 2"_
+   * Danny's email will be sent to you via Blackboard announcements (and _Discord_).
   
 1. Read the rest of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, where you'll learn about arithmetic operators, data types and more.
     - Take notes
@@ -255,7 +255,6 @@ When you've completed typing and running the code below **submit the `main.cpp` 
 {{< alert title="Where's the main.cpp file?" color= "secondary" >}}
 You can find the `main.cpp` file for a project in its **project folder**. 
 
-* If you're following our class conventions, those project folders will be in `ise102/week2`.
+* If you're following our class conventions, those project folders will be in `ise102/code/week2`.
 * If you aren't sure were to find it, right click the project name in the visual studio _solution explorer_ and go to _open folder in file explorer_.
-
 {{< /alert >}}
