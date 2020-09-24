@@ -43,11 +43,18 @@ Create a new visual studio project called _Baby\_threads\_journey_, make sure th
 caption
 {{< /imgcard >}}
 
-2. Even though threads let your functions go to another core and run in parallel, they can still see and edit variables and call other functions. Have our **threads call a busywork function** instead of just saying hello._show code for transcription_
+
+
+1. Even though threads let your functions go to another core and run in parallel, they can still see and edit variables and call other functions. Have our **threads call a busywork function** instead of just saying hello._show code for transcription_
+
 1. **Good old Quicksort!** Refresher on QS.
+
 1. **EXPLORE CODE: Timing/benchmarking and simple example**. Sorting one list and timing it. You would have done this in ADS subject for your sort algos._attach code_
+
 2. Note on **new** keyword, explanation of **C arrays**.
+
 1. **Sorting several lists, multi d quick sort**. What if we have several? How long does it take to sort 1? 2? 4? 8? Try it out 
+
 1. Make a **line graph** of the results (y axis: lists count, x axis: overall sort time in milliseconds) using **WEBSITE?** _need website_
 
 ## Homework/assessment 1 lab 1.
