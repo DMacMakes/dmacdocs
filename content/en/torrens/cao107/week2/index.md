@@ -1,91 +1,122 @@
 
 ---
-title: "Week 2: The Memory Heirarchy and fast matrices"
-linkTitle: "W2: Memory"
+title: "Week 2: Threads 1"
+linkTitle: "2. Threads 1"
 weight: "20"
 description: >
-  Refining our models, UVs.
+  Using all the cores!
 ---
 
-Must cover:
+## Weeks 1-4 and assessment 1 update
 
-Memory heirarchy: Lots of storage in a compute with diff speeds.
-{{< youtube TQCr9RV7twk >}}  
-_CCCS: memory heirarchy_  
+| W | **Topic**  | Class and assessment  |
+|----|-------------- |-------  |
+| 1 | **Computer abstractions**, hello | PC arch. Build videos and textbook diagrams, forum intros |
+| 2 | **Parallel processors: Intro threads.** | Threads in theory and in C++. Lab: quicksort multiple lists. Graphing. |
+| 3 | **Threading challenges, sync** | lab: How would you sort 1 list with multiple threads. |
+| 4 | **OS, Process/thread mgmt** | User vs kernel space, cost threads. Lab: thread pools. |
 
-## What is the cache? (needs pre-reading really)
-How does it work roughly? You want a bit of memory, it gets a chunk.
-Cache lines and their size.
+## Project downloads
 
-### Locality! 
-Data locality, time locality. Both similar but different.
-Data you use tends to be close to other data you'll use.
-Data you use now tends to be close to other you'll use.
-A character is wandering a map. You need to load it into memory so you can check if they walk into walls, fall off things, and of course to render the map on screen. 
-That bit of map is in memory somewhere, along with the rest of the tiles.
-Unless you teleport or exit the map, the next places you'll visit will be parts of the map next to your current area. (need pictures)
-So, you can predict the next bit of memory you need is going to be parts of this map that are close by, and they happen to be close together in memory! That's locality.
-It also explains why, when you're done with a map, there's often a bit of load time. Also, why teleporters often make dramatic sounds and stuff before they transport you: it buys some time for the next bit of map to load into memory/cache.
+Grab these two quicksort projects, you'll be reading through them today and using one for your assessment.
 
-<img src="link_warp.gif" width=640 />  
-<br />
-_Awesome effect or suspicious stalling? Both!_
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="cao107_week2_projects.zip" target="_blank">Download cao107_week2_projects.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-### Caching often used memory
-Since we're going to be smashing those bits of memory over and over, because we keep going back to the store and then grinding for nearby gems, we need
-(good example for cache access in future, how to grab map tiles).
+## Class sections
+Each concept needs an illuminating picture and a reading point in book.
 
-If you access memory for one part of a game map so your can render it, 
-So: Over the lifetime of a program you often use data that's near other data, and often close together in time.
+## Processes
+ A program can spawn other **processes**/programs, but they don't share your program's data and you can't easily communicate. Like kids who left the farm back in the days before australia post, they're off doing their own thing now and you're stuck with all the cows to milk.
 
-### std::Vectors vs std::Arrays vs C arrays
+## Threads
+
+**Threads** are less like human children and more like minions: you can spawn them and give them jobs, and they'll go off to other cores, almost like a real process, but you have some control over them and you can communicate easily.
+
+
+### EXERCISE Programming threads in c++
+Creating, launching and joining back up with our threads.
+Threads are basically functions given special treatment so they can run on their own, letting you keep doing what you're doing. 
+
+Create a new visual studio project called _Baby\_threads\_journey_, make sure the solution and project are in the same folder (checkbox in create project window) and type in this code.
+
+{{< imgcard code_baby_threads_1 Link "code_baby_threads_1.png">}}
+caption
+{{< /imgcard >}}
+
+2. Even though threads let your functions go to another core and run in parallel, they can still see and edit variables and call other functions. Have our **threads call a busywork function** instead of just saying hello._show code for transcription_
+1. **Good old Quicksort!** Refresher on QS.
+1. **EXPLORE CODE: Timing/benchmarking and simple example**. Sorting one list and timing it. You would have done this in ADS subject for your sort algos._attach code_
+2. Note on **new** keyword, explanation of **C arrays**.
+1. **Sorting several lists, multi d quick sort**. What if we have several? How long does it take to sort 1? 2? 4? 8? Try it out 
+1. Make a **line graph** of the results (y axis: lists count, x axis: overall sort time in milliseconds) using **WEBSITE?** _need website_
+
+## Homework/assessment 1 lab 1.
+
+{{< alert title="The reading" color= "primary" >}}
+I've started this section with the exercise so you won't miss it, but make sure you **scroll down to the recommended reading**. There's not too much, and the extra understanding will help a lot with the lab work and understanding what's next.
+{{< /alert >}}
+
+### Exercise
+
+1. Make a duplicate of the Quicksort_multi_d
+
+### Reading
+Read more about parallel processing and threads. Don't be put off by the maths, go for the overall ideas.
+> **6.1** Intro to Parallel processing  
+> **6.2** Difficulty of creating parallel processing programs
+
+{{< imgcard coad_cover Link "https://ebookcentral-proquest-com.ezproxy.laureate.net.au/lib/think/reader.action?docID=5376640&ppg=660">}}
+_Computer organization and design_ chapter 6 on ebookcentral. You can download a pdf.
+{{< /imgcard >}}
+
+Read more about using threads in c++. Go up to and including 
+> **intro and 2.1** Basic thread management.
+> **2.1.1** Launching a thread. You can ignore the bits on function objects and lambdas.
+> **2.1.2** Waiting for a thread to complete:
+{{< imgcard cia_chap2_cover Link "ConcurrencyInAction_Chap2.pdf">}}
+_Concurrency In Action:_ Download the chapter 2 pdf.
+{{< /imgcard >}}
+
+
+## Updated course description
+
+
+<!--
+## std::Vectors vs basic C arrays
+
 c arrays are declared in straight line, they're basicly direct access to memory without any help. Dangerous, clunky, but with blistering speed.
-stack vs heap (errors if we load too much into a regular variable).
-the `new` keyword in c++. Cover it lightly, but know we need it for big arrays. We'll come back to it.
 
-## Code
+You declare an array like this:
 
-Give out load and sort code (slow). 
+```cpp
+// Basic c style array to hold the player numbers 
+// of 11 soccer players
+int playerNumbers[11];
 
-### timing
-If we're speeding stuff up, we need code for measuring how long stuff takes.
-Microsoft has special library for it. I've coded it, you just need to use it.
+// You can of course use a variable to set array size.
+int scoresToKeep = 8;
+int bestScores[scoresToKeep];
+```
+A basic c array is just a place in memory, and a data type, plus a promise that the next x bits of contiguous memory are available for you to use.
 
-### multi d arrays
+{{< alert title="Definition: Contiguous" color= "primary" >}}
+Contiguous means all in a row. For arrays, that means that the memory addresses are all sequential: your data won't be scattered around in memory.
+{{< /alert >}}
 
-2d, 3d, 4d. How do we hit them so that we are accessing stuff in the cache.
+### Locality
+Data locality.
+Accessing stuff sequentially in memory is fastest, because 1. all the computer has to do is add (1*data size) to the address and read what's there.
 
-Cache is so small it's easy to go to data that isn't in it, just by picking the wrong row or column!
+Image of memory with integers in it.
 
-Especially when you're **loading 100k or 1 million numbers, like we are.**
+{{< alert title="The `new` keyword" color= "primary" >}}
+`new` makes sure your new array or other object is declared in a part of your program's allocated memory called "dynamic" or "heap" memory. This can expand and shrink pretty easily.
 
+The "stack" on the other hand, where your regular variables go, can _overflow_ if you put too much on it. That's bad. Thus the "stack overflow" website :D
+{{< /alert >}}
 
-----
+-->
 
-## Memory
-
-Memory is just anything that keeps information in the computer. Programs only care how fast each one is. You also worry about if it holds information after the pc powers off.
-
-How is speed measured?
- - Access time: How long from my first request to the first data received
- - Bandwidth: How much cames in over what time
-
-
-**_Fastest_ to _slowest_**
-Registers
-Cache
-DRAM (your DDR4 rgb _HyperWolf Ninja King_ ram)
-Solid State Drive (ssd)
-Hard Disk Drive (spinning rust)
-Cloud Drive folder
-
-## Oh look, Matrices
-
-Row, row, row your matrix,  
-gently through the cache.
-
-$$ \begin{bmatrix} 
-    2  & 8  & 5  \\\\ 
-    11 & 1  & 56 \\\\
-    34 & 1  & 14 
-    \end{bmatrix} $$
+<!--<img src="link_warp.gif" width=640 />  
+<br />
+_Awesome effect or suspicious stalling? Both!_ -->
