@@ -61,9 +61,32 @@ caption
 I've started this section with the exercise so you won't miss it, but make sure you **scroll down to the recommended reading**. There's not too much, and the extra understanding will help a lot with the lab work and understanding what's next.
 {{< /alert >}}
 
-### Exercise
+## Sorting lists in Parallel
 
-1. Make a duplicate of the Quicksort_multi_d
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="cao107_week2_projects.zip" target="_blank">Download cao107_week2_projects.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Complete this exercise
+1. Make a **duplicate** of the *quicksort_multi_vec* folder in the week 2 example projects. Rename the folder *quicksort_threaded_multi* and work in this solution.
+1. A `for` loop currently runs the quicksort function for each list, in sequence. **Run it for 1, 2, 3 and on up to 16 lists, collecting the total times** taken to sort them. 
+1. Use the times to **create a line graph,** showing how sort time changes as the number of lists increases.
+1. **Change the code** so that instead of calling the function directly, it creates a **new thread** to quicksort each list.
+1. Next, call **`join()`** on all these running threads.
+1. **Gather the time taken** to sort multiple lists starting at 1, 2, 3 and work your way up to 16, recording the times. Refer to the [threads_baby exercise code](#threads) we typed out in class for the code you need. **Note:** When you make a thread and have pass an argument to the function (quicksort's  vector<int>& numbers argument) you need to wrap it using ref() when making the thread. See [here](https://stackoverflow.com/questions/34078208/passing-object-by-reference-to-stdthread-in-c11) or [here](https://riptutorial.com/cplusplus/example/2329/passing-a-reference-to-a-thread)
+1. Alternately, create a loop to do this for you. Keep in mind, you'll need to restore the lists to their randomised order before sort them again: quicksort's worst case is trying to sort a sorted list :D 
+1. **Make another line graph** for these times, or add them as a second line on the same graph.
+
+### Answer the questions below:
+1. How does the performance of the threaded version of multi-list sort compare to the original version.
+2. What CPU does your machine have? How many cores does it have? Does it support hyperthreading (google this for your cpu model if you don't know, or run Speccy on your computer).
+3. Compare your graph to the total number of physical cores you have, and if you have hyper threading, the virtual number of cores (physical cores * 2).
+
+Examples of line graphs (with dummy data). I used **Microsoft excel**
+{{< imgproc line_graphs_1 Resize "400x" Link "line_graphs_1.png" >}}
+Single vs multi core. Can you guess the core count of the cpu? Does it support hyperthreading?
+{{< /imgproc >}}
+
+### Submit your work
+Zip up the *quicksort_threaded_multi* folder in which you completed the exercise. Upload it to a cloud sharing service like dropbox or your laureate onedrive space. Email the zip file, the line graph images and a text file or doc file of your answers to Danny's email address (available on discord and in announcements).
 
 ### Reading
 Read more about parallel processing and threads. Don't be put off by the maths, go for the overall ideas.
