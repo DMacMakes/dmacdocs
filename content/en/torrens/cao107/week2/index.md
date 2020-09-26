@@ -43,8 +43,6 @@ Create a new visual studio project called _Baby\_threads\_journey_, make sure th
 caption
 {{< /imgcard >}}
 
-
-
 1. Even though threads let your functions go to another core and run in parallel, they can still see and edit variables and call other functions. Have our **threads call a busywork function** instead of just saying hello._show code for transcription_
 
 1. **Good old Quicksort!** Refresher on QS.
