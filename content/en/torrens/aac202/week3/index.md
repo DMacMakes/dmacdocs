@@ -1,6 +1,6 @@
 ---
-title: "3. Working from base meshes"
-linkTitle: "3. Basemeshes"
+title: "3. Working clean in zbrush"
+linkTitle: "3. Clean ZBrush 2"
 weight: 30
 description: >
   Working clean: subtools, automasking, base meshes, remeshing.
@@ -17,15 +17,11 @@ resources:
 3. Working easily with multiple meshes in a single subtool
 4. Merging separate meshes with Easymesh/Dynamesh, and cleaning up the seams
    
-## Discussing Week 6 Sculpt
+## Discussing Week 2 Sculpt
 
 What was good? What was tricky?
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week6/#homework" target="_blank">Week 6 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-## Assessment 1
-
-Marking status.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week2/#homework" target="_blank">Week 2 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Refining The Sculpt
 
@@ -95,7 +91,9 @@ If you didn't get it done, borrow [Callum's](Long_head_joe_CA.zip).
 
 ## Assessment 2: Character Bust
 
-Jump to the my [assessment page](http://localhost:1313/torrens/aac202/assessments/#assessment-2-high-poly-character).
+Here's the [assessment page](../assessments/#assessment-2-high-poly-character).
+
+This week we'll do the first page, jump to the [homework](#homework).
 
 ## Topology
 
@@ -182,6 +180,13 @@ Hiding parts of meshes or polygroups makes it a lot easier to work in the spaces
 | Hide a polygroup    | `ctrl + alt + left click` on mesh               | 
 
 
+## Homework
+
+Work on your assessment 1 bust, follow the instructions in the thread, and post your work before our work review:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902734_1&message_id=_2344753_1" target="_blank">Assessment 1 Progress Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<!--
 ## Fusing and Remeshing with Dynamesh
 
 
@@ -217,3 +222,4 @@ Click for high res and check out the mesh changes.
 | Project           | Button in the _Dynamesh_ subpallette. |
 | Change resolution | Slider in _Dynamesh_ subpalette. |
 
+-->

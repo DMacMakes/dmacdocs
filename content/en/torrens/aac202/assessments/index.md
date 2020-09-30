@@ -16,7 +16,7 @@ The brief for the assessment delves into things we won't actually be covering he
 
 {{< alert title="Your task: Creating a bust from an existing 2D concept" color= "primary" >}}
 
-1. Select one of the heads you _didn't_ already sculpt. 
+1. Select one of the heads you _didn't_ already sculpt (concept art below)
 2. Using the provided base mesh and what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.
 3. Using the ZBrush photoshop export plugin, send render layers to photoshop and composite a _beauty render_
 {{< /alert >}}
@@ -45,6 +45,22 @@ Some **polishing** possibilities:
 2. **Rename that folder** `AAC202_A2_Lastname_Firstname`, zip it and, if it's not too big, submit it on the **Blackboard** Assessment 2 page.
 3. If that file is very large (>100MB) use the Torrens LFS to upload it. If you don't know how to use the LFS, upload it to cloud storage like drive/dropbox/onedrive and provide a link when you submit.
 {{< /alert >}}
+
+### Concepts
+
+Choose one of the concepts below, or click one and visit Patri Balanovsky's page to pick another **from the same artstation page** (not all of his artstation content). Be careful not to pick one that requires extra meshes (hair, horns, eyepatches) if you're not confident creating new meshes. Don't stretch the head to support large horns, hair etc.
+
+{{< imgproc "patri-balanovsky-alien-faces-5" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
+faces-5
+{{< /imgproc >}}
+
+{{< imgproc "patri-balanovsky-alien-faces-8" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
+faces-8
+{{< /imgproc >}}
+
+{{< imgproc "patri-balanovsky-alien-faces-12" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
+faces-12
+{{< /imgproc >}}
 
 ---
 
