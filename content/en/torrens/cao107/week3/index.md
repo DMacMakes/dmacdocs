@@ -41,9 +41,10 @@ I'll engage full parent mode now so we aren't doing it for the rest of the trime
 * Back up your work. 
   - This is something that is kinda accepted in first tri, but that's about the limit. Losing your work has never, in the history of the human race, been harder.
   - One principle: As you hit milestones where your code is working, BACK UP THAT WHOLE FOLDER, solution and all. Save it to another folder, to a usb drive, to the cloud whatever. Ideally, learn to use Github, it's the industry standard for most programming jobs.
-  - Attend class. If you can't attend, watch the recordings. Your questions and your assessments eventually reveal what you didn't watch, so.. watch!
-  - Communicate! Not checking Discord/Blackboard for several days == just not doing the work. If you go to work as a programmer and you don't do any tasks all week because you didn't check the board/email in the morning.. they'll yeet you out a window.
-- 
+
+* Attend class. If you can't attend, watch the recordings. Your questions and your assessments eventually reveal what you didn't watch, so.. watch!
+* Communicate! Not checking Discord/Blackboard for several days == just not doing the work. If you go to work as a programmer and you don't do any tasks all week because you didn't check the board/email in the morning.. they'll yeet you out a window.
+
 {{< alert title="Hard work is the baseline" color= "primary" >}}
 I'm putting in a lot of hours on CAO107. I'll be understanding of people struggling with the material despite having done the reading, watched the videos, looked things up. That's what I'm here for. 
 
