@@ -13,9 +13,10 @@ description: >
 |----|-------------- |-------  |
 | 1 | **Computer abstractions**, hello | PC arch. Build videos and textbook diagrams, forum intros |
 | 2 | **Parallel processors: Intro threads.** | Threads in theory and in C++. Lab: quicksort multiple lists. Graphing. |
-| 3 | **Threading challenges, sync** | lab: threads racing for movie tickets?
-| <!-- lab: How would you sort 1 list with multiple threads. | -->
+| 3 | **Threading challenges, sync** | lab: threads racing for movie tickets? | 
 | 4 | **OS, Process/thread mgmt** | User vs kernel space, cost threads. Lab: ? |
+
+<!-- lab: How would you sort 1 list with multiple threads. | -->
 
 ## Assessment 1
 
