@@ -97,56 +97,8 @@ This is something for you to learn about this week :D
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="cao107_week2_projects.zip" target="_blank">Download cao107_week2_projects.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-### EXERCISE 
-
-
-## Limited resources: cinema seats
-
-Describe the problems of selling in parallel through code.
-
-Buying tix, no seats. Oh no.
-- code with structures
-- sales happening in sequence
-
-### Task 1: Single Sales Person: 
-(coding together to get you familiar with the code and structures)
-1. Process orders in a loop, one at a time, no parallelism!
-2. When an order comes in, check for available seats. If all requested are available, sell them, otherwise deny the order.
-3. Print out the successful orders. Use colour for the customer text. Display the status of the seats at the end.
-
-```
-Sold seats = -oo- (3d glasses)
--------------------------------
-| G1 | G2 | G3 | G4 | G5 |
-|-oo-|-oo-|    |    |-oo-|
--------------------------------
-```
-Colour the seats by customer. See the current order printing code.
-
-### Task 2: Multiple sales people
-
-Dispatch each ticket request with a different sales person (thread) at the same time.
-
-Print out the same info. What's happened?
-Run it a few more times. What do you see??
-
 ## Homework
 
-## Assessment 1 lab 2
+Complete lab 2 of assessment 1, _with the help of the reading_.
 
-{{< alert title="The reading" color= "primary" >}}
-I've started this section with the exercise so you won't miss it, but make sure you **scroll down to the recommended reading**. There's not too much, and the extra understanding will help a lot with the lab work and understanding what's next.
-{{< /alert >}}
-
-## Sorting lists in Parallel
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="cao107_week2_projects.zip" target="_blank">Download cao107_week2_projects.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-### Complete this exercise
-
-
-### Submit your work
-
-### Reading
-OLD 
-
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#lab-2" target="_blank">Go To Lab 2<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>

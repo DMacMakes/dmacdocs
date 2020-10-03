@@ -6,6 +6,48 @@ description: >
   Assessment dates, briefs, deliverables etc.
 ---
 
+## Assessment 1
+
+Three coding, observation and analysis tasks (referred to as labs) in which we'll explore the challenges of writing code that executes in parallel.
+
+> We won't be working from the Blackboard brief for this. See the instructions below.
+
+### Lab 1
+
+Complete.
+
+### Lab 2
+
+Download the following zip file, containing the _cinema\_seats_ source code. The task **instructions are** written in comments **at the top of the main.cpp** file. You will need to **read** sections _3.1.1, 3.1.2, 3.2, and 3.2.1_ of _Concurrency In Action_; grab chapter 2 from [the resources page](../resources/).
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="cinema_seats.zip" target="_blank">Download Project: cinema_seats<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< imgcard comments_instructions>}}
+The <b>instructions for this task</b> are at the top of main.cpp
+{{< /imgcard >}}
+
+**Deliver to:**  
+Danny via email (available on Discord or auto completing in outlook).  
+
+**Due before:**  
+Attempt to complete it **before work review** (Tuesday's 4pm). Final submission by email due **end of Wednesday**, week 4. 
+
+I won't be giving answers at the work review: it'll be a chance to answer questions you have from _reading the textbook_ and your attempts to collect data. The work review answers won't mean a lot if you haven't done the reading.
+  
+{{< alert title="What to submit" color= "primary" >}}  
+
+A **zip file** containing:
+
+1. The Visual Studio project folder (NO cache folders, size < 100KB) of your multi-threaded cinema_seats program.
+2. Screenshots of anomalies you discover in the threaded version.
+3. A plain text (txt) or markdown (md) file with Answers to the questions, including your pseudocode.
+
+<i>If you don't know how to delete the cache files, watch week 3's class recording.</i>
+{{< /alert >}}
+
+
+
+<!--
 Xs and Os, noughts and crosses assessment 4.
 What would have been marked as the solid approach?
 Everyone went the cheap way with 2 dimensional arrays.
@@ -47,10 +89,13 @@ Binary search tree, keeping left hand side higher than root node, right side low
 
 **3 Deliverables:** Weeks **2, 3, 4.**
 
+-->
+
 # Assessment 2: Multi threaded loader
 
 Load, in parallel, and then display/play multiple images and sounds. Display the time taken to load and display/begin playing the files.
 
+<!-- 
 Base given out: windows app with _File_ and _Exit_. _File - Load Image_ and _File - Load Sound_ each open a file browser. Uses Visual Studio gui bits, `rc` resource file.
 
 Windows?
@@ -74,10 +119,19 @@ _Identify how operating systems bring the computer system components together to
 > * Are we using windows api calls for loading or raw c++ file io?
 > * Seems like the threads are mostly going to be i/o limited, so it's going to be less about cores and more about things like DMA and buses?
 
-
+-->
 
 # Assessment 3: Cuda + Cpu threads Mandelbrot
 
+Mandelbrot fractals using the CPU and GPU together.
+
+* Build your program on the base provided, built with imgui and SDL2.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="" target="_blank">Base link will be here.<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+More info soon. 
+
+<!-- 
 Look at GPR202. Also maybe noman slides from weeks 8-11.
 Try to give them a base that lets them test it. Show knowledge not so much by writing their own cuda code but instead testing and choosing the write amounts of data to distribute across the right amount of threads. If they can do a good job of picking ranges of numbers to test, and come out with ones that optimize it well, then they're showing enough understanding.
 
@@ -95,4 +149,5 @@ Split work appropriately between available resources to maximise speed.
 
 **Qs**
 ** What windowing/multimedia library? SFML? SDL2?
+-->
 
