@@ -18,7 +18,7 @@ Complete.
 
 ### Lab 2
 
-Download the following zip file, containing the _cinema\_seats_ source code. The task **instructions are** written in comments **at the top of the main.cpp** file. You will need to **read** sections _3.1.1, 3.1.2, 3.2, and 3.2.1_ of _Concurrency In Action_; grab chapter 2 from [the resources page](../resources/).
+Download the following zip file, containing the _cinema\_seats_ source code. The task **instructions are** written in comments **at the top of the main.cpp** file. You will need to **read** sections _3.1.1, 3.1.2, 3.2, and 3.2.1_ of _Concurrency In Action_; grab chapter 3 from [the resources page](../resources/).
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="cinema_seats.zip" target="_blank">Download Project: cinema_seats<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
