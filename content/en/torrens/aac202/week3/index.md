@@ -172,12 +172,12 @@ Hiding parts of meshes or polygroups makes it a lot easier to work in the spaces
 
 | Command           | Shortcut                              |
 |-----------        |------------                           |
-| Activate hiding    | `ctrl-shift`                                     | 
-| Hide part of mesh   | `ctrl + left drag (mouse)` a rectangle over it  | 
-| Invert hiding       | `ctrl + left drag` on canvas                    | 
-| Show all            | `ctrl + left click` on canvas                   | 
-| Solo a polygroup    | `ctrl + left click` on mesh                     | 
-| Hide a polygroup    | `ctrl + alt + left click` on mesh               | 
+| Activate hiding    | `ctrl-shift (plus mouse)`                                     | 
+| Hide part of mesh   | `ctrl + shift + left drag (mouse)` a rectangle over it  | 
+| Invert hiding       | `ctrl + shift + left drag` on canvas                    | 
+| Show all            | `ctrl + shift + left click` on canvas                   | 
+| Solo a polygroup    | `ctrl + shift + left click` on mesh                     | 
+| Hide a polygroup    | `ctrl + shift + alt + left click` on mesh               | 
 
 
 ## Homework
