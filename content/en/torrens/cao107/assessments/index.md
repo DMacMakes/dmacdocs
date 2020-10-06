@@ -45,7 +45,9 @@ A **zip file** containing:
 <i>If you don't know how to delete the cache files, watch week 3's class recording.</i>
 {{< /alert >}}
 
+### Lab 3
 
+Implement the peaceful version of threaded cinema. Use what you learned from chapter 3 and the week 4 lecture.
 
 <!--
 Xs and Os, noughts and crosses assessment 4.
