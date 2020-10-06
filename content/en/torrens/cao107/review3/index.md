@@ -24,10 +24,6 @@ Threads are wild animals who only care about getting their own job done. Knowing
 
 Battling for resources? Interrupting eachother?
 
-{{< imgcard store_rush>}}
-Black Friday SSD sale maybe? I remember having to queue for a box copy of WoW.
-{{< /imgcard >}}
-
 ### Simple, similar scenario
 
 Two cooks go into a cold room one after, and on their way out, see there are no artichokes left. 
